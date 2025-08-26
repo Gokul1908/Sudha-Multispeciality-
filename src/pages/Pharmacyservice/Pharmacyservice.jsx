@@ -7,7 +7,7 @@ import Banner from "@/assets/facilities/pharmacy-banner.webp";
 import Sudha1 from "@/assets/pharmacyservice/sudha.png";
 import Image from "next/image";
 import "./pharmacy.css";
-import Medicine from "@/assets/pharmacyservice/Medicine.png";
+import Medicine from "@/assets/pharmacyservice/medicine.png";
 import Check from "@/assets/insurance/check.svg";
 import CampusFacilitySlider from "@/components/FacilitySlider/CampusFacilitySlider";
 import Slider1 from "@/assets/pharmacyservice/slider1.png";
