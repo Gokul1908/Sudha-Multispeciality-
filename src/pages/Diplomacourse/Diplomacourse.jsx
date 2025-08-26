@@ -107,12 +107,12 @@ const Diplomacourse = () => {
     return (
         <div>
             {/* Banner Section */}
-            <section className="relative -mt-12 lg:-mt-24 m-10">
+            <section className="relative px-7 hero-section -mt-28 mb-hero-section">
                 <div
-                    className="max-w-full mx-auto px-4 py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain banner min-h-400"
+                    className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
-                    <div className="pl-8 md:pl-20">
+                    <div className="max-w-7xl mx-auto">
                         <motion.p
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -126,7 +126,7 @@ const Diplomacourse = () => {
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
-                            className="text-[44px]  mb-2"
+                            className="text-[40px]  mb-3"
                         >
                             Diplomate of National Board (DNB)
                         </motion.h1>
@@ -146,12 +146,12 @@ const Diplomacourse = () => {
 
                     </div>
 
-                    <div className="absolute bottom-0 right-4 sm:right-10 md:right-[-40px] z-30 hidden md:block mr-10">
-                        <div className="w-[220px] overflow-hidden rounded-tl-xl  rounded-br-xl">
+                    <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+                        <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
                             <div className="h-[30%] bg-transparent" />
-                            <div className="bg-white p-4 ">
-                                <h3 className="text-[36px] font-bold text-[#2B3990]">40+</h3>
-                                <p className="text-lg leading-snug text-black font-semibold">
+                            <div className="bg-white p-5">
+                                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
+                                <p className="text-[16px] text-black font-bold">
                                     Years of Trusted <br />
                                     Expertise in <br />
                                     Healthcare
@@ -163,7 +163,7 @@ const Diplomacourse = () => {
             </section>
 
             <section>
-                <div className="max-w-7xl mx-auto py-8 h-full">
+                <div className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
                     <motion.div
                         variants={container}
                         initial="hidden"
@@ -194,22 +194,22 @@ const Diplomacourse = () => {
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-10 rounded-xl">
                     {/* Left Content */}
                     <div className="w-full md:w-1/2">
-                        <div className="inline-block mb-4 px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm sm:text-base">
+                        <h5 className="inline-block mb-4 px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm ">
                             Diplomate of National Board (DNB)
-                        </div>
+                        </h5>
 
-                        <h2 className="text-[24px] sm:text-[28px] md:text-[30px] font-bold mb-3 leading-snug text-center md:text-left">
+                        <h2 className="text-[30px]  ">
                             Reproductive Medicine <br />
 
                         </h2>
 
-                        <p className="mb-4 text-sm sm:text-base text-center md:text-left">
+                        <p className="mb-4 mt-4">
                             The Diplomate of National Board (DNB) is a prestigious postgraduate medical qualification awarded by the National Board of Examinations in
                             Medical Sciences (NBEMS), Government of India. It is offered in approved broad specialties, super specialties, and sub-specialties to ensure high and
                             uniform standards of medical education and training across the country.
                         </p>
 
-                        <p className="mb-3 text-sm sm:text-base text-center md:text-left">
+                        <p className="mb-4 mt-4">
                             Sudha Multispeciality Hospital, accredited by NBEMS, offers structured training for DNB trainees with expert faculty guidance and access to
                             advanced medical facilities. The DNB qualification is recognized by the Government of India, included in the First Schedule of the IMC Act, 1956,
                             and is considered equivalent to MD/MS degrees—qualifying doctors for specialist roles and faculty positions in hospitals and medical institutions nationwide.
@@ -228,11 +228,11 @@ const Diplomacourse = () => {
             </section>
 
             <section className="text-center px-4 py-6 md:px-8 lg:px-16">
-                <div className="inline-block mb-4 px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm md:text-base">
+                <h5 className="inline-block mb-4 px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm ">
                     Meet Our Expert Faculty
-                </div>
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold pt-3 leading-snug">
-                    Expert Care from DNB-Qualified Doctors
+                </h5>
+                <h2 className="text-[30px]">
+                    Expert Care from <br /> DNB-Qualified Doctors
                 </h2>
                 <div className='max-w-7xl mx-auto px-4 py-10 relative'>
                     <Faculties />
@@ -240,13 +240,17 @@ const Diplomacourse = () => {
             </section>
 
             <section className="px-4 sm:px-6 md:px-8 lg:px-16 py-10 sm:py-14 lg:py-20">
-                {/* Heading */}
-                <div className="inline-block mb-4 px-4 sm:px-5 py-1.5 sm:py-2 font-semibold bg-white text-[#2B3990] rounded-full text-xs sm:text-sm md:text-base">
-                    Diplomate of National Board (DNB)
+
+                <div className="text-center">
+                    <h5 className="inline-block mb-4 px-4 sm:px-5 py-1.5 sm:py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm">
+                        Diplomate of National Board (DNB)
+                    </h5>
+                    <h2 className="text-[30px]">
+                        Academic Structure & <br /> Course Details
+                    </h2>
                 </div>
-                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold pt-3 leading-snug">
-                    Academic Structure & Course Details
-                </h2>
+                {/* Heading */}
+
 
                 {/* Card Grid */}
                 <div className="bg-[#f0f7fd] flex justify-center items-center mt-8 rounded-2xl p-4 sm:p-6 lg:p-10">
@@ -254,32 +258,32 @@ const Diplomacourse = () => {
                         {courses.map((course, index) => (
                             <div
                                 key={index}
-                                className="bg-white rounded-2xl flex flex-col md:flex-row w-full p-4 sm:p-5"
+                                className="bg-white rounded-3xl flex flex-col md:flex-row w-full p-4 sm:p-5"
                             >
                                 {/* Image Section */}
-                                <div className="relative w-full md:w-[45%] flex justify-center items-center bg-white">
-                                    <div className="rounded-xl overflow-hidden w-full h-[180px] sm:h-[220px] md:h-[250px] lg:h-[280px]">
+                                <div className="relative w-full md:w-[75%] flex justify-center items-center bg-white">
+                                    <div className="rounded-3xl overflow-hidden w-full ">
                                         <Image
                                             src={course.img}
                                             alt={course.title}
                                             className="w-full h-full object-cover"
                                         />
                                     </div>
-                                    <span className="absolute top-3 sm:top-4 left-3 sm:left-4 bg-white text-[#2A3F92] text-[10px] sm:text-xs font-medium px-2 sm:px-3 py-0.5 sm:py-1 rounded-full ">
+                                    <span className="absolute top-3 sm:top-4 left-3 sm:left-4 bg-white text-[#2A3F92] text-[12px]  font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full ">
                                         {course.since}
                                     </span>
                                 </div>
 
                                 {/* Text Section */}
-                                <div className="flex flex-col justify-between p-4 w-full">
+                                <div className="flex flex-col justify-between ml-5 w-full">
                                     <div>
-                                        <h3 className="text-base sm:text-lg font-bold text-gray-900">
+                                        <h3 className="text-[20px]  ">
                                             {course.title}
                                         </h3>
-                                        <p className="text-gray-600 mt-2 text-sm sm:text-base">
+                                        <p className="mt-2 ">
                                             {course.duration}
                                         </p>
-                                        <p className="text-gray-600 text-sm sm:text-base">{course.seats}</p>
+                                        <p className="mt-4">{course.seats}</p>
                                     </div>
 
                                     <div className="mt-4 border-t pt-6">

@@ -128,13 +128,13 @@ function Organtransplant() {
 
   return (
     <div>
-      <section className="relative -mt-12 lg:-mt-28 m-10">
+      <section className="relative px-7 hero-section -mt-28 mb-hero-section">
         {/* Background Gradient */}
         <div
-          className="max-w-full mx-auto px-4 py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain banner"
+          className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
           style={{ backgroundImage: `url(${Banner.src})` }}
         >
-          <div className="pl-8 md:pl-20">
+          <div className="max-w-7xl mx-auto">
             {/* Breadcrumb */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -152,7 +152,7 @@ function Organtransplant() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className=" text-[44px]  mb-3"
+              className=" text-[40px]  mb-4"
             >
               Renal Transplant
             </motion.h1>
@@ -182,22 +182,27 @@ function Organtransplant() {
             </motion.div>
           </div>
 
-          <div className="absolute bottom-[40px] hidden md:block right-4 sm:right-10 md:-right-[35px] z-30 text-[#2B3990] p-4 rounded-xl w-[220px]">
-            <div
-              className="w-12 h-12 mb-2 bg-contain bg-no-repeat"
-              style={{ backgroundImage: `url(${HandIcon.src})` }}
-            ></div>
-            <p className="  text-black font-bold">
-              Government <br />
-              Approved <br />
-              Licence
-            </p>
+          <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+            <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
+              <div className="h-[30%] bg-transparent" />
+              <div className="bg-white p-5">
+                <div
+                  className="w-12 h-12 mb-2 bg-contain bg-no-repeat"
+                  style={{ backgroundImage: `url(${HandIcon.src})` }}
+                ></div>
+                <p className="  text-black font-bold">
+                  Government <br />
+                  Approved <br />
+                  Licence
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section>
-        <div className="max-w-7xl mx-auto  py-8 relative">
+        <div className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
           <SidebarTabs />
         </div>
       </section>

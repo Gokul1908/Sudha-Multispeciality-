@@ -217,12 +217,12 @@ const Fellownationalboard = () => {
     return (
         <div>
             {/* Banner Section */}
-            <section className="relative -mt-12 lg:-mt-24 m-10">
+            <section className="relative px-7 hero-section -mt-28 mb-hero-section">
                 <div
-                    className="max-w-full mx-auto px-4 py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain banner min-h-400"
+                    className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
-                    <div className="pl-8 md:pl-20">
+                    <div className="max-w-7xl mx-auto">
                         <motion.p
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -236,7 +236,7 @@ const Fellownationalboard = () => {
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
-                            className="text-[44px]  mb-2"
+                            className="text-[40px]  mb-2"
                         >
                             Fellow of National Board (FNB)
                         </motion.h1>
@@ -256,12 +256,12 @@ const Fellownationalboard = () => {
 
                     </div>
 
-                    <div className="absolute bottom-0 right-4 sm:right-10 md:right-[-40px] z-30 hidden md:block mr-10">
-                        <div className="w-[220px] overflow-hidden rounded-tl-xl  rounded-br-xl">
+                    <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+                        <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
                             <div className="h-[30%] bg-transparent" />
-                            <div className="bg-white p-4 ">
-                                <h3 className="text-[36px] font-bold text-[#2B3990]">40+</h3>
-                                <p className="text-lg leading-snug text-black font-semibold">
+                            <div className="bg-white p-5">
+                                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
+                                <p className="text-[16px] text-black font-bold">
                                     Years of Trusted <br />
                                     Expertise in <br />
                                     Healthcare
@@ -273,7 +273,7 @@ const Fellownationalboard = () => {
             </section>
 
 
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-10 sm:py-14 lg:py-20">
+            <section className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
                 <motion.div
                     className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-10"
                 >
@@ -299,17 +299,18 @@ const Fellownationalboard = () => {
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-6 sm:gap-8 lg:gap-12">
                     {/* Left Content */}
                     <div className="flex-1">
-                        <div className="inline-block mb-4 px-3 sm:px-4 py-1.5 sm:py-2 font-semibold bg-white text-[#2B3990] rounded-full text-xs sm:text-sm md:text-base">
+                         <h5 className="inline-block mb-4 px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm ">
                             Fellow of National Board (FNB)
-                        </div>
-                        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[30px] font-bold mb-3 leading-snug text-center md:text-left">
+                        </h5>
+
+                        <h2 className="text-[30px]  mt-4 sm:mt-6">
                             Reproductive Medicine
                         </h2>
-                        <p className="mb-4 text-sm sm:text-base lg:text-lg text-center md:text-left">
+                        <p className="mb-4 mt-4">
                             The Fellow of National Board (FNB) is a prestigious post-doctoral qualification awarded by the National Board of Examinations in Medical Sciences (NBEMS),
                             Government of India. It is offered in approved super-specialties and sub-specialties to promote advanced clinical expertise and academic excellence.
                         </p>
-                        <p className="mb-3 text-sm sm:text-base text-center md:text-left">
+                        <p className="mb-4 mt-4">
                             Sudha Multispeciality Hospital, accredited by NBEMS, offers structured training for FNB trainees with expert faculty support and access to advanced
                             medical facilities. The FNB qualification is recognized by the Government of India, included in the First Schedule of the IMC Act, 1956, and considered
                             equivalent to DM/MCh degrees—eligible for specialist and faculty roles across hospitals and teaching institutions nationwide.
@@ -329,11 +330,11 @@ const Fellownationalboard = () => {
 
 
             <section className="text-center px-4 sm:px-6 lg:px-10 py-10 sm:py-14 lg:py-20">
-                <div className="inline-block mb-4 px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm sm:text-base">
+                <h5 className="inline-block mb-2 px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm ">
                     Meet Our Expert Faculty
-                </div>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug">
-                    Reproductive Medicine with Expertise & Care
+                </h5>
+                <h2 className="text-[30px]  ">
+                    Reproductive Medicine with <br/> Expertise & Care
                 </h2>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-8 sm:py-10 relative">
                     <Faculties />

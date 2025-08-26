@@ -106,12 +106,12 @@ const VocationalDegree = () => {
     return (
         <div>
             {/* Banner Section */}
-            <section className="relative -mt-12 lg:-mt-24 m-10">
+            <section className="relative px-7 hero-section -mt-28 mb-hero-section">
                 <div
-                    className="max-w-full mx-auto px-4 py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain banner min-h-400"
+                    className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
-                    <div className="pl-8 md:pl-20">
+                    <div className="max-w-7xl mx-auto">
                         <motion.p
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -125,7 +125,7 @@ const VocationalDegree = () => {
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
-                            className="text-[44px] mb-2"
+                            className="text-[40px] mb-3"
                         >
                             Vocational Degree Courses 
                         </motion.h1>
@@ -144,12 +144,12 @@ const VocationalDegree = () => {
                         </motion.div>
                     </div>
 
-                    <div className="absolute bottom-6 right-4 sm:right-10 md:right-[-40px] z-30 hidden md:block mr-10">
-                        <div className="w-[220px] overflow-hidden rounded-tl-xl rounded-br-xl">
+                    <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+                        <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
                             <div className="h-[30%] bg-transparent" />
-                            <div className="bg-white p-4">
-                                <h3 className="text-[36px] font-bold text-[#2B3990]">40+</h3>
-                                <p className="text-lg leading-snug text-black font-semibold">
+                            <div className="bg-white p-5">
+                                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
+                                <p className="text-[16px] text-black font-bold">
                                     Years of Trusted <br />
                                     Expertise in <br />
                                     Healthcare
@@ -160,17 +160,17 @@ const VocationalDegree = () => {
                 </div>
             </section>
 
-            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
+            <section className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 md:gap-10">
                     {/* Left Content */}
                     <div className="md:col-span-8">
-                        <div className="inline-block mb-4 px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm sm:text-base ">
+                        <h5 className="inline-block mb-3 px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm ">
                             Available Courses
-                        </div>
-                        <h2 className="text-[24px] sm:text-[28px] md:text-[30px] font-bold leading-snug">
+                        </h5>
+                        <h2 className="text-[30px] mb-3">
                             Vocational Degree Courses in Health Education
                         </h2>
-                        <p className='mt-8'>
+                        <p className="">
                             Sudha Hospitals, in collaboration with Lingaya’s Vidyapeeth University, offers a 3-year vocational degree program in Health Education.
                             This course combines practical skills and academic knowledge across various healthcare specialities. Designed for 12th pass students,
                             the program prepares learners for rewarding medical careers through hands-on training and an industry-relevant curriculum for comprehensive
@@ -189,8 +189,8 @@ const VocationalDegree = () => {
             </section>
 
             {/* All Degrees Grid Section */}
-            <section className="py-12 px-4 sm:px-6 lg:px-8 ">
-                <div className="max-w-7xl mx-auto">
+            <section className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
+                <div className="">
                     {/* degree Grid */}
                     <div className="max-w-7xl mx-auto p-0 grid md:grid-cols-3 gap-6">
                         {degrees.map(degree => (
@@ -206,21 +206,21 @@ const VocationalDegree = () => {
                                     className="w-full h-56 object-cover rounded-2xl"
                                 />
                                 {/* degree Title */}
-                                <h2 className="text-lg font-semibold mt-4 mb-4">{degree.title}</h2>
+                                <h2 className="text-[18px]  mt-4 mb-4">{degree.title}</h2>
 
                                 {/* degree Details */}
-                                <p className="text-gray-600 text-sm mb-2">
-                                    <span className="font-medium">Education Qualification :</span> {degree.qualification}
+                                <p className="  mb-2">
+                                    <span className="font-semibold">Education Qualification :</span> {degree.qualification}
                                 </p>
-                                <p className="text-gray-600 text-sm mb-4">
-                                    <span className="font-medium">Course Duration :</span> {degree.duration}
+                                <p className=" mb-4">
+                                    <span className="font-semibold">Course Duration :</span> {degree.duration}
                                 </p>
                                 <div className="flex-grow"></div>
 
                                 {/* View Details Button */}
                                 <Link
                                     href="#"
-                                    className="block bg-[#2B3990] hover:bg-[#1e2660] text-white py-2 px-4 rounded-full text-center font-medium"
+                                    className="block bg-[#2B3990] hover:bg-[#1e2660] text-white py-2 px-4 rounded-full text-center font-medium text-[14px]"
                                 >
                                     View Details
                                 </Link>
@@ -229,12 +229,12 @@ const VocationalDegree = () => {
                     </div>
 
 
-                    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
+                    <section className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 md:gap-10 items-start">
 
                             {/* Text Column */}
                             <div className="order-2 md:order-1 md:col-span-6">
-                                <h2 className="text-xl sm:text-2xl md:text-[24px] mb-4 mt-3 sm:mt-5 font-bold">
+                                <h2 className="text-[30px]  mb-4 mt-3 sm:mt-5 ">
                                     Highlights of the Course
                                 </h2>
                                 {terms.map((term, idx) => (
@@ -242,7 +242,7 @@ const VocationalDegree = () => {
                                         <div className="flex-shrink-0 mt-1">
                                             <TickCircle className="w-5 h-5 text-[#2B3990]" />
                                         </div>
-                                        <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
+                                        <p className="">
                                             {term}
                                         </p>
                                     </div>
@@ -262,7 +262,7 @@ const VocationalDegree = () => {
                         </div>
                     </section>
 
-                    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
+                    <section className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 md:gap-10">
                             <div className="md:col-span-6">
                                 <img
@@ -274,7 +274,7 @@ const VocationalDegree = () => {
 
                             {/* Text (8 cols) */}
                             <div className="md:col-span-6">
-                                <h2 className="text-2xl md:text-[24px] mb-4 font-bold">
+                                <h2 className="text-[30px] mb-4 ">
                                     Documents Required with Application
                                 </h2>
                                 {documents.map((doc, idx) => (
@@ -282,7 +282,7 @@ const VocationalDegree = () => {
                                         <div className="flex-shrink-0 mt-1">
                                             <TickCircle className="w-5 h-5 text-[#2B3990]" />
                                         </div>
-                                        <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
+                                        <p className="">
                                             {doc}
                                         </p>
                                     </div>

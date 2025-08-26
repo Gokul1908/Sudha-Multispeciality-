@@ -41,7 +41,7 @@ function Cardiothoracicsurgery() {
   };
   return (
     <div>
-      <section className="relative px-7  hero-section -mt-28 mb-hero-section">
+      <section className="relative px-7 hero-section -mt-28 mb-hero-section">
         {/* Background Gradient */}
         <div
           className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
@@ -63,7 +63,7 @@ function Cardiothoracicsurgery() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-[44px]  mb-3"
+              className="text-[40px]  mb-3"
             >
               Cardiothoracic Surgery
             </motion.h1>
@@ -106,6 +106,8 @@ function Cardiothoracicsurgery() {
               </div>
             </div>
           </div>
+
+
         </div>
       </section>
 

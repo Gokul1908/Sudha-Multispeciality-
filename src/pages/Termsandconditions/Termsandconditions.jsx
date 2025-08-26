@@ -8,45 +8,45 @@ import Breadcrumb from "@/components/Breadcrumb";
 const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: "Terms & Conditions", href: "/terms-and-conditions" },
-  
-  ];
+
+];
 
 const Termsandconditions = () => {
     return (
         <div>
-            <section className="relative -mt-20 lg:-mt-[100px] m-10">
+            <section className="relative px-7 hero-section -mt-28 mb-hero-section">
                 {/* Banner Container */}
                 <div
-                    className="relative top-6 max-w-full mx-auto px-4 py-36 z-10 text-white bg-center bg-no-repeat bg-cover lbg-contain rounded-[24px] overflow-hidden banner"
+                    className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
                     {/* Breadcrumb + Title */}
-                    <div className="pl-8 md:pl-20">
+                    <div className="max-w-7xl mx-auto">
                         <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4 }}
                             className="text-sm mb-3"
                         >
-                           <Breadcrumb items={breadcrumbItems} />
+                            <Breadcrumb items={breadcrumbItems} />
                         </motion.div>
 
                         <motion.h1
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
-                            className="text-[44px] mb-4"
+                            className="text-[40px] mb-4"
                         >
                             Terms & Conditions
                         </motion.h1>
                     </div>
 
-                    <div className="absolute bottom-0 right-4 sm:right-10 md:right-[-40px] z-30 hidden md:block">
-                        <div className="w-[220px] overflow-hidden rounded-tl-xl rounded-tr-xl rounded-br-xl">
+                    <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+                        <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
                             <div className="h-[30%] bg-transparent" />
-                            <div className="bg-white p-4">
-                                <h3 className="text-[36px] font-bold text-[#2B3990]">40+</h3>
-                                <p className="text-lg leading-snug text-black font-semibold">
+                            <div className="bg-white p-5">
+                                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
+                                <p className="text-[16px] text-black font-bold">
                                     Years of Trusted <br />
                                     Expertise in <br />
                                     Healthcare

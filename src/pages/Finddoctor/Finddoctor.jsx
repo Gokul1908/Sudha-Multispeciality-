@@ -5,7 +5,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import BackgroundIMage from "../../assets/ourteam/ourteam.png";
+import BackgroundIMage from "../../assets/ourteam/find-doctor.webp";
 import { degrees, motion } from "framer-motion";
 import Link from "next/link";
 import "../Finddoctor/finddoc.css";
@@ -69,13 +69,13 @@ export default function Finddoctor() {
 
   return (
     <>
-      <section className="relative -mt-20 lg:-mt-32">
+      <section className="relative px-7 hero-section -mt-28 mb-hero-section">
         {/* Background Gradient */}
         <div
-          className="max-w-7xl mx-auto px-4 py-36 relative -z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain"
+          className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
           style={{ backgroundImage: `url(${BackgroundIMage.src})` }}
         >
-          <div>
+          <div className="max-w-7xl mx-auto">
             {/* Breadcrumb */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -91,7 +91,7 @@ export default function Finddoctor() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-4xl md:text-xl font-bold mb-4"
+              className="text-[40px]  mb-3"
             >
               Find a Doctor
             </motion.h1>
@@ -101,34 +101,35 @@ export default function Finddoctor() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-lg md:text-xl max-w-xl mb-6"
+              className="mb-6 text-white"
             >
               A Heartfelt Care For Your Heart Care
             </motion.p>
 
-            {/* Button */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-            >
-              <Link
-                href="#"
-                className="inline-flex text-md items-center px-6 py-3 bg-white text-[#0C122A] font-semibold rounded-full shadow-md hover:bg-gray-100 transition"
-              >
-                Book an Appointment <ArrowUpRight className="ml-2 w-5 h-5" />
-              </Link>
-            </motion.div>
+           
+          </div>
+          <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+            <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
+              <div className="h-[30%] bg-transparent" />
+              <div className="bg-white p-5">
+                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
+                <p className="text-[16px] text-black font-bold">
+                  Years of Trusted <br />
+                  Expertise in <br />
+                  Healthcare
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <div className=" max-w-7xl mx-auto p-4">
-        <div className=" bg-white z-20 w-[50%] absolute p-10 rounded-lg -mt-28">
+      <div className=" max-w-7xl mx-auto pt-16">
+        <div className=" bg-white z-20 w-[50%] absolute p-8 rounded-3xl -mt-28">
           <div>
-            <p>
+            <h5 className="mb-4 text-[20px]">
               Find top specialists by department and book your appointment now.
-            </p>
+            </h5>
             <div className="flex flex-col md:flex-row gap-4 mb-6">
               <select
                 onChange={(e) => {
@@ -167,23 +168,25 @@ export default function Finddoctor() {
           </div>
         </div>
 
-        <div className="mt-[60px] ">
+        
+      </div>
+      <div className="max-w-7xl mx-auto  pt-20 sm:py-16">
           {selectedDoctor ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {filteredDoctors.map((doc) => (
                 <div
                   key={doc.id}
-                  className="bg-white finddoc shadow-md rounded-xl p-4 text-center relative"
+                  className="bg-white finddoc shadow-md rounded-xl p-4 text-center pt-5 relative"
                 >
                   <Image
                     src={doc.image}
                     alt={doc.name}
                     className="mx-auto w-[50%] rounded-md object-cover"
                   />
-                  <h3 className="text-md font-bold mt-2 text-[#2B3990]">
+                  <h3 className="text-md  mt-2 text-[#2B3990]">
                     {doc.name}
                   </h3>
-                  <h3 className="text-md font-bold mt-2 text-[#2B3990]">
+                  <h3 className="text-md  mt-2 text-[#2B3990]">
                     {doc.degrees}
                   </h3>
                   <p className="text-sm mt-2 text-gray-600">
@@ -275,7 +278,6 @@ export default function Finddoctor() {
             ))
           )}
         </div>
-      </div>
     </>
   );
 }

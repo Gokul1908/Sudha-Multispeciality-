@@ -165,7 +165,7 @@ const Centreofexcellence = () => {
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
-                            className="text-[44px]  mb-4"
+                            className="text-[40px]  mb-4"
                         >
                             Centre of Excellence
                         </motion.h1>

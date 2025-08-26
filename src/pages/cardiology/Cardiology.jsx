@@ -64,7 +64,7 @@ function Cardiology() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-[44px]  mb-3"
+              className="text-[40px]  mb-3"
             >
               Cardiology
             </motion.h1>

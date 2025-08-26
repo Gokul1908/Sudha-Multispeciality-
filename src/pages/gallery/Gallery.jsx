@@ -197,19 +197,16 @@ function Gallery() {
   };
   return (
     <div>
-      <section className="relative -mt-24 sm:-mt-20 md:-mt-24 lg:-mt-26 mx-2 sm:mx-2 md:mx-2 lg:mx-2">
+      <section className="relative px-7 hero-section -mt-28 mb-hero-section">
         {/* Banner Container */}
         <div
           className="
-      relative top-6 max-w-full mx-auto px-4 py-36 z-10 
-      text-white bg-center bg-no-repeat bg-cover
-      rounded-b-3xl md:rounded-b-3xl 
-      overflow-hidden banner
+      relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400
     "
           style={{ backgroundImage: `url(${Banner.src})` }}
         >
 
-          <div className="pl-8 md:pl-20">
+          <div className="max-w-7xl mx-auto">
             {/* Breadcrumb */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -225,7 +222,7 @@ function Gallery() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-[44px] mb-4"
+              className="text-[40px] mb-4"
             >
               Gallery
             </motion.h1>
@@ -255,13 +252,18 @@ function Gallery() {
             </motion.div>
           </div>
 
-          <div className="absolute bottom-[10px] hidden md:block right-4 sm:right-10 md:-right-[35px] z-30 text-[#2B3990] p-4 pt-5 rounded-xl w-[220px] ">
-            <h3 className="text-[36px] font-bold mt-1 mb-1">40+</h3>
-            <p className="text-lg leading-snug text-black font-semibold">
-              Years of Trusted <br />
-              Expertise in <br />
-              Healthcare
-            </p>
+          <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+            <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
+              <div className="h-[30%] bg-transparent" />
+              <div className="bg-white p-5">
+                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
+                <p className="text-[16px] text-black font-bold">
+                  Years of Trusted <br />
+                  Expertise in <br />
+                  Healthcare
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -272,7 +274,7 @@ function Gallery() {
           speed={50}
           gradient={false}
           pauseOnHover={true}
-          className="py-8"
+          className="pt-20 pb-16"
         >
           <span className="mx-4 text-[#D5DAE5] font-extrabold text-[76px]">
             Trusted Healthcare Partners
@@ -283,7 +285,7 @@ function Gallery() {
       <section>
 
 
-        <div className="container max-w-7xl  mx-auto relative h-full px-4 sm:px-6 lg:px-8 py-16">
+        <div className="container max-w-7xl  mx-auto relative h-full px-4 sm:px-6 lg:px-8 py-8">
           <p className="bg-white text-[#2B3990] px-5 mb-5 py-2  w-[220px] mx-auto rounded-full  font-semibold">
             Infrastructure & Gallery
           </p>

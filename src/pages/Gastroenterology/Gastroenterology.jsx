@@ -43,13 +43,13 @@ function Gastroenterology() {
   };
   return (
     <div>
-      <section className="relative -mt-16 sm:-mt-20 md:-mt-24 lg:-mt-28 mx-2 sm:mx-2 md:mx-4 lg:mx-6 overflow-hidden">
+      <section className="relative px-7 hero-section -mt-28 mb-hero-section">
         {/* Background Gradient */}
         <div
-          className="max-w-full mx-auto px-4 py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain banner min-h-400"
+          className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
           style={{ backgroundImage: `url(${Banner.src})` }}
         >
-          <div className="pl-8 md:pl-20">
+          <div className="max-w-7xl mx-auto">
             {/* Breadcrumb */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -65,7 +65,7 @@ function Gastroenterology() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-[44px]  mb-3"
+              className="text-[40px]  mb-3"
             >
               Gastroenterology
             </motion.h1>
@@ -85,90 +85,63 @@ function Gastroenterology() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
-              className="flex justify-center sm:justify-start" 
+              className="flex justify-center sm:justify-start"
             >
               <Link
                 href="#"
-               className="btn-white inline-flex items-center whitespace-nowrap text-[14px] sm:text-[16px] tracking-wide px-4 sm:px-7 py-2 sm:py-3 bg-white text-[#2B3990] font-semibold rounded-full transition hover:-translate-y-[3px] transition-transform duration-200">
+                className="btn-white inline-flex items-center whitespace-nowrap text-[14px] sm:text-[16px] tracking-wide px-4 sm:px-7 py-2 sm:py-3 bg-white text-[#2B3990] font-semibold rounded-full transition hover:-translate-y-[3px] transition-transform duration-200">
                 Book an Appointment <ArrowUpRight className="w-5 h-5" />
               </Link>
             </motion.div>
           </div>
 
-          <div className="absolute bottom-[40px] hidden md:block right-4 sm:right-10 md:-right-[35px] z-30 text-[#2B3990] p-4 rounded-xl w-[220px]">
-            <h3 className="text-[36px] font-bold">40+</h3>
-            <p className="text-lg leading-snug text-black font-semibold">
-              Years of Trusted <br />
-              Expertise in <br />
-              Healthcare
-            </p>
+          <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+            <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
+              <div className="h-[30%] bg-transparent" />
+              <div className="bg-white p-5">
+                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
+                <p className="text-[16px] text-black font-bold">
+                  Years of Trusted <br />
+                  Expertise in <br />
+                  Healthcare
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section>
-        <div className="max-w-7xl mx-auto px-4 py-8 relative">
+        <div className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
           <SidebarTabs />
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto py-16 relative">
+<section className="max-w-7xl mx-auto py-16 relative">
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
           {/* Left - Image with Overlay Card */}
-          <div className="relative w-full lg:w-1/2 mx-auto rounded-2xl overflow-hidden px-4 xs:px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+          <div className="relative w-full lg:w-1/2 mx-auto rounded-2xl overflow-hidden">
             {/* Background Image */}
             <Image
               src={Clinic}
               alt="Clinic"
-              className="w-full h-auto object-cover rounded-2xl"
+              className="w-full h-auto object-cover"
             />
 
-            {/* Overlay Card */}
-            <div
-              className="
-      absolute left-1/2 transform -translate-x-1/2 bg-white/80
-      bottom-4 xs:bottom-6 sm:bottom-8 md:bottom-10
-      p-4 xs:p-5 sm:p-6 md:p-8 lg:p-10
-      w-[95%] xs:w-[90%] sm:w-[85%] md:w-[80%] lg:w-[70%]
-      flex flex-col items-center justify-end rounded-2xl
-    "
-            >
-              <h2
-                className="
-        text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl
-        mb-2 text-center font-semibold
-      "
-              >
+            {/* Overlay Card at Bottom Center */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 bg-white/80 p-6 w-[90%] bottom-10 flex flex-col items-center justify-end rounded-2xl">
+              <h2 className="text-[20px] mb-2 text-center">
                 Your Health, Our Priority
               </h2>
-
-              <p
-                className="
-        mb-4 text-center
-        text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl
-      "
-              >
+              <p className=" mb-4 text-center">
                 Get all your personalised healthcare services under one roof from experienced and trusted doctors.
               </p>
-
-              <button
-                className="
-        inline-flex items-center justify-center
-        text-white bg-[#2B3990] hover:bg-[#1e2a70]
-        px-4 xs:px-5 sm:px-6 md:px-7 lg:px-8
-        py-2 xs:py-2 sm:py-3 md:py-3 lg:py-4
-        rounded-full
-        text-xs xs:text-sm sm:text-base md:text-lg
-        font-medium
-        hover:-translate-y-[3px] transition-transform duration-200
-      "
-              >
+              <button className="btn-diagonal inline-flex items-center text-white bg-[#2B3990] hover:bg-[#1e2a70] px-7 py-3 rounded-full text-sm font-medium hover:-translate-y-[3px] transition-transform duration-200">
                 Book an Appointment
-                <ArrowUpRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
+               <ArrowUpRight className="w-5 h-5" />
               </button>
             </div>
           </div>
-
 
           {/* Right - Info Card and Paragraph */}
           <div className="w-full lg:w-3/5 flex flex-col gap-6">

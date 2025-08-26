@@ -47,19 +47,19 @@ const rightbar = [
 
 const Alliedhealthsidebar = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div className="">
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Left Section */}
         <aside className="w-full lg:w-1/2 space-y-6 lg:sticky lg:top-24 h-fit">
-          <div className="inline-block mb-2 px-4 py-1.5 font-semibold bg-white text-[#2B3990] rounded-full text-sm sm:text-base">
+          <h5 className="inline-block  px-4 py-1.5 font-semibold bg-white text-[#2B3990] rounded-full text-sm ">
             Allied Services
-          </div>
+          </h5>
 
           <div>
-            <h2 className="text-2xl sm:text-3xl pb-4 font-semibold">
+            <h2 className="text-[30px] ">
               Advanced Allied Healthcare for Complete Recovery
             </h2>
-            <p className="pb-4 text-sm sm:text-base leading-relaxed text-gray-700">
+            <p className="mt-3">
               At Sudha Multispeciality Hospital, our Allied Health Care Services offer
               critical support that complements your medical treatment. Our expert professionals
               provide personalised care across physiotherapy, dietetics, psychology, maternal
@@ -70,8 +70,8 @@ const Alliedhealthsidebar = () => {
             </p>
 
             <Link href="#">
-              <div className="btn-diagonal inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 mt-4 text-sm sm:text-base bg-[#253990] font-semibold text-white rounded-full transition duration-300 hover:bg-[#1e2f70]">
-                Book a Appointment
+              <div className="btn-diagonal inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 mt-4 text-sm  bg-[#253990] font-semibold text-white rounded-full transition duration-300 hover:bg-[#1e2f70]">
+                Book an Appointment
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5"
@@ -97,18 +97,18 @@ const Alliedhealthsidebar = () => {
             {rightbar.map((item, index) => (
               <Link href={item.link} key={index}>
                 <div className="relative group">
-                  <div className="bg-white nursingimg rounded-xl p-4 sm:p-6 flex flex-col sm:flex-row gap-4 items-start">
+                  <div className="bg-white nursingimg rounded-3xl p-4 sm:p-6 flex flex-col sm:flex-row gap-4 items-start">
                     {/* Image */}
                     <Image
                       src={item.image}
                       alt={item.head}
-                      className="w-full sm:w-60 h-[220px] sm:h-[260px] object-cover rounded-lg"
+                      className="w-full sm:w-60 h-[220px] sm:h-[260px] object-cover rounded-3xl"
                     />
 
                     {/* Text Content */}
                     <div className="flex flex-col flex-1 h-full w-full">
                       <div className="flex justify-between items-start w-full">
-                        <h3 className="text-lg sm:text-[22px] font-semibold">
+                        <h3 className="text-[20px] sm:text-[22px] ">
                           {item.head}
                         </h3>
                         <Image
@@ -122,7 +122,7 @@ const Alliedhealthsidebar = () => {
 
                       <div className="pt-4">
                         <div className="border-t border-gray-200 mt-4 mb-2" />
-                        <p className="text-gray-700 text-sm sm:text-base">
+                        <p className="">
                           {item.label}
                         </p>
                       </div>

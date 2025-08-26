@@ -37,7 +37,7 @@ const AppointmentForm = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          <div className="flex items-center  my-6 rounded-full text-md font-semibold w-fit mt-3 overflow-hidden">
+          <div className="flex items-center  my-6 rounded-full text-[14px] font-semibold w-fit mt-3 overflow-hidden">
             {["New Registration", "Existing Registration"].map((label, index) => {
               const isActive = isCustomer === (index === 1);
 

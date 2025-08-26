@@ -74,14 +74,10 @@ function Aboutus() {
   };
   return (
     <div>
-      <section className="relative px-5 -mt-24 sm:-mt-20 md:-mt-24 lg:-mt-26 mx-2 sm:mx-2 md:mx-2 lg:mx-2">
+      <section className="relative px-7 hero-section -mt-28 mb-hero-section">
         {/* Background Gradient */}
         <div
-          className="relative top-6 max-w-full mx-auto  py-36 z-10 text-white
-                        bg-center bg-no-repeat bg-cover
-                        rounded-3xl   
-                        overflow-hidden         
-                        banner"
+          className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
           style={{ backgroundImage: `url(${Banner.src})` }}
         >
           <div className="max-w-7xl mx-auto">
@@ -100,7 +96,7 @@ function Aboutus() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-[44px] font-bold mb-3"
+              className="text-[40px]  mb-3"
             >
               Our Growth Story
             </motion.h1>
@@ -116,13 +112,18 @@ function Aboutus() {
             </motion.p>
           </div>
 
-          <div className="absolute bottom-[10px] hidden md:block right-4 sm:right-10 md:-right-[35px] z-30 text-[#2B3990] p-4 pt-5 rounded-xl w-[220px] ">
-            <h3 className="text-[36px] font-bold mt-1 mb-1">40+</h3>
-            <p className="text-lg leading-snug text-black font-semibold">
-              Years of Trusted <br />
-              Expertise in <br />
-              Healthcare
-            </p>
+          <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+            <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
+              <div className="h-[30%] bg-transparent" />
+              <div className="bg-white p-5">
+                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
+                <p className="text-[16px] text-black font-bold">
+                  Years of Trusted <br />
+                  Expertise in <br />
+                  Healthcare
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

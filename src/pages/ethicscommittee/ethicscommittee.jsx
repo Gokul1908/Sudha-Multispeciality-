@@ -180,12 +180,12 @@ const EthicsCommitte = () => {
     return (
         <div>
             {/* Banner Section */}
-            <section className="relative -mt-12 lg:-mt-24 m-10">
+            <section className="relative px-7 hero-section -mt-28 mb-hero-section">
                 <div
-                    className="max-w-full mx-auto px-4 py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain banner min-h-400"
+                    className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
-                    <div className="pl-8 md:pl-20">
+                    <div className="max-w-7xl mx-auto">
                         <motion.p
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -199,7 +199,7 @@ const EthicsCommitte = () => {
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
-                            className="text-[44px]  mb-2"
+                            className="text-[40px]  mb-2"
                         >
                             Ethics Committee
                         </motion.h1>
@@ -219,12 +219,12 @@ const EthicsCommitte = () => {
 
                     </div>
 
-                    <div className="absolute bottom-0 right-4 sm:right-10 md:right-[-40px] z-30 hidden md:block mr-10">
-                        <div className="w-[220px] overflow-hidden rounded-tl-xl  rounded-br-xl">
+                    <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+                        <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
                             <div className="h-[30%] bg-transparent" />
-                            <div className="bg-white p-4 ">
-                                <h3 className="text-[36px] font-bold text-[#2B3990]">40+</h3>
-                                <p className="text-lg leading-snug text-black font-semibold">
+                            <div className="bg-white p-5">
+                                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
+                                <p className="text-[16px] text-black font-bold">
                                     Years of Trusted <br />
                                     Expertise in <br />
                                     Healthcare
@@ -236,7 +236,7 @@ const EthicsCommitte = () => {
             </section>
 
             <section>
-                <div className="max-w-7xl mx-auto py-6 sm:py-8 md:py-12 h-full px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
                     <motion.div
                         variants={container}
                         initial="hidden"
@@ -268,28 +268,28 @@ const EthicsCommitte = () => {
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 md:gap-10">
                     {/* Left Content */}
                     <div className="md:col-span-8">
-                        <h2 className="text-[24px] sm:text-[28px] md:text-[30px] font-bold leading-snug">
+                        <h2 className="text-[30px]">
                             Institutional Ethics Committee at Sudha Hospitals
                         </h2>
-                        <p className="mb-2 text-sm text-blue-900 sm:text-base mt-6">
+                        <p className=" mt-5 mb-2 text-primary-blue font-bold">
                             Registration No:
-                            <span className="text-sm text-gray-600 sm:text-base">
+                            <span className="text-[14px] font-semibold text-[#5E566A]">
                                 {" "}ECR / 948 / INST / TN / 2018 / RR-22
                             </span>
                         </p>
-                        <p className="mb-2 text-sm text-blue-900 sm:text-base">
+                        <p className="mb-2  text-primary-blue font-bold">
                             Valid From:
-                            <span className="text-sm text-gray-600 sm:text-base">
+                            <span className="text-[14px] font-semibold text-[#5E566A]">
                                 {" "}14 May 2022
                             </span>
                         </p>
-                        <p className="mb-2 text-sm text-blue-900 sm:text-base">
+                        <p className="text-primary-blue font-bold">
                             Valid To:
-                            <span className="text-sm text-gray-600 sm:text-base">
+                            <span className="text-[14px] font-semibold text-[#5E566A]">
                                 {" "}13 May 2027
                             </span>
                         </p>
-                        <p className='mt-8'>
+                        <p className='mt-4'>
                             The EC shall be established to formalize and specify the institution's
                             commitment to the promotion of high scientific and ethical standards in
                             patient care, professional education, clinical research, and community
@@ -321,7 +321,7 @@ const EthicsCommitte = () => {
 
                     {/* Text (8 cols) */}
                     <div className="md:col-span-8">
-                        <h2 className="text-2xl md:text-[24px] mb-4 font-bold">
+                        <h2 className="text-[30px] mb-4 ">
                             Terms Of Reference Of EC
                         </h2>
                         {terms.map((term, idx) => (
@@ -329,7 +329,7 @@ const EthicsCommitte = () => {
                                 <div className="flex-shrink-0 mt-1">
                                     <TickCircle className="w-5 h-5 text-[#2B3990]" />
                                 </div>
-                                <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
+                                <p className="mb-0">
                                     {term}
                                 </p>
                             </div>
@@ -346,7 +346,7 @@ const EthicsCommitte = () => {
 
                     {/* Text Column */}
                     <div className="order-2 md:order-1 md:col-span-8">
-                        <h2 className="text-xl sm:text-2xl md:text-[24px] mb-4 mt-3 sm:mt-5 font-bold">
+                        <h2 className="text-[30px] mb-4">
                             Roles and Responsibility of EC
                         </h2>
                         {roles.map((role, idx) => (
@@ -354,7 +354,7 @@ const EthicsCommitte = () => {
                                 <div className="flex-shrink-0 mt-1">
                                     <TickCircle className="w-5 h-5 text-[#2B3990]" />
                                 </div>
-                                <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
+                                <p className="mb-0">
                                     {role}
                                 </p>
                             </div>
@@ -377,7 +377,7 @@ const EthicsCommitte = () => {
 
 
             <section className='md:12 px-28'>
-                <h2 className="text-[24px] mb-7 mt-5">
+                <h2 className="text-[30px] mb-7 mt-5">
                     Composition of the Ethics Committee
                 </h2>
                 <div className='text-center mb-9'>

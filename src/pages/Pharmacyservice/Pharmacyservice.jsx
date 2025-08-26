@@ -52,13 +52,13 @@ const Pharmacyservice = () => {
 
     return (
         <div>
-            <section className="relative -mt-24 sm:-mt-20 md:-mt-24 lg:-mt-28 mx-2 sm:mx-2 md:mx-4 lg:mx-6 overflow-hidden">
+            <section className="relative px-7 hero-section -mt-28 mb-hero-section">
                 {/* Banner Container */}
                 <div
-                    className="relative top-6 max-w-full mx-auto px-4 py-36 z-10 text-white bg-center bg-no-repeat bg-cover lbg-contain rounded-3xl overflow-hidden banner"
+                    className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
-                    <div className="pl-8 md:pl-20">
+                    <div className="max-w-7xl mx-auto">
                         {/* Breadcrumb */}
                         <motion.div
                             initial={{ opacity: 0, y: 10 }}
@@ -74,7 +74,7 @@ const Pharmacyservice = () => {
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
-                            className="text-[44px] font-bold mb-4"
+                            className="text-[40px]  mb-4"
                         >
                             Pharmacy
                         </motion.h1>
@@ -90,13 +90,18 @@ const Pharmacyservice = () => {
                         </motion.p>
                     </div>
 
-                    <div className="absolute bottom-[20px] hidden md:block right-4 sm:right-10 md:-right-[35px] z-30 text-[#2B3990]  p-4 rounded-xl  w-[220px]">
-                        <h3 className="text-[36px] font-bold">40+</h3>
-                        <p className="text-lg leading-snug text-black font-semibold">
-                            Years of Trusted <br />
-                            Expertise in <br />
-                            Healthcare
-                        </p>
+                    <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+                        <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
+                            <div className="h-[30%] bg-transparent" />
+                            <div className="bg-white p-5">
+                                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
+                                <p className="text-[16px] text-black font-bold">
+                                    Years of Trusted <br />
+                                    Expertise in <br />
+                                    Healthcare
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -111,13 +116,13 @@ const Pharmacyservice = () => {
                         </div>
                         <h2 className='text-[30px] text-black '>Sudha Pharmacy </h2>
                         <p className=''>
-                           Sudha Hospital has an in house pharmacy department established in the year 1982 working 24*7 which caters to the patients with its timely and 
-                           quality service under one roof.
+                            Sudha Hospital has an in house pharmacy department established in the year 1982 working 24*7 which caters to the patients with its timely and
+                            quality service under one roof.
                         </p>
 
                         <p className=''>
-                           The Pharmacy has qualified and experienced pharmacists in catering the patients' needs at the right time and with right quality meeting NABH Standards. 
-                           Various advanced and improved dispensing methods are followed to avoid the waiting time and error free dispensing of medicines.
+                            The Pharmacy has qualified and experienced pharmacists in catering the patients' needs at the right time and with right quality meeting NABH Standards.
+                            Various advanced and improved dispensing methods are followed to avoid the waiting time and error free dispensing of medicines.
                         </p>
 
                         <p className=''>
@@ -179,8 +184,8 @@ const Pharmacyservice = () => {
                                 ))}
                             </ul>
                             <p className=''>
-                                Our hospital pharmacy serves as a vital link in the continuum of care, ensuring patients have access to the right medications at the right time. 
-                                It operates in close coordination with all clinical departments to support safe and effective treatment plans. With a strong focus on patient safety, 
+                                Our hospital pharmacy serves as a vital link in the continuum of care, ensuring patients have access to the right medications at the right time.
+                                It operates in close coordination with all clinical departments to support safe and effective treatment plans. With a strong focus on patient safety,
                                 we adhere to strict storage, labelling, and dosage protocols.
                             </p>
 

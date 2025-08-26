@@ -131,12 +131,12 @@ const VocationalEducation = () => {
     return (
         <div>
             {/* Banner Section */}
-            <section className="relative -mt-12 lg:-mt-24 m-10">
+            <section className="relative px-7 hero-section -mt-28 mb-hero-section">
                 <div
-                    className="max-w-full mx-auto px-4 py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain banner min-h-400"
+                    className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
-                    <div className="pl-8 md:pl-20">
+                    <div className="max-w-7xl mx-auto">
                         <motion.p
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -150,7 +150,7 @@ const VocationalEducation = () => {
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6 }}
-                            className="text-[44px] mb-2"
+                            className="text-[40px] mb-3"
                         >
                             BSS Vocational Education
                         </motion.h1>
@@ -169,12 +169,12 @@ const VocationalEducation = () => {
                         </motion.div>
                     </div>
 
-                    <div className="absolute bottom-6 right-4 sm:right-10 md:right-[-40px] z-30 hidden md:block mr-10">
-                        <div className="w-[220px] overflow-hidden rounded-tl-xl rounded-br-xl">
+                    <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+                        <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
                             <div className="h-[30%] bg-transparent" />
-                            <div className="bg-white p-4">
-                                <h3 className="text-[36px] font-bold text-[#2B3990]">40+</h3>
-                                <p className="text-lg leading-snug text-black font-semibold">
+                            <div className="bg-white p-5">
+                                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
+                                <p className="text-[16px] text-black font-bold">
                                     Years of Trusted <br />
                                     Expertise in <br />
                                     Healthcare
@@ -281,7 +281,7 @@ const VocationalEducation = () => {
                                 />
                             </div>
 
-        
+
                             <div className="md:col-span-6">
                                 <h2 className="text-2xl md:text-[24px] mb-4 font-bold">
                                     Documents Required with Application

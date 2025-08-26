@@ -17,6 +17,7 @@ import hospitalFour from "@/assets/home/cards/c4.svg";
 import HospitalCard from "@/components/Hospital";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+
 import Alliedhealthsidebar from "@/components/AlliedhealthSidebar";
 
 
@@ -92,78 +93,77 @@ const Alliedhealthservice = () => {
     };
     return (
         <div>
-            <section className="relative -mt-16 md:-mt-20 lg:-mt-28 mx-4 sm:mx-6 md:-mt-10 lg:mx-18 -ml-18 -mr-17">
+            <section className="relative px-7 hero-section -mt-28 mb-hero-section">
                 <div
-                    className="max-w-full mx-auto px-4 py-20 md:py-28 lg:py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain rounded-xl overflow-hidden min-h-[280px] md:min-h-[320px] lg:min-h-[400px]"
+                    className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
-                    <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-2 relative h-full">
-                        <div className="pl-2 sm:pl-4 md:pl-4">
-                            {/* Breadcrumb */}
-                            <motion.div
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.4 }}
-                                className="text-xs sm:text-sm md:text-base mb-2 sm:mb-3 text-white"
-                            >
-                                <Breadcrumb items={breadcrumbItems} />
-                            </motion.div>
 
-                            {/* Heading */}
-                            <motion.h1
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5 }}
-                                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-2 sm:mb-3 font-bold"
-                            >
-                                Allied Health Service
-                            </motion.h1>
+                    <div className="max-w-7xl mx-auto">
+                        {/* Breadcrumb */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.4 }}
+                            className="text-sm mb-3"
+                        >
+                            <Breadcrumb items={breadcrumbItems} />
+                        </motion.div>
 
-                            {/* Subtext */}
-                            <motion.p
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
-                                className="text-sm sm:text-base md:text-lg lg:text-xl mb-4 sm:mb-5 md:mb-6 text-white max-w-[90%] md:max-w-[80%] lg:max-w-[70%]"
-                            >
-                                Comprehensive Support for Complete Recovery
-                            </motion.p>
+                        {/* Heading */}
+                        <motion.h1
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className="text-[40px]  mb-3"
+                        >
+                            Allied Health Service
+                        </motion.h1>
 
-                            {/* Button */}
-                            <motion.div
-                                initial={{ opacity: 0, y: 10 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.7 }}
-                            >
-                                <button className="btn-white inline-flex items-center gap-2 bg-white text-[#2B3990] 
-                     text-xs sm:text-sm md:text-base lg:text-lg font-semibold 
-                     px-4 sm:px-5 py-3 sm:py-4 rounded-full shadow-lg hover:bg-gray-100 transition-colors">
-                                    Book an Appointment <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
-                                </button>
-                            </motion.div>
-                        </div>
-                        
-                        <div className="absolute bottom-0 right-0 hidden md:block">
-                            <div className="w-[140px] md:w-[180px] lg:w-[200px] overflow-hidden rounded-tl-xl rounded-br-xl bg-white ">
-                                <div className="p-3 md:p-4">
-                                    <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2B3990]">
-                                        40+
-                                    </h3>
-                                    <p className="text-sm md:text-base lg:text-lg leading-snug text-black font-semibold">
-                                        Years of Trusted <br />
-                                        Expertise in <br />
-                                        Healthcare
-                                    </p>
-                                </div>
+                        {/* Subtext */}
+                        <motion.p
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                            className="mb-6 text-white"
+                        >
+                            Comprehensive Support for Complete Recovery
+                        </motion.p>
+
+                        {/* Button */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.7 }}
+                        >
+                            <Link
+                                href="#"
+                                className="btn-white inline-flex items-center whitespace-nowrap text-[14px] sm:text-[16px] tracking-wide px-4 sm:px-7 py-2 sm:py-3 bg-white text-[#2B3990] font-semibold rounded-full transition hover:-translate-y-[3px] transition-transform duration-200">
+                                Book an Appointment <ArrowUpRight className="w-5 h-5" />
+                            </Link>
+                        </motion.div>
+                    </div>
+
+                    <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+                        <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
+                            <div className="h-[30%] bg-transparent" />
+                            <div className="bg-white p-5">
+                                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
+                                <p className="text-[16px] text-black font-bold">
+                                    Years of Trusted <br />
+                                    Expertise in <br />
+                                    Healthcare
+                                </p>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
 
 
             <section>
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 h-full">
+                <div className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
                     <motion.div
                         variants={containerVariants}
                         initial="hidden"
@@ -199,11 +199,11 @@ const Alliedhealthservice = () => {
                 </Marquee>
             </div>
 
-            <div className="max-w-7xl mx-auto py-16 ">
+            <div className="max-w-7xl mx-auto py-8 sm:py-16 ">
                 <Alliedhealthsidebar />
             </div>
 
-            <div className="max-w-7xl mx-auto py-20 ">
+            <div className="max-w-7xl mx-auto px-4 py-8 sm:py-16 ">
                 <div className="flex flex-col lg:flex-row gap-10">
                     {/* Slider Section */}
                     <div className="w-full lg:w-1/2">
