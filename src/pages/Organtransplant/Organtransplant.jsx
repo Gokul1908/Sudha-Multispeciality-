@@ -16,7 +16,7 @@ import hospitalFour from "@/assets/home/cards/c4.svg";
 import HospitalCard from "@/components/Hospital";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
-import OrganTransplantSidebar from "@/components/organtransplantSidebar";
+import OrganTransplantSidebar from "@/components/OrganTransplantSidebar";
 
 
 const breadcrumbItems = [

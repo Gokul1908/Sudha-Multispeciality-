@@ -1,4 +1,4 @@
-import OrganTransplant from '@/pages/organtransplant/organtransplant';
+import OrganTransplant from '@/pages/organtransplant/Organtransplant';
 import React from 'react';
 
 const Page = () => {
