@@ -6,7 +6,7 @@ import Banner from "@/assets/about/board-of-directors.webp";
 import Contactusmain from '@/components/contactusmain';
 import Marquee from "react-fast-marquee";
 import Image from 'next/image';
-import Chairmen from "@/assets/Ourmanagement/chairman.jpg";
+import Chairmen from "@/assets/ourmanagement/chairman.jpg";
 import HospitalCard from "@/components/Hospital";
 import Executiveteam from '@/components/Executiveteam';
 import "../Ourmanagement/Ourmanagement.css";

@@ -43,12 +43,12 @@ function Cardiology() {
   return (
     <div>
       {/* Banner Section */}
-      <section className="relative -mt-16 sm:-mt-20 md:-mt-24 lg:-mt-28 mx-2 sm:mx-2 md:mx-4 lg:mx-6 overflow-hidden">
+      <section className="relative px-7  hero-section -mt-28 mb-hero-section">
         <div
-          className="max-w-full mx-auto py-20 md:py-36 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain banner min-h-[300px] sm:min-h-[400px]"
+          className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
           style={{ backgroundImage: `url(${Banner.src})` }}
         >
-          <div className="pl-4 md:pl-20">
+          <div className="max-w-7xl mx-auto">
             {/* Breadcrumb */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -84,24 +84,29 @@ function Cardiology() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
-              className="flex justify-center sm:justify-start"
+              className="flex justify-start sm:justify-start"
             >
               <Link
                 href="#"
-                className="btn-white inline-flex items-center whitespace-nowrap text-[14px] sm:text-[16px] tracking-wide px-4 sm:px-7 py-2 sm:py-3 bg-white text-[#2B3990] font-semibold rounded-full transition hover:-translate-y-[3px] transition-transform duration-200">
+                className="btn-white inline-flex items-center whitespace-nowrap text-[14px] sm:text-[14px] tracking-wide px-4 sm:px-7 py-2 sm:py-3 mt-4 sm:mt-0 bg-white text-[#2B3990] font-semibold rounded-full transition hover:-translate-y-[3px] transition-transform duration-200">
                 Book an Appointment <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
             </motion.div>
           </div>
 
           {/* Years of Expertise */}
-          <div className="absolute bottom-5 sm:bottom-4 hidden md:block right-4 sm:right-10 md:-right-[35px] z-30 text-[#2B3990] p-4 rounded-xl w-[180px] sm:w-[220px] mt-0 ">
-            <h3 className="text-2xl sm:text-4xl font-bold tracking-wide">40+</h3>
-            <p className="text-sm sm:text-lg leading-[1.6] tracking-wide text-black font-semibold">
-              Years of Trusted <br />
-              Expertise in <br />
-              Healthcare
-            </p>
+          <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+            <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
+              <div className="h-[30%] bg-transparent" />
+              <div className="bg-white p-5">
+                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
+                <p className="text-[16px] text-black font-bold">
+                  Years of Trusted <br />
+                  Expertise in <br />
+                  Healthcare
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

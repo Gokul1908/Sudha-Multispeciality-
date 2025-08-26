@@ -458,7 +458,7 @@ export default function SidebarTabs() {
 
         {/* Find a Doctor Box */}
         <div
-          className="mt-2 rounded-2xl px-6 py-6 flex flex-col sm:flex-row items-center justify-between text-white"
+          className="mt-2 rounded-2xl px-6 py-6 flex flex-row sm:flex-col  justify-between text-white"
           style={{
             background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
           }}
@@ -470,7 +470,7 @@ export default function SidebarTabs() {
             </h3>
           </div>
 
-          <div className="w-24 sm:w-32 md:w-40">
+          <div className="w-24 sm:w-32 md:w-40 mb-img">
             <Image
               src={doctorImg}
               alt="Doctor"

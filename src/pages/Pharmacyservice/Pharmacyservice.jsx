@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Banner from "@/assets/facilities/pharmacy-banner.webp";
 
-import Sudha1 from "@/assets/pharmacyService/sudha.png";
+import Sudha1 from "@/assets/pharmacyservice/sudha.png";
 import Image from "next/image";
 import "./pharmacy.css";
-import Medicine from "@/assets/pharmacyService/Medicine.png";
+import Medicine from "@/assets/pharmacyservice/Medicine.png";
 import Check from "@/assets/insurance/check.svg";
 import CampusFacilitySlider from "@/components/FacilitySlider/CampusFacilitySlider";
-import Slider1 from "@/assets/pharmacyService/slider1.png";
-import Slider2 from "@/assets/pharmacyService/slider2.png";
-import Slider3 from "@/assets/pharmacyService/slider3.png";
+import Slider1 from "@/assets/pharmacyservice/slider1.png";
+import Slider2 from "@/assets/pharmacyservice/slider2.png";
+import Slider3 from "@/assets/pharmacyservice/slider3.png";
 import Breadcrumb from "@/components/Breadcrumb";
 
 
