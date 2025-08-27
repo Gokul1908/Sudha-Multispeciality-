@@ -19,6 +19,214 @@ const serviceSections = [
   { id: "faqs", label: "FAQs" },
 ];
 
+
+const accordionData = [
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Cardiothoracic Surgery" />  */}
+          Acne and Scar Treatment
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p>
+          We offer personalised treatment plans for acne and post-acne scarring, focusing on prevention, control, and skin rejuvenation. Treatments include topical or oral medication, chemical peels, and laser therapy to reduce inflammation and enhance skin texture.
+        </p>
+        <div>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Chemical peels </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Laser scar reduction   </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Oral and topical medications  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Blackhead/whitehead extraction    </li>
+          </ul>
+        </div>
+
+      </div>
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+         Psoriasis and Eczema Care    
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm text-gray-700 space-y-3">
+        <p>
+          Our dermatologists manage chronic skin conditions like psoriasis and eczema with a balanced approach that includes lifestyle counselling, medication, and advanced therapies. We aim to reduce flare-ups and improve the quality of life.  
+        </p>
+        <div>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Topical and systemic treatments</li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Narrowband UVB therapy     </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Immunosuppressive therapy  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Skin hydration and care routines   </li>
+          </ul>
+        </div>
+
+      </div>
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+          Hair & Scalp Disorders  
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm text-gray-700 space-y-3">
+        <p>
+          Hair loss, dandruff, and scalp infections are treated with scientifically backed procedures and trichology consultations. We offer diagnosis, customised regimens, and minimally invasive procedures.  
+        </p>
+        <div>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> PRP therapy for hair regrowth</li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Dandruff and scalp infection treatments      </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Hormonal hair loss management  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Microneedling for hair follicles    </li>
+          </ul>
+        </div>
+
+      </div>
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+          Allergy Testing & Treatment 
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p>
+          We help identify triggers of skin allergies through patch testing and detailed assessments. Treatments are planned to minimise allergic reactions and manage associated symptoms.  
+        </p>
+        <div>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Skin prick and patch tests</li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Urticaria management     </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Treatment for contact dermatitis    </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Hypoallergenic skincare solutions  </li>
+          </ul>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+         Skin Infections & Fungal Diseases
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p>
+          From bacterial to fungal infections, we provide precise diagnosis and prompt treatment to avoid recurrence. Our team also handles resistant infections with targeted antifungal or antibiotic therapies.   
+        </p>
+        <div>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Antifungal and antibacterial therapies</li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Management of cellulitis and abscess       </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Viral skin infections (e.g., warts, molluscum)    </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Personalised hygiene counselling   </li>
+          </ul>
+        </div>
+      </div>
+    ),
+  },
+
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+        Skin Pigmentation & Whitening Treatments  
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p>
+          We offer solutions for melasma, hyperpigmentation, and uneven skin tone through safe and effective dermatological techniques that restore radiance and clarity to your skin.  
+        </p>
+        <div>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Laser toning</li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Glutathione-based therapies   </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Depigmentation peels    </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Advanced topical formulations    </li>
+          </ul>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+        Anti-Aging & Aesthetic Dermatology  
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p>
+         Our aesthetic dermatology services include skin tightening, wrinkle reduction, and non-surgical facial rejuvenation. We ensure visible results while maintaining natural expressions and safety. 
+        </p>
+        <div>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Botox and fillers</li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Skin resurfacing treatments     </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Anti-aging facials and peels      </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Radiofrequency and laser-based tightening    </li>
+          </ul>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+        Wart & Mole Removal     
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p>
+         Benign skin growths like warts, moles, and skin tags are removed with minimal discomfort using electrocautery or laser procedures, ensuring minimal scarring and quick healing.
+        </p>
+        <div>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Electrocautery  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> CO2 laser removal         </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Cryotherapy        </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Skin biopsy for suspicious growths     </li>
+          </ul>
+        </div>
+      </div>
+    ),
+  },
+
+];
 // Dummy accordionData + faq omitted for brevity...
 
 export default function SidebarTabs() {
@@ -54,7 +262,7 @@ export default function SidebarTabs() {
       <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-8">
-          <h3 className="text-base sm:text-lg md:text-xl font-bold text-center mb-5">
+          <h3 className="text-[16px]  text-center font-bold  mb-5">
             Dermatology Care We Offer
           </h3>
           <ul className="space-y-2 sm:space-y-3">
@@ -103,26 +311,26 @@ export default function SidebarTabs() {
             backgroundPosition: "center",
           }}
         >
-          <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">
+          <h3 className="text-[20px] font-bold mb-2">
             Sudha Multispeciality Hospital
           </h3>
           <hr className="border-light" />
-          <ul className="space-y-3 sm:space-y-4 text-left mt-4">
-            <li className="flex items-start gap-2 text-sm sm:text-[15px] font-semibold">
-              <Image src={Checklight} alt="tick" width={16} height={16} />Expert
+          <ul className="space-y-4 text-start mt-4">
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">
+              <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Expert
               dermatologists for both medical and cosmetic concerns.
             </li>
-            <li className="flex items-start gap-2 text-sm sm:text-[15px] font-semibold">
-              <Image src={Checklight} alt="tick" width={16} height={16} />
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">
+              <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />
               Safe and effective skin rejuvenation and anti-aging solutions.
             </li>
-            <li className="flex items-start gap-2 text-sm sm:text-[15px] font-semibold">
-              <Image src={Checklight} alt="tick" width={16} height={16} />
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">
+              <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />
               Personalized treatment plans for chronic and recurring skin issues.
             </li>
           </ul>
 
-          <button className="btn-sidebar inline-flex items-center gap-2 bg-white text-[#2B3990] font-semibold px-5 sm:px-7 py-2.5 sm:py-3 rounded-full mt-6 text-sm sm:text-[14px] hover:-translate-y-[3px] transition-transform duration-200">
+          <button className="btn-white mt-5">
             Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
           </button>
         </div>
@@ -139,7 +347,7 @@ export default function SidebarTabs() {
           }}
         >
           <div className="text-left mb-4 sm:mb-0 sm:mr-4">
-            <h3 className="text-[26px]  font-bold">
+            <h3 className="text-[22px]  font-bold">
               Find a<br />
               Doctor?
             </h3>
@@ -156,26 +364,26 @@ export default function SidebarTabs() {
       </aside>
 
       {/* Content Sections */}
-      <div className="flex-1 space-y-4 xs:space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-12">
+      <div className="flex-1 space-y-0">
         {serviceSections.map(({ id }) => (
           <section
             key={id}
             id={id}
-            className="scroll-mt-20 xs:scroll-mt-22 sm:scroll-mt-24 md:scroll-mt-28 lg:scroll-mt-32 rounded-xl"
+            className="scroll-mt-32 rounded-xl"
           >
             {id === "overview" && (
               <div className="space-y-2 xs:space-y-3 sm:space-y-4 md:space-y-5">
                 <Image
                   src={aboutOverview}
                   alt="aboutOverview"
-                  className="w-full h-[200px] xs:h-[240px] sm:h-[280px] md:h-[340px] lg:h-[400px] xl:h-[450px] rounded-xl xs:rounded-2xl object-cover"
+                  className="w-full h-[400px] rounded-2xl object-cover"
                 />
-                <h2 className="text-lg xs:text-xl sm:text-2xl md:text-[22px] lg:text-[24px] xl:text-[26px] font-bold leading-tight">
+                <h2 className="text-[24px] mb-3 mt-5">
                   Dermatology Services and Skin Treatments at{" "}
                   <span className="text-[#2B3990]">Sudha</span>{" "}
                   Multispeciality Hospital
                 </h2>
-                <p className="text-xs xs:text-sm sm:text-[14px] md:text-[13px] lg:text-sm xl:text-[15px] leading-relaxed text-gray-600">
+                <p className="">
                   The Dermatology Department at Sudha Multispeciality Hospital
                   provides expert diagnosis and advanced treatment for a wide
                   spectrum of skin, hair, and nail conditions. Our team of
@@ -189,45 +397,58 @@ export default function SidebarTabs() {
             )}
             {id === "facilities" && (
               <>
-                <h2 className="text-lg xs:text-xl sm:text-2xl md:text-[24px] lg:text-[26px] xl:text-[28px] font-bold mt-3 xs:mt-4 sm:mt-5 md:mt-6">
+                <h2 className="text-[24px] mt-5 mb-3">
                   Facilities
                 </h2>
-                <ul className="mt-2 xs:mt-3 sm:mt-4 space-y-1.5 xs:space-y-2 sm:space-y-3 md:space-y-3.5">
-                  {[
-                    "Dedicated consultation suites for skin evaluation",
-                    "Minor procedure room for outpatient dermatological procedures",
-                    "Skin and hair analysis equipment",
-                    "UV light therapy unit for treating chronic skin conditions",
-                    "Laser treatment setup for acne scars and pigmentation",
-                    "Trained nursing staff for patient care and post-procedure support",
-                  ].map((facility, i) => (
-                    <li
-                      key={i}
-                      className="flex gap-2 xs:gap-2.5 sm:gap-3 items-start text-gray-700 text-xs xs:text-sm sm:text-[15px] md:text-base lg:text-[15px] font-semibold leading-relaxed"
-                    >
-                      <div className="w-1.5 h-1.5 xs:w-2 xs:h-2 sm:w-2 sm:h-2 rounded-lg bg-[#2B3990] flex-shrink-0 mt-1.5 xs:mt-2" />
-                      <span className="flex-1">{facility}</span>
-                    </li>
-                  ))}
+                <ul>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Dedicated consultation suites for skin evaluation
+                  </li>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Minor procedure room for outpatient dermatological procedures
+                  </li>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
+                    Skin and hair analysis equipment
+                  </li>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
+                    UV light therapy unit for treating chronic skin conditions
+                  </li>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
+                    Laser treatment setup for acne scars and pigmentation
+                  </li>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
+                    Trained nursing staff for patient care and post-procedure support
+                  </li>
                 </ul>
+
               </>
             )}
             {id === "treatmentsandprocedures" && (
-              <div className="space-y-1.5 xs:space-y-2 sm:space-y-3">
-                <h2 className="text-lg xs:text-xl sm:text-2xl md:text-[24px] lg:text-[26px] xl:text-[28px] font-bold mt-4 xs:mt-5 sm:mt-6 mb-2 xs:mb-3 sm:mb-4">
+              <div className="space-y-2">
+                <h2 className="text-[24px] mt-5 mb-3">
                   Treatments and Procedures
                 </h2>
-                <Accordion accordionData={[]} />
+                <Accordion accordionData={accordionData} />
               </div>
             )}
             {id === "doctors" && (
               <>
-                <h2 className="text-lg xs:text-xl sm:text-2xl md:text-[24px] lg:text-[26px] xl:text-[28px] font-bold mt-4 xs:mt-5 sm:mt-6 pb-2 xs:pb-3 sm:pb-4">
+                <h2 className="text-[24px]  mt-5 pb-3">
                   Doctors
                 </h2>
                 <DoctorSlider />
               </>
             )}
+            {/* {id === "faqs" && (
+              <div className="mt-8">
+                <h2 className="text-[30px] font-semibold mt-5 pb-3">FAQ</h2>
+                <Faq faq={faq} />
+              </div>
+            )} */}
           </section>
         ))}
       </div>

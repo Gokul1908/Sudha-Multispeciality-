@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Frame from "@/assets/about/frame.png";
 import doctorImg from "@/assets/about/doctorImg.png";
-
+import Checklight from "@/assets/home/check-light.svg";
 import Accordion from "../../components/Accordion";
 import aboutOverview from "@/assets/specialites/cardiology/cardiology.webp";
 import DoctorSlider from "../../components/Slicksliderdoctor";
@@ -447,30 +447,31 @@ export default function SidebarTabs() {
           </h3>
           <hr className="border-light" />
 
-          <p className="text-center text-white mb-3 text-[14px] mt-3"> Performed 1,00,000+ successful cardiology surgeries with the best heart surgeons, world-class medical equipment, and international facilities.</p>
-
-          <p className="text-center text-white mb-3 text-[14px] mt-3"> Your dedicated health partner for every medical requirement. </p>
-
-          <button className="btn-sidebar inline-flex items-center gap-2 bg-white text-[#2B3990] font-semibold px-7 py-3 rounded-full   mt-5 text-[14px] hover:-translate-y-[3px] transition-transform duration-200">
+          <ul className="space-y-4 text-start mt-4">
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />24/7 cardiac intensive care and monitoring specialties </li>
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Expert team for adult and paediatric cardiac careworkstations</li>
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Comprehensive facilities ensuring the best outcomes</li>
+          </ul>
+          <button className="btn-white mt-5">
             Book Your Appointment  <ArrowUpRight className="w-5 h-5" />
           </button>
         </div>
 
         {/* Find a Doctor Box */}
         <div
-          className="mt-2 rounded-2xl px-6 py-6 flex flex-row sm:flex-col  justify-between text-white"
+          className="mt-2 rounded-2xl px-6 py-6 flex flex-col sm:flex-row items-center justify-between text-white"
           style={{
             background: "radial-gradient(circle, #9EB36A 0%, #333C22 100%)",
           }}
         >
           <div className="text-left mb-4 sm:mb-0 sm:mr-4">
-            <h3 className="text-[26px]  font-bold">
-              Find a <br />
+            <h3 className="text-[22px]  font-bold">
+              Find a<br />
               Doctor?
             </h3>
           </div>
 
-          <div className="w-24 sm:w-32 md:w-40 mb-img">
+          <div className="w-24 sm:w-32 md:w-40">
             <Image
               src={doctorImg}
               alt="Doctor"

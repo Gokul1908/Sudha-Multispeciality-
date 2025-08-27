@@ -31,7 +31,7 @@ import experienced from "../assets/home/pharmacy.svg";
 import holistic from "../assets/home/quality.svg";
 import modern from "../assets/home/blood-bank.svg";
 import review from "../assets/home/review-patient.svg";
-import './Home.css';
+
 import banner from "../assets/home/home-banner.svg";
 import heartIcon from "../assets/home/medical/1.svg";
 import Expect from "../assets/home/expert-care.svg";
@@ -420,7 +420,7 @@ function Home() {
 
               <Link href="#">
                 <motion.div
-                  className="btn-diagonal inline-flex items-center gap-2 px-6 sm:px-7 py-3  bg-[#253990] font-semibold text-white rounded-full transition-transform duration-200 hover:-translate-y-[3px]"
+                  className="btn-diagonal "
                 >
                   Know more
                   <svg
@@ -652,7 +652,7 @@ function Home() {
                   Testimonials of Trust From <br /> Those We've Served.
                 </h3>
 
-                <button className="btn-diagonal bg-[#2B3990] mt-4 text-[#fff] text-[15px] pt-3 pb-3 pr-7 pl-7 rounded-full trnasition flex gap-2 hover:-translate-y-[3px] transition-transform duration-200">
+                <button className="btn-diagonal mt-5">
                   Book your Appointment <ArrowUpRight />
                 </button>
               </div>

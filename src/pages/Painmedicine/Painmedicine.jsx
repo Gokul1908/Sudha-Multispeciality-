@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Banner from "@/assets/specialites/painmedicine/pain-medicine.webp";
-import Clinic from "@/assets/about/clinic.png";
+import Clinic from "@/assets/common/general-consultation.webp";
 import Image from "next/image";
 // Sample images – replace with your own
 import consult1 from "@/assets/about/img.png";

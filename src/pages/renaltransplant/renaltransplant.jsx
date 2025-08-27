@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Banner from "@/assets/facilities/organ-transplant.webp";
 
-import Clinic from "@/assets/about/clinic.png";
+import Clinic from "@/assets/common/general-consultation.webp";
 import Image from "next/image";
 import HandIcon from "@/assets/healthpackage/nephrology.svg";
 import consult1 from "@/assets/about/img.png";

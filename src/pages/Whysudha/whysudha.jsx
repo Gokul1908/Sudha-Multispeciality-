@@ -33,7 +33,7 @@ import "slick-carousel/slick/slick-theme.css";
 import consult1 from "@/assets/about/img.png";
 import consult2 from "@/assets/about/img.png";
 import consult3 from "@/assets/about/img.png";
-import Clinic from "@/assets/about/clinic.png";
+import Clinic from "@/assets/common/general-consultation.webp";
 import Slider from "react-slick";
 import Breadcrumb from "@/components/Breadcrumb";
 
@@ -461,7 +461,7 @@ function Whysudha() {
               <p className=" mb-2 text-center">
                 Book in-person visits for personalized care and schedule the appointments with our experienced team.
               </p>
-              <button className="btn-diagonal bg-[#2B3990] mt-2 text-[#fff] text-[15px] pt-3 pb-3 pr-7 pl-7 rounded-full transition flex gap-2 hover:-translate-y-[3px] transition-transform duration-200">
+              <button className="btn-diagonal mt-2">
                 Book an Appointment <ArrowUpRight className="w-5 h-5" />
 
               </button>

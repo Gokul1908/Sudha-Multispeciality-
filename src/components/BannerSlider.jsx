@@ -3,6 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import Link from "next/link";
 import "swiper/css/autoplay";
 import { GoThumbsup } from "react-icons/go";
 import { ArrowUpRight } from "lucide-react";
@@ -17,6 +18,7 @@ const slides = [
         All In One Place.
       </>
     ),
+    link:"/centre-of-excellence",
     description:
       "Sudha Multispeciality Hospital, a healthcare icon delivering quality healthcare for 40+ years.",
     buttonText: "Discover Our Service",
@@ -31,6 +33,7 @@ const slides = [
         Child Care
       </>
     ),
+    link:"/mother-and-childcare",
     description:
       "Because Every mother deserves care that comforts, every step of the way.",
     buttonText: "Discover Our Service ",
@@ -45,6 +48,7 @@ const slides = [
         Care
       </>
     ),
+    link:"https://sudhafertilitycentre.com/",
     description:
       "Sudha Fertility Centre has been a beacon of hope for lakhs of families, helping turn parenthood dreams into joyful realities.",
     buttonText: "Discover Our Service ",
@@ -61,6 +65,7 @@ const slides = [
     ),
     description: "The Only Comprehensive Cancer Care in Erode.",
     buttonText: "Discover Our Service ",
+    link:"https://sudhacancercentre.com/",
     video: "https://ship-crm-img.s3.eu-north-1.amazonaws.com/happy-family-tiny-newborn-infant-male-or-female.mp4",
   },
 ];
@@ -143,10 +148,11 @@ const BannerSlider = () => {
                     <p className="text-[16px] mb-6 text-[#fff]">
                       {slide.description}
                     </p>
-                    <button className="flex gap-2 bg-transparent border border-white px-6 py-2 text-[14px] rounded-full text-white font-semibold hover:bg-white hover:text-blue-900 transition">
+                    
+                    <Link className="btn-outline-white" href="#">
                       {slide.buttonText}
                       <ArrowUpRight className="w-5 h-5 mt-0.5" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

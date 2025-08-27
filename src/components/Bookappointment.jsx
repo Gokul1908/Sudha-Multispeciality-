@@ -170,7 +170,7 @@ function Bookappointment() {
                   <div className="md:col-span-1 mt-2">
                     <button
                       type="submit"
-                      className=" btn-diagonal w-full flex items-center justify-center gap-2 bg-[#2B3990] hover:bg-[#2B3990] text-white text-sm lg:text-md font-semibold py-3 rounded-[50px] transition duration-200 hover:-translate-y-[3px] transition-transform duration-200"
+                      className=" btn-diagonal "
                     >
                       Book an Appointment <ArrowUpRight className="w-5 h-5" />
                     </button>

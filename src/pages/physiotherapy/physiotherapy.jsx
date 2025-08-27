@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Banner from "@/assets/alliedhealthservice/physio/physiotherapy-banner.webp";
-import Clinic from "@/assets/about/clinic.png";
+import Clinic from "@/assets/common/general-consultation.webp";
 import Image from "next/image";
 import consult1 from "@/assets/about/img.png";
 import consult2 from "@/assets/about/img.png";

@@ -22,7 +22,7 @@ import Academics from "./Academics";
 import HeaderOne from "@/assets/header_one.svg";
 import HeaderTwo from "@/assets/header_two.svg";
 import { ArrowUpRight } from "lucide-react";
-import './Navbar.css';
+
 export default function Navbar() {
   const pathname = usePathname();
 
@@ -345,16 +345,9 @@ export default function Navbar() {
             <div className="hidden lg:block  items-center gap-x-4">
               <div className="  rounded-full overflow-hidden relative">
                 <button
-                  className={cn(
-                    " btn-diagonal flex items-center gap-2 text-[14px] pt-3 pb-3 pr-8 pl-8 rounded-full transition letter-space",
-                    isScrolled
-                      ? "bg-[#ffffff] text-[#2B3990] text-[14px] shadow-sm shadow-accent border-b border-accent"
-                      : isWhitePage
-                        ? "bg-white text-[#2B3990] hover:bg-[#2B3990] hover:text-[#2B3990]"
-                        : "bg-[#2B3990] text-white hover:bg-[#ffffff]"
-                        ? "bg-white text-[#2B3990] hover:bg-gray-100"
-                        : "bg-[#2B3990] text-white hover:bg-[#1f2f70]"
-                  )}
+                  className=
+                    "btn-white letter-space"
+                   
                 >
                   Consult Our Specialists <ArrowUpRight className="w-5 h-5" />
                 </button>

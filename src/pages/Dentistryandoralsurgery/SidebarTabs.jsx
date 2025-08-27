@@ -161,16 +161,16 @@ const accordionData = [
           Comprehensive care to preserve natural teeth, restore functionality, and prevent further decay or damage. Every treatment plan is tailored to individual dental needs and comfort. Early intervention and regular check-ups are key to maintaining oral health.
         </p>
 
-<div>
+        <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Dental crowns and bridges </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Tooth-colored fillings </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Fluoride treatments and dental sealants </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Routine dental cleanings and oral exams </li>
-            
+
           </ul>
         </div>
-        
+
       </div>
     ),
   },
@@ -194,9 +194,9 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Dental veneers </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Smile correction and alignment </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Cosmetic reshaping and contouring </li>
-            
+
           </ul>
-          
+
         </div>
       </div>
     ),
@@ -224,9 +224,9 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> <b>Endodontics -</b>Root canal treatment </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> <b>Periodontics -</b>Gum disease treatment and maintenance </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> <b>Laser Dentistry -</b>Minimally invasive treatments for soft tissue and gum procedures </li>
-            
+
           </ul>
-          
+
         </div>
       </div>
     ),
@@ -330,10 +330,10 @@ export default function SidebarTabs() {
             <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Painless root canal and laser-assisted dental procedures</li>
             <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Skilled dental surgeons offering comprehensive treatments under one roof</li>
           </ul>
-          
 
 
-          <button className="btn-sidebar inline-flex items-center gap-2 bg-white text-[#2B3990] font-semibold px-7 py-3 rounded-full   mt-5 text-[14px] hover:-translate-y-[3px] transition-transform duration-200">
+
+          <button className="btn-white mt-5">
             Book an Appointment <ArrowUpRight className="w-5 h-5" />
           </button>
         </div>
@@ -346,7 +346,7 @@ export default function SidebarTabs() {
           }}
         >
           <div className="text-left mb-4 sm:mb-0 sm:mr-4">
-            <h3 className="text-[26px]  font-bold">
+            <h3 className="text-[22px]  font-bold">
               Find a<br />
               Doctor?
             </h3>
@@ -371,17 +371,17 @@ export default function SidebarTabs() {
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover " />
                 <div className="mt-6 space-y-4">
 
-                
-                <h2 className="text-[24px] mb-3 mt-5">
-                  Comprehensive Dentistry and Oral Surgery in
-                  <span className="text-[#2B3990]"> Erode</span> at Sudha Multispeciality Hospital
-                </h2>
-                <p className="text-gray-700">
-                  The Department of Dentistry and Oral Surgery at Sudha Multispeciality Hospital provides advanced dental care through modern technology and 
-                  a team of skilled dental surgeons. From routine dental check-ups to complex oral surgeries, our services cover preventive, restorative, cosmetic, 
-                  and surgical dental solutions. We ensure a painless and comfortable experience for patients of all ages with strict hygiene protocols and patient-focused care. 
-                  Whether it's cosmetic enhancement, tooth restoration, or oral rehabilitation, we offer tailored treatment plans under one roof.
-                </p>
+
+                  <h2 className="text-[24px] mb-3 mt-5">
+                    Comprehensive Dentistry and Oral Surgery in
+                    <span className="text-[#2B3990]"> Erode</span> at Sudha Multispeciality Hospital
+                  </h2>
+                  <p className="">
+                    The Department of Dentistry and Oral Surgery at Sudha Multispeciality Hospital provides advanced dental care through modern technology and
+                    a team of skilled dental surgeons. From routine dental check-ups to complex oral surgeries, our services cover preventive, restorative, cosmetic,
+                    and surgical dental solutions. We ensure a painless and comfortable experience for patients of all ages with strict hygiene protocols and patient-focused care.
+                    Whether it's cosmetic enhancement, tooth restoration, or oral rehabilitation, we offer tailored treatment plans under one roof.
+                  </p>
                 </div>
               </>
             )}
