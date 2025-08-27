@@ -128,19 +128,19 @@ export const links = [
           },
         ],
       },
-      {
-        header: "News & Events",
-        hrefs: "/news-and-events",
+      // {
+      //   header: "News & Events",
+      //   hrefs: "/news-and-events",
 
-        image: Whysudha,
-        hoverImage: Whysudha,
-        subMenu: [
-          {
-            label: "Why Sudha?",
-            dec: "Trusted healthcare with a 40-year legacy.",
-          },
-        ],
-      },
+      //   image: Whysudha,
+      //   hoverImage: Whysudha,
+      //   subMenu: [
+      //     {
+      //       label: "Why Sudha?",
+      //       dec: "Trusted healthcare with a 40-year legacy.",
+      //     },
+      //   ],
+      // },
     ],
   },
 
@@ -212,10 +212,10 @@ export const links = [
         ],
       },
       {
-        header: "Dermatology Aesthetics and Lasers",
+        header: "Dermatology",
         image: s6,
         // hoverImage: AboutUs,
-        hrefs: "/dermatology-aesthetics-and-lasers",
+        hrefs: "/dermatology",
         subMenu: [
           {
             label: "Our Growth Story",
@@ -296,7 +296,7 @@ export const links = [
         ],
       },
       {
-        header: "Intensive Care Unit",
+        header: "Intensive Care Unit (ICU)",
         image: s13,
         // hoverImage: AboutUs,
         hrefs: "/intensive-care-unit",
@@ -356,7 +356,7 @@ export const links = [
         ],
       },
       {
-        header: "Imaging & Diagnostic Services",
+        header: "Imaging & Diagnotic Services",
         image: s18,
         // hoverImage: AboutUs,
         hrefs: "/imaging-and-diagnostic-services",
@@ -666,18 +666,18 @@ export const links = [
       },
      
 
-      {
-        header: "Bio-medical Report",
-        hrefs: "/bio-medical-report",
-        image: Biomedical,
-        hoverImage: Biomedical,
-        subMenu: [
-          {
-            label: "Bio-medical Report",
-            dec: "Trusted health insights and tips from our experts",
-          },
-        ],
-      },
+      // {
+      //   header: "Bio-medical Report",
+      //   hrefs: "/bio-medical-report",
+      //   image: Biomedical,
+      //   hoverImage: Biomedical,
+      //   subMenu: [
+      //     {
+      //       label: "Bio-medical Report",
+      //       dec: "Trusted health insights and tips from our experts",
+      //     },
+      //   ],
+      // },
        {
         header: "Blogs ",
         hrefs: "/",

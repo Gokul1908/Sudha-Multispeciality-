@@ -394,8 +394,8 @@ select ,textarea {
     display: inline-flex;
     align-items: center;
     overflow: hidden;
-    border: 2px solid #2A3D90;
-    color: #2A3D90;
+    border: 2px solid #2B3990;
+    color: #2B3990;
     border-radius: 9999px;
     padding: 0.75rem 1.75rem;
     transition: color 0.4s ease-in-out;
@@ -405,7 +405,7 @@ select ,textarea {
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .btn-2::before,
@@ -414,7 +414,7 @@ select ,textarea {
     position: absolute;
     width: 0;
     height: 0;
-    background-color: #2A3D90;
+    background-color: #2B3990;
     z-index: -1;
     transition: all 0.5s ease-in-out;
 }
@@ -424,8 +424,8 @@ select ,textarea {
     right: 0;
     border-left: 0px solid transparent;
     border-bottom: 0px solid transparent;
-    border-top: 0px solid #2A3D90;
-    border-right: 0px solid #2A3D90;
+    border-top: 0px solid #2B3990;
+    border-right: 0px solid #2B3990;
 }
 
 .btn-2::after {
@@ -433,8 +433,8 @@ select ,textarea {
     left: 0;
     border-right: 0px solid transparent;
     border-top: 0px solid transparent;
-    border-bottom: 0px solid #2A3D90;
-    border-left: 0px solid #2A3D90;
+    border-bottom: 0px solid #2B3990;
+    border-left: 0px solid #2B3990;
 }
 
 .btn-2:hover {
@@ -444,15 +444,15 @@ select ,textarea {
 .btn-2:hover::before {
     border-left: 200px solid transparent;
     border-bottom: 100px solid transparent;
-    border-top: 0px solid #2A3D90;
-    border-right: 0px solid #2A3D90;
+    border-top: 0px solid #2B3990;
+    border-right: 0px solid #2B3990;
 }
 
 .btn-2:hover::after {
     border-right: 200px solid transparent;
     border-top: 100px solid transparent;
-    border-bottom: 0px solid #2A3D90;
-    border-left: 0px solid #2A3D90;
+    border-bottom: 0px solid #2B3990;
+    border-left: 0px solid #2B3990;
 }
 
 
@@ -461,7 +461,7 @@ select ,textarea {
     display: inline-flex;
     align-items: center;
     overflow: hidden;
-    background-color: #2A3D90;
+    background-color: #2B3990;
     color: white;
     border-radius: 9999px;
     padding: 0.75rem 1.75rem;
@@ -471,7 +471,7 @@ select ,textarea {
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     border: none;
 }
 
@@ -481,7 +481,7 @@ select ,textarea {
     position: absolute;
     width: 0;
     height: 0;
-    background-color: #173366;
+    background-color: #FFFFFF;
     z-index: -1;
     transition: all 0.5s ease-in-out;
 }
@@ -491,8 +491,8 @@ select ,textarea {
     right: 0;
     border-left: 0px solid transparent;
     border-bottom: 0px solid transparent;
-    border-top: 0px solid #173366;
-    border-right: 0px solid #173366;
+    border-top: 0px solid #2B3990;
+    border-right: 0px solid #2B3990;
 }
 
 .btn-diagonal::after {
@@ -500,13 +500,13 @@ select ,textarea {
     left: 0;
     border-right: 0px solid transparent;
     border-top: 0px solid transparent;
-    border-bottom: 0px solid #173366;
-    border-left: 0px solid #173366;
+    border-bottom: 0px solid #2B3990;
+    border-left: 0px solid #2B3990;
 }
 
 .btn-diagonal:hover {
-    color: white;
-    background-color: #173366;
+    color: #2B3990;
+    background-color: #FFFFFF;
 }
 
 .btn-diagonal:hover::before {
@@ -526,7 +526,7 @@ select ,textarea {
     align-items: center;
     overflow: hidden;
     background-color: white;
-    color: #2A3D90;
+    color: #2B3990;
     border-radius: 9999px;
     padding: 0.75rem 1.75rem;
     transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
@@ -535,7 +535,7 @@ select ,textarea {
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     border: none;
 }
 
@@ -545,7 +545,7 @@ select ,textarea {
     position: absolute;
     width: 0;
     height: 0;
-    background-color: #2A3D90;
+    background-color: #2B3990;
     z-index: -1;
     transition: all 0.5s ease-in-out;
 }
@@ -555,8 +555,8 @@ select ,textarea {
     right: 0;
     border-left: 0px solid transparent;
     border-bottom: 0px solid transparent;
-    border-top: 0px solid #2A3D90;
-    border-right: 0px solid #2A3D90;
+    border-top: 0px solid #2B3990;
+    border-right: 0px solid #2B3990;
 }
 
 .btn-white::after {
@@ -564,13 +564,13 @@ select ,textarea {
     left: 0;
     border-right: 0px solid transparent;
     border-top: 0px solid transparent;
-    border-bottom: 0px solid #2A3D90;
-    border-left: 0px solid #2A3D90;
+    border-bottom: 0px solid #2B3990;
+    border-left: 0px solid #2B3990;
 }
 
 .btn-white:hover {
     color: white;
-    background-color: #2A3D90;
+    background-color: #2B3990;
 }
 
 .btn-white:hover::before {

@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { X } from "lucide-react";
-import AppointmentImage from "@/assets/bookappointmentmodal/appointment.png";
+import AppointmentImage from "@/assets/bookappointmentmodal/consultation-form.webp";
 import { ArrowUpRight } from "lucide-react";
 
 const BookAppointmentModal = ({ open, onClose }) => {
@@ -47,7 +47,7 @@ const BookAppointmentModal = ({ open, onClose }) => {
 
         {/* Right Side Form */}
         <div className="p-6 sm:p-8 md:p-12 relative bg-white">
-          <h2 className="text-[24px] md:text-[30px] font-semibold mb-8 text-center md:text-left relative z-10">
+          <h2 className="text-[24px] md:text-[30px]  mb-8 text-center md:text-left relative z-10">
             Book an Appointment for Comprehensive Medical Care
           </h2>
 
@@ -59,7 +59,7 @@ const BookAppointmentModal = ({ open, onClose }) => {
               </label>
               <input
                 type="date"
-                className="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:text-primary-blue"
               />
             </div>
 
@@ -71,7 +71,7 @@ const BookAppointmentModal = ({ open, onClose }) => {
               <input
                 type="text"
                 placeholder="Enter full name"
-                className="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -83,7 +83,7 @@ const BookAppointmentModal = ({ open, onClose }) => {
               <input
                 type="tel"
                 placeholder="Enter your mobile number"
-                className="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -95,7 +95,7 @@ const BookAppointmentModal = ({ open, onClose }) => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -106,7 +106,7 @@ const BookAppointmentModal = ({ open, onClose }) => {
               </label>
               <div className="relative">
                 <select
-                  className="appearance-none border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                  className="appearance-none border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
                 >
                   <option>Select a department</option>
                   <option>Anaethesiology</option>
@@ -155,7 +155,7 @@ const BookAppointmentModal = ({ open, onClose }) => {
                 Doctor <span className="text-red-500">*</span>
               </label>
               <div className="relative">
-                <select className="appearance-none border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 w-full">
+                <select className="appearance-none border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 w-full">
                   <option>Select a doctor</option>
                   <option>Dr. Smith</option>
                   <option>Dr. John</option>
@@ -181,7 +181,7 @@ const BookAppointmentModal = ({ open, onClose }) => {
               <textarea
                 rows="3"
                 placeholder="Enter your remarks…"
-                className="border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
             </div>
 

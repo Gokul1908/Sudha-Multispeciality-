@@ -350,7 +350,7 @@ export default function SidebarTabs() {
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
-            Post-Partum Care 
+            Painless Delivery Services
           </h3>
           <ul className="space-y-3">
             {serviceSections.map((item) => {
@@ -454,11 +454,7 @@ export default function SidebarTabs() {
                     at Sudha Multispeciality Hospital
                   </h2> */}
                   <p className="mb-4">
-                    At Sudha Multispeciality Hospital, Erode, we specialise in painless delivery techniques to ensure a comfortable and safe childbirth experience. 
-                    Our experienced obstetricians employ advanced pain relief methods and modern options to effectively reduce labour pain while safeguarding 
-                    the health of both mother and baby. We prioritise personalised care, addressing each woman’s unique needs and preferences. Our compassionate team 
-                    supports mothers emotionally and physically, creating a calm and reassuring environment. We are dedicated to helping women embrace childbirth confidently, 
-                    making the process as smooth and empowering as possible.    
+                    At Sudha Multispeciality Hospital, Erode, we specialise in painless delivery techniques to ensure a comfortable and safe childbirth experience. Our experienced obstetricians employ advanced pain relief methods and modern options to effectively reduce labour pain while safeguarding the health of both mother and baby. We prioritise personalised care, addressing each woman’s unique needs and preferences. Our compassionate team supports mothers emotionally and physically, creating a calm and reassuring environment. We are dedicated to helping women embrace childbirth confidently, making the process as smooth and empowering as possible.   
                   </p>
                   {/* <p className="mt-4 mb-4">
                     Whether it's for managing diabetes, cardiovascular conditions, kidney disorders, cancer recovery, or nutritional needs during pregnancy, we provide evidence-based diet plans to suit every individual. The department ensures holistic dietary care for preventive health, disease management, and long-term wellness.
@@ -472,18 +468,18 @@ export default function SidebarTabs() {
                 <h3 className="text-[24px] mt-5">Facilities</h3>
                 <ul>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Dedicated labour rooms with facilities for continuous monitoring and pain relief 
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Dedicated labour rooms with facilities for continuous monitoring and pain relief  
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Emergency obstetric care with immediate availability of surgical interventions 
-                  </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                   Skilled obstetric and nursing teams trained in painless delivery techniques 
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Emergency obstetric care with immediate availability of surgical interventions
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    Neonatal intensive care unit (NICU) for specialised newborn care if required 
+                   Skilled obstetric and nursing teams trained in painless delivery techniques
+                  </li>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
+                    Neonatal intensive care unit (NICU) for specialised newborn care if required
                   </li>
                 </ul>
               </>

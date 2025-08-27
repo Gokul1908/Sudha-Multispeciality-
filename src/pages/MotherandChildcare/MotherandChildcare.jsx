@@ -189,19 +189,19 @@ const services = [
     hoverIcon: Iconsix,
     link: "/post-partum-care",
   },
-  {
-    title: "Paediatric Cardiology",
-    image: Seven,
-    icon: IconHoverseven,
-    hoverIcon: Iconseven,
-    link: "/cardiology",
-  },
+  // {
+  //   title: "Paediatric Cardiology",
+  //   image: Seven,
+  //   icon: IconHoverseven,
+  //   hoverIcon: Iconseven,
+  //   link: "/cardiology",
+  // },
   {
     title: "Painless Delivery",
     image: Eight,
     icon: IconHovereight,
     hoverIcon: Iconeight,
-    link: "/pain-less-delivery",
+    link: "/painless-delivery",
   },
 ];
 
@@ -506,7 +506,7 @@ function MotherandChildcare() {
             {/* 40+ Years Box */}
             <div className="absolute top-52 left-0 bg-white text-blue-700 text-sm font-bold p-6 rounded-2xl ">
               <p className="text-[30px] text-primary-blue font-extrabold font-nunito">40+</p>
-              <p className=" text-black font-nunito">
+              <p className=" text-black font-semibold font-nunito">
                 Years of Trusted
                 <br />
                 Expertise in <br />

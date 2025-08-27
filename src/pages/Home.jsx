@@ -420,9 +420,9 @@ function Home() {
 
               <Link href="#">
                 <motion.div
-                  className="btn-diagonal inline-flex items-center gap-2 px-6 sm:px-7 py-3 text-sm sm:text-base bg-[#253990] font-semibold text-white rounded-full transition-transform duration-200 hover:-translate-y-[3px]"
+                  className="btn-diagonal inline-flex items-center gap-2 px-6 sm:px-7 py-3  bg-[#253990] font-semibold text-white rounded-full transition-transform duration-200 hover:-translate-y-[3px]"
                 >
-                  Know More
+                  Know more
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-5 h-5"

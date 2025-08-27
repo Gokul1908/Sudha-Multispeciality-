@@ -454,9 +454,7 @@ export default function SidebarTabs() {
                     at Sudha Multispeciality Hospital
                   </h2> */}
                   <p className="mb-4">
-                    At Sudha Multispeciality Hospital in Erode, we provide comprehensive postpartum care to support new mothers through their recovery and adjustment period 
-                    after childbirth. Our experienced team offers personalised medical, emotional, and nutritional support to ensure a smooth and healthy transition for mother and baby. 
-                    We focus on holistic care that promotes physical healing, mental well-being, and breastfeeding success during this critical phase.      
+                    At Sudha Multispeciality Hospital in Erode, we provide comprehensive postpartum care to support new mothers through their recovery and adjustment period after childbirth. Our experienced team offers personalised medical, emotional, and nutritional support to ensure a smooth and healthy transition for mother and baby. We focus on holistic care that promotes physical healing, mental well-being, and breastfeeding success during this critical phase.    
                   </p>
                   {/* <p className="mt-4 mb-4">
                     Whether it's for managing diabetes, cardiovascular conditions, kidney disorders, cancer recovery, or nutritional needs during pregnancy, we provide evidence-based diet plans to suit every individual. The department ensures holistic dietary care for preventive health, disease management, and long-term wellness.
