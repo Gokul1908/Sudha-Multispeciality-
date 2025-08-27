@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Banner from "@/assets/alliedhealthservice/Banner.png";
+import Banner from "@/assets/organtransplant/organ-transplant.webp";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 

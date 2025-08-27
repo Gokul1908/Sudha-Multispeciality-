@@ -97,7 +97,7 @@ const Alliedhealthsidebar = () => {
             {rightbar.map((item, index) => (
               <Link href={item.link} key={index}>
                 <div className="relative group">
-                  <div className="bg-white nursingimg rounded-3xl p-4 sm:p-6 flex flex-col sm:flex-row gap-4 items-start">
+                  <div className="bg-white  rounded-3xl p-4 sm:p-6 flex flex-col sm:flex-row gap-4 items-start">
                     {/* Image */}
                     <Image
                       src={item.image}
@@ -130,7 +130,7 @@ const Alliedhealthsidebar = () => {
                   </div>
 
                   {/* Arrow Icon */}
-                  <div className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white flex items-center justify-center z-30 shadow-md group-hover:shadow-lg transition-all duration-200">
+                  {/* <div className="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white flex items-center justify-center z-30 shadow-md group-hover:shadow-lg transition-all duration-200">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-4 h-4 text-black group-hover:translate-x-[2px] group-hover:-translate-y-[2px] transition-transform"
@@ -145,7 +145,7 @@ const Alliedhealthsidebar = () => {
                         d="M17 7L7 17M7 7h10v10"
                       />
                     </svg>
-                  </div>
+                  </div> */}
                 </div>
               </Link>
             ))}

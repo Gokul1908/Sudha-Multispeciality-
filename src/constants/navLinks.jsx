@@ -538,7 +538,7 @@ export const links = [
       },
       {
         header: "Organ Transplant",
-        hrefs: "/renal-transplant",
+        hrefs: "/organ-transplant",
         image: Organ,
         hoverImage: Organ,
         subMenu: [
