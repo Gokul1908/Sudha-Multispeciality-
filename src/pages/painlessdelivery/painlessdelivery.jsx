@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Banner from "@/assets/alliedhealthservice/diet/diet.webp";
+import Banner from "@/assets/motherandchildcare/painless/painless-banner.webp";
 import Clinic from "@/assets/about/clinic.png";
 import Image from "next/image";
 import consult1 from "@/assets/about/img.png";

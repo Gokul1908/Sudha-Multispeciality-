@@ -45,7 +45,7 @@ import IconHoverFive from "@/assets/motherandchildcare/hover/5.svg";
 import IconHoversix from "@/assets/motherandchildcare/hover/6.svg";
 import IconHoverseven from "@/assets/motherandchildcare/hover/7.svg";
 import IconHovereight from "@/assets/motherandchildcare/hover/8.svg";
-import Couple from "@/assets/motherandchildcare/couple.png";
+import Couple from "@/assets/motherandchildcare/couple.webp";
 import Whychoicebg from "@/assets/motherandchildcare/whychoicebg.png";
 import Whychoiceone from "@/assets/motherandchildcare/why1.jpg";
 import Whychoicetwo from "@/assets/motherandchildcare/why2.jpg";
@@ -722,18 +722,18 @@ function MotherandChildcare() {
                     onClick={() => toggle(index)}
                   >
                     {item.title}
-                    <span className="text-xl">
+                    <h3 className="text-[20px] ">
                       {openIndex === index ? (
                         <AiOutlineClose />
                       ) : (
                         <AiOutlinePlus />
                       )}
-                    </span>
+                    </h3>
                   </button>
                   {openIndex === index && (
-                    <div className=" pb-4 text-[#5E566A] mt-2 text-[15px]">
+                    <p className=" pb-4 text-[#5E566A] mt-2 ">
                       {item.content}
-                    </div>
+                    </p>
                   )}
                 </motion.div>
               ))}
@@ -751,7 +751,7 @@ function MotherandChildcare() {
             <Image
               src={Couple}
               alt="Happy Couple"
-              className="w-full max-w-md object-contain"
+              className="w-full max-w-lg h-auto object-contain"
             />
           </motion.div>
         </div>
@@ -1047,11 +1047,11 @@ function MotherandChildcare() {
             <span className="bg-[#fff] text-[#2A3D90] text-sm font-semibold px-3 py-2 rounded-full">
               Sudha Care
             </span>
-            <h2 className="text-[30px]  font-bold text-[#2A3D90] mt-4 mb-6">
+            <h2 className="text-[30px]  text-[#2A3D90] mt-4 mb-6">
               Maternal Health Care
             </h2>
 
-            <ul className="space-y-4 text-[15px] text-[#5E566A]">
+            <ul className="space-y-4 text-[15px] font-semibold text-[#5E566A]">
               {[
                 "Postpartum Care",
                 "Preconception Care",
@@ -1111,10 +1111,10 @@ function MotherandChildcare() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[30px]  font-bold text-[#2B3990] mt-4 mb-6">
+            <h2 className="text-[30px]   text-[#2B3990] mt-4 mb-6">
               Paediatric Health Care
             </h2>
-            <ul className="space-y-4 text-[15px] text-[#5E566A]">
+            <ul className="space-y-4 text-[15px] font-semibold text-[#5E566A]">
               {[
                 "Seasonal & Tropical Infections (Dengue, Malaria etc.)",
                 "Chronic Infections",

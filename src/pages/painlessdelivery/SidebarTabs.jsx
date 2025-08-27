@@ -8,7 +8,7 @@ import Frame from "@/assets/about/frame.png";
 import doctorImg from "@/assets/about/doctorImg.png";
 
 import Accordion from "../../components/Accordion";
-import aboutOverview from "@/assets/alliedhealthservice/diet/diet-inner.webp";
+import aboutOverview from "@/assets/motherandchildcare/painless/painless-inner.webp";
 import DoctorSlider from "../../components/Slicksliderdoctor";
 import Faq from "../../components/Faq";
 import one from "@/assets/about/1.svg";
