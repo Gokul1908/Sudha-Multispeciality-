@@ -299,7 +299,7 @@ const Fellownationalboard = () => {
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-6 sm:gap-8 lg:gap-12">
                     {/* Left Content */}
                     <div className="flex-1">
-                         <h5 className="inline-block mb-4 px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm ">
+                         <h5 className="inline-block px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm ">
                             Fellow of National Board (FNB)
                         </h5>
 
@@ -333,10 +333,10 @@ const Fellownationalboard = () => {
                 <h5 className="inline-block mb-2 px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm ">
                     Meet Our Expert Faculty
                 </h5>
-                <h2 className="text-[30px]  ">
+                <h2 className="text-[30px] mb-4 ">
                     Reproductive Medicine with <br/> Expertise & Care
                 </h2>
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-8 sm:py-10 relative">
+                <div className="max-w-7xl mx-auto mt-14 relative">
                     <Faculties />
                 </div>
             </section>
