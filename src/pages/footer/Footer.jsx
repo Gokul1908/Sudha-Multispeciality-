@@ -238,169 +238,7 @@ const Footer = () => {
 
 
       {/* Floating Action Icons */}
-      <div
-        className="
-    fixed bottom-0 left-0 w-full flex justify-around items-center py-2
-    bg-white shadow-md border-t
-    sm:bg-transparent sm:shadow-none sm:border-0
-    sm:bottom-3 sm:right-2 sm:w-auto sm:flex-col sm:items-end sm:space-y-2 sm:py-0
-    z-[9999]
-  "
-      >
-
-        {/* Emergency Button */}
-        <Link href="#">
-          <button
-            onMouseEnter={() => setShowEmergencyText(true)}
-            onMouseLeave={() => setShowEmergencyText(false)}
-            className={`
-    flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2
-    text-xs font-semibold text-gray-700
-    transition-all duration-300
-    sm:h-10 md:h-12 sm:shadow-md sm:border-2 sm:border-red-500 sm:rounded-full sm:overflow-hidden
-    ${showEmergencyText ? "sm:bg-white sm:px-3 sm:w-56 md:w-64" : "sm:w-10 sm:h-10 md:w-12 md:h-12 sm:bg-white sm:justify-center"}
-  `}
-          >
-            {/* Icon */}
-            <span className="flex items-center justify-center w-6 h-6">
-              <Image src={Emergency} alt="Emergency" className="w-6 h-6 object-contain" />
-            </span>
-
-            {/* Mobile Label */}
-            <span className="block sm:hidden mt-1 text-center">
-              Emergency <br /> Contact
-            </span>
-
-            {/* Desktop Hover Label */}
-            {showEmergencyText && (
-              <span className="hidden sm:block text-red-600 text-sm md:text-[14px] whitespace-nowrap transition-opacity duration-300">
-                Emergency Contact
-              </span>
-            )}
-          </button>
-        </Link>
-
-
-        {/* Find Doctor Button */}
-        <Link href="#">
-          <button
-            onMouseEnter={() => setShowDocText(true)}
-            onMouseLeave={() => setShowDocText(false)}
-            className={`
-      flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2
-      text-xs font-semibold text-gray-700
-      transition-all duration-300
-      sm:h-10 md:h-12 sm:shadow-md sm:border-2 sm:border-blue-80 sm:rounded-full sm:overflow-hidden
-      ${showDocText ? "sm:bg-white sm:px-4 sm:w-56 md:w-64" : "sm:w-10 sm:h-10 md:w-12 md:h-12 sm:bg-white sm:justify-center"}
-    `}
-          >
-            <span className="flex items-center justify-center w-6 h-6">
-              <Image src={FindDoc} alt="Find Doctor" className="w-6 h-6 object-contain" />
-            </span>
-            {/* Mobile Label */}
-            <span className="block sm:hidden mt-1 text-center">
-              Find a<br />Doctor
-            </span>
-            {/* Desktop Hover Label */}
-            {showDocText && (
-              <span className="hidden sm:block text-black text-sm md:text-[14px] leading-snug transition-opacity duration-300 sm:max-w-[120px] md:max-w-[150px]">
-                Find a Doctor
-              </span>
-            )}
-          </button>
-        </Link>
-
-        {/* Appointment Button */}
-        <Link href="#">
-          <button
-            onMouseEnter={() => setShowCalendarText(true)}
-            onMouseLeave={() => setShowCalendarText(false)}
-            className={`
-      flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2
-      text-xs font-semibold text-gray-700
-      transition-all duration-300
-      sm:h-10 md:h-12 sm:shadow-md sm:border-2 sm:border-green-50 sm:rounded-full sm:overflow-hidden
-      ${showCalendarText ? "sm:bg-white sm:px-3 sm:w-56 md:w-64" : "sm:w-10 sm:h-10 md:w-12 md:h-12 sm:bg-white sm:justify-center"}
-    `}
-          >
-            <span className="flex items-center justify-center w-6 h-6">
-              <CalendarDays className="w-6 h-6 text-primary-blue" />
-            </span>
-            {/* Mobile Label */}
-            <span className="block sm:hidden mt-1 text-[12px] leading-tight text-center">
-              Book<br />Appointment
-            </span>
-            {/* Desktop Hover Label */}
-            {showCalendarText && (
-              <span
-                className="hidden sm:block text-black text-sm md:text-[14px] leading-snug transition-opacity duration-300 whitespace-nowrap"
-              >
-                Book an Appointment
-              </span>
-            )}
-          </button>
-        </Link>
-        {/* WhatsApp Button */}
-        <Link href="#">
-          <button
-            onMouseEnter={() => setShowMessageText(true)}
-            onMouseLeave={() => setShowMessageText(false)}
-            className={`
-      flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2
-      text-xs font-semibold text-gray-700
-      transition-all duration-300
-      sm:h-10 md:h-12 sm:shadow-md sm:border-2 sm:border-green-50 sm:rounded-full sm:overflow-hidden
-      ${showMessageText ? "sm:bg-white sm:px-3 sm:w-56 md:w-64" : "sm:w-10 sm:h-10 md:w-12 md:h-12 sm:bg-white sm:justify-center"}
-    `}
-          >
-            <span className="flex items-center justify-center w-6 h-6">
-              <Image src={WhatsApp} alt="WhatsApp" className="w-6 h-6 object-contain" />
-            </span>
-            {/* Mobile Label */}
-            <span className="block sm:hidden mt-1 text-center">Chat with <br /> WhatsApp</span>
-            {/* Desktop Hover Label */}
-            {showMessageText && (
-              <span className="hidden sm:block text-blue-900 text-sm md:text-[14px] whitespace-nowrap transition-opacity duration-300">
-                Chat with WhatsApp
-              </span>
-            )}
-          </button>
-        </Link>
-
-        {/* Scroll To Top */}
-        {visible && (
-          <>
-            {/* Mobile (outside bottom navbar) */}
-            <button
-              onClick={scrollToTop}
-              className="
-        sm:hidden
-        fixed bottom-24 right-4
-        w-10 h-10 rounded-full bg-white shadow-md
-        flex items-center justify-center
-        hover:bg-blue-900 transition
-        z-[10000]
-      "
-            >
-              <ChevronUp className="w-6 h-6 text-blue-900 hover:text-white" />
-            </button>
-
-            {/* Desktop (inside floating stack) */}
-            <button
-              onClick={scrollToTop}
-              className="
-        hidden sm:flex 
-        w-10 h-10 md:w-12 md:h-12 rounded-full bg-white shadow-md 
-        items-center justify-center 
-        hover:bg-blue-900 transition
-      "
-            >
-              <ChevronUp className="w-6 h-6 md:w-7 md:h-7 text-blue-900 hover:text-white" />
-            </button>
-          </>
-        )}
-
-      </div>
+     
 
       <section className="bg-[#FFFFFF] rounded-t-3xl -z-20 pt-40 -mt-36">
         {/* Top Grid Section */}
@@ -594,6 +432,128 @@ const Footer = () => {
 
 
       </section>
+
+
+
+
+       <section className="relative">
+        <div className=" fixed bottom-0 right-0  flex justify-around items-center py-2 bg-white shadow-md border-t sm:bg-transparent sm:shadow-none sm:border-0  sm:bottom-3 sm:right-2 sm:w-auto sm:flex-col sm:items-end sm:space-y-2 sm:py-0  ">
+
+          {/* Emergency Button */}
+          <Link href="#">
+            <button
+              onMouseEnter={() => setShowEmergencyText(true)}
+              onMouseLeave={() => setShowEmergencyText(false)}
+              className={` flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-xs font-semibold text-gray-700 transition-all duration-300 sm:h-10 md:h-12 sm:shadow-md sm:border-2 sm:border-red-500 sm:rounded-full sm:overflow-hidden ${showEmergencyText ? "sm:bg-white sm:px-3 sm:w-56 md:w-64" : "sm:w-10 sm:h-10 md:w-12 md:h-12 sm:bg-white sm:justify-center"}`}
+            >
+              {/* Icon */}
+              <span className="flex items-center justify-center w-6 h-6">
+                <Image src={Emergency} alt="Emergency" className="w-6 h-6 object-contain" />
+              </span>
+
+              {/* Mobile Label */}
+              <span className="block sm:hidden mt-1 text-center">
+                Emergency <br /> Contact
+              </span>
+
+              {/* Desktop Hover Label */}
+              {showEmergencyText && (
+                <span className="hidden sm:block text-red-600 text-sm md:text-[14px] whitespace-nowrap transition-opacity duration-300">
+                  Emergency Contact
+                </span>
+              )}
+            </button>
+          </Link>
+
+
+          {/* Find Doctor Button */}
+          <Link href="#">
+            <button
+              onMouseEnter={() => setShowDocText(true)}
+              onMouseLeave={() => setShowDocText(false)}
+              className={` flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-xs font-semibold text-gray-700 transition-all duration-300 sm:h-10 md:h-12 sm:shadow-md sm:border-2 sm:border-blue-80 sm:rounded-full sm:overflow-hidden ${showDocText ? "sm:bg-white sm:px-4 sm:w-56 md:w-64" : "sm:w-10 sm:h-10 md:w-12 md:h-12 sm:bg-white sm:justify-center"} `}>
+
+              <span className="flex items-center justify-center w-6 h-6">
+                <Image src={FindDoc} alt="Find Doctor" className="w-6 h-6 object-contain" />
+              </span>
+              {/* Mobile Label */}
+              <span className="block sm:hidden mt-1 text-center">
+                Find a<br />Doctor
+              </span>
+              {/* Desktop Hover Label */}
+              {showDocText && (
+                <span className="hidden sm:block text-black text-sm md:text-[14px] leading-snug transition-opacity duration-300 sm:max-w-[120px] md:max-w-[150px]">
+                  Find a Doctor
+                </span>
+              )}
+            </button>
+          </Link>
+
+          {/* Appointment Button */}
+          <Link href="#">
+            <button
+              onMouseEnter={() => setShowCalendarText(true)}
+              onMouseLeave={() => setShowCalendarText(false)}
+              className={` flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-xs font-semibold text-gray-700 transition-all duration-300 sm:h-10 md:h-12 sm:shadow-md sm:border-2 sm:border-green-50 sm:rounded-full sm:overflow-hidden ${showCalendarText ? "sm:bg-white sm:px-3 sm:w-56 md:w-64" : "sm:w-10 sm:h-10 md:w-12 md:h-12 sm:bg-white sm:justify-center"} `} >
+              <span className="flex items-center justify-center w-6 h-6">
+                <CalendarDays className="w-6 h-6 text-primary-blue" />
+              </span>
+              {/* Mobile Label */}
+              <span className="block sm:hidden mt-1 text-[12px] leading-tight text-center">
+                Book<br />Appointment
+              </span>
+              {/* Desktop Hover Label */}
+              {showCalendarText && (
+                <span
+                  className="hidden sm:block text-black text-sm md:text-[14px] leading-snug transition-opacity duration-300 whitespace-nowrap"
+                >
+                  Book an Appointment
+                </span>
+              )}
+            </button>
+          </Link>
+          {/* WhatsApp Button */}
+          <Link href="#">
+            <button
+              onMouseEnter={() => setShowMessageText(true)}
+              onMouseLeave={() => setShowMessageText(false)}
+              className={` flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-xs font-semibold text-gray-700 transition-all duration-300 sm:h-10 md:h-12 sm:shadow-md sm:border-2 sm:border-green-50 sm:rounded-full sm:overflow-hidden ${showMessageText ? "sm:bg-white sm:px-3 sm:w-56 md:w-64" : "sm:w-10 sm:h-10 md:w-12 md:h-12 sm:bg-white sm:justify-center"} `} >
+              <span className="flex items-center justify-center w-6 h-6">
+                <Image src={WhatsApp} alt="WhatsApp" className="w-6 h-6 object-contain" />
+              </span>
+              {/* Mobile Label */}
+              <span className="block sm:hidden mt-1 text-center">Chat with <br /> WhatsApp</span>
+              {/* Desktop Hover Label */}
+              {showMessageText && (
+                <span className="hidden sm:block text-blue-900 text-sm md:text-[14px] whitespace-nowrap transition-opacity duration-300">
+                  Chat with WhatsApp
+                </span>
+              )}
+            </button>
+          </Link>
+
+          {/* Scroll To Top */}
+          {visible && (
+            <>
+              {/* Mobile (outside bottom navbar) */}
+              <button
+                onClick={scrollToTop}
+                className=" sm:hidden fixed bottom-24 right-4  w-10 h-10 rounded-full bg-white shadow-md  flex items-center justify-center hover:bg-blue-900 transition z-[10000]" >
+                <ChevronUp className="w-6 h-6 text-blue-900 hover:text-white" />
+              </button>
+
+              {/* Desktop (inside floating stack) */}
+              <button
+                onClick={scrollToTop}
+                className=" hidden sm:flex  w-10 h-10 md:w-12 md:h-12 rounded-full bg-white shadow-md  items-center justify-center  hover:bg-blue-900 transition " >
+                <ChevronUp className="w-6 h-6 md:w-7 md:h-7 text-blue-900 hover:text-white" />
+              </button>
+            </>
+          )}
+
+        </div>
+      </section>
+
     </footer>
   );
 };
