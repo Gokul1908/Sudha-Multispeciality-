@@ -111,7 +111,15 @@ export default function Navbar() {
         </div>
       </div>
 
-      <header
+      <section   className={cn(
+          "sticky top-0 z-50 py-3  mb-navbar transition-all supports-[backdrop-filter]:bg-background-transparent",
+          isScrolled
+            ? "w-full bg-white text-black"
+            : isWhitePage
+              ? "max-w-7xl mx-auto bg-transparent text-black lg:text-white"
+              : "max-w-7xl mx-auto bg-transparent text-white"
+        )}>
+        <header
         className={cn(
           "sticky top-0 z-50 py-3  mb-navbar max-w-7xl mx-auto text-sm transition-all supports-[backdrop-filter]:bg-background-transparent",
           isScrolled
@@ -359,6 +367,9 @@ export default function Navbar() {
           <MobileNav />
         </div>
       </header>
+      </section>
+
+      
     </>
   );
 }

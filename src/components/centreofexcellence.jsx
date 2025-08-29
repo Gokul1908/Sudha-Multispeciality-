@@ -14,103 +14,102 @@ const excellenceData = [
   {
     id: 1,
     title: "Cardiology",
-    description: "Our world-class cancer specialists deliver quality care that is compassionate, easy to access, and personalized to your needs.",
+    description: "Comprehensive cardiac care led by experienced cardiologists and advanced diagnostic tools.",
     image: Heart,
     services: [
-      "Brain Cancer ",
-      "Breast Cancer ",
-      "Cervical Cancer ",
-      "Colorectal Cancer ",
-      "Endometrial Cancer",
-      "Leukemia Cancer ",
-      "Lung Cancer ",
-      "Lymphoma Cancer ",
-      "Mediastinal Cancer",
-      "Renal Cancer",
-      "Oral Cancer"
+      "Coronary Angiography ",
+      "Coronary Angioplasty  ",
+      "Pacemaker Implantation  ",
+      "Peripheral Vascular Stenting ",
+      "Complex Heart Surgeries ",
+      "Paediatric Cardiology ",
+      "Preventive Cardiology  ",
+      "Non-Invasive Cardiology ",
+      
     ]
   },
   {
     id: 2,
     title: "Pulmonology",
-    description: "Expert, compassionate care for women and children, with advanced maternal and pediatric services..",
+    description: "Advanced care and diagnosis for all your pulmonary needs, from diagnosis to recovery. ",
     image: Lungs,
     services: [
-      "Neonatology ",
-      "Pediatric ",
-      "Maternity ",
-      "Gynecological ",
-      "Adolescent ",
-      "Child Development",
-      "Family Planning ",
+      "Asthma  ",
+      "Chronic Obstructive Pulmonary Disease (COPD)  ",
+      "Interstitial Lung Disease  ",
+      "Tuberculosis (TB)   ",
+      "Pneumonia   ",
+      "Fungal and bacterial lung infections ",
+      "Paediatric Pulmonology",
+      "Pulmonology Surgeries",
 
     ]
   },
   {
     id: 3,
     title: "Mother And Child Care",
-    description: "Expert, compassionate care for women and children, with advanced maternal and pediatric services.",
+    description: "Expert-led services for mothers and babies, from prenatal assessments to delivery and neonatal care. ",
     image: Mother,
     services: [
-      "Neonatology",
-      "Gynecological",
-      "Family Planning",
-      "Pediatric",
-      "Adolescent",
+      "Pre-natal Care ",
+      "Post-natal Care ",
+      "Paediatrics ",
+      "Maternity Care",
+      "Gynaecology ",
       "Maternity",
-      "Child Development",
-      "Prenatal Care"
+      "Painless Delivery ",
+      "Dietetics "
     ]
   },
   {
     id: 4,
     title: "Cancer Center",
-    description: "Our world-class cancer specialists deliver quality care that is compassionate, easy to access, and personalized to your needs.",
+    description: "Comprehensive cancer diagnosis and treatment led by expert oncologists using advanced technologies in a compassionate setting. ",
     image: Cancercentre,
     services: [
       "Brain Cancer",
-      "Breast Cancer",
-      "Cervical Cancer",
+      "Breast Cancer ",
+      "Cervical Cancer ",
       "Colorectal Cancer",
       "Endometrial Cancer",
-      "Leukemia Cancer",
+     
       "Lung Cancer",
       "Lymphoma Cancer",
-      "Mediastinal Cancer",
+      
       "Renal Cancer",
-      "Oral Cancer"
+      
     ]
   },
   {
     id: 5,
     title: "Neurology",
-    description: "Begin your parenthood journey with India’s top fertility experts, offering personalized care and world-class treatments.",
+    description: "Comprehensive neurological support with cutting-edge evaluation and compassionate care. ",
     image: Brain,
     services: [
-      "In Vitro Fertilization ",
-      "Intrauterine Insemination ",
-      "Hysteroscopy ",
-      "Intracytoplasmic Sperm Injection",
-      "Blastocyst Culture and Transfer ",
-      "Laser-Assisted Hatching ",
-      "Laparoscopy ",
-      "PCOS & PCOD "
+      "Micro Neurosurgical Tumour Removal  ",
+      "Stereotactic surgery (Pinhole/Keyhole Brain Biopsy)   ",
+      "Skull Base Surgery  ",
+      "Paediatric Neurology ",
+      "Neurosurgery ",
+      "Epilepsy Surgeries  ",
+      "Stereotactic Surgery  ",
+      "Stroke Evaluation  "
     ]
   },
   {
     id: 6,
-    title: "Sudha Fertility Centre",
-    description: "Begin your parenthood journey with India’s top fertility experts, offering personalized care and world-class treatments.",
+    title: "Fertility Centre",
+    description: "Advanced fertility treatments and diagnostics, supporting couples in every stage of their parenthood journey with care. ",
     image: Fertility,
     services: [
-      "In Vitro Fertilization ",
-      "Intrauterine Insemination ",
-      "Hysteroscopy ",
-      "Intracytoplasmic Sperm Injection",
-      "Blastocyst Culture and Transfer ",
-      "Laser-Assisted Hatching ",
-      "Laparoscopy ",
-      "PCOS & PCOD "
+      "IVF ",
+      "IUI ",
+      "ICSI ",
+      "Fertility Checkup ",
+      "PCOD & PCOS ",
+      "Laparoscopy  ",
+      "Male Infertility  ",
+      "Female Infertility "
     ]
   },
 
