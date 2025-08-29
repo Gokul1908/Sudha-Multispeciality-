@@ -1,7 +1,6 @@
 "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
@@ -32,8 +31,6 @@ import holistic from "../assets/home/quality.svg";
 import modern from "../assets/home/blood-bank.svg";
 import review from "../assets/home/review-patient.svg";
 
-import banner from "../assets/home/home-banner.svg";
-import heartIcon from "../assets/home/medical/1.svg";
 import Expect from "../assets/home/expert-care.svg";
 import FacilitySlider from "../components/FacilitySlider";
 import OurTeamSlider from "../components/OurTeamSlider";
@@ -545,7 +542,7 @@ function Home() {
               />
 
               {/* Floating Info Badges */}
-              <div className="absolute bottom-6 right-4 sm:bottom-8 sm:left-6 bg-white shadow-lg rounded-2xl flex flex-col sm:flex-row gap-4 sm:gap-6 px-6 py-6 text-sm sm:text-md font-semibold text-[#2B3990] max-w-[90%] sm:max-w-none">
+              <div className="absolute bottom-10 right-6  z-20 bg-white shadow-lg rounded-2xl flex flex-col sm:flex-row gap-6 sm:gap-6 px-8 py-8 text-md font-semibold text-[#2B3990]">
                 <div className="flex items-center gap-3 sm:gap-4">
                   <Image
                     src={inter}

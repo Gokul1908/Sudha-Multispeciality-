@@ -66,7 +66,7 @@ function Anaesthesiology() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              Anaesthesiology
+             Best Anaesthesiology Hospital in Erode
             </motion.h1>
 
             {/* Subtitle */}
