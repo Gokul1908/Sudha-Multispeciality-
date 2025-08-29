@@ -20,7 +20,7 @@ import ServiceCard from "@/components/ServiceCard";
 import Mother from "@/assets/motherandchildcare/mother.png";
 import Arrow from "@/assets/motherandchildcare/arrow.svg";
 import Background from "@/assets/motherandchildcare/bg.png";
-import One from "@/assets/motherandchildcare/one.png";
+import One from "@/assets/motherandchildcare/lactation-maternal.webp";
 import Two from "@/assets/motherandchildcare/paediatrics.webp";
 import Three from "@/assets/motherandchildcare/gynaecology.webp";
 import Four from "@/assets/motherandchildcare/healthpackage.webp";
@@ -47,14 +47,14 @@ import IconHoverseven from "@/assets/motherandchildcare/hover/7.svg";
 import IconHovereight from "@/assets/motherandchildcare/hover/8.svg";
 import Couple from "@/assets/motherandchildcare/couple.webp";
 import Whychoicebg from "@/assets/motherandchildcare/whychoicebg.png";
-import Whychoiceone from "@/assets/motherandchildcare/why1.jpg";
-import Whychoicetwo from "@/assets/motherandchildcare/why2.jpg";
+import Whychoiceone from "@/assets/motherandchildcare/year-of-motherly-care.webp";
+import Whychoicetwo from "@/assets/motherandchildcare/year-of-motherly-care.webp";
 import Whychoicethree from "@/assets/motherandchildcare/why3.jpg";
 import Whychoiceiconone from "@/assets/motherandchildcare/whyicon1.svg";
 import Whychoiceicontwo from "@/assets/motherandchildcare/whyicon2.svg";
 import Whychoiceiconthree from "@/assets/motherandchildcare/whyicon3.svg";
-import OurAchivementOne from "@/assets/motherandchildcare/our_achivement_one.png";
-import OurAchivementTwo from "@/assets/motherandchildcare/our_achivement_two.png";
+import OurAchivementOne from "@/assets/motherandchildcare/our-achiement.webp";
+import OurAchivementTwo from "@/assets/motherandchildcare/our-achiement-1.webp";
 import Contact_us from "@/assets/motherandchildcare/contact_us.png";
 import Sudhacare from "@/assets/motherandchildcare/sudhacare_one.png";
 import Sudhacaretwo from "@/assets/motherandchildcare/sudhacare_two.png";
@@ -426,13 +426,14 @@ function MotherandChildcare() {
             <p className="text-white font-nunito mb-6">
               Motherly Care for Mothers of Sudha
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className=" btn-sidebar inline-flex items-center whitespace-nowrap justify-center w-64 bg-white text-[#2C3790] px-6 py-3 rounded-full font-semibold text-sm transition mx-auto md:mx-0"
-            >
-              Book an Appointment <ArrowUpRight className="ml-2" />
-            </motion.button>
+            <div>
+              <Link
+                href="#contactus"
+                className="btn-outline-white"
+              >
+                Book an Appointment <ArrowUpRight className="w-5 h-5" />
+              </Link>
+            </div>
 
           </motion.div>
 
@@ -792,13 +793,13 @@ function MotherandChildcare() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: idx * 0.2 }}
               viewport={{ once: true }}
-              className="rounded-2xl overflow-hidden bg-white text-gray-900 shadow-md h-full flex flex-col"
+              className="rounded-2xl overflow-hidden bg-white text-gray-900 shadow-md h-[220px] flex flex-col"
             >
               {item.type === "image" ? (
                 <Image
                   src={item.src}
                   alt={item.src}
-                  className="w-full h-full object-cover"
+                  className="w-full h-[220px] object-cover"
                 />
               ) : (
                 <div className="p-6 flex flex-col gap-3 h-full justify-center">
@@ -838,11 +839,11 @@ function MotherandChildcare() {
               Every baby born here reflects our commitment to expert care,
               compassion, and safety.
             </p>
-            <div className="rounded-xl overflow-hidden w-full">
+            <div className="rounded-3xl overflow-hidden w-full">
               <Image
                 src={OurAchivementTwo}
                 alt="Expecting Couple"
-                className="w-[100%] mx-auto h-auto object-cover rounded-xl"
+                className="w-[100%] mx-auto h-[352px] object-cover rounded-3xl"
               />
             </div>
           </motion.div>
@@ -855,11 +856,11 @@ function MotherandChildcare() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="rounded-xl overflow-hidden">
+            <div className="rounded-3xl overflow-hidden">
               <Image
                 src={OurAchivementOne}
                 alt="Happy Family"
-                className="w-[100%] mx-auto h-auto object-cover rounded-xl"
+                className="w-[100%] mx-auto h-[352px] object-cover rounded-3xl"
               />
             </div>
 
@@ -1010,14 +1011,14 @@ function MotherandChildcare() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="flex gap-10 flex-wrap"
+              className=""
             >
-              <button className="btn-sidebar mt-4 bg-white text-indigo-900 font-semibold w-[200px] h-[44px] px-6 py-2 rounded-full flex items-center justify-center gap-2 hover:bg-gray-100 transition whitespace-nowrap">
+              <button className="btn-white ">
                 Start Your Journey
-                <ArrowUpRight />
+                <ArrowUpRight className="w-5 h-5" />
               </button>
 
-              <motion.div
+              {/* <motion.div
                 animate={{
                   x: [0, 5, 0],
                 }}
@@ -1028,7 +1029,7 @@ function MotherandChildcare() {
                 }}
               >
                 <Image src={Arrow} alt="Arrow" width={90} height={90} />
-              </motion.div>
+              </motion.div> */}
             </motion.div>
           </motion.div>
         </div>
@@ -1241,7 +1242,7 @@ function MotherandChildcare() {
               <div className="text-center mt-6">
                 <button
                   onClick={handleViewMore}
-                  className="btn-diagonal bg-[#2B3990] hover:bg-[#1f2c6e] text-white font-medium px-6 py-2 rounded-full transition"
+                  className="btn-diagonal "
                 >
                   View More <ArrowUpRight className="w-5 h-5" />
                 </button>
@@ -1390,7 +1391,7 @@ function MotherandChildcare() {
 
                 <button
                   type="submit"
-                  className="btn-diagonal bg-[#2B3990] hover:bg-[#1d2971] text-white font-semibold text-sm rounded-full px-6 py-2 mt-2"
+                  className="btn-diagonal "
                 >
                   Book an Appointment <ArrowUpRight className="w-5 h-5" />
                 </button>

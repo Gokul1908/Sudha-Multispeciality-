@@ -42,7 +42,7 @@ const OrganTransplantSidebar = () => {
             <h2 className="text-[30px]  pb-4 ">
               Advanced Allied Healthcare for Complete Recovery
             </h2>
-            <p className="">
+            <p className="mb-4">
               At Sudha Multispeciality Hospital, our Allied Health Care Services offer
               critical support that complements your medical treatment. Our expert professionals
               provide personalised care across physiotherapy, dietetics, psychology, maternal
@@ -53,8 +53,10 @@ const OrganTransplantSidebar = () => {
             </p>
 
             <Link href="#">
-              <div className="btn-diagonal inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 mt-4 text-sm sm:text-base bg-[#253990] font-semibold text-white rounded-full transition duration-300 hover:bg-[#1e2f70]">
-                Book a Appointment
+              <div
+                className="btn-diagonal "
+              >
+                Book an Appointment
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5"

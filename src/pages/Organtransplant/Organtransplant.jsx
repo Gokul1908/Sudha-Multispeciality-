@@ -135,8 +135,9 @@ const OrganTransplant = () => {
                             transition={{ duration: 0.7 }}
                         >
                             <Link
-                                href="#"
-                                className="btn-white inline-flex items-center whitespace-nowrap text-[14px] sm:text-[16px] tracking-wide px-4 sm:px-7 py-2 sm:py-3 bg-white text-[#2B3990] font-semibold rounded-full transition hover:-translate-y-[3px] transition-transform duration-200">
+                                href="#contactus"
+                                className="btn-white"
+                            >
                                 Book an Appointment <ArrowUpRight className="w-5 h-5" />
                             </Link>
                         </motion.div>
@@ -198,9 +199,9 @@ const OrganTransplant = () => {
                 <OrganTransplantSidebar />
             </div>
 
-            <div>
+            <section id="contactus">
                 <Bookappointment />
-            </div>
+            </section>
         </div>
     );
 };

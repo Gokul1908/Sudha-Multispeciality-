@@ -398,8 +398,8 @@ export default function SidebarTabs() {
 
 
 
-          <button className="btn-sidebar inline-flex items-center gap-2 bg-white text-[#2B3990] font-semibold px-7 py-3 rounded-full   mt-5 text-[14px] hover:-translate-y-[3px] transition-transform duration-200">
-            Book an Appointment <ArrowUpRight className="w-5 h-5" />
+          <button className="btn-white mt-5">
+            Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
           </button>
 
         </div>
@@ -412,7 +412,7 @@ export default function SidebarTabs() {
           }}
         >
           <div className="text-left mb-4 sm:mb-0 sm:mr-4">
-            <h3 className="text-[26px]  font-bold">
+            <h3 className="text-[22px]  font-bold">
               Find a<br />
               Doctor?
             </h3>

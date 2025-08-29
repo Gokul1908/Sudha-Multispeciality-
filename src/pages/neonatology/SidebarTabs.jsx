@@ -152,17 +152,17 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Paediatrics and Neonatology"/>  */}
-          Care for Premature and Low Birth Weight Babies 
+          Care for Premature and Low Birth Weight Babies
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Our neonatology team in Erode specialises in caring for premature and low birth weight newborns who need extra medical support in the first days of life. We provide round-the-clock monitoring, temperature regulation, respiratory support, and nutritional management to help babies grow stronger. Our advanced NICU ensures they receive the safest, most comfortable care for a healthy start. 
+          Our neonatology team in Erode specialises in caring for premature and low birth weight newborns who need extra medical support in the first days of life. We provide round-the-clock monitoring, temperature regulation, respiratory support, and nutritional management to help babies grow stronger. Our advanced NICU ensures they receive the safest, most comfortable care for a healthy start.
         </p>
 
-        
+
       </div>
     ),
   },
@@ -171,18 +171,18 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Paediatrics and Neonatology" /> */}
-          Management of Neonatal Respiratory Distress 
+          Management of Neonatal Respiratory Distress
         </div>
       </>
     ),
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Newborns with breathing difficulties require immediate, skilled intervention. Our NICU in Erode is equipped with high-frequency ventilators, CPAP machines, and continuous oxygen monitoring to manage neonatal respiratory distress effectively. Our experienced neonatologists and trained nurses work together to stabilise the baby’s breathing and ensure optimal oxygen supply for healthy organ function. 
+          Newborns with breathing difficulties require immediate, skilled intervention. Our NICU in Erode is equipped with high-frequency ventilators, CPAP machines, and continuous oxygen monitoring to manage neonatal respiratory distress effectively. Our experienced neonatologists and trained nurses work together to stabilise the baby’s breathing and ensure optimal oxygen supply for healthy organ function.
         </p>
 
 
-       
+
       </div>
     ),
   },
@@ -192,17 +192,17 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Paediatrics and Neonatology" /> */}
-         Treatment for Neonatal Infections 
+          Treatment for Neonatal Infections
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Infections in newborns can progress quickly, which is why our hospital in Erode offers rapid diagnosis and targeted treatment. We follow strict hygiene protocols, use dedicated isolation units, and provide evidence-based antibiotic therapy to ensure effective recovery. Our infection control measures protect vulnerable babies while allowing parents to be part of the healing process. 
+          Infections in newborns can progress quickly, which is why our hospital in Erode offers rapid diagnosis and targeted treatment. We follow strict hygiene protocols, use dedicated isolation units, and provide evidence-based antibiotic therapy to ensure effective recovery. Our infection control measures protect vulnerable babies while allowing parents to be part of the healing process.
         </p>
 
-        
+
       </div>
     ),
   },
@@ -211,17 +211,17 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Paediatrics and Neonatology" /> */}
-          Care for Congenital Anomalies and Birth Defects 
+          Care for Congenital Anomalies and Birth Defects
         </div>
       </>
     ),
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Some newborns may be diagnosed with congenital anomalies or birth defects that require immediate attention. Our neonatology specialists in Erode coordinate with paediatric surgeons and other specialists to provide comprehensive care. From diagnosis to treatment planning, we focus on ensuring the best possible quality of life for your baby, with constant family support and counselling. 
+          Some newborns may be diagnosed with congenital anomalies or birth defects that require immediate attention. Our neonatology specialists in Erode coordinate with paediatric surgeons and other specialists to provide comprehensive care. From diagnosis to treatment planning, we focus on ensuring the best possible quality of life for your baby, with constant family support and counselling.
         </p>
 
-       
+
       </div>
     ),
   },
@@ -230,17 +230,17 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Paediatrics and Neonatology" /> */}
-          Feeding Support and Nutrition Management 
+          Feeding Support and Nutrition Management
         </div>
       </>
     ),
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Feeding is critical for newborn development, especially for those with health challenges. Our neonatology team provides breastfeeding assistance, formula feeding guidance, and customised nutrition plans. In Erode, our hospital’s lactation consultants work closely with mothers to ensure babies receive the right nutrients for healthy growth, while promoting the bond between parent and child. 
+          Feeding is critical for newborn development, especially for those with health challenges. Our neonatology team provides breastfeeding assistance, formula feeding guidance, and customised nutrition plans. In Erode, our hospital’s lactation consultants work closely with mothers to ensure babies receive the right nutrients for healthy growth, while promoting the bond between parent and child.
         </p>
 
-       
+
       </div>
     ),
   },
@@ -249,7 +249,7 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Paediatrics and Neonatology" /> */}
-         Follow-Up and Developmental Care 
+          Follow-Up and Developmental Care
         </div>
       </>
     ),
@@ -259,7 +259,7 @@ const accordionData = [
           Our commitment to newborn care in Erode extends beyond hospital discharge. We offer regular follow-up check-ups to monitor growth, developmental milestones, and overall health. Our neonatology team works with paediatricians, nutritionists, and therapists when needed, ensuring every baby gets the support they need during their crucial first year of life.
         </p>
 
-       
+
       </div>
     ),
   },
@@ -368,8 +368,8 @@ export default function SidebarTabs() {
 
 
 
-          <button className="btn-sidebar inline-flex items-center gap-2 bg-white text-[#2B3990] font-semibold px-7 py-3 rounded-full   mt-5 text-[14px] hover:-translate-y-[3px] transition-transform duration-200">
-            Book an Appointment <ArrowUpRight className="w-5 h-5" />
+          <button className="btn-white mt-5">
+            Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
           </button>
 
         </div>
@@ -382,7 +382,7 @@ export default function SidebarTabs() {
           }}
         >
           <div className="text-left mb-4 sm:mb-0 sm:mr-4">
-            <h3 className="text-[26px]  font-bold">
+            <h3 className="text-[22px]  font-bold">
               Find a<br />
               Doctor?
             </h3>
@@ -436,7 +436,7 @@ export default function SidebarTabs() {
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Family counselling and breastfeeding support rooms  </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> In-house laboratory and diagnostic imaging for rapid results</li>
-                  
+
 
                 </ul>
               </>

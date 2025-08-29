@@ -159,7 +159,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Specialised in rapid stroke diagnosis, clot removal, and vascular surgeries to restore blood flow and prevent disability. Our multidisciplinary approach ensures timely intervention during the golden hour for better outcomes. We also provide rehabilitation support for post-stroke recovery. 
+          Specialised in rapid stroke diagnosis, clot removal, and vascular surgeries to restore blood flow and prevent disability. Our multidisciplinary approach ensures timely intervention during the golden hour for better outcomes. We also provide rehabilitation support for post-stroke recovery.
         </p>
         <p className="mt-3 font-bold text-primary-blue">Key Procedures: </p>
 
@@ -179,14 +179,14 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Neurology" /> */}
-          Movement Disorders & Parkinson’s Care 
+          Movement Disorders & Parkinson’s Care
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          We offer advanced treatments for Parkinson’s, tremors, and dystonia using non-invasive and surgical options. Treatment plans are tailored based on the stage of the disease and patient needs. Our care focuses on improving motor control and enhancing life quality. 
+          We offer advanced treatments for Parkinson’s, tremors, and dystonia using non-invasive and surgical options. Treatment plans are tailored based on the stage of the disease and patient needs. Our care focuses on improving motor control and enhancing life quality.
         </p>
         <p className="mt-3 font-bold text-primary-blue">Key Treatments: </p>
 
@@ -214,9 +214,9 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Comprehensive epilepsy care for uncontrolled seizures including surgical options for drug-resistant cases. Our diagnostic tools allow for pinpointing seizure origin for effective management. We also support long-term lifestyle and medication guidance for patients. 
+          Comprehensive epilepsy care for uncontrolled seizures including surgical options for drug-resistant cases. Our diagnostic tools allow for pinpointing seizure origin for effective management. We also support long-term lifestyle and medication guidance for patients.
         </p>
-       
+
         {/* <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Video EEG Monitoring</li>
@@ -274,7 +274,7 @@ const accordionData = [
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Surgery for Spinal Cord Tumours</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Intraoperative Monitoring for Complex Surgeries</li>
-           
+
           </ul>
 
 
@@ -415,8 +415,8 @@ export default function SidebarTabs() {
 
 
 
-          <button className="btn-sidebar inline-flex items-center gap-2 bg-white text-[#2B3990] font-semibold px-7 py-3 rounded-full   mt-5 text-[14px] hover:-translate-y-[3px] transition-transform duration-200">
-            Book an Appointment <ArrowUpRight className="w-5 h-5" />
+          <button className="btn-white mt-5">
+            Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
           </button>
         </div>
 
@@ -428,7 +428,7 @@ export default function SidebarTabs() {
           }}
         >
           <div className="text-left mb-4 sm:mb-0 sm:mr-4">
-            <h3 className="text-[26px]  font-bold">
+            <h3 className="text-[22px]  font-bold">
               Find a<br />
               Doctor?
             </h3>

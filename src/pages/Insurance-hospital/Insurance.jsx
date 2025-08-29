@@ -405,9 +405,11 @@ const Insurance = () => {
               Experience the great virtual care from anywhere and connect with
               medical professionals for expert guidance.
             </p>
-            <button className="btn-white flex items-center gap-2 bg-white text-[#2B3990] font-semibold text-sm pt-3 pb-3 pr-7 pl-7 rounded-full w-fit hover:bg-[#173366] hover:text-white transition hover:-translate-y-[3px] transition-transform duration-200">
+           <div>
+             <button className="btn-white ">
               Call for More Information <ArrowUpRight className="w-5 h-5" />
             </button>
+           </div>
 
           </div>
         </div>

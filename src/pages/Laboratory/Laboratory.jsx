@@ -454,10 +454,10 @@ function Laboratory() {
               transition={{ duration: 0.7 }}
             >
               <Link
-                href="#"
-                className="btn-white inline-flex text-sm items-center px-6 py-3 bg-white text-[#2B3990] font-semibold rounded-full shadow-md hover:-translate-y-[3px] transition-transform duration-200 "
+                href="#contactus"
+                className="btn-white"
               >
-                Book an Appointment <ArrowUpRight className=" ml-2 w-5 h-5" />
+                Book an Appointment <ArrowUpRight className="w-5 h-5" />
               </Link>
             </motion.div>
           </div>
