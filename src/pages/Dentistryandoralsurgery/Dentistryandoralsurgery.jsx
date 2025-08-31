@@ -65,7 +65,7 @@ function Dentistryandoralsurgery() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              Dentistry and Oral Surgery
+              Best Hospital in Erode for Dentistry and Oral Surgery
             </motion.h1>
 
             {/* Subtitle */}
@@ -75,7 +75,7 @@ function Dentistryandoralsurgery() {
               transition={{ duration: 0.6 }}
               className="mb-6 text-white"
             >
-              Caring for Your Smile with Compassion and Technology
+              Caring for Your Smile With Compassion and Technology
             </motion.p>
 
             {/* Button */}

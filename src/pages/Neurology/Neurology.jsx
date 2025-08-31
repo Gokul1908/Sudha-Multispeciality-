@@ -68,7 +68,7 @@ function Neurology() {
               className="text-[40px]  mb-3"
             >
 
-              Neurology
+              Best Neurology Hospital in Erode
             </motion.h1>
 
             {/* Subtitle */}
@@ -78,7 +78,7 @@ function Neurology() {
               transition={{ duration: 0.6 }}
               className="mb-6 text-white"
             >
-              From Diagnosis to Recovery - Neuro Care You Can Trust.
+              From Diagnosis to Recovery – Neuro Care You Can Trust. 
             </motion.p>
 
             {/* Button */}

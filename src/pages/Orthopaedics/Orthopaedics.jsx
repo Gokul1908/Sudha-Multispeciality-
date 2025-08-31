@@ -67,7 +67,7 @@ function Orthopaedics() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              Orthopaedics
+              Best Orthopaedics Hospital in Erode
             </motion.h1>
 
             {/* Subtitle */}

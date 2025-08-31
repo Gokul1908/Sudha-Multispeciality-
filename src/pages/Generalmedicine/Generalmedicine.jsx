@@ -65,7 +65,7 @@ function Generalmedicine() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              General Medicine
+              Best Hospital in Erode for General Medicine
             </motion.h1>
 
             {/* Subtitle */}

@@ -151,21 +151,21 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Generalsurgery"/> */}
-          Laparoscopic and Minimally Invasive Surgeries
+          Laparoscopic and Minimally Invasive Surgeries 
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Our team performs a wide range of laparoscopic surgeries that offer faster recovery, reduced pain, and smaller scars. Using high-definition imaging and precision instruments, our surgeons ensure better outcomes and minimal hospital stay for patients across all age groups.
+         Our team performs a wide range of laparoscopic surgeries that offer faster recovery, reduced pain, and smaller scars. Using high-definition imaging and precision instruments, our surgeons ensure better outcomes and minimal hospital stay for patients across all age groups.  
         </p>
 
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Gallbladder removal (Laparoscopic cholecystectomy)  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Appendectomy  </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Hernia repair (Laparoscopic hysterectomy)  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Hernia repair (Laparoscopic hysterectomy)   </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Laparoscopic diagnostic procedures  </li>
           </ul>
 
@@ -178,14 +178,14 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Generalsurgery" /> */}
-          Gastrointestinal and Abdominal Surgeries
+         Gastrointestinal and Abdominal Surgeries
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Comprehensive surgical management for conditions related to the stomach, intestines, liver, and abdominal organs. These surgeries are carried out using both open and laparoscopic techniques, ensuring effective care tailored to each patient's condition and severity.
+          Comprehensive surgical management for conditions related to the stomach, intestines, liver, and abdominal organs. These surgeries are carried out using both open and laparoscopic techniques, ensuring effective care tailored to each patient's condition and severity.  
         </p>
 
         <div>
@@ -215,7 +215,7 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          Our department handles all forms of surgical emergencies round-the-clock. Backed by intensive care and rapid diagnostics, we provide timely intervention for life-threatening conditions with a multidisciplinary team approach.
+          Our department handles all forms of surgical emergencies round-the-clock. Backed by intensive care and rapid diagnostics, we provide timely intervention for life-threatening conditions with a multidisciplinary team approach. 
         </p>
 
         <div>
@@ -235,14 +235,14 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Generalmedicine" /> */}
-          Oncology-Related Surgeries
+          Oncology-Related Surgeries 
         </div>
       </>
     ),
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          We perform cancer-related surgeries involving the gastrointestinal tract, breast, thyroid, and soft tissues, in coordination with oncology teams. These procedures are done with utmost precision to aid further treatment and recovery.
+          We perform cancer-related surgeries involving the gastrointestinal tract, breast, thyroid, and soft tissues, in coordination with oncology teams. These procedures are done with utmost precision to aid further treatment and recovery.  
         </p>
 
         <div>
@@ -398,14 +398,11 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Advanced General Surgery Services at Sudha Multispeciality Hospital in
-                  <span className="text-[#2B3990]"> Erode</span>
+                  Best General Surgeons at the Best Hospital in  
+                  <span className="text-[#2B3990]"> Erode</span> for General Surgery
                 </h2>
                 <p className="mb-4">
-                  The General Surgery Department at Sudha Multispeciality Hospital in Erode is equipped to manage a wide spectrum of surgical needs with advanced
-                  technology and a team of skilled surgeons. From routine procedures to complex operations, every patient receives personalised and evidence-based care.
-                  The department operates 24/7 with fully equipped operating rooms, modern tools like CUSA and Harmonic Scalpel, and dedicated ICU support to ensure
-                  optimal outcomes and faster recovery.
+                  The General Surgery Department at Sudha Multispeciality Hospital in Erode is equipped to manage a wide spectrum of surgical needs with advanced technology and a team of best general surgeons in Erode. From routine procedures to complex operations, every patient receives personalised and evidence-based care. The department operates 24/7 with fully equipped operating rooms, modern tools like CUSA and Harmonic Scalpel, and dedicated ICU support to ensure optimal outcomes and faster recovery.  
                 </p>
               </>
             )}
@@ -417,10 +414,10 @@ export default function SidebarTabs() {
                 <h2 className="text-[24px] mt-5">Facilities</h2>
                 <ul>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Fully equipped operation theatres with laminar airflow for infection control
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Fully equipped operating theatres with laminar airflow for infection control
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Advanced high-definition laparoscopic systems and surgical instruments
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Advanced high-definition laparoscopic systems and surgical instruments 
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
@@ -428,11 +425,11 @@ export default function SidebarTabs() {
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    24/7 general and special wards with round-the-clock support staff
+                    24/7 general and special wards with round-the-clock support staff  
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    In-house diagnostic lab and pharmacy available at all times
+                    In-house diagnostic lab and pharmacy available at all times  
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}

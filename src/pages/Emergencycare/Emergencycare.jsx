@@ -66,7 +66,7 @@ function Emergencycare() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              Advanced Emergency Complex
+              Best Emergency Care Hospital in Erode
             </motion.h1>
 
             {/* Subtitle */}
@@ -76,7 +76,7 @@ function Emergencycare() {
               transition={{ duration: 0.6 }}
               className="mb-6 text-white"
             >
-              Emergency Care That’s Always Ready To Save Lives
+             Emergency Care That’s Always Ready to Save Lives
             </motion.p>
 
             {/* Button */}

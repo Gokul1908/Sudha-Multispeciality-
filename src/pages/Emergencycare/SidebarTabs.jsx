@@ -159,7 +159,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Our emergency team is trained to respond swiftly to cardiac events, including heart attacks, arrhythmias, and heart failure. With rapid diagnostics and interventional support, every second counts towards saving a life.
+         Our emergency team is trained to respond swiftly to cardiac events, including heart attacks, arrhythmias, and heart failure. With rapid diagnostics and interventional support, every second counts towards saving a life. 
         </p>
 
         <div>
@@ -217,7 +217,7 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          Acute respiratory conditions such as severe asthma, COPD exacerbations, and pulmonary embolisms managed with ventilator support and swift diagnosis.
+         Acute respiratory conditions such as severe asthma, COPD exacerbations, and pulmonary embolisms are managed with ventilator support and swift diagnosis.
         </p>
 
         <div>
@@ -247,13 +247,13 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Conditions like gastrointestinal bleeding, severe blood vomiting, abdominal distension or liver complications are treated promptly to prevent further complications. 
+          Conditions like gastrointestinal bleeding, severe blood vomiting, abdominal distension or liver complications are treated promptly to prevent further complications.   
         </p>
 
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> GI bleeding stabilization</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Acute abdomen injuries  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Acute abdominal injuries  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Acute liver failure monitoring  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Emergency endoscopic procedure </li>
           </ul>
@@ -511,13 +511,10 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Best Emergency Care in <span className="text-[#2B3990]"> Erode</span> at Sudha Multispeciality Hospital
+                 24/7 Critical Care at the Best Emergency Care hospital in <span className="text-[#2B3990]"> Erode</span>
                 </h2>
                 <p className="mb-4">
-                  The Advanced Emergency Complex at Sudha Multispeciality Hospital is designed to handle all medical emergencies with speed, expertise, and compassion.
-                  Equipped with advanced infrastructure, trained personnel, and round-the-clock availability, our emergency department ensures every critical moment is
-                  managed with precision. Whether it’s a trauma case, cardiac emergency, or acute illness, we are prepared to provide rapid assessment, accurate diagnosis,
-                  and immediate intervention to save lives and stabilise patients effectively.
+                 Sudha Multispeciality Hospital, with its Advanced Emergency Complex, is recognised as the best emergency care hospital in Erode for handling medical emergencies with speed, expertise, and compassion. Equipped with advanced infrastructure, trained personnel, and round-the-clock availability, our emergency department ensures every critical moment is managed with precision. Whether it’s a trauma case, cardiac emergency, or acute illness, we are prepared to provide rapid assessment, accurate diagnosis, and immediate intervention to save lives and stabilise patients effectively.
                 </p>
 
               </>
@@ -530,11 +527,11 @@ export default function SidebarTabs() {
                 <h2 className="text-[24px] mt-5">Facilities</h2>
                 <ul>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Fully equipped emergency beds </li>
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Fully equipped emergency beds</li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Counselling room for families and support  </li>
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Counselling room for families and support   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> 24/7 ambulance services with advanced life support </li>
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> 24/7 ambulance services with advanced life support  </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Regular staff training for rapid response and updated protocols  </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">

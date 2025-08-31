@@ -67,7 +67,7 @@ function Gastroenterology() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              Gastroenterology
+              Best Gastroenterology Hospital in Erode
             </motion.h1>
 
             {/* Subtitle */}
@@ -77,7 +77,7 @@ function Gastroenterology() {
               transition={{ duration: 0.6 }}
               className="mb-6 text-white"
             >
-              Advanced Care for Every Stomach Concern
+              Advanced Care for Every Stomach Concern 
             </motion.p>
 
             {/* Button */}

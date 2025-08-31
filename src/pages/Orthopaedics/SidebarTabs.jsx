@@ -153,22 +153,22 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Orthopaedics" />  */}
-          Trauma & Joint Care
+        Trauma & Joint Care 
         </div>
       </>
     ),
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Specialised in managing both simple and complex fractures, joint injuries, and emergency trauma cases with rapid response and advanced techniques. Our orthopaedic trauma team is available 24/7 to handle high-impact injuries with precision.
+          Specialised in managing both simple and complex fractures, joint injuries, and emergency trauma cases with rapid response and advanced techniques. Our orthopaedic trauma team is available 24/7 to handle high-impact injuries with precision. 
         </p>
 
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Polytrauma & fracture management</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Pelvic and acetabular fracture management </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Hip, knee, shoulder, spine, and elbow fracture surgeries</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Endoscopic and minimally invasive procedures </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Polytrauma & fracture management </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Pelvic and acetabular fracture management  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Hip, knee, shoulder, spine, and elbow fracture surgeries </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Endoscopic and minimally invasive procedures </li>
           </ul>
 
         </div>
@@ -180,22 +180,22 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Orthopaedics" /> */}
-          Joint Replacement & Reconstruction
+          Joint Replacement & Reconstruction 
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          We provide advanced surgical solutions for degenerative joint diseases using durable implants and minimally invasive techniques to restore mobility. Post-operative rehab is also integrated into every treatment plan.
+          We provide advanced surgical solutions for degenerative joint diseases using durable implants and minimally invasive techniques to restore mobility. Post-operative rehab is also integrated into every treatment plan. 
         </p>
 
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Total knee and hip replacement</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Partial joint replacements </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Revision surgeries</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Deformity correction and limb lengthening procedures </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Partial joint replacements  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Revision surgeries </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Deformity correction and limb lengthening procedures  </li>
           </ul>
 
         </div>
@@ -215,15 +215,15 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Our spine specialists treat spinal disorders through both conventional and minimally invasive approaches, improving outcomes and reducing recovery time. We use advanced imaging to guide spinal decompression, fixation, and fusion surgeries.
+          Our spine specialists treat spinal disorders through both conventional and minimally invasive approaches, improving outcomes and reducing recovery time. We use advanced imaging to guide spinal decompression, fixation, and fusion surgeries. 
         </p>
 
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Minimally Invasive Spine Surgery (MISS)</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Spinal decompression and fixation </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Minimally Invasive Spine Surgery (MISS) </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Spinal decompression and fixation  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Surgery for spine fractures and tumours</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> ACDF, cervical corpectomy, and spinal fusion </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> ACDF, cervical corpectomy, and spinal fusion  </li>
           </ul>
 
         </div>
@@ -235,7 +235,7 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Orthopaedics" /> */}
-          Specialised Orthopaedic Care
+          Specialised Orthopaedic Care 
         </div>
       </>
     ),
@@ -247,10 +247,10 @@ const accordionData = [
 
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Paediatric orthopaedics and deformity correction</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Geriatric orthopaedic care for ageing bones and joints </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Rheumatology and arthritis management</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Bone tumour evaluation and surgery </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Paediatric orthopaedics and deformity correction </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Geriatric orthopaedic care for ageing bones and joints  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Rheumatology and arthritis management </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Bone tumour evaluation and surgery</li>
           </ul>
 
         </div>
@@ -425,10 +425,10 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover " />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Best Orthopaedic Care in <span className="text-[#2B3990]"> Erode</span> at Sudha Multispeciality Hospital
+                  Best Orthopaedic Care at the Best Ortho Hospital in  <span className="text-[#2B3990]"> Erode</span> 
                 </h2>
                 <p className=" mb-3">
-                  The Department of Orthopaedics at Sudha Multispeciality Hospital offers expert care for trauma, bone, joint, and spine conditions through a combination of clinical excellence, advanced surgical techniques, and world-class infrastructure. Whether it's joint replacement, complex fractures, spinal disorders, or paediatric orthopaedics, our multidisciplinary team delivers precise, personalised care for faster recovery and improved mobility. From emergency trauma care to advanced reconstructive surgeries, we are equipped to handle every orthopaedic challenge with compassion and confidence.
+                  The Department of Orthopaedics at Sudha Multispeciality Hospital is recognized as one of the best orthopaedic hospitals in Erode, offering comprehensive treatment for trauma, bone, joint, and spine conditions. With the expertise of the best orthopaedic doctors in Erode, the department specializes in joint replacement, complex fracture management, spinal disorders, and paediatric orthopaedics. Equipped with advanced surgical techniques and world-class infrastructure, the team ensures precise diagnosis, personalised treatment, and faster recovery. From emergency trauma care to advanced reconstructive surgeries, every orthopaedic challenge is managed with excellence, compassion, and confidence. 
                 </p>
 
               </>
@@ -441,10 +441,10 @@ export default function SidebarTabs() {
                 <h2 className="text-[24px] mt-5 mb-3">Facilities</h2>
                 <ul>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>24x7 Emergency & Trauma Services with immediate orthopaedic intervention
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>24x7 Emergency & Trauma Services with immediate orthopaedic intervention 
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Hi-Tech SICU (Surgical ICU) with specialised orthopaedic care
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Hi-Tech SICU (Surgical ICU) with specialised orthopaedic care 
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
@@ -452,19 +452,19 @@ export default function SidebarTabs() {
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    Advanced Orthopaedic Implants and Instruments for precision surgery
+                    Advanced Orthopaedic Implants and Instruments for precision surgery 
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    State-of-the-art OT Tables for joint, spine, and trauma procedures
+                    State-of-the-art OT Tables for joint, spine, and trauma procedures 
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    Expertise in Pelvic-Acetabular fracture management with interventional radiology
+                    Expertise in Pelvic-Acetabular fracture management with interventional radiology 
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    Comprehensive care for polytrauma and complex musculoskeletal injuries
+                   Comprehensive care for polytrauma and complex musculoskeletal injuries
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}

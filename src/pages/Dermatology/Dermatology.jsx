@@ -21,7 +21,7 @@ const consultSlides = [consult1, consult2, consult3];
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
-  { label: "Dermatology Aesthetics and Lasers", href: "/dermatology-aesthetics-and-lasers" },
+  { label: "Dermatology", href: "/dermatology" },
 ];
 
 function Dermatology() {
@@ -65,7 +65,7 @@ function Dermatology() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              Dermatology
+              Best Dermatology Hospital in Erode
             </motion.h1>
 
             {/* Subtitle */}

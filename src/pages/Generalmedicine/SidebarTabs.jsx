@@ -434,14 +434,11 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Advanced General Medicine Treatment in
-                  <span className="text-[#2B3990]"> Erode</span> at Sudha Multispeciality Hospital
+                  Advanced General Medicine Treatment with the Best General Physicians in  
+                  <span className="text-[#2B3990]"> Erode</span>
                 </h2>
                 <p className="mb-4">
-                  The Department of General Medicine offers round-the-clock, patient-centred care for a wide range of medical conditions. Equipped with modern diagnostic
-                  tools and a team of experienced physicians, our General Medicine unit serves as the first point of contact for all non-surgical health issues. We focus on early
-                  diagnosis, preventive care, and long-term disease management for both acute and chronic illnesses. Our physicians collaborate with various specialties within
-                  the hospital to ensure integrated and personalized treatment for every patient.
+                  The Department of General Medicine offers round-the-clock, patient-centred care for a wide range of medical conditions. Equipped with modern diagnostic tools and a team of the best general physicians in Erode, Sudha Multispeciality Hospital is known as the best hospital in Erode for general medicine. Our General Medicine unit serves as the first point of contact for all non-surgical health issues. We focus on early diagnosis, preventive care, and long-term disease management for both acute and chronic illnesses. Our physicians collaborate with various specialties within the hospital to ensure integrated and personalized treatment for every patient. Our dedication towards providing quality healthcare at an affordable cost, earned us the position as the best hospital for general treatments and consultations. 
                 </p>
               </>
             )}

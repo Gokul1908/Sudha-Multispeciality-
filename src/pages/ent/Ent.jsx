@@ -65,7 +65,7 @@ function Ent() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              ENT  
+              Best ENT Hospital in Erode  
             </motion.h1>
 
             {/* Subtitle */}
@@ -75,7 +75,7 @@ function Ent() {
               transition={{ duration: 0.6 }}
               className="mb-6 text-white"
             >
-              Advanced ENT Solutions for Every Generation   
+              Advanced ENT Solutions for Every Generation  
             </motion.p>
 
             {/* Button */}

@@ -66,7 +66,7 @@ function Cardiology() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              Cardiology
+              Best Cardiology Hospital in Erode
             </motion.h1>
 
             {/* Subtitle */}
@@ -76,7 +76,7 @@ function Cardiology() {
               transition={{ duration: 0.6 }}
               className="text-sm sm:text-base mb-4 text-white"
             >
-              A Heartfelt Care For Your Heart Care
+              Heartfelt Care for Every Heartbeat.
             </motion.p>
 
             {/* Button */}

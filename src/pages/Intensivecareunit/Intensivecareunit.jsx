@@ -67,7 +67,7 @@ function Intensivecareunit() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              Intensive Care Unit
+              Best Intensive Care Unit (ICU) in Erode
             </motion.h1>
 
             {/* Subtitle */}
@@ -77,7 +77,7 @@ function Intensivecareunit() {
               transition={{ duration: 0.6 }}
               className="mb-6 text-white"
             >
-              24/7 Advanced Critical Care
+              Where Every Second Counts, and Every Life Matters.
             </motion.p>
 
             {/* Button */}

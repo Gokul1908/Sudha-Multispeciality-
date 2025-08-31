@@ -65,7 +65,7 @@ function Cardiothoracicsurgery() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              Cardiothoracic Surgery
+              Best Hospital in Erode for Cardiothoracic Surgery 
             </motion.h1>
 
             {/* Subtitle */}
