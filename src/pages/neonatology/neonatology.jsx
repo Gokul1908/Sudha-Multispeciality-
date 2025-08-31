@@ -67,7 +67,7 @@ function Neonatology() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              Neonatology
+              Best Neonatology Hospital in Erode
             </motion.h1>
 
 
@@ -78,7 +78,7 @@ function Neonatology() {
               transition={{ duration: 0.6 }}
               className="mb-6 text-white"
             >
-              Nurturing the Tiniest Lives with the Greatest Care
+              Nurturing the Tiniest Lives with the Greatest Care 
             </motion.p>
 
             {/* Button */}

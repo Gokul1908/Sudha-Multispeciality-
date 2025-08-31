@@ -434,7 +434,7 @@ function Laboratory() {
               transition={{ duration: 0.5 }}
               className="text-[40px] mb-4"
             >
-              Laboratory
+              Best Hospital for Laboratory Facilities in Erode
             </motion.h1>
 
             {/* Subtitle */}
@@ -444,7 +444,7 @@ function Laboratory() {
               transition={{ duration: 0.6 }}
               className="text-white mb-6"
             >
-              Accuracy in Testing, Excellence in Healing
+              Accuracy in Testing, Excellence in Healing 
             </motion.p>
 
             {/* Button */}

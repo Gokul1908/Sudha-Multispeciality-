@@ -19,6 +19,16 @@ import Faculties from '@/components/faculties';
 import Anaesthesia from '@/assets/fellownationalboard/anaesthesia.png';
 import Radiology from '@/assets/fellownationalboard/radiology.png';
 
+import Breadcrumb from "@/components/Breadcrumb";
+
+const breadcrumbItems = [
+    { label: "Home", href: "/" },
+
+    { label: "Academics", href: "" },
+
+    { label: "Post MBBS Diploma Courses (DNB)", href: "/post-mbbs-diploma-courses" },
+];
+
 
 const cards = [
     {
@@ -119,7 +129,8 @@ const Diplomacourse = () => {
                             transition={{ duration: 0.4 }}
                             className="text-sm mb-2 text-white"
                         >
-                            Home / Academic /  DNB
+                            <Breadcrumb items={breadcrumbItems} />
+
                         </motion.p>
 
                         <motion.h1
@@ -128,8 +139,16 @@ const Diplomacourse = () => {
                             transition={{ duration: 0.6 }}
                             className="text-[40px]  mb-3"
                         >
-                            Diplomate of National Board (DNB)
+                            Post MBBS Diploma Courses
                         </motion.h1>
+                        <motion.p
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                            className="mb-6 text-white"
+                        >
+                            Offering the Advanced Healthcare Education. 
+                        </motion.p>
 
                         <motion.div className='mt-12'
                             initial={{ opacity: 0, y: 10 }}

@@ -67,7 +67,7 @@ const Ambulanceservice = () => {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-4"
             >
-              Ambulance Service
+              Best Ambulance Services in Erode
             </motion.h1>
 
             {/* Subtitle */}

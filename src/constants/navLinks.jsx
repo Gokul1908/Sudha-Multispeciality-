@@ -570,7 +570,7 @@ export const links = [
       
       {
         header: "Fellow of National Board (FNB) ",
-        hrefs: "/fellow-national-board",
+        hrefs: "/fellow-of-national-board",
         image: National,
         hoverImage: National,
         subMenu: [
@@ -582,7 +582,7 @@ export const links = [
       },
       {
         header: "Post MBBS Diploma Courses (DNB)",
-        hrefs: "/diploma-course",
+        hrefs: "/post-mbbs-diploma-courses",
         image: Diploma,
         hoverImage: Diploma,
         subMenu: [

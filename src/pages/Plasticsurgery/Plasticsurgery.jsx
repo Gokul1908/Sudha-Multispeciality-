@@ -67,7 +67,7 @@ function Plasticsurgery() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              Plastic Surgery
+              Best Hospital in Erode for Plastic Surgery
             </motion.h1>
 
             {/* Subtitle */}

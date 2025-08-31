@@ -159,12 +159,12 @@ const accordionData = [
       <div className="text-sm  space-y-3">
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Brain CT to detect stroke, bleeding, tumours, and vascular issues </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Brain CT to detect stroke, bleeding, tumours, and vascular issues </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Neck CT to evaluate masses, lymph nodes, or soft tissue abnormalities  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Chest CT to assess lung pathologies, enlarged lymph nodes, and medical pathologies.</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Abdominal & Pelvis CT for organ assessment, kidney stones, injection bowel obstruction and tumours.</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Sinus CT to identify sinus blockages or infections</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Spine CT to detect disc herniation, spinal stenosis, or fractures </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Spine CT to detect disc herniation, spinal stenosis, or fractures  </li>
           </ul>
 
         </div>
@@ -176,7 +176,7 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Imaging and Diagnostic Services" /> */}
-          Ultrasound 2D/3D/4D
+          Ultrasound 2D/3D/4D 
         </div>
       </>
     ),
@@ -385,10 +385,10 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Accurate Diagnostic Solutions at <span className="text-[#2B3990]"> Erode</span> in Sudha Multispeciality Hospital
+                  Accurate Diagnostic Solutions at   <span className="text-[#2B3990]"> Erode</span> in Sudha Multispeciality Hospital
                 </h2>
                 <p className=" mb-3">
-                  Our Imaging and Diagnostic Services department is equipped with cutting-edge technologies and staffed by skilled professionals to deliver accurate and timely results. From non-invasive imaging to advanced cardiology and pathology diagnostics, we provide a comprehensive range of services essential for effective diagnosis, monitoring, and treatment planning. Whether it’s routine screenings or complex investigations, our team ensures precision and patient comfort every step of the way.
+                  Our Imaging and Diagnostic Services department is equipped with cutting-edge technologies and staffed by skilled professionals to deliver accurate and timely results. From non-invasive imaging to advanced cardiology and pathology diagnostics, we provide a comprehensive range of services essential for effective diagnosis, monitoring, and treatment planning. Whether it’s routine screenings or complex investigations, our team ensures precision and patient comfort every step of the way. 
                 </p>
 
               </>

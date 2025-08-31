@@ -67,7 +67,7 @@ function Pulmonology() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              Pulmonology
+              Best Pulmonology Hospital in Erode
             </motion.h1>
 
             {/* Subtitle */}
@@ -77,7 +77,7 @@ function Pulmonology() {
               transition={{ duration: 0.6 }}
               className="mb-6 text-white"
             >
-              Advanced Respiratory Care for Healthy Breathing
+              Advanced Respiratory Care for Healthy Breathing 
             </motion.p>
 
             {/* Button */}

@@ -67,7 +67,7 @@ function Paediatrics() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              Paediatrics
+              Best Paediatrics Hospital in Erode
             </motion.h1>
 
             {/* Subtitle */}

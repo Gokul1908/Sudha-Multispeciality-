@@ -25,6 +25,17 @@ import "slick-carousel/slick/slick-theme.css";
 import DiplomaDoctor from "@/components/diplomaSlider";
 import Faculties from '@/components/faculties';
 
+import Breadcrumb from "@/components/Breadcrumb";
+
+const breadcrumbItems = [
+    { label: "Home", href: "/" },
+
+    { label: "Academics", href: "" },
+
+    { label: "Fellow of National Board (FNB)", href: "/fellow-of-national-board" },
+];
+
+
 const cards = [
     {
         icon: cardone,
@@ -229,7 +240,9 @@ const Fellownationalboard = () => {
                             transition={{ duration: 0.4 }}
                             className="text-sm mb-2 text-white"
                         >
-                            Home / Academic / Fellow of National Board (FNB)
+                            <Breadcrumb items={breadcrumbItems} />
+
+
                         </motion.p>
 
                         <motion.h1
@@ -240,6 +253,15 @@ const Fellownationalboard = () => {
                         >
                             Fellow of National Board (FNB)
                         </motion.h1>
+
+                        <motion.p
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                            className="mb-6 text-white"
+                        >
+                            Offering the best medical courses in Erode 
+                        </motion.p>
 
                         <motion.div className='mt-12'
                             initial={{ opacity: 0, y: 10 }}
@@ -299,7 +321,7 @@ const Fellownationalboard = () => {
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-6 sm:gap-8 lg:gap-12">
                     {/* Left Content */}
                     <div className="flex-1">
-                         <h5 className="inline-block px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm ">
+                        <h5 className="inline-block px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm ">
                             Fellow of National Board (FNB)
                         </h5>
 
@@ -334,7 +356,7 @@ const Fellownationalboard = () => {
                     Meet Our Expert Faculty
                 </h5>
                 <h2 className="text-[30px] mb-4 ">
-                    Reproductive Medicine with <br/> Expertise & Care
+                    Reproductive Medicine with <br /> Expertise & Care
                 </h2>
                 <div className="max-w-7xl mx-auto mt-14 relative">
                     <Faculties />

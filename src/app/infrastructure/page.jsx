@@ -1,6 +1,14 @@
 import Gallery from '@/pages/gallery/Gallery'
 import React from 'react'
 
+export const metadata = {
+  title: "Infrastructure  | Sudha Multispeciality Hospital",
+  description: "",
+
+  keywords: "Which Hospital has Modern Lab Facility, Affordable Cost for Tests and Scannings in Erode, Worldclass Labs and Equipments in Erode",
+};
+
+
 function page() {
   return (
     <div>

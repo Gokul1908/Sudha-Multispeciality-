@@ -67,7 +67,7 @@ function Obstetricsandgynaecology() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              Obstetrics & Gynaecology
+              Best Obstetrics and Gynaecology Hospital in Erode
             </motion.h1>
 
             {/* Subtitle */}
@@ -77,7 +77,7 @@ function Obstetricsandgynaecology() {
               transition={{ duration: 0.6 }}
               className="mb-6 text-white"
             >
-              Compassionate Care for Every Stage of Womanhood
+              Compassionate Care for Every Stage of Womanhood 
             </motion.p>
 
             {/* Button */}

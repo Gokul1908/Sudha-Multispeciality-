@@ -154,7 +154,7 @@ function Organtransplant() {
               transition={{ duration: 0.5 }}
               className=" text-[40px]  mb-4"
             >
-              Renal Transplant
+             Best Hospital for Renal Transplant in Erode
             </motion.h1>
 
             {/* Subtitle */}
