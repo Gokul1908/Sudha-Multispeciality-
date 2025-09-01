@@ -17,7 +17,12 @@ import Operation from '@/assets/bssvocationaleducational/operation.png';
 import Highlight1 from "@/assets/bssvocationaleducational/highlight1.png";
 import Student from "@/assets/vocationaldegree/student.png";
 import Doc from "@/assets/vocationaldegree/doc.png";
-
+import Breadcrumb from "@/components/Breadcrumb";
+const breadcrumbItems = [
+    { label: "Home", href: "/" },
+    { label: "Academics", href: "/" },
+    { label: "Vocational Degree Courses", href: "/vocational-degree-courses" },
+];
 
 const VocationalDegree = () => {
 
@@ -112,14 +117,14 @@ const VocationalDegree = () => {
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
                     <div className="max-w-7xl mx-auto">
-                        <motion.p
+                        <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4 }}
                             className="text-sm mb-2 text-white"
                         >
-                            Home / Academic / Vocational Degree Courses 
-                        </motion.p>
+                            <Breadcrumb items={breadcrumbItems} />
+                        </motion.div>
 
                         <motion.h1
                             initial={{ opacity: 0, y: 10 }}
@@ -127,20 +132,28 @@ const VocationalDegree = () => {
                             transition={{ duration: 0.6 }}
                             className="text-[40px] mb-3"
                         >
-                            Vocational Degree Courses 
+                            Vocational Degree Courses
                         </motion.h1>
+                        <motion.p
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                            className="text-white mb-4"
+                        >
+                            Empowering Tomorrow’s Medical Professionals
+                        </motion.p>
 
                         <motion.div className='mt-12'
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7 }}
                         >
-                            <Link
+                            {/* <Link
                                 href="#degrees"
                                 className="btn-white inline-flex text-[16px] tracking-wide items-center px-7 py-3 bg-white text-[#2B3990] font-semibold rounded-full hover:-translate-y-[3px] transition-transform duration-200"
                             >
                                 Enroll Now <ArrowUpRight className="w-5 h-5" />
-                            </Link>
+                            </Link> */}
                         </motion.div>
                     </div>
 
@@ -218,18 +231,21 @@ const VocationalDegree = () => {
                                 <div className="flex-grow"></div>
 
                                 {/* View Details Button */}
-                                <Link
-                                    href="#"
-                                    className="block bg-[#2B3990] hover:bg-[#1e2660] text-white py-2 px-4 rounded-full text-center font-medium text-[14px]"
-                                >
-                                    View Details
-                                </Link>
+                                <div className="text-center">
+                                    <Link
+                                        href="#"
+                                        className="btn-diagonal w-[100%] mx-auto text-center justify-center"
+                                    >
+                                        Enroll Now
+                                    </Link>
+                                </div>
+
                             </div>
                         ))}
                     </div>
 
 
-                    <section className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
+                    <section className="max-w-7xl mx-auto px-4 py-16 sm:py-16">
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 md:gap-10 items-start">
 
                             {/* Text Column */}

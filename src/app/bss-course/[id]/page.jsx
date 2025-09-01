@@ -29,14 +29,7 @@ export default function CourseDetail() {
 
                 >
                     <div className="max-w-7xl mx-auto">
-                        <motion.p
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.4 }}
-                            className="text-sm mb-2 text-white"
-                        >
-                            Home / Academic / BSS Vocational Education
-                        </motion.p>
+
 
                         <motion.h1
                             initial={{ opacity: 0, y: 10 }}
@@ -44,7 +37,7 @@ export default function CourseDetail() {
                             transition={{ duration: 0.6 }}
                             className="text-[40px] mb-3"
                         >
-                            BSS Vocational Education
+                            BSS Vocational Courses
                         </motion.h1>
 
                         <motion.div className='mt-12'
@@ -52,12 +45,12 @@ export default function CourseDetail() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7 }}
                         >
-                            <Link
+                            {/* <Link
                                 href="#courses"
                                 className="btn-white inline-flex text-[16px] tracking-wide items-center px-7 py-3 bg-white text-[#2B3990] font-semibold rounded-full hover:-translate-y-[3px] transition-transform duration-200"
                             >
                                 Enroll Now <ArrowUpRight className="w-5 h-5" />
-                            </Link>
+                            </Link> */}
                         </motion.div>
                     </div>
 
@@ -76,142 +69,145 @@ export default function CourseDetail() {
                     </div>
                 </div>
             </section>
-            
+
 
             {/* Left side */}
-            <div className="max-w-7xl mx-auto p-6 grid md:grid-cols-12 gap-8 items-start">
+            <section className=" py-16">
+                <div className="max-w-7xl mx-auto grid md:grid-cols-12 gap-8 items-start">
 
-                {/* Left side */}
-                <div className="md:col-span-6">
-                    <h1 className="text-3xl font-bold mb-4">{course.title}</h1>
-                    <p><strong>Course Code:</strong> {course.courseCode}</p>
-                    <p><strong>Qualification:</strong> {course.education}</p>
-                    <p><strong>Duration:</strong> {course.duration}</p>
+                    {/* Left side */}
+                    <div className="md:col-span-6">
+                        <h1 className="text-[30px]  mb-4">{course.title}</h1>
+                        <p className="text-black mb-2"><strong>Course Code:</strong> {course.courseCode}</p>
+                        <p className="text-black mb-2"><strong>Qualification:</strong> {course.education}</p>
+                        <p className="text-black mb-2"><strong>Duration:</strong> {course.duration}</p>
 
-                    <table className="mt-6 w-full border bg-white">
-                        <thead>
-                            <tr>
-                                <th className="text-white p-2 border bg-blue-900">SNo</th>
-                                <th className="text-white p-2 border bg-blue-900">Subject Code</th>
-                                <th className="text-white p-2 border bg-blue-900">Subject</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {/* I Year */}
-                            <tr>
-                                <td colSpan="3" className="p-2 border bg-white font-semibold">I Year</td>
-                            </tr>
-                            {course.year1?.map(sub => (
-                                <tr key={sub.sno}>
-                                    <td className="p-2 border">{sub.sno}</td>
-                                    <td className="p-2 border">{sub.code}</td>
-                                    <td className="p-2 border">{sub.name}</td>
+                        <table className="mt-6 w-full border bg-white">
+                            <thead>
+                                <tr className="bg-[#2B3990] text-white ">
+                                    <th className="px-5 py-3 text-left font-semibold letter-space text-[14px]">SNo</th>
+                                    <th className="px-10 py-3 text-left font-semibold letter-space text-[14px]">Subject Code</th>
+                                    <th className=" px-7 py-3 text-left font-semibold letter-space text-[14px]">Subject</th>
                                 </tr>
-                            ))}
-
-                            {/* II Year - render only if exists */}
-                            {course.year2?.length > 0 && (
-                                <>
-                                    <tr>
-                                        <td colSpan="3" className="p-2 border bg-white font-semibold">II Year</td>
+                            </thead>
+                            <tbody>
+                                {/* I Year */}
+                                <tr>
+                                    <td colSpan="3" className="px-5 py-3 text-center border font-semibold letter-space text-[14px]">I Year</td>
+                                </tr>
+                                {course.year1?.map(sub => (
+                                    <tr key={sub.sno}>
+                                        <td className="px-5 py-3  border bg-white font-semibold letter-space text-[14px]">{sub.sno}</td>
+                                        <td className="px-5 py-3  border bg-white font-semibold letter-space text-[14px]">{sub.code}</td>
+                                        <td className="px-5 py-3  border bg-white font-semibold letter-space text-[14px]">{sub.name}</td>
                                     </tr>
-                                    {course.year2.map(sub => (
-                                        <tr key={sub.sno}>
-                                            <td className="p-2 border">{sub.sno}</td>
-                                            <td className="p-2 border">{sub.code}</td>
-                                            <td className="p-2 border">{sub.name}</td>
+                                ))}
+
+                                {/* II Year - render only if exists */}
+                                {course.year2?.length > 0 && (
+                                    <>
+                                        <tr>
+                                            <td colSpan="3" className="px-5 py-3 text-center border  font-semibold letter-space text-[14px]">II Year</td>
                                         </tr>
-                                    ))}
-                                </>
-                            )}
-                        </tbody>
-                    </table>
+                                        {course.year2.map(sub => (
+                                            <tr key={sub.sno}>
+                                                <td className="px-5 py-3  border bg-white font-semibold letter-space text-[14px]">{sub.sno}</td>
+                                                <td className="px-5 py-3  border bg-white font-semibold letter-space text-[14px]">{sub.code}</td>
+                                                <td className="px-5 py-3  border bg-white font-semibold letter-space text-[14px]">{sub.name}</td>
+                                            </tr>
+                                        ))}
+                                    </>
+                                )}
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    {/* Right side sticky form */}
+                    <div className="md:col-span-6 bg-white rounded-3xl p-8 sticky top-6 h-fit ">
+                        <h2 className="text-[30px]  mb-2">Enroll Now!</h2>
+                        <p className=" mb-4">Personal Details</p>
+
+                        <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {/* Full Name */}
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+                                    Full Name <span className="text-red-500">*</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="Enter full name"
+                                    className="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required
+                                />
+                            </div>
+
+                            {/* Mobile No */}
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+                                    Mobile No <span className="text-red-500">*</span>
+                                </label>
+                                <input
+                                    type="tel"
+                                    placeholder="Enter Mobile No"
+                                    className="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required
+                                />
+                            </div>
+
+                            {/* Email */}
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+                                    Email <span className="text-red-500">*</span>
+                                </label>
+                                <input
+                                    type="email"
+                                    placeholder="Enter your Email Id"
+                                    className="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required
+                                />
+                            </div>
+
+                            {/* Qualification */}
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+                                    Qualification <span className="text-red-500">*</span>
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="Enter your Qualification"
+                                    className="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required
+                                />
+                            </div>
+
+                            {/* Message - Full Width */}
+                            <div className="md:col-span-2">
+                                <label className="block text-sm font-medium text-gray-700 mb-1">
+                                    Message
+                                </label>
+                                <textarea
+                                    placeholder="Leave your Message..."
+                                    rows={3}
+                                    className="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                ></textarea>
+                            </div>
+
+                            {/* Submit Button - Full Width */}
+                            <div className="md:col-span-2 flex justify-end">
+                                <button
+                                    type="submit"
+                                    className="btn-diagonal"
+                                >
+                                    Enroll Now
+                                </button>
+                            </div>
+                        </form>
+                    </div>
 
                 </div>
+            </section>
 
-                {/* Right side sticky form */}
-                <div className="md:col-span-6 bg-white rounded-lg p-6 sticky top-6 h-fit ">
-                    <h2 className="text-xl font-bold mb-2">Enroll Now!</h2>
-                    <p className="text-gray-600 mb-4">Personal Details</p>
-
-                    <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        {/* Full Name */}
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
-                                Full Name <span className="text-red-500">*</span>
-                            </label>
-                            <input
-                                type="text"
-                                placeholder="Enter full name"
-                                className="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                required
-                            />
-                        </div>
-
-                        {/* Mobile No */}
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
-                                Mobile No <span className="text-red-500">*</span>
-                            </label>
-                            <input
-                                type="tel"
-                                placeholder="Enter Mobile No"
-                                className="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                required
-                            />
-                        </div>
-
-                        {/* Email */}
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
-                                Email <span className="text-red-500">*</span>
-                            </label>
-                            <input
-                                type="email"
-                                placeholder="Enter your Email Id"
-                                className="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                required
-                            />
-                        </div>
-
-                        {/* Qualification */}
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
-                                Qualification <span className="text-red-500">*</span>
-                            </label>
-                            <input
-                                type="text"
-                                placeholder="Enter your Qualification"
-                                className="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                required
-                            />
-                        </div>
-
-                        {/* Message - Full Width */}
-                        <div className="md:col-span-2">
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
-                                Message
-                            </label>
-                            <textarea
-                                placeholder="Leave your Message..."
-                                rows={3}
-                                className="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            ></textarea>
-                        </div>
-
-                        {/* Submit Button - Full Width */}
-                        <div className="md:col-span-2 flex justify-end">
-                            <button
-                                type="submit"
-                                className="bg-[#2B3990] hover:bg-[#1e2660] text-white py-1 px-6 rounded-full"
-                            >
-                                Enroll Now
-                            </button>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
 
 
         </div>

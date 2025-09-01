@@ -112,7 +112,7 @@ export default function Navbar() {
       </div>
 
       <section   className={cn(
-          "sticky top-0 z-50 py-3  mb-navbar transition-all supports-[backdrop-filter]:bg-background-transparent",
+          "sticky top-0 z-50 mb-navbar transition-all supports-[backdrop-filter]:bg-background-transparent",
           isScrolled
             ? "w-full bg-white text-black"
             : isWhitePage

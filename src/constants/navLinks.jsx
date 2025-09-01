@@ -600,13 +600,13 @@ export const links = [
         subMenu: [
           {
             label: "Ethics Committee",
-            dec: "Postgraduate diploma programs for future medical leaders.",
+            dec: "Guiding medical research with integrity, accountability, and care.",
           },
         ],
       },
       {
         header: "Vocational Degree Courses",
-        hrefs: "/vocational-degree",
+        hrefs: "/vocational-degree-courses",
         image: Diploma,
         hoverImage: Diploma,
         subMenu: [
@@ -618,7 +618,7 @@ export const links = [
       },
       {
         header: "BSS Vocational Courses",
-        hrefs: "/bss-course",
+        hrefs: "/bss-vocational-courses",
         image: Diploma,
         hoverImage: Diploma,
         subMenu: [

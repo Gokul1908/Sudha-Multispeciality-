@@ -102,7 +102,7 @@ const Diplomacourse = () => {
             seats: "Approved Seats : 4 No’s",
             img: Anaesthesia,
             since: "Since 2002",
-            link: '/anesthesio-course-details',
+            link: '/dnb-anaesthesiology',
         },
         {
             title: "DNB – Radio Diagnosis",
@@ -110,7 +110,7 @@ const Diplomacourse = () => {
             seats: "Approved Seats : 4 No’s",
             img: Radiology,
             since: "Since 2002",
-            link: '/anesthesio-course-details',
+            link: '/dnb-radio-diagnosis',
         },
     ];
 
@@ -123,7 +123,7 @@ const Diplomacourse = () => {
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
                     <div className="max-w-7xl mx-auto">
-                        <motion.p
+                        <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4 }}
@@ -131,7 +131,7 @@ const Diplomacourse = () => {
                         >
                             <Breadcrumb items={breadcrumbItems} />
 
-                        </motion.p>
+                        </motion.div>
 
                         <motion.h1
                             initial={{ opacity: 0, y: 10 }}
@@ -307,7 +307,7 @@ const Diplomacourse = () => {
 
                                     <div className="mt-4 border-t pt-6">
                                         <Link href={course.link}>
-                                            <button className="w-full sm:w-auto bg-[#283593] text-white text-sm sm:text-base px-6 sm:px-10 lg:px-16 py-2 sm:py-2.5 rounded-full hover:bg-[#1A237E] transition">
+                                            <button className="btn-diagonal w-75">
                                                 View Details
                                             </button>
                                         </Link>

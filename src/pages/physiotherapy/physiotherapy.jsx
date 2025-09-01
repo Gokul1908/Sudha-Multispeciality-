@@ -65,7 +65,7 @@ function Physiotherapy() {
                             transition={{ duration: 0.5 }}
                             className="text-[44px]  mb-2"
                         >
-                            Physiotherapy
+                            Best Hospital in Erode for Physiotherapy
                         </motion.h1>
 
                         {/* Subtitle */}

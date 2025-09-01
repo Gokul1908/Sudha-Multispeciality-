@@ -66,7 +66,7 @@ function Psychology() {
               transition={{ duration: 0.5 }}
               className="text-[40px]  mb-3"
             >
-              Psychology
+              Best Hospital in Erode for Psychology
             </motion.h1>
 
             {/* Subtitle */}

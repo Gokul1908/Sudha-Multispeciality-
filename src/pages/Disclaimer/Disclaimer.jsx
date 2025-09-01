@@ -35,7 +35,7 @@ const Disclaimer = () => {
                             transition={{ duration: 0.6 }}
                             className="text-[40px] mb-4"
                         >
-                            Disclaimer
+                            Disclaimer and Events
                         </motion.h1>
                     </div>
 

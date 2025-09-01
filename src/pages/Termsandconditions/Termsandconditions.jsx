@@ -37,7 +37,7 @@ const Termsandconditions = () => {
                             transition={{ duration: 0.6 }}
                             className="text-[40px] mb-4"
                         >
-                            Terms & Conditions
+                            Terms and Conditions
                         </motion.h1>
                     </div>
 

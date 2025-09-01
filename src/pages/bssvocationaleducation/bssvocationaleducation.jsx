@@ -17,8 +17,16 @@ import Operation from '@/assets/bssvocationaleducational/operation.png';
 import Ortho from '@/assets/bssvocationaleducational/ortho.png';
 import Highlight1 from "@/assets/bssvocationaleducational/highlight1.png";
 import { courses } from '@/constants/bssCourseDetails';
+import Breadcrumb from "@/components/Breadcrumb";
 
+const breadcrumbItems = [
+    { label: "Home", href: "/" },
+    { label: "Academics", href: "" },
+    { label: "BSS Vocational Courses", href: "/bss-vocational-courses" },
+];
 const course = courses.find(c => c.id === 1);
+
+
 
 
 const VocationalEducation = () => {
@@ -137,14 +145,15 @@ const VocationalEducation = () => {
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
                     <div className="max-w-7xl mx-auto">
-                        <motion.p
+                        <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4 }}
                             className="text-sm mb-2 text-white"
                         >
-                            Home / Academic / BSS Vocational Education
-                        </motion.p>
+                            <Breadcrumb items={breadcrumbItems} />
+
+                        </motion.div>
 
                         <motion.h1
                             initial={{ opacity: 0, y: 10 }}
@@ -152,20 +161,30 @@ const VocationalEducation = () => {
                             transition={{ duration: 0.6 }}
                             className="text-[40px] mb-3"
                         >
-                            BSS Vocational Education
+                            BSS Vocational Courses
                         </motion.h1>
+
+                        <motion.p
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                            className="mb-6 text-white"
+                        >
+                            Your Pathway to Professional Excellence
+                        </motion.p>
+
 
                         <motion.div className='mt-12'
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7 }}
                         >
-                            <Link
+                            {/* <Link
                                 href="#courses"
                                 className="btn-white inline-flex text-[16px] tracking-wide items-center px-7 py-3 bg-white text-[#2B3990] font-semibold rounded-full hover:-translate-y-[3px] transition-transform duration-200"
                             >
                                 Enroll Now <ArrowUpRight className="w-5 h-5" />
-                            </Link>
+                            </Link> */}
                         </motion.div>
                     </div>
 
@@ -186,14 +205,14 @@ const VocationalEducation = () => {
             </section>
 
             {/* All Courses Grid Section */}
-            <section className="py-12 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-7xl mx-auto">
+            <section className=" sm:py-16">
+                <div className="max-w-7xl mx-auto py-16 ">
                     {/* Header */}
-                    <div className="mb-12">
-                        <div className="inline-block mb-4 px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm sm:text-base ">
+                    <div className="mb-12 text-center">
+                        <div className="inline-block mb-3 px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm  ">
                             BSS Vocational Courses
                         </div>
-                        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold pt-3 leading-snug mb-4">
+                        <h2 className="text-[30px] mb-4">
                             Academic Structure & Education Details
                         </h2>
                     </div>
@@ -215,24 +234,24 @@ const VocationalEducation = () => {
                                 />
 
                                 {/* Course Title */}
-                                <h2 className="text-lg font-semibold mt-4">{course.title}</h2>
+                                <h2 className="text-[18px] mt-4">{course.title}</h2>
 
                                 {/* Course Details */}
-                                <p className="text-gray-600 text-sm mt-2">
-                                    <span className="font-medium">Course Code :</span> {course.code}
+                                <p className=" mt-2 mb-2">
+                                    <span className="font-semibold">Course Code :</span> {course.code}
                                 </p>
-                                <p className="text-gray-600 text-sm">
-                                    <span className="font-medium">Education Qualification :</span> {course.qualification}
+                                <p className="mb-2">
+                                    <span className="font-semibold">Education Qualification :</span> {course.qualification}
                                 </p>
-                                <p className="text-gray-600 text-sm">
-                                    <span className="font-medium">Course Duration :</span> {course.duration}
+                                <p className="mb-2">
+                                    <span className="font-semibold">Course Duration :</span> {course.duration}
                                 </p>
 
                                 {/* Spacer to push button down */}
                                 <div className="flex-grow"></div>
                                 <Link
                                     href={`/bss-course/${course.id}`}
-                                    className="block bg-[#2B3990] hover:bg-[#1e2660] text-white py-2 px-4 rounded-full text-center font-medium mt-4"
+                                    className="btn-diagonal w-full mx-auto text-center justify-center mt-5"
                                 >
                                     View Details
                                 </Link>
@@ -244,7 +263,7 @@ const VocationalEducation = () => {
                     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 md:gap-10 items-start">
                             <div className="order-2 md:order-1 md:col-span-6">
-                                <h2 className="text-xl sm:text-2xl md:text-[24px] mb-4 mt-3 sm:mt-5 font-bold">
+                                <h2 className="text-[30px] mb-4">
                                     Highlights of the Course
                                 </h2>
                                 {terms.map((term, idx) => (
@@ -252,7 +271,7 @@ const VocationalEducation = () => {
                                         <div className="flex-shrink-0 mt-1">
                                             <TickCircle className="w-5 h-5 text-[#2B3990]" />
                                         </div>
-                                        <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
+                                        <p className="">
                                             {term}
                                         </p>
                                     </div>
@@ -283,7 +302,7 @@ const VocationalEducation = () => {
 
 
                             <div className="md:col-span-6">
-                                <h2 className="text-2xl md:text-[24px] mb-4 font-bold">
+                                <h2 className="text-[30px] mb-4">
                                     Documents Required with Application
                                 </h2>
                                 {documents.map((doc, idx) => (
@@ -291,7 +310,7 @@ const VocationalEducation = () => {
                                         <div className="flex-shrink-0 mt-1">
                                             <TickCircle className="w-5 h-5 text-[#2B3990]" />
                                         </div>
-                                        <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
+                                        <p className="">
                                             {doc}
                                         </p>
                                     </div>
@@ -302,7 +321,7 @@ const VocationalEducation = () => {
                     </section>
 
                     <div className="order-2 md:order-1 md:col-span-12">
-                        <h2 className="text-xl sm:text-2xl md:text-[24px] mb-4 mt-3 sm:mt-5 font-bold">
+                        <h2 className="text-[30px] mb-3">
                             Important Note :
                         </h2>
                         {notes.map((note, idx) => {
@@ -318,7 +337,7 @@ const VocationalEducation = () => {
                                         (() => {
                                             const parts = note.split("www.sudhahospitals.com");
                                             return (
-                                                <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
+                                                <p className="">
                                                     {parts[0]}
                                                     <a
                                                         href="https://www.sudhahospitals.com"

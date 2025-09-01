@@ -14,7 +14,7 @@ const breadcrumbItems = [
 
     { label: "Post MBBS Diploma Courses (DNB)", href: "/post-mbbs-diploma-courses" },
 
-    { label: "DNB - Anesthesiology", href: "/dnb-anaesthesiology" },
+    { label: "DNB – Radio Diagnosis", href: "/dnb-radio-diagnosis" },
 ];
 
 const TickCircle = () => (
@@ -90,7 +90,7 @@ const AnesthesioCourseDetails = () => {
                             transition={{ duration: 0.6 }}
                             className="text-[40px]  mb-3"
                         >
-                           DNB – Anesthesiology
+                            DNB – Radio Diagnosis
                         </motion.h1>
                         <motion.p
                             initial={{ opacity: 0, y: 10 }}
@@ -98,7 +98,7 @@ const AnesthesioCourseDetails = () => {
                             transition={{ duration: 0.6 }}
                             className="mb-6 text-white"
                         >
-                            Advanced Skills for Critical Care
+                            Training Experts in Diagnostic Excellence
                         </motion.p>
 
                         <motion.div className='mt-12'
@@ -141,33 +141,31 @@ const AnesthesioCourseDetails = () => {
                             <h2 className="text-[30px]  text-[#2d2d8f]">Course Details</h2>
 
                             {/* Anesthesiology */}
-                            <h4 className="text-[22px] ">DNB – Anesthesiology</h4>
+                            <h4 className="text-[22px] ">DNB – Radio Diagnosis</h4>
                             <p className=" ">
-                                Our institute is recognised by the National board of examinations and 5 seats have been allotted from 2018 onwards. Work is equally balanced with
-                                academics. Regular teaching programmes keep our post graduates updated with the latest guidelines and working protocol. Lectures, seminars, symposium,
-                                mockdrills, case presentation and mock examination have helped us achieve 100% results. Our postgraduates participate in State and National level
-                                conferences and presents papers and have won awards.
-                            </p>
-                            <p>
-                                All our post graduates take active participation in teaching Anaesthesia technician trainees and in imparting Basic Life Support classes for nursing and
-                                paramedical personnel in our institute.
-                            </p>
-                            <p>
-                                The department of Anaesthesiology at Sri Ramakrishna Hospital provides comprehensive perioperative care to patients , pain management for both
-                                minimally invasive and complex surgeries.
+                                Sudha Multispeciality Hospital offers a 2-year DNB Post MBBS Diploma course in Radio Diagnosis, accredited by the National Board of Examinations in Medical Sciences (NBEMS). With one approved seat available annually, this programme aims to develop proficient radiologists skilled in the latest imaging techniques and diagnostic practices.
                             </p>
 
-                            <h4 className="text-[22px] ">We Work As A Team</h4>
+                            <div className="mt-4">
+                                <h4 className="text-[22px] ">Our Radiology Department 
+</h4>
+                                <p className="mt-3 ">
+                                    Our Radiology department is equipped with advanced imaging modalities including digital X-ray, ultrasound, CT scan, MRI, and interventional radiology suites. Trainees gain extensive hands-on experience interpreting a wide range of cases, guided by experienced faculty committed to comprehensive clinical and academic training. 
+                                </p>
+                            </div>
+
+
+                            <h4 className="text-[22px] ">Why Choose Our Program? </h4>
                             <ul className="pl-1 space-y-2 text-gray-700 text-sm sm:text-base">
-                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> General surgery</li>
-                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Orthopedics</li>
-                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Obstetric anaesthesia and Anaesthesia for Gynaecological procedures</li>
-                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Otorhinolaryngology</li>
-                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Oro maxillofacial surgery</li>
-                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Paediatric anaesthesia including neonates</li>
+                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> NBEMS accredited 2-year course</li>
+                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Limited seat (1 per year) for focused mentorship </li>
+                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Access to cutting-edge diagnostic technology</li>
+                                
+                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Strong academic curriculum and research opportunities </li>
+                                <li className="flex items-start  gap-2 text-[14px] font-semibold"><TickCircle /> Supportive learning environment with multidisciplinary collaboration</li>
                             </ul>
 
-                            
+
                         </div>
 
                         {/* Right Side Form */}
