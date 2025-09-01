@@ -106,7 +106,7 @@ const Footer = () => {
     },
      {
       name: "Post MBBS Diploma Courses (DNB)",
-      link: "/post-mbbs-diploma-courses",
+      link: "post-mbbs-diploma-courses",
     },
     {
       name: "Ethics Committee",
@@ -114,11 +114,11 @@ const Footer = () => {
     },
     {
       name: "Vocational Degree Courses",
-      link: "/vocational-degree-courses",
+      link: "vocational-degree-courses",
     },
     {
       name: "BSS Vocational Courses",
-      link: "/bss-vocational-courses",
+      link: "bss-vocational-courses",
     },
     
     
@@ -141,7 +141,7 @@ const Footer = () => {
   const importantLinks = [
     { name: "Privacy Policy", link: "privacy-policy" },
     { name: "Terms & Conditions", link: "terms-and-conditions" },
-    { name: "Disclaimer & Events", link: "disclaimer" },
+    { name: "Disclaimer", link: "disclaimer" },
   ];
 
 
