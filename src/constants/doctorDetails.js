@@ -1,4 +1,37 @@
+import Kandasamy from "@/assets/home/doc/kandasamy.webp";
+import Sudhakar from "@/assets/home/doc/sudhakar.webp";
+import Gopinath from "@/assets/home/doc/gopinath.webp";
+import Mohan from "@/assets/home/doc/mohan.webp";
+import Vikram from "@/assets/home/doc/vikram.webp";
+import Nagendran from "@/assets/home/doc/nagendran.webp";
+import Nithiyanandhan from "@/assets/home/doc/nithiyanandhan.webp";
+import Duraikannan from "@/assets/home/doc/duraikannan.webp";
+import Amutha from "@/assets/home/doc/amutha.webp";
+import Balaji from "@/assets/home/doc/balaji.webp";
+import Sangeeth from "@/assets/home/doc/sangeeth.webp";
+import Renuka from "@/assets/home/doc/renuka.webp";
+import Subhashree from "@/assets/home/doc/subhashree.webp";
+import Ganesha from "@/assets/home/doc/ganesha.webp";
+import Sathishkumar from "@/assets/home/doc/sathishkumar.webp";
+import Sathishkumar1 from "@/assets/home/doc/sathishkumar1.webp";
+import Bhuvaneswaran from "@/assets/home/doc/bhuvaneswaran.webp";
+import Murali from "@/assets/home/doc/murali.webp";
+import Vanitha from "@/assets/home/doc/vanitha.webp";
+import Deepika from "@/assets/home/doc/deepika.webp";
+import Gowrishankar from "@/assets/home/doc/gowrishankar.webp";
+import Rangesh from "@/assets/home/doc/rangesh.webp";
+import Anand from "@/assets/home/doc/anand.webp";
+import Sugashwaran from "@/assets/home/doc/sugashwaran.webp";
+import Prabakaran from "@/assets/home/doc/prabakaran.webp";
+import Roopak from "@/assets/home/doc/roopak.webp";
+import Prathap from "@/assets/home/doc/prathap.webp";
+import Praveen from "@/assets/home/doc/praveen.webp";
+import Rajasekar from "@/assets/home/doc/rajasekar.webp";
 
+import Emptydoctor from "@/assets/home/doc/emptydoctor.webp";
+import Nanthetha from "@/assets/home/doc/nanthetha.webp";
+import Aafiaparveen from "@/assets/home/doc/aafiaparveen.webp";
+import Kavinkumar from "@/assets/home/doc/Kavinkumar.webp";
 
 ///Anaesthesis
 import Nithiyanandhan from "../assets/specialites/Anaesthesia/dr.p.nithiyanandhan.webp";
