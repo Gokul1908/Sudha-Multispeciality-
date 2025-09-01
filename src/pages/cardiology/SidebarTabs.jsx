@@ -385,12 +385,12 @@ export default function SidebarTabs() {
   }, []);
 
   return (
-    <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
+    <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8 px-4 sm:px-6 md:px-8 lg:px-0">
 
       {/* Sidebar */}
       <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
-        <div className="bg-white  rounded-2xl p-4 sm:p-6">
+        <div className="bg-white rounded-xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
             Comprehensive Cardiology Care
           </h3>
@@ -435,7 +435,7 @@ export default function SidebarTabs() {
 
         {/* Sudha Hospital Box */}
         <div
-          className="relative rounded-2xl overflow-hidden text-white text-center px-6 py-10"
+          className="relative rounded-2xl overflow-hidden text-white text-center px-8 py-10"
           style={{
             backgroundImage: `linear-gradient(to bottom right, rgba(42, 61, 144, 0.9), rgba(12, 18, 42, 0.9)), url(${Frame.src})`,
             backgroundSize: "cover",
@@ -548,7 +548,7 @@ export default function SidebarTabs() {
             {id === "doctors" && (
               <>
                 <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
-                  <DoctorSlider specialty="Cardiology" counter={2} />
+                  <DoctorSlider specialty="Cardiology" counter={3} />
               </>
             )}
 

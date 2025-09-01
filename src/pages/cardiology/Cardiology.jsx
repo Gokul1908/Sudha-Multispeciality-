@@ -43,7 +43,7 @@ function Cardiology() {
   return (
     <div>
       {/* Banner Section */}
-      <section className="relative px-7  hero-section -mt-28 mb-hero-section">
+      <section className="relative px-7 hero-section -mt-28 mb-hero-section">
         <div
           className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
           style={{ backgroundImage: `url(${Banner.src})` }}

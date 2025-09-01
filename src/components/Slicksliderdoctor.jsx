@@ -36,7 +36,7 @@ export default function DoctorSlider({ specialty, counter }) {
     (doctor) => doctor.speciality === specialty
   );
   const settings = {
-    arrows: counter > 2, // ✅ disables arrows for 1, 2, 3
+    arrows: counter > 3, // ✅ disables arrows for 1, 2, 3
     infinite: true,
     speed: 500,
     slidesToShow: counter,
