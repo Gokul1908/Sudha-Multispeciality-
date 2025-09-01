@@ -6,26 +6,23 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BackgroundIMage from "../../assets/ourteam/find-doctor.webp";
-import { degrees, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import "../Finddoctor/finddoc.css";
-import { ArrowUpRight } from "lucide-react";
-
 import { doctorsData } from "@/constants/doctorDetails";
 import Breadcrumb from "@/components/Breadcrumb";
-
+import { ArrowUpRight } from "lucide-react";
 
 const breadcrumbItems = [
-    { label: "Home", href: "/" },
-    { label: "Find a Doctor", href: "/doctorlist" },
-  ];
-
-
+  { label: "Home", href: "/" },
+  { label: "Find a Doctor", href: "/find-a-doctor" },
+];
 
 export default function Finddoctor() {
   const [selectedSpeciality, setSelectedSpeciality] = useState("");
   const [selectedDoctor, setSelectedDoctor] = useState("");
 
+  // ✅ Filter doctors
   const filteredDoctors = useMemo(() => {
     return doctorsData.filter((doc) => {
       return (
@@ -35,6 +32,7 @@ export default function Finddoctor() {
     });
   }, [selectedSpeciality, selectedDoctor]);
 
+  // ✅ Group doctors by speciality
   const groupedBySpeciality = useMemo(() => {
     const map = new Map();
     filteredDoctors.forEach((doc) => {
@@ -44,6 +42,7 @@ export default function Finddoctor() {
     return map;
   }, [filteredDoctors]);
 
+  // ✅ Doctor names (based on selected speciality)
   const uniqueDoctors = useMemo(() => {
     const filtered = selectedSpeciality
       ? doctorsData.filter((doc) => doc.speciality === selectedSpeciality)
@@ -51,6 +50,7 @@ export default function Finddoctor() {
     return [...new Set(filtered.map((doc) => doc.name))];
   }, [selectedSpeciality]);
 
+  // ✅ Specialities
   const uniqueSpecialities = [
     ...new Set(doctorsData.map((doc) => doc.speciality)),
   ];
@@ -61,6 +61,7 @@ export default function Finddoctor() {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 2 } },
       { breakpoint: 640, settings: { slidesToShow: 1 } },
@@ -69,8 +70,8 @@ export default function Finddoctor() {
 
   return (
     <>
+      {/* Hero Section */}
       <section className="relative px-7 hero-section -mt-28 mb-hero-section">
-        {/* Background Gradient */}
         <div
           className="relative top-6 max-w-full mx-auto px-4 pt-36 pb-24 z-10 text-white bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden min-h-400"
           style={{ backgroundImage: `url(${BackgroundIMage.src})` }}
@@ -83,7 +84,7 @@ export default function Finddoctor() {
               transition={{ duration: 0.4 }}
               className="text-sm mb-4"
             >
-             <Breadcrumb items={breadcrumbItems} />
+              <Breadcrumb items={breadcrumbItems} />
             </motion.div>
 
             {/* Title */}
@@ -91,7 +92,7 @@ export default function Finddoctor() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-[40px]  mb-3"
+              className="text-[40px] mb-3"
             >
               Find a Doctor
             </motion.h1>
@@ -105,14 +106,16 @@ export default function Finddoctor() {
             >
               A Heartfelt Care For Your Heart Care
             </motion.p>
-
-           
           </div>
-          <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+
+          {/* Side Info Box */}
+          <div className="absolute bottom-0 right-0 z-30 hidden md:block">
             <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
               <div className="h-[30%] bg-transparent" />
               <div className="bg-white p-5">
-                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
+                <h3 className="text-[36px] font-extrabold text-[#2B3990]">
+                  40+
+                </h3>
                 <p className="text-[16px] text-black font-bold">
                   Years of Trusted <br />
                   Expertise in <br />
@@ -124,160 +127,123 @@ export default function Finddoctor() {
         </div>
       </section>
 
-      <div className=" max-w-7xl mx-auto pt-16">
-        <div className=" bg-white z-20 w-[50%] absolute p-8 rounded-3xl -mt-28">
-          <div>
-            <h5 className="mb-4 text-[20px]">
-              Find top specialists by department and book your appointment now.
-            </h5>
-            <div className="flex flex-col md:flex-row gap-4 mb-6">
-              <select
-                onChange={(e) => {
-                  setSelectedSpeciality(e.target.value);
-                  setSelectedDoctor(""); // ✅ RESET doctor when speciality changes
-                }}
-                className="border px-4 py-2 rounded-md w-full"
-                value={selectedSpeciality}
-              >
-                <option value="">All Specialities</option>
-                {uniqueSpecialities.map((speciality, i) => (
-                  <option key={i} value={speciality}>
-                    {speciality}
-                  </option>
-                ))}
-              </select>
-              <select
-                value={selectedDoctor}
-                onChange={(e) => setSelectedDoctor(e.target.value)}
-                className="border px-4 py-2 rounded-md w-full"
-                disabled={!selectedSpeciality} // ✅ disable unless a speciality is selected
-              >
-                <option value="">
-                  {selectedSpeciality
-                    ? "All Doctors"
-                    : "Select Speciality First"}
+      {/* Filter Section */}
+      <div className="max-w-7xl mx-auto pt-16">
+        <div className="bg-white z-20 w-[50%] absolute p-8 rounded-3xl -mt-28">
+          <h5 className="mb-4 text-[20px]">
+            Find top specialists by department and book your appointment now.
+          </h5>
+          <div className="flex flex-col md:flex-row gap-4 mb-6">
+            {/* Speciality Filter */}
+            <select
+              onChange={(e) => {
+                setSelectedSpeciality(e.target.value);
+                setSelectedDoctor("");
+              }}
+              className="border px-4 py-2 rounded-md w-full"
+              value={selectedSpeciality}
+            >
+              <option value="">All Specialities</option>
+              {uniqueSpecialities.map((speciality, i) => (
+                <option key={i} value={speciality}>
+                  {speciality}
                 </option>
+              ))}
+            </select>
 
-                {uniqueDoctors.map((name, i) => (
-                  <option key={i} value={name}>
-                    {name}
-                  </option>
-                ))}
-              </select>
-            </div>
+            {/* Doctor Filter */}
+            <select
+              value={selectedDoctor}
+              onChange={(e) => setSelectedDoctor(e.target.value)}
+              className="border px-4 py-2 rounded-md w-full"
+              disabled={!selectedSpeciality}
+            >
+              <option value="">
+                {selectedSpeciality ? "All Doctors" : "Select Speciality First"}
+              </option>
+              {uniqueDoctors.map((name, i) => (
+                <option key={i} value={name}>
+                  {name}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
-
-        
       </div>
-      <div className="max-w-7xl mx-auto  pt-20 sm:py-16">
-          {selectedDoctor ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              {filteredDoctors.map((doc) => (
-                <div
-                  key={doc.id}
-                  className="bg-white finddoc shadow-md rounded-xl p-4 text-center pt-5 relative"
+
+      {/* Doctors List */}
+      <div className="max-w-7xl mx-auto pt-20 sm:py-16">
+        {selectedDoctor ? (
+          // ✅ Single doctor view
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {filteredDoctors.map((doc) => (
+              <div key={doc.id} className="rounded-3xl text-center relative">
+                <Image
+                  src={doc.image}
+                  alt={doc.name}
+                  width={400}
+                  height={400}
+                  className="mx-auto w-full rounded-3xl object-cover"
+                />
+                <h3 className="text-md mt-2 text-[#2B3990]">{doc.name}</h3>
+                <p className="text-sm mt-2 text-gray-600">{doc.qualification}</p>
+
+
+                <Link
+                  href={`/doctor-detail/${doc.id}`}
+                  className="text-[#2B3990] text-[14px] mt-4 font-semibold inline-block"
                 >
-                  <Image
-                    src={doc.image}
-                    alt={doc.name}
-                    className="mx-auto w-[50%] rounded-md object-cover"
-                  />
-                  <h3 className="text-md  mt-2 text-[#2B3990]">
-                    {doc.name}
-                  </h3>
-                  <h3 className="text-md  mt-2 text-[#2B3990]">
-                    {doc.degrees}
-                  </h3>
-                  <p className="text-sm mt-2 text-gray-600">
-                    {doc.qualification}
-                  </p>
-                  <p className="text-sm mt-3 text-gray-600">{doc.degrees}</p>
-
-                  <h2 className="text-[#2B3990] mt-8 font-semibold">
-                    Book an Appointment{" "}
-                  </h2>
-
-                  {/* Arrow Button */}
-                  <Link
-                    href={`/doctor-detail/${doc.id}`}
-                    className="absolute bottom-24 right-1 w-8 h-8 rounded-full bg-white flex items-center justify-center z-30 shadow-md group "
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-4 h-4 text-black transform transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 7L7 17M7 7h10v10"
+                  Book an Appointment
+                </Link>
+              </div>
+            ))}
+          </div>
+        ) : (
+          // ✅ Grouped by speciality view
+          [...groupedBySpeciality.entries()].map(([speciality, doctors]) => (
+            <div key={speciality} className="mb-8">
+              <h2 className="text-[24px]  text-[#2B3990] mb-4 mt-16">
+                {speciality}
+              </h2>
+              <Slider {...sliderSettings}>
+                {doctors.map((doc) => (
+                  <div key={doc.id} className="pr-4">
+                    <div className="bg-white h-[520px] rounded-2xl text-start relative">
+                      <Image
+                        src={doc.image}
+                        alt={doc.name}
+                        width={300}
+                        height={300}
+                        className="mx-auto w-[100%] h-[320px] rounded-t-2xl object-cover"
                       />
-                    </svg>
-                  </Link>
-                </div>
-              ))}
-            </div>
-          ) : (
-            [...groupedBySpeciality.entries()].map(([speciality, doctors]) => (
-              <div key={speciality} className="mb-8">
-                <h2 className="text-xl font-semibold text-[#2B3990] mb-4">
-                  {speciality}
-                </h2>
-                <Slider {...sliderSettings}>
-                  {doctors.map((doc) => (
-                    <div key={doc.id} className="px-3">
-                      <div className="bg-white finddoc rounded-xl p-4 text-start relative">
-                        <Image
-                          src={doc.image}
-                          alt={doc.name}
-                          className="mx-auto w-[70%] rounded-md object-cover"
-                        />
-                        <h3 className="text-md font-bold mt-2  text-[#2B3990]">
-                          {doc.name}
-                        </h3>
+                      <div className="p-6 flex flex-col justify-between">
+                        <div className="">
+                          <h3 className="text-md   text-[#2B3990]">
+                            {doc.name}
+                          </h3>
+                          <p className="text-sm mt-2 ">
+                            {doc.qualification}
+                          </p>
+                        </div>
 
-                        <p className="text-sm mt-2 text-gray-600">
-                          {doc.qualification}
-                        </p>
-                        <p className="text-sm mt-3 text-gray-600">
-                          {doc.degrees}
-                        </p>
-                        <h2 className="text-[#2B3990] mt-8 font-semibold">
-                          Book an Appointment{" "}
-                        </h2>
-
-                        {/* Arrow Button */}
-                        <Link
-                           href={`/doctor-detail/${doc.id}`}
-                          className="absolute bottom-2 right-1 w-8 h-8 rounded-full bg-white flex items-center justify-center z-30 shadow-md group "
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-4 h-4 text-black transform transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
+                        <div className="absolute bottom-6 ">
+                          <Link
+                            href="#contactus"
+                            className="btn-diagonal-outline px-8  w-full mt-8"
                           >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M17 7L7 17M7 7h10v10"
-                            />
-                          </svg>
-                        </Link>
+                            Book an Appointment <ArrowUpRight className="w-5 h-5" />
+                          </Link>
+                        </div>
+
                       </div>
                     </div>
-                  ))}
-                </Slider>
-              </div>
-            ))
-          )}
-        </div>
+                  </div>
+                ))}
+              </Slider>
+            </div>
+          ))
+        )}
+      </div>
     </>
   );
 }

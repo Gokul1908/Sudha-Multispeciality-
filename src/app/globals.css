@@ -658,3 +658,72 @@ select ,textarea {
 }
 
 
+
+.btn-diagonal-outline{
+  position: relative;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: transparent;
+    color: #2B3990;
+    border:1px solid #2B3990!important;
+    border-radius: 9999px;
+    padding: 0.75rem 1.75rem;
+    letter-spacing: 0.3px;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+    z-index: 0;
+    gap: 0.5rem;
+    width:100%;
+    text-align:center;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+.btn-diagonal-outline::before,
+.btn-diagonal-outline::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #2B3990;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-diagonal-outline::before {
+    top: 0;
+    right: 0;
+    border-left: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-top: 0px solid #ffffff;
+    border-right: 0px solid #ffffff;
+}
+
+.btn-diagonal-outline::after {
+    bottom: 0;
+    left: 0;
+    border-right: 0px solid transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid #2B3990;
+    border-left: 0px solid #2B3990;
+}
+
+.btn-diagonal-outline:hover {
+    color: #ffffff;
+    background-color: #2B3990!important;
+    box-shadow:0px 10px 20px 5px rgba(0, 0, 0, 0.07);
+
+}
+
+.btn-diagonal-outline:hover::before {
+    border-left: 200px solid transparent;
+    border-bottom: 100px solid transparent;
+}
+
+.btn-diagonal-outline:hover::after {
+    border-right: 200px solid transparent;
+    border-top: 100px solid transparent;
+}

@@ -5,23 +5,24 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import { ArrowUpRight } from "lucide-react";
 import docImg from "../assets/home/doc/shyla.jpg";
+import Link from "next/link";
 
 const doctors = [
   {
-    name: "Dr. U. Shyla",
-    title: "Preventive Cardiologist",
+    name: "Dr.Kumaravel Pandiyan",
+    qualification: "DA Anaesthesia",
     image: docImg,
   },
   {
     name: "Dr. U. Shyla",
-    title: "DNB Cardiologist",
+    qualification: "DNB Cardiologist",
     image: docImg,
   },
   {
     name: "Dr. U. Shyla",
-    title: "Interventional Cardiologist",
+    qualification: "Interventional Cardiologist",
     image: docImg,
   },
 ];
@@ -70,26 +71,37 @@ export default function DoctorSlider() {
   };
 
   return (
-    <div className="relative bg-[#f0f7ff] py-10 px-4 md:px-8 max-w-4xl mx-auto">
+    <div className="relative bg-[#f0f7ff] pt-4  max-w-4xl mx-auto">
       <Slider {...settings}>
         {doctors.map((doc, index) => (
-          <div key={index} className="">
-            <div className=" rounded-2xl  text-center relative h-full flex gap-4 flex-col items-center justify-between">
-              <div className="ourteamcard_img_one w-[100%] ">
-                <Image
-                  src={doc.image}
-                  alt={doc.name}
-                  className="mx-auto rounded-lg  mb-2 w-[90%] "
-                />
-              </div>
-              <div>
-                <h3 className="text-[#2B3990] text-base font-semibold mt-4">
-                  {doc.name}
-                </h3>
-                <p className="text-sm text-black">{doc.title}</p>
-              </div>
-              <div className="absolute bottom-4 right-4">
-                {/* Calendar icon here if needed */}
+          <div key={index} className="pr-4">
+            <div className="bg-white h-[520px] rounded-2xl text-start relative">
+              <Image
+                src={doc.image}
+                alt={doc.name}
+                width={300}
+                height={300}
+                className="mx-auto w-[100%] h-[320px] rounded-t-2xl object-cover"
+              />
+              <div className="p-6 flex flex-col justify-between">
+                <div className="">
+                  <h3 className="text-md   text-[#2B3990]">
+                    {doc.name}
+                  </h3>
+                  <p className="text-sm mt-2 ">
+                    {doc.qualification}
+                  </p>
+                </div>
+
+                <div className="absolute bottom-6 ">
+                  <Link
+                    href="#contactus"
+                    className="btn-diagonal-outline w-full mt-8"
+                  >
+                    Book an Appointment <ArrowUpRight className="w-5 h-5" />
+                  </Link>
+                </div>
+
               </div>
             </div>
           </div>
