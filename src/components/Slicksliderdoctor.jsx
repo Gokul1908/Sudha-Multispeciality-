@@ -5,27 +5,9 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { doctorsData } from "@/constants/doctorDetails";
 import { ArrowUpRight } from "lucide-react";
-import docImg from "../assets/home/doc/shyla.jpg";
 import Link from "next/link";
-
-const doctors = [
-  {
-    name: "Dr.Kumaravel Pandiyan",
-    qualification: "DA Anaesthesia",
-    image: docImg,
-  },
-  {
-    name: "Dr. U. Shyla",
-    qualification: "DNB Cardiologist",
-    image: docImg,
-  },
-  {
-    name: "Dr. U. Shyla",
-    qualification: "Interventional Cardiologist",
-    image: docImg,
-  },
-];
 
 function NextArrow({ onClick }) {
   return (
@@ -49,64 +31,75 @@ function PrevArrow({ onClick }) {
   );
 }
 
-export default function DoctorSlider() {
+export default function DoctorSlider({ specialty, counter }) {
+  const filteredDoctors = doctorsData.filter(
+    (doctor) => doctor.speciality === specialty
+  );
   const settings = {
-    dots: false,
+    arrows: counter > 2, // ✅ disables arrows for 1, 2, 3
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: counter,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
-        settings: { slidesToShow: 2 },
+        settings: {
+          slidesToShow: Math.min(filteredDoctors.length, 2),
+        },
       },
       {
         breakpoint: 768,
-        settings: { slidesToShow: 2 },
+        settings: {
+          slidesToShow: 1,
+        },
       },
     ],
   };
 
   return (
-    <div className="relative bg-[#f0f7ff] pt-4  max-w-4xl mx-auto">
+    <div className="relative bg-[#f0f7ff] py-6   max-w-4xl mx-auto">
       <Slider {...settings}>
-        {doctors.map((doc, index) => (
-          <div key={index} className="pr-4">
+        {filteredDoctors.map((doc, index) => (
+          <div key={index} className="px-3">
             <div className="bg-white h-[520px] rounded-2xl text-start relative">
-              <Image
-                src={doc.image}
-                alt={doc.name}
-                width={300}
-                height={300}
-                className="mx-auto w-[100%] h-[320px] rounded-t-2xl object-cover"
-              />
+              <div className=" self-start">
+                <Image
+                  src={doc.image}
+                  alt={doc.name}
+                  width={300}
+                  height={300}
+                  className="mx-auto w-[100%] h-[320px] rounded-t-2xl object-cover"
+                />
+              </div>
+
+
               <div className="p-6 flex flex-col justify-between">
+                {/* Text centered below */}
                 <div className="">
                   <h3 className="text-md   text-[#2B3990]">
                     {doc.name}
                   </h3>
                   <p className="text-sm mt-2 ">
-                    {doc.qualification}
+                    {doc.degrees}
                   </p>
                 </div>
-
                 <div className="absolute bottom-6 ">
                   <Link
-                    href="#contactus"
-                    className="btn-diagonal-outline w-full mt-8"
-                  >
-                    Book an Appointment <ArrowUpRight className="w-5 h-5" />
+                    href={`/doctor-detail/${doc.id}`}
+                    className="btn-diagonal-outline px-8  w-full mt-8" >
+                    View Profile <ArrowUpRight className="w-5 h-5" />
+
                   </Link>
                 </div>
-
               </div>
             </div>
           </div>
-        ))}
-      </Slider>
-    </div>
+        ))
+        }
+      </Slider >
+    </div >
   );
 }

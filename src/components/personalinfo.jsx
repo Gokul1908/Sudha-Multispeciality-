@@ -4,6 +4,7 @@ import RegistrationForm from './Appointment';
 import Tick from '../assets/doctordetails/check.png';
 import Image from "next/image";
 import { motion } from 'framer-motion';
+import Checklight from "@/assets/home/check-light.svg";
 
 const Personalinfo = ({ doctor }) => {
   if (!doctor) {
@@ -15,19 +16,19 @@ const Personalinfo = ({ doctor }) => {
       {/* Personal Details */}
       {doctor.personalDetails && (
         <motion.div className="pb-10" initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} viewport={{ once: false }}>
-          <h1 className="text-xl text-black font-bold">{doctor.personalDetails.title}</h1>
-          <p className="text-[#5E566A] text-md font-medium mt-4">{doctor.personalDetails.description}</p>
+          <h3 className="text-[24px] ">{doctor.personalDetails.title}</h3>
+          <p className=" mt-4">{doctor.personalDetails.description}</p>
         </motion.div>
       )}
 
       {/* Clinical Expertise */}
       {doctor.clinicalExpertise && (
         <motion.div className="pb-10" initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} viewport={{ once: false }}>
-          <h1 className="text-xl text-black font-bold">{doctor.clinicalExpertise.title}</h1>
-          <ul className="text-[#5E566A] text-md font-medium">
+          <h1 className="text-[24px]">{doctor.clinicalExpertise.title}</h1>
+          <ul className="mt-4 font-semibold text-[#5E566A] text-[15px]">
             {doctor.clinicalExpertise.list.map((item, index) => (
               <li key={index} className="flex items-center gap-5 pb-3 mt-2">
-                <Image src={Tick} alt="tick" />
+                <Image src={Checklight} alt="tick" />
                 <span>{item}</span>
               </li>
             ))}
@@ -38,11 +39,11 @@ const Personalinfo = ({ doctor }) => {
       {/* Research and Publications */}
       {doctor.researchandpublications && (
         <motion.div className="pb-10" initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} viewport={{ once: false }}>
-          <h1 className="text-xl text-black font-bold">{doctor.researchandpublications.title}</h1>
-          <ul className="text-[#5E566A] text-md font-medium">
+          <h1 className="text-[24px]">{doctor.researchandpublications.title}</h1>
+          <ul className="mt-4 font-semibold text-[#5E566A] text-[15px]">
             {doctor.researchandpublications.list.map((item, index) => (
               <li key={index} className="flex items-center gap-5 pb-3 mt-2">
-                <Image src={Tick} alt="tick" />
+                <Image src={Checklight} alt="tick" />
                 <span>{item}</span>
               </li>
             ))}
@@ -53,11 +54,11 @@ const Personalinfo = ({ doctor }) => {
       {/* Awards */}
       {doctor.awards && (
         <motion.div className="pb-10" initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7 }} viewport={{ once: false }}>
-          <h1 className="text-xl text-black font-bold">{doctor.awards.title}</h1>
-          <ul className="text-[#5E566A] text-md font-medium">
+          <h1 className="text-[24px]">{doctor.awards.title}</h1>
+          <ul className=" mt-4 font-semibold text-[#5E566A] text-[15px]">
             {doctor.awards.list.map((item, index) => (
-              <li key={index} className="flex items-center gap-5 pb-3 mt-2">
-                <Image src={Tick} alt="tick" />
+              <li key={index} className="flex items-center gap-5 pb-3 mt-2 ">
+                <Image src={Checklight} alt="tick" />
                 <span>{item}</span>
               </li>
             ))}
