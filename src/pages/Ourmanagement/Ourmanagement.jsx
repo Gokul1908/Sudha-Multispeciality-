@@ -184,10 +184,10 @@ const Ourmanagement = () => {
           <h1 className='text-[#000000] text-[30px]  pb-5'>Chairman’s Message</h1>
           <p className='text-[#2B3990] text-sm md:text-base font-semibold pb-5'> "My dream was to ensure no one had to leave my hometown for quality medical care"</p>
           <p className='pb-5'>
-            Sudha Hospitals has proudly served people for more than four decades, offering dependable, cost-effective, ethical, compassionate, advanced, inclusive, and patient-centred care. Our strength lies in the unwavering dedication of our doctors, nurses, and paramedical staff, whose service continues to earn trust and admiration across generations.
+            Sudha Hospitals has proudly served people for more than four decades, offering dependable, cost-effective, ethical, compassionate, advanced, inclusive, and patient-centred care. Our strength lies in the unwavering dedication of our doctors, nurses, and paramedical staff, whose service continues to earn trust and admiration across generations. 
           </p>
           <p className=''>
-            We have always delivered, and will continue to deliver, healthcare that people can rely on with trust and confidence through evolving technologies, continuous learning, compassionate service, and an unwavering commitment to improving lives every day.
+           We have always delivered, and will continue to deliver, healthcare that people can rely on with trust and confidence through evolving technologies, continuous learning, compassionate service, and an unwavering commitment to improving lives every day. 
           </p>
         </div>
       </div>

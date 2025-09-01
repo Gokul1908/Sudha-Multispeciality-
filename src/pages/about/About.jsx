@@ -180,7 +180,7 @@ function Aboutus() {
               Sudha Multispeciality Hospital
             </h2>
             <p className="">
-              Established in 1985 by Dr. D. Kandasamy, Sudha Multispeciality Hospital was born out of a vision to bring world-class healthcare to his homeland. With a strong commitment to serve, he began with a heart care centre in Erode, focusing on cardiac health. As community trust grew, the hospital expanded to include specialised services in mother and childcare. Building on its reputation for quality and compassion, Sudha Hospitals further broadened its expertise into fertility care and multispeciality services. Today, it stands as one of South India’s leading centres for multispeciality care, mother and child health, and fertility treatment.
+              Established in 1985 by Dr. D. Kandasamy, Sudha Multispeciality Hospital was born out of a vision to bring world-class healthcare to his homeland. With a strong commitment to serve, he began with a heart care centre in Erode, focusing on cardiac health. As community trust grew, the hospital expanded to include specialised services in mother and childcare. Building on its reputation for quality and compassion, Sudha Hospitals further broadened its expertise into fertility care and multispeciality services. Today, it stands as one of South India’s leading centres for multispeciality care, mother and child health, and fertility treatment. 
             </p>
           </motion.div>
 
@@ -211,7 +211,7 @@ function Aboutus() {
               Our Growth Story
             </h2>
             <p className=" text-white mt-4 mb-6 ">
-              Sudha Hospitals was established as a single speciality hospital focusing on cardiology in Erode in 1985. Dr. D. Kandaswamy began the hospital with just 20 beds. Over the years Sudha Hospital spread its wings in Mother and childcare, Multispeciality, and Fertility care.
+             Sudha Hospitals was established as a single speciality hospital focusing on cardiology in Erode in 1985. Dr. D. Kandaswamy began the hospital with just 20 beds. Over the years Sudha Hospital spread its wings in Mother and childcare, Multispeciality, and Fertility care.
             </p>
           </div>
 
@@ -255,7 +255,7 @@ function Aboutus() {
                 Dr. D. Kandaswamy, the visionary behind the legacy of Sudha Multispeciality Hospital.
               </span>
             </p>
-            <p className="">With the incredible experience of 50+ years our founder has envisioned to start a hospital identifying the critical need in his native land. Dr. D. Kandaswamy MD, DTCD Preventive Cardiologist wanted to provide quality healthcare for heart in Erode which resulted in establishment of Sudha Hospitals in 1985. He is widely respected for his foresight in preventive healthcare and early diagnosis. Under his leadership, the hospital has grown into a centre of excellence across specialties. He has received multiple recognitions for his lifelong service to the medical field. His commitment to ethical, patient-first care remains the foundation of our values. To this day, he remains actively involved in shaping the future of the institution. </p>
+            <p className="">With the incredible experience of 50+ years our founder has envisioned to start a hospital identifying the critical need in his native land. Dr. D. Kandaswamy MD, DTCD Preventive Cardiologist wanted to provide quality healthcare for heart in Erode which resulted in establishment of Sudha Hospitals in 1985. He is widely respected for his foresight in preventive healthcare and early diagnosis. Under his leadership, the hospital has grown into a centre of excellence across specialties. He has received multiple recognitions for his lifelong service to the medical field. His commitment to ethical, patient-first care remains the foundation of our values. To this day, he remains actively involved in shaping the future of the institution.  </p>
           </div>
         </div>
       </section>
@@ -277,9 +277,7 @@ function Aboutus() {
             <div className="bg-[#CBE1FB] rounded-2xl p-8 text-left">
               <h3 className="text-[20px] mb-3">Our Vision</h3>
               <p className="text-black text-[14px]">
-                Become a trusted healthcare leader by providing compassionate,
-                advanced, and accessible care, empowering healthier communities
-                through excellence and innovation.
+                Become a trusted healthcare leader by providing compassionate, advanced, and accessible care, empowering healthier communities through excellence and innovation. 
               </p>
             </div>
 
@@ -287,9 +285,7 @@ function Aboutus() {
             <div className="bg-[#D5F2E3] rounded-2xl p-8 text-left">
               <h3 className="text-[20px] mb-3">Our Mission</h3>
               <p className="text-black text-[14px]">
-                To make quality healthcare accessible by blending innovation,
-                medical excellence, and compassion while ensuring value-driven
-                treatment for all.
+                To make quality healthcare accessible by blending innovation, medical excellence, and compassion while ensuring value-driven treatment for all. 
               </p>
             </div>
 
@@ -297,8 +293,7 @@ function Aboutus() {
             <div className="bg-[#DAD3F9] rounded-2xl p-8 text-left">
               <h3 className="text-[20px] mb-3">Our Values</h3>
               <p className="text-black text-[14px]">
-                We believe in ethical care, compassion, medical excellence, respect,
-                innovation, teamwork, and putting every patient’s needs at the heart.
+                We believe in ethical care, compassion, medical excellence, respect, innovation, teamwork, and putting every patient’s needs at the heart. 
               </p>
             </div>
           </div>

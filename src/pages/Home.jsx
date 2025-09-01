@@ -56,8 +56,8 @@ const cards = [
     icon: cardtwo,
     title: (
       <p className="text-md font-extrabold text-black">
-        <span className="text-[#2b3990] font-extrabold"> Sudha </span> <br />
-        Master Health Check Up
+        Master <span className="text-[#2b3990] font-extrabold"> Health  </span>   <br />Check Up
+         
       </p>
     ),
     link: "/maternity",

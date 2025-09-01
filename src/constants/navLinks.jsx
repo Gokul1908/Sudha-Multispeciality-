@@ -104,18 +104,18 @@ export const links = [
           },
         ],
       },
-      {
-        header: "Infrastructure",
-        hrefs: "/infrastructure",
-        image: Infracstructure,
-        hoverImage: Infracstructure,
-        subMenu: [
-          {
-            label: "Infrastructure",
-            dec: "Cutting-edge facilities. International standards",
-          },
-        ],
-      },
+      // {
+      //   header: "Infrastructure",
+      //   hrefs: "/infrastructure",
+      //   image: Infracstructure,
+      //   hoverImage: Infracstructure,
+      //   subMenu: [
+      //     {
+      //       label: "Infrastructure",
+      //       dec: "Cutting-edge facilities. International standards",
+      //     },
+      //   ],
+      // },
       {
         header: "Why Sudha?",
         hrefs: "/why-sudha",
@@ -527,7 +527,7 @@ export const links = [
       {
         header: "Health Package",
         hrefs: "/health-packages",
-         image: Health,
+        image: Health,
         hoverImage: Health,
         subMenu: [
           {
@@ -565,9 +565,9 @@ export const links = [
     imagestatic: Academics,
     navImage: "",
     caption: "Kids Snowboarding",
-   
+
     subLinks: [
-      
+
       {
         header: "Fellow of National Board (FNB) ",
         hrefs: "/fellow-of-national-board",
@@ -612,7 +612,7 @@ export const links = [
         subMenu: [
           {
             label: "Vocational Degree Courses",
-            dec: "Postgraduate diploma programs for future medical leaders.",
+            dec: "Building Healthcare Careers with Expertise.",
           },
         ],
       },
@@ -624,7 +624,7 @@ export const links = [
         subMenu: [
           {
             label: "Post MBBS Diploma Courses (DNB )",
-            dec: "Government-recognized training for skilled healthcare careers.",
+            dec: "Government-recognized training for skilled healthcare careers",
           },
         ],
       },
@@ -664,7 +664,7 @@ export const links = [
           },
         ],
       },
-     
+
 
       // {
       //   header: "Bio-medical Report",
@@ -678,7 +678,7 @@ export const links = [
       //     },
       //   ],
       // },
-       {
+      {
         header: "Blogs ",
         hrefs: "/",
         image: Blogs,
@@ -702,7 +702,7 @@ export const links = [
           },
         ],
       },
-      
+
     ],
   },
 

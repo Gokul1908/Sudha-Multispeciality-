@@ -110,19 +110,19 @@ const accordionData = [
     title: "Affordability ",
     img: imgthree,
     content:
-      "We believe quality care shouldn’t be a luxury. That’s why we offer treatments that are both advanced and affordable, so that every family can access the best without compromise. ",
+      "We believe quality care shouldn’t be a luxury. That’s why we offer treatments that are both advanced and affordable, so that every family can access the best without compromise.  ",
   },
   {
     title: "Cutting Edge Technology",
     img: imgfour,
     content:
-      "Equipped with world-class infrastructure and the latest medical technologies, Sudha ensures precise diagnosis, effective treatments, and faster recovery. We bring tomorrow’s healthcare to you, today. ",
+      "Equipped with world-class infrastructure and the latest medical technologies, Sudha ensures precise diagnosis, effective treatments, and faster recovery. We bring tomorrow’s healthcare to you, today.  ",
   },
   {
     title: "Care Beyond Treatment ",
     img: imgfive,
     content:
-      "At Sudha, healing is not just about procedures, it’s about people. We treat every patient like family, offering kindness, patience, and heartfelt support at every step. From a gentle smile to a reassuring word, our team ensures your journey to wellness feels comforting, safe, and truly cared for. ",
+      "At Sudha, healing is not just about procedures, it’s about people. We treat every patient like family, offering kindness, patience, and heartfelt support at every step. From a gentle smile to a reassuring word, our team ensures your journey to wellness feels comforting, safe, and truly cared for.  ",
   },
 ];
 
@@ -300,13 +300,7 @@ function Whysudha() {
             </span>
             <h2 className="text-[30px] font-bold mb-4">Sudha Overview?</h2>
             <p>
-              Sudha Multispeciality Hospital in Erode was established in 1985 by the
-              Kandasamy Charitable Trust to care for Women and Children. Since then,
-              this institution has grown to encompass the entire spectrum of multi
-              specialties of healthcare under one roof. Being the most renowned,
-              trusted and the best hospital in Erode, we take utmost care in treating
-              the people with the most advanced technologies that help people to
-              recover quickly.
+              Sudha Multispeciality Hospital holds a record of serving more than four decades in the healthcare industry yearning the trust of lakhs of families. With the motherly care from the heart, we serve every people visit our doors with the best treatments for their healthcare needs. We don’t just treat people with medicines; we serve them with kind and compassionate care along with advanced treatments to help people recover quickly. 
             </p>
           </motion.div>
 

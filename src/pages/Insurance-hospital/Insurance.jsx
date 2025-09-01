@@ -43,10 +43,10 @@ const Insurance = () => {
   const [active, setActive] = useState("Planned Admission");
 
   const buttons = [
-    "Planned Admission",
-    "Emergency Admission",
-    "Hospitalisation",
-    "Pre-Authorisation",
+    "ECHS ",
+    "Railway Scheme ",
+    "ESI ",
+    "Government Employees/Pensioners ",
     "Discharge Process",
   ];
 
@@ -57,40 +57,33 @@ const Insurance = () => {
       description:
         (
           <>
-            <h3 className="text-[26px] text-black mb-3"> Planned Admission</h3>
-            <p className="mb-3">For scheduled treatments, patients can visit Sudha Hospital with their CMCHIS–PMJAY card, valid ID proof, and referral if available. Our front office and insurance desk will assist with initial registration and eligibility verification. </p>
-            <p className="mb-3">Once the treating doctor confirms the need for hospitalization, our insurance coordinator prepares a pre-authorization request. This includes a summary of the diagnosis, treatment plan, and estimated cost. </p>
-            <p className="mb-3">The request is sent to the insurance authority for approval. Once approved, the admission process is completed, and patients are admitted without any upfront payment. Our goal is to ensure a smooth and informed experience from the very beginning.  </p>
+            <h3 className="text-[26px] text-black mb-3"> ECHS </h3>
+            <p className="mb-3">ECHS patients must come with a valid referral form issued by their respective polyclinic. It is compulsory to carry their ECHS medical ID card at the time of consultation or treatment. The referral and ID card together confirm their eligibility under the scheme. Without these, services cannot be extended. Patients are advised to ensure all documents are up to date and presented for smooth and uninterrupted medical care at the hospital. </p>
+            
           </>
         ),
     },
     {
       image: Emergency, description: (
         <>
-          <h3 className="text-[26px] text-black mb-3"> Emergency Admission</h3>
-          <p className="mb-3">In medical emergencies, Sudha Hospital prioritizes immediate treatment. Patients are admitted right away, and the clinical team starts providing care without waiting for formalities. </p>
-          <p className="mb-3">The insurance desk ensures that all treatments and services provided align with CMCHIS–PMJAY scheme guidelines. Any updates or extensions to the treatment plan are documented and submitted if needed.   </p>
-          <p className="mb-3">The insurance coordinator follows up closely to ensure swift approval from the concerned authority. This allows patients to access urgent care under the scheme without delay or financial burden during critical times.   </p>
+          <h3 className="text-[26px] text-black mb-3"> Railway Scheme</h3>
+          <p className="mb-3">Patients under the Railway Scheme need a referral form provided by their designated railway hospital before visiting. Along with the referral, they must bring their official railway medical ID card for verification. This process ensures proper eligibility under the scheme and allows timely access to healthcare services. Patients should verify that both documents are valid and up to date to avoid delays, making their hospital visits easier and hassle-free for treatment.  </p>
         </>
       ),
     },
     {
       image: hospitalize, description: (
         <>
-          <h3 className="text-[26px] text-black mb-3"> Hospitalisation</h3>
-          <p className="mb-3">During hospitalization, patients continue to receive expert medical care as per the approved treatment plan. Our doctors and nurses monitor the patient closely to ensure effective recovery. </p>
-          <p className="mb-3">The insurance desk ensures that all treatments and services provided align with CMCHIS–PMJAY scheme guidelines. Any updates or extensions to the treatment plan are documented and submitted if needed. </p>
-          <p className="mb-3">Throughout the hospital stay, our staff remains available to answer patient and family queries. We focus on both medical excellence and a supportive environment to promote healing.  </p>
+          <h3 className="text-[26px] text-black mb-3"> ESI </h3>
+          <p className="mb-3">ESI patients are required to present their official medical ID card whenever they visit the hospital for treatment. This card serves as proof of enrollment under the Employees’ State Insurance scheme and confirms their entitlement to healthcare benefits. Without this ID card, patients may face delays in availing services. They are advised to carry the card at every visit, ensuring smooth verification and quick access to the necessary consultations, procedures, or treatments provided under ESI. </p>
         </>
       ),
     },
     {
       image: Preauth, description: (
         <>
-          <h3 className="text-[26px] text-black mb-3"> Pre-Authorisation</h3>
-          <p className="mb-3">Pre-authorization is a mandatory step before cashless treatment begins. Once a diagnosis is made, the treating doctor prepares a clinical summary and treatment recommendation.  </p>
-          <p className="mb-3">This information, along with patient details and required documents, is compiled and submitted to the CMCHIS–PMJAY approval authority through the online portal.  </p>
-          <p className="mb-3">Our insurance coordinator follows up regularly to expedite the approval process. Once clearance is received, the patient is notified, and treatment can proceed without upfront payment concerns.  </p>
+          <h3 className="text-[26px] text-black mb-3"> Government Employees/Pensioners </h3>
+          <p className="mb-3">Government employees and pensioners should carry either their medical ID card or Annexure form during their hospital visit. Along with this, the Aadhaar card of the primary insured person is mandatory. Employees still in service must also submit their last two months’ payslips to validate eligibility. These documents are essential for availing benefits under the scheme. Carrying all required papers ensures smooth processing, faster verification, and access to entitled medical care without unnecessary delays or rejections.   </p>
         </>
       ),
     },
@@ -182,7 +175,7 @@ const Insurance = () => {
 
       <div className="max-w-7xl mx-auto px-4 pt-20 pb-16 h-full">
         <div className="flex flex-col md:flex-row items-center justify-center py-16">
-          {/* Left: Text Section */}
+        
           <div className="w-full md:w-1/2  h-full">
             <div className="font-semibold text-blue-800 bg-white inline-block px-5  py-2 rounded-full mb-3">
               Insurance
@@ -191,11 +184,11 @@ const Insurance = () => {
               Insurance Support
             </h2>
             <p className="">
-              Sudha Hospital is empanelled with various health insurance schemes, offering eligible patients the benefit of cashless treatment. Our dedicated insurance support team ensures smooth coordination and assistance throughout the process, from verifying eligibility and obtaining approvals to managing documentation. We are committed to providing accessible, affordable care while helping patients and families focus on recovery without the stress of financial procedures. For more details, kindly contact our insurance helpdesk.
+              Sudha Hospital is empanelled with various health insurance schemes, offering eligible patients the benefit of cashless treatment. Our dedicated insurance support team ensures smooth coordination and assistance throughout the process, from verifying eligibility and obtaining approvals to managing documentation. We are committed to providing accessible, affordable care while helping patients and families focus on recovery without the stress of financial procedures. For more details, kindly contact our insurance helpdesk. 
             </p>
           </div>
 
-          {/* Right: Image Section */}
+         
           <div className="w-full md:w-1/2 mx-auto flex items-end  justify-end">
             <Image
               src={Patient}

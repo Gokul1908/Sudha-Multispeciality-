@@ -10,28 +10,29 @@ import Link from 'next/link';
 const Executiveteam = () => {
 
     const team = [
+            { image: Doctor3, post: "Managing Director", name: "Dr. K. Sudhakar MD, DNB", specilist: "Cardiologist" },
         { image: Doctor1, post: "President", name: "Dr. S. Dhanabagyam MD, (Og), ART", specilist: "IVF & ART Specialist" },
         { image: Doctor2, post: "President", name: "Dr. S. Pradeepa DGO, DNB(OG), MNAMS, FICOG", specilist: "IVF & ART Specialist" },
-        { image: Doctor3, post: "Managing Director", name: "Dr. K. Sudhakar MD, DNB", specilist: "Cardiologist" },
+    
     ]
 
     return (
         <div>
-            <div className='flex flex-wrap justify-center gap-[100px]'>
+            <div className='flex flex-wrap justify-between '>
                 {team.map((value, index) => (
                     <div
                         key={index}
-                        className='flex flex-col text-start items-center w-72 bg-white rounded-2xl '
+                        className='flex flex-col text-start items-center w-[30%] bg-white rounded-2xl '
                     >
-                        <div className='executeimg relative'>
+                        <div className=' relative mt-7'>
                             <Image
                                 src={value.image}
                                 alt="Doctor"
-                                width={295}
-                                height={200}
-                                className="rounded-2xl z-10 object-fill mb-4"
+                                
+                                
+                                className="rounded-2xl  w-full h-[380px] object-cover mb-4"
                             />
-                            <Link
+                            {/* <Link
                                 href=""
                                 className="absolute bottom-5 right-2 w-8 h-8 rounded-full bg-white flex items-center justify-center z-30  group "
                             >
@@ -39,7 +40,7 @@ const Executiveteam = () => {
                                     src={calenter}
                                     alt='calenter'
                                 />
-                            </Link>
+                            </Link> */}
                             {/* <Image 
                           src={calenter}
                           alt='Calenter'

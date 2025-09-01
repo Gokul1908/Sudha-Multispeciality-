@@ -97,7 +97,7 @@ export default function OurTeamSlider() {
                   <Image
                     src={doc.image}
                     alt={doc.name}
-                    className="mx-auto rounded-xl mb-2 w-[90%] h-auto gap-4 "
+                    className="mx-auto rounded-xl mb-2 w-[90%] h-[280px] object-cover gap-4 "
                   />
                 </div>
                 {/* Arrow Button */}

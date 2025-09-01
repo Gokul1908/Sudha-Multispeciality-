@@ -18,13 +18,15 @@ const excellenceData = [
     image: Heart,
     services: [
       "Coronary Angiography ",
-      "Coronary Angioplasty  ",
+     
       "Pacemaker Implantation  ",
       "Peripheral Vascular Stenting ",
       "Complex Heart Surgeries ",
-      "Paediatric Cardiology ",
+    
       "Preventive Cardiology  ",
       "Non-Invasive Cardiology ",
+       "Coronary Angioplasty  ",
+         "Paediatric Cardiology ",
 
     ]
   },
@@ -34,14 +36,14 @@ const excellenceData = [
     description: "Advanced care and diagnosis for all your pulmonary needs, from diagnosis to recovery. ",
     image: Lungs,
     services: [
-      "Asthma  ",
-      "Chronic Obstructive Pulmonary Disease (COPD)  ",
-      "Interstitial Lung Disease  ",
-      "Tuberculosis (TB)   ",
-      "Pneumonia   ",
-      "Fungal and bacterial lung infections ",
+      "Asthma",
+      "Tuberculosis (TB)",
+      "Pneumonia",
+      "Interstitial Lung Disease",
       "Paediatric Pulmonology",
       "Pulmonology Surgeries",
+       "Fungal and bacterial lung infections",
+      "Chronic Obstructive Pulmonary Disease (COPD)",
 
     ]
   },
@@ -72,12 +74,9 @@ const excellenceData = [
       "Cervical Cancer ",
       "Colorectal Cancer",
       "Endometrial Cancer",
-
       "Lung Cancer",
       "Lymphoma Cancer",
-
       "Renal Cancer",
-
     ]
   },
   {
@@ -86,14 +85,15 @@ const excellenceData = [
     description: "Comprehensive neurological support with cutting-edge evaluation and compassionate care. ",
     image: Brain,
     services: [
-      "Micro Neurosurgical Tumour Removal  ",
-      "Stereotactic surgery (Pinhole/Keyhole Brain Biopsy)   ",
-      "Skull Base Surgery  ",
-      "Paediatric Neurology ",
-      "Neurosurgery ",
-      "Epilepsy Surgeries  ",
-      "Stereotactic Surgery  ",
-      "Stroke Evaluation  "
+      
+      "Skull Base Surgery",
+      "Paediatric Neurology",
+      "Neurosurgery",
+      "Epilepsy Surgeries",
+      "Stereotactic Surgery",
+      "Stroke Evaluation ",
+      "Micro Neurosurgical Tumour Removal",
+      "Stereotactic surgery (Pinhole/Keyhole Brain Biopsy)",
     ]
   },
   {
@@ -230,7 +230,7 @@ export default function CentreOfExcellence() {
                       <div className="w-5 h-5 rounded-full bg-[#F0F7FD] text-[#2B3990] flex items-center justify-center">
                         <Check className="w-3 h-3" strokeWidth={3} />
                       </div>
-                      <p className="font-semibold text-[14px]">{service}</p>
+                      <p className="font-semibold text-[13px]">{service}</p>
                     </div>
                   ))}
                 </div>

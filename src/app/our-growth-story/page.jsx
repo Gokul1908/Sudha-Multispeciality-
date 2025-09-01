@@ -3,7 +3,7 @@ import React from 'react'
 
 export const metadata = {
   title: "Our Growth Story | Sudha Multispeciality Hospital",
-  description: "",
+  description: "Explore Sudha Multispeciality Hospital in Erode, known for its expert medical team, advanced facilities, and dedication to compassionate healthcare.",
 
   keywords: "",
 };

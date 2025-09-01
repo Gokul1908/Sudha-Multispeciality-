@@ -95,8 +95,8 @@ const cards = [
     icon: cardtwo,
     title: (
       <p className="text-md font-extrabold text-black">
-        <span className="text-[#2b3990] font-extrabold"> Sudha </span> <br />
-        Master Health Check Up
+        Master <span className="text-[#2b3990] font-extrabold">Health  </span> <br />
+        Check Up
       </p>
     ),
     link: "/maternity",
@@ -140,10 +140,10 @@ const item = {
 };
 
 const features = [
-  "Expert Gynaecologists And Paediatricians Dedicated To Your Care",
+  "Expert gynaecologists and paediatricians dedicated to your care",
   "Personalised treatment plans for every mother and child",
-  "Trusted experience in handling high-risk pregnancies",
-  "Compassionate counselling and emotional support during postpartum recovery",
+  "Trusted experience in handling high-risk pregnancies ",
+  "Compassionate counselling and emotional support during postpartum recovery ",
 ];
 
 const services = [
@@ -224,7 +224,7 @@ const whychoice = [
     type: "text",
     icon: Whychoiceicontwo,
     title: "Personalised Care",
-    desc: "Comfortable and safe birthing environment designed for a smooth and healthy delivery.",
+    desc: "From treatments to diet, every patient receives personalised care for positive outcomes.",
   },
   {
     type: "image",
@@ -247,12 +247,12 @@ const ourcommitment = [
   {
     title: "Compassionate Support",
     content:
-      "We provide emotional and medical support at every stage, making your journey easier and more joyful.",
+      "We believe care is not complete without compassion. At Sudha, we support you with empathy at every step. ",
   },
   {
     title: "Personalized Care For Every Patient",
     content:
-      "Every parent is unique. We tailor our services to your specific needs with empathy and care.",
+      "We believe care is not complete without compassion. At Sudha, we support you with empathy at every step. ",
   },
 ];
 
@@ -419,9 +419,9 @@ function MotherandChildcare() {
               <Breadcrumb items={breadcrumbItems} />
             </motion.div>
             <h1 className=" text-[44px] text-white font-extrabold">
-              Caring for mothers
-              and their little ones, the <br></br>
-              Sudha way.
+              The Best Mother & Child Care
+              Hospital in Erode!
+
             </h1>
             <p className="text-white font-nunito mb-6">
               Motherly Care for Mothers of Sudha
@@ -530,9 +530,9 @@ function MotherandChildcare() {
             </span>
 
             <h2 className=" text-[30px] ">
-              The Best Mother &amp; Child Care
+              Caring for mothers and their
               <br className="hidden sm:block" />
-              Hospital in Erode!
+              little ones, the Sudha way.
             </h2>
 
             <ul className={`${nunito.className} space-y-3 text-gray-700 text-base sm:text-lg`}>
@@ -548,8 +548,7 @@ function MotherandChildcare() {
 
             <div className="bg-white p-6 rounded-3xl ">
               <h3 className=" text-[22px] text-black">
-                Maternity and paediatric emergencies handled with speed, care,
-                and expertise.
+                Maternity and paediatric emergencies handled with speed, care, and expertise.
               </h3>
 
               <div className="flex gap-4 items-center mt-3">
@@ -557,7 +556,7 @@ function MotherandChildcare() {
                   href="#"
                   className=" text-primary-blue font-semibold inline-flex items-center gap-2 hover:underline"
                 >
-                  24/7 For Emergencies
+                  24/7 Emergency Care
                 </a>
 
                 {/* Animated arrow image */}
@@ -676,9 +675,9 @@ function MotherandChildcare() {
           <span className="bg-blue  px-3 py-1 rounded-full text-xs mr-2">
             Free
           </span>
-          <b>Dreaming of motherhood? Get the right support.</b>
+          <b>Dreaming of motherhood? Get the right support.  </b>
           <a href="#" className="text-primary-blue font-semibold ml-1 underline">
-            Book a Free Consultation
+            Book your free consultation
           </a>
         </motion.div>
       </section>
@@ -697,14 +696,11 @@ function MotherandChildcare() {
               Our Commitment
             </span>
             <h2 className="text-[30px] text-primary-blue  mb-4">
-              Making Parenthood Journey as <br />
+              Making Parenthood Journey as   <br />
               Joyful as It Should Be
             </h2>
             <p className="mb-4">
-              At Sudha, we're committed to turning your hopes into happiness
-              with compassionate, personalised care at every step. From first
-              scan to postnatal support, we walk with you through every stage of
-              your journey, ensuring it’s filled with trust, comfort, and joy.
+              At the best Mother and Child Care Hospital in Erode, we’re committed to turning your hopes into happiness with compassionate, personalised care at every step. From first scan to postnatal support, we walk with you through every stage of your journey, ensuring it’s filled with trust, comfort, and joy.
             </p>
 
             {/* Accordion */}
@@ -779,8 +775,8 @@ function MotherandChildcare() {
             Why Choose Us
           </div>
           <h2 className="text-[30px]  text-white ">
-            Trusted by Mothers at Every Stage <br className="hidden sm:block" />
-            of Motherhood
+            Trusted by Mothers at Every Stage   <br className="hidden sm:block" />
+            of Motherhood.
           </h2>
         </motion.div>
 
@@ -830,14 +826,11 @@ function MotherandChildcare() {
               Our Achievements
             </span>
             <h2 className=" text-[30px]  mb-4">
-              Driven by the trust of Mothers <br className="hidden sm:block" />
+              Driven by the trust of Mothers    <br className="hidden sm:block" />
               Across Generations
             </h2>
             <p className="  mb-6">
-              With over four decades of dedicated experience in mother and
-              childcare, Sudha has been a part of countless parenthood journeys.
-              Every baby born here reflects our commitment to expert care,
-              compassion, and safety.
+              With over four decades of dedicated experience in mother and childcare, Sudha has been a part of countless parenthood journeys. Every baby born here reflects our commitment to expert care, compassion, and safety.
             </p>
             <div className="rounded-3xl overflow-hidden w-full">
               <Image
@@ -866,9 +859,9 @@ function MotherandChildcare() {
 
             <ul className="space-y-4 text-md">
               {[
-                "Advanced Treatments For Mother And Childcare",
-                "World-class equipment and infrastructure",
-                "State-of-the-art Operation Theatres and ICUs",
+                "Advanced treatments for mother and childcare ",
+                "World-class equipment and infrastructure ",
+                "State-of-the-art Operation Theatres and ICUs ",
               ].map((text, index) => (
                 <motion.li
                   key={index}
@@ -896,7 +889,7 @@ function MotherandChildcare() {
               {[
                 { number: "40+", label: "Year of Experience" },
                 { number: "98%", label: "Patient satisfaction" },
-                { number: "1K+", label: "Happy families" },
+                { number: "1,00,000+", label: "Happy families" },
               ].map((item, i) => (
                 <div key={i} className="text-start">
                   <h3 className="text-primary-blue  text-[44px]">
@@ -1051,32 +1044,54 @@ function MotherandChildcare() {
             <h2 className="text-[30px]  text-[#2A3D90] mt-4 mb-6">
               Maternal Health Care
             </h2>
+            <div className="flex justify-between">
+              <ul className="space-y-4 text-[14px] font-semibold text-[#5E566A]">
+                {[
+                  "Postpartum Care",
+                  "Preconception Care",
+                  "Gestational Diabetes",
+                  "Pre-eclampsia and Hypertensive Disorders",
+                  "Gestational Hypertension",
+                  "Hyperemesis Gravidarum",
+                  "Placenta Previa and Placental Abruption",
 
-            <ul className="space-y-4 text-[15px] font-semibold text-[#5E566A]">
-              {[
-                "Postpartum Care",
-                "Preconception Care",
-                "Gestational Diabetes",
-                "Pre-eclampsia and Hypertensive Disorders",
-                "Gestational Hypertension",
-                "Hyperemesis Gravidarum",
-                "Placenta Previa and Placental Abruption",
-                "Ectopic Pregnancy",
-                "Miscarriage",
-                "Preterm Labor and Birth",
-                "Multiple Gestations (Twins, Triplets)",
-                "Maternal Infections (e.g., Group B Streptococcus)",
-                "Maternal Anaemia",
-                "Maternal Diet",
-              ].map((item, index) => (
-                <li key={index} className="flex items-start gap-4">
-                  <div className="text-primary-blue w-7 h-7 bg-white  flex justify-center items-center p-1 rounded-2xl">
-                    <TickCircle className="min-w-5 min-h-5" />
-                  </div>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-4">
+                    <div className="text-primary-blue w-7 h-7 bg-white  flex justify-center items-center p-1 rounded-2xl">
+                      <TickCircle className="min-w-5 min-h-5" />
+                    </div>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <ul className="space-y-4 text-[15px] font-semibold text-[#5E566A]">
+                {[
+                  "Ectopic Pregnancy",
+                  "Miscarriage",
+                  "Preterm Labor and Birth",
+                  "Multiple Gestations (Twins, Triplets)",
+                  "Maternal Infections (e.g., Group B Streptococcus)",
+                  "Maternal Anaemia",
+                  "Maternal Diet",
+
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-4">
+                    <div className="text-primary-blue w-7 h-7 bg-white  flex justify-center items-center p-1 rounded-2xl">
+                      <TickCircle className="min-w-5 min-h-5" />
+                    </div>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+
+            </div>
+
+
+
+
+
           </motion.div>
 
           {/* Right Image Section */}
@@ -1084,7 +1099,7 @@ function MotherandChildcare() {
             <Image
               src={Sudhacare}
               alt="Mother and Baby"
-              className="w-[100%] mx-auto rounded-2xl object-cover"
+              className="w-[100%] mx-auto h-[440px] rounded-3xl object-cover"
             />
           </motion.div>
         </div>
@@ -1102,7 +1117,7 @@ function MotherandChildcare() {
             <Image
               src={Sudhacaretwo}
               alt="Child Care"
-              className="w-[100%] mx-auto rounded-2xl object-cover"
+              className="w-[100%] mx-auto h-[440px] rounded-2xl object-cover"
             />
           </motion.div>
 
@@ -1115,7 +1130,9 @@ function MotherandChildcare() {
             <h2 className="text-[30px]   text-[#2B3990] mt-4 mb-6">
               Paediatric Health Care
             </h2>
-            <ul className="space-y-4 text-[15px] font-semibold text-[#5E566A]">
+
+             <div className="flex justify-between">
+               <ul className="space-y-4 text-[15px] font-semibold text-[#5E566A]">
               {[
                 "Seasonal & Tropical Infections (Dengue, Malaria etc.)",
                 "Chronic Infections",
@@ -1124,6 +1141,18 @@ function MotherandChildcare() {
                 "Paediatric Neurology",
                 "Paediatric Pulmonology",
                 "Paediatric Cardiology",
+                
+              ].map((item, index) => (
+                <li key={index} className="flex items-start gap-4">
+                  <div className="text-primary-blue w-6 h-6 bg-white shadow-sm flex justify-center items-center p-1 rounded-2xl">
+                    <TickCircle className="min-w-4 min-h-4" />
+                  </div>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <ul className="space-y-4 text-[15px] font-semibold text-[#5E566A]">
+              {[
                 "Paediatric Surgery",
                 "Paediatric Diet",
                 "Paediatric Diabetes",
@@ -1141,6 +1170,8 @@ function MotherandChildcare() {
                 </li>
               ))}
             </ul>
+             </div>
+            
           </motion.div>
         </div>
       </div>
@@ -1152,7 +1183,7 @@ function MotherandChildcare() {
               <p className="text-[#2A3D90]"> Sudha Care</p>
 
             </div>
-            <h2 className="text-[30px] text-center  font-bold text-[#2A3D90] mt-4 mb-6">
+            <h2 className="text-[30px] text-center  text-[#2A3D90] mt-4 mb-6">
               Dedicated to your fertility <br /> journey success
             </h2>
           </div>
