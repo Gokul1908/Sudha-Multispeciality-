@@ -624,7 +624,7 @@ export const links = [
         subMenu: [
           {
             label: "Post MBBS Diploma Courses (DNB )",
-            dec: "Postgraduate diploma programs for future medical leaders.",
+            dec: "Government-recognized training for skilled healthcare careers.",
           },
         ],
       },

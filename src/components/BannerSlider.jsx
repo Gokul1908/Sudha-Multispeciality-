@@ -37,7 +37,7 @@ const slides = [
     description:
       "Because Every mother deserves care that comforts, every step of the way.",
     buttonText: "Discover Our Service ",
-    video: "https://ship-crm-img.s3.eu-north-1.amazonaws.com/1165414_Woman_Indoor_3840x2160.mp4",
+    video: "https://ship-crm-img.s3.eu-north-1.amazonaws.com/mother-child.mp4",
   },
   {
     heading: "Nurturing Parenthood for Over 40 Years",
@@ -66,7 +66,7 @@ const slides = [
     description: "The Only Comprehensive Cancer Care in Erode.",
     buttonText: "Discover Our Service ",
     link:"https://sudhacancercentre.com/",
-    video: "https://ship-crm-img.s3.eu-north-1.amazonaws.com/happy-family-tiny-newborn-infant-male-or-female.mp4",
+    video: "https://ship-crm-img.s3.eu-north-1.amazonaws.com/sudha-cancercentre.mp4",
   },
 ];
 

@@ -62,27 +62,32 @@ const Footer = () => {
     "Cardiothoracic Surgery",
     "Anaesthesiology",
     "Dentistry & Oral Surgery",
-    "Dermatology Aesthetics & Lasers",
+    "Dermatology",
     "ENT",
     "Emergency Care",
     "Gastroenterology",
     "Radiology",
     "General Medicine",
+    "General Surgery",
+    "Intensive Care Unit",
   ];
 
   const specialties2 = [
-    "General Surgery",
-    "Intensive Care Unit",
+    
     "Urology",
     "Orthopedics",
     "Nephrology",
     "Neurology",
+    
     "Obstetrics & Gynaecology",
     "Imaging & Diagnostic Services",
     "Pulmonology",
-    "Pediatrics & Neonatology",
+    "Pediatrics ",
+    "Neonatology",
+    "Oncology",
     "Pain Medicine",
     "Plastic Surgery",
+    "Laryngology",
   ];
 
   const about = [
@@ -94,22 +99,29 @@ const Footer = () => {
   ];
 
   const academicLinks = [
-    {
-      name: "Post MBBS Diploma Courses (DNB)",
-      link: "diploma-course",
-    },
+   
     {
       name: "Fellow of National Board (FNB)",
       link: "fellow-national-board",
+    },
+     {
+      name: "Post MBBS Diploma Courses (DNB)",
+      link: "/post-mbbs-diploma-courses",
     },
     {
       name: "Ethics Committee",
       link: "ethics-committee",
     },
     {
-      name: "Elite Academy",
-      link: "elite-academy",
+      name: "Vocational Degree Courses",
+      link: "/vocational-degree-courses",
     },
+    {
+      name: "BSS Vocational Courses",
+      link: "/bss-vocational-courses",
+    },
+    
+    
   ];
 
   const careersLinks = [
@@ -381,7 +393,7 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h4 className="text-[18px] mb-3 ">Media Centre</h4>
               <ul className="space-y-3 gap-8">
                 {mediaLinks.map((item, i) => (
@@ -394,7 +406,7 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
             <div>
               <h4 className="text-[18px] mb-3">Important link</h4>
               <ul className="space-y-3 gap-8">

@@ -50,7 +50,7 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Traction  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Shortwave Diathermy (SWD)  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Continuous Passive Motion (CPM) Machines  </li>
-            
+
           </ul>
 
         </div>
@@ -62,7 +62,7 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" />  */}
-          Exercise Therapy & Functional Training 
+          Exercise Therapy & Functional Training
 
         </div>
       </>
@@ -72,7 +72,7 @@ const accordionData = [
         <p>
           Exercise therapy is a cornerstone of physical rehabilitation that improves strength, balance, flexibility, and endurance. Our unit is equipped with specialized tools to assist patients in regaining functional independence.
         </p>
-       <div>
+        <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Suspension Therapy  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Tilting Table  </li>
@@ -82,7 +82,7 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Hand Exercise Equipment </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Overhead Pulley (OHP)   </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Ladder Exercise   </li>
-           
+
           </ul>
 
         </div>
@@ -104,7 +104,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p className="mt-2">
-         We offer targeted rehabilitation plans based on individual patient conditions to improve outcomes in specific areas of health and recovery. 
+          We offer targeted rehabilitation plans based on individual patient conditions to improve outcomes in specific areas of health and recovery.
         </p>
         <div>
           <ul className="space-y-4">
@@ -115,8 +115,8 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Post-General Surgery Rehabilitation  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Paediatric Rehabilitation  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Women’s Health Rehabilitation (Gynaecology and Obstetrics)    </li>
-          
-           
+
+
           </ul>
 
         </div>
@@ -348,8 +348,8 @@ export default function SidebarTabs() {
 
           </ul>
 
-          <button className="inline-flex items-center gap-2 bg-white text-[#2B3990] font-semibold px-7 py-3 rounded-full   mt-5 text-[14px]">
-            Book Your Appointment  <ArrowUpRight className="w-5 h-5" />
+          <button className="btn-white mt-5">
+            Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
           </button>
         </div>
 
@@ -361,7 +361,7 @@ export default function SidebarTabs() {
           }}
         >
           <div className="text-left mb-4 sm:mb-0 sm:mr-4">
-            <h3 className="text-[26px]  font-bold">
+            <h3 className="text-[22px]  font-bold">
               Find a <br />
               Doctor?
             </h3>
