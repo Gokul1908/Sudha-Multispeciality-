@@ -4,10 +4,9 @@ import Gopinath from "@/assets/home/doc/gopinath.webp";
 import Mohan from "@/assets/home/doc/mohan.webp";
 import Vikram from "@/assets/home/doc/vikram.webp";
 import Nagendran from "@/assets/home/doc/nagendran.webp";
-import Nithiyanandhan from "@/assets/home/doc/nithiyanandhan.webp";
+
 import Duraikannan from "@/assets/home/doc/duraikannan.webp";
-import Amutha from "@/assets/home/doc/amutha.webp";
-import Balaji from "@/assets/home/doc/balaji.webp";
+
 import Sangeeth from "@/assets/home/doc/sangeeth.webp";
 import Renuka from "@/assets/home/doc/renuka.webp";
 import Subhashree from "@/assets/home/doc/subhashree.webp";
