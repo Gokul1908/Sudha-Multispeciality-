@@ -30,7 +30,7 @@ import Rajasekar from "@/assets/home/doc/rajasekar.webp";
 import Emptydoctor from "@/assets/home/doc/emptydoctor.webp";
 import Nanthetha from "@/assets/home/doc/nanthetha.webp";
 import Aafiaparveen from "@/assets/home/doc/aafiaparveen.webp";
-import Kavinkumar from "@/assets/home/doc/Kavinkumar.webp";
+import Kavinkumar from "@/assets/home/doc/kavinkumar.webp";
 
 ///Anaesthesis
 import Nithiyanandhan from "../assets/specialites/Anaesthesia/dr.p.nithiyanandhan.webp";
