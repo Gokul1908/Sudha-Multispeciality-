@@ -25,7 +25,7 @@ const excellenceData = [
       "Paediatric Cardiology ",
       "Preventive Cardiology  ",
       "Non-Invasive Cardiology ",
-      
+
     ]
   },
   {
@@ -72,12 +72,12 @@ const excellenceData = [
       "Cervical Cancer ",
       "Colorectal Cancer",
       "Endometrial Cancer",
-     
+
       "Lung Cancer",
       "Lymphoma Cancer",
-      
+
       "Renal Cancer",
-      
+
     ]
   },
   {
@@ -174,7 +174,7 @@ export default function CentreOfExcellence() {
   const itemsPerPage = 4;
   const totalSlides = Math.ceil(excellenceData.length / itemsPerPage);
 
-  
+
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides);
   };
