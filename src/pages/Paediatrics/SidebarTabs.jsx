@@ -331,7 +331,7 @@ export default function SidebarTabs() {
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
 
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -436,10 +436,13 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Best Paediatric Care in   <span className="text-[#2B3990]"> Erode</span>  at Sudha Multispeciality Hospital
+                  Best Paediatric Care by the Best Paediatrician in<span className="text-[#2B3990]"> Erode</span>
                 </h2>
                 <p className="mb-3">
-                  Sudha Multispeciality Hospital’s Paediatrics Department is built on clinical excellence, advanced infrastructure, and round-the-clock specialist support. Our dedicated team of paediatricians, intensivists, and trained nursing staff provide expert care. With dedicated NICU and PICU units, emergency response systems, and child-friendly facilities, we are equipped to handle a wide spectrum of paediatric conditions, ensuring timely, compassionate, and evidence-based treatment for every child.
+                  Sudha Multispeciality Hospital’s Paediatrics Department is built on clinical excellence, advanced infrastructure, and round-the-clock specialist support. As the best pediatric hospital in Erode, our dedicated team is equipped with the best child specialists, intensivists, and trained nursing staff provide expert care.
+                </p>
+                <p className="mb-3">
+                  With dedicated NICU and PICU units, emergency response systems, and child-friendly facilities, we are equipped to handle a wide spectrum of paediatric conditions, ensuring timely, compassionate, and evidence-based treatment for every child.
                 </p>
 
               </>
@@ -482,16 +485,16 @@ export default function SidebarTabs() {
               </div>
             )}
 
-            {id === "doctors" && (
+            {/* {id === "doctors" && (
               <>
-                <h2 className="text-[24px]  mt-5 pb-3 pb-3">Doctors</h2>
-                <DoctorSlider />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="Neurology" counter={2} />
               </>
             )}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
             )} */}

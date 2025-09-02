@@ -15,7 +15,7 @@ const serviceSections = [
   { id: "overview", label: "Overview" },
   { id: "facilities", label: "Facilities" },
   { id: "services", label: "Services" },
-  { id: "doctors", label: "Doctors" },
+  // { id: "doctors", label: "Doctors" },
   { id: "faqs", label: "FAQs" },
 ];
 
@@ -23,56 +23,13 @@ const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">What is cardiology? </div>
+        <div className="flex gap-3">Which is the best hospital for gastroenterology?</div>
       </>
     ),
     content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
-          A branch of medicine dealing with disorders of heart and blood
-          vessels. The work of our cardiologists for adults includes diagnosis
-          and treatment of adult congenital heart disease, heart failure,
-          coronary artery disease, valvular heart disease and arrhythmias. All
-          the necessary investigations like ECG, Echocardiogram, Treadmill test,
-          Holter monitoring, Ambulatory BP monitoring, tilt table testing,
-          cardiac CT, cardiac MRI, and nuclear heart scanning are available to
-          provide you with the best adult cardiology treatment at our
-          multispeciality hospital in Erode.
-        </p>
-        <h4 className="font-semibold">
-          Diagnostic Tests Available in our Cardiology Hospital:
-        </h4>
-        <h2 className="font-semibold text-[#2B3990]">ECG:</h2>
-        <p>
-          Cardiac problems such as heart attack, heart block, etc. can be
-          detected by measuring the electrical activity of the heart, which is
-          done by electrocardiogram (ECG).
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">ECHOCARDIOGRAM:</h2>
-        <p>
-          The structure and function of the heart can be assessed by moving
-          images produced by sound waves. Various heart diseases can be
-          diagnosed by this readily available investigation.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">TREADMILL TEST:</h2>
-        <p>
-          Patients will walk on a treadmill at graded levels and their 12- lead
-          ECG will be monitored for heart rate, ST-T segment changes. The
-          presence or absence of changes will be interpreted accordingly to
-          detect heart problems like coronary artery disease, heart block,
-          etc..., that helps in determining the cardiology treatment that is to
-          proceed further accordingly.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">
-          STRESS ECHOCARDIOGRAPHY:
-        </h2>
-        <p>
-          Heart is exerted by exercise or medicines and its activity is
-          monitored by echocardiography. For those who are not able to walk to
-          perform treadmill test, this is a very useful test to rule out
-          coronary artery disease.
-        </p>
-      </div>
+      <p>
+        The best gastroenterology hospital should provide advanced diagnostics, specialized care, and treatments for all digestive system conditions, including stomach, liver, and intestinal disorders. In Erode, Sudha Multispeciality Hospital is recognized as the best gastroenterology hospital, offering expert care from some of the best gastroenterologists in Erode.
+      </p>
     ),
   },
   {
@@ -80,66 +37,66 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-          What is the main cause of heart problems?
+          Does a gastroenterologist treat stomach problems? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Gastroenterologists diagnose and treat a wide range of stomach and digestive issues such as acidity, gas, bloating, ulcers, and indigestion. At Sudha Multispeciality Hospital, patients receive care from the best gastroenterologists in Erode who provide personalized treatment plans for effective relief.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What are the signs of a stomach ulcer? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Common signs of a stomach ulcer include burning stomach pain, bloating, nausea, vomiting, heartburn, and loss of appetite. Sudha Multispeciality Hospital, the best gastroenterology hospital in Erode, offers advanced diagnostics and treatment to detect and manage stomach ulcers early, ensuring better outcomes. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Is gastric trouble completely curable? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Many gastric problems, including stomach gas, bloating, acidity, and indigestion, can be managed or cured with proper diagnosis, medication, and lifestyle changes. At Sudha Multispeciality Hospital, patients benefit from expert care by the best gastroenterologists in Erode, who provide comprehensive treatment for all digestive issues.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          How to cure digestive and acidity problems? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Digestive and acidity problems can often be treated with a combination of proper diet, lifestyle modifications, and medical treatment. Avoiding spicy foods, eating smaller meals, staying hydrated, and reducing stress help improve digestion. At Sudha Multispeciality Hospital, the best gastroenterology hospital in Erode, specialists provide personalized guidance along with advanced treatment for long-term digestive health. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Which doctor should I consult for stomach ulcers and digestive problems? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Gastroenterologists are the specialists to consult for stomach ulcers, acidity, bloating, gas, and other digestive issues. At Sudha Multispeciality Hospital, patients can consult the best gastroenterologists in Erode who provide accurate diagnosis and effective treatment for all digestive concerns. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+         Can Diet and exercise help prevent gas trouble? (lifestyle changes) 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Lifestyle changes such as a balanced diet, regular exercise, adequate hydration, and avoiding trigger foods can significantly reduce gas, bloating, and acidity. Sudha Multispeciality Hospital, the best gastroenterology hospital in Erode, offers guidance on diet, exercise, and lifestyle changes alongside medical treatment to prevent digestive problems. </p>,
   },
 ];
 
@@ -158,7 +115,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          We offer advanced diagnostic tools including endoscopy and colonoscopy to detect and evaluate a wide range of gastrointestinal disorders. Our endoscopy and colonoscopy units are equipped for accurate visual diagnosis and early detection of GI conditions. We use minimally invasive procedures for patient safety and quick recovery.
+         We offer advanced diagnostic tools, including endoscopy and colonoscopy, to detect and evaluate a wide range of gastrointestinal disorders. Our endoscopy and colonoscopy units are equipped for accurate visual diagnosis and early detection of GI conditions. We use minimally invasive procedures for patient safety and quick recovery.  
         </p>
 
         <div>
@@ -205,22 +162,22 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Gastroenterology" /> */}
-          Stomach and Intestinal Disorders
+          Stomach and Intestinal Disorders  
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          We provide personalized care for conditions such as GERD, ulcers, Crohn's disease, and irritable bowel syndrome. Our gastro specialists diagnose and treat these disorders with a combination of medication, nutrition guidance, and where needed, advanced surgical procedures to improve long-term digestive health.
+          We provide personalized care for conditions such as GERD, ulcers, Crohn's disease, and irritable bowel syndrome. Our gastro specialists diagnose and treat these disorders with a combination of medication, nutrition guidance, and, where needed, advanced surgical procedures to improve long-term digestive health.
         </p>
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> GERD (Acid Reflux) Management </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> GERD (Acid Reflux) Management   </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Ulcer and Gastritis Treatment </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Crohn’s and IBD Care </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Irritable Bowel Syndrome (IBS) </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Intestinal Obstruction Management </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Intestinal Obstruction Management   </li>
 
           </ul>
 
@@ -233,14 +190,14 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Gastroenterology" /> */}
-          Metabolic and Bariatric Support
+         Metabolic and Bariatric Support  
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          We offer medical and surgical support for patients dealing with obesity and metabolic disorders. Our weight loss programs include evaluation, counselling, and surgical procedures when needed, helping individuals achieve a healthier weight and reduce risks of diabetes, fatty liver, and heart conditions.
+          We offer medical and surgical support for patients dealing with obesity and metabolic disorders. Our weight loss programs include evaluation, counselling, and surgical procedures when needed, helping individuals achieve a healthier weight and reduce risks of diabetes, fatty liver, and heart conditions. 
         </p>
         <div>
           <ul className="space-y-4">
@@ -291,7 +248,7 @@ export default function SidebarTabs() {
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
 
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -395,13 +352,13 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover " />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Advanced Gastroenterology Care in
-                  <span className="text-[#2B3990]"> Erode</span> at Sudha Multispeciality Hospital
+                  Advanced Gastroenterology Care with The Best Gastroenterologists in 
+                  <span className="text-[#2B3990]"> Erode</span> 
                 </h2>
                 <p className="mb-4">
-                  Sudha Multispeciality Hospital provides comprehensive gastroenterology care for a wide range of digestive system conditions. Our team of skilled 
-                  gastroenterologists, surgeons, and support staff are equipped with advanced diagnostic and therapeutic tools to manage diseases affecting the esophagus, 
-                  stomach, intestines, liver, pancreas, and gallbladder. From endoscopic procedures to minimally invasive surgeries, we ensure precise and effective care for both 
+                  Sudha Multispeciality Hospital provides comprehensive gastroenterology care for a wide range of digestive system conditions. Our team of skilled
+                  gastroenterologists, surgeons, and support staff are equipped with advanced diagnostic and therapeutic tools to manage diseases affecting the esophagus,
+                  stomach, intestines, liver, pancreas, and gallbladder. From endoscopic procedures to minimally invasive surgeries, we ensure precise and effective care for both
                   acute and chronic gastrointestinal issues. Our dedicated approach emphasizes early detection, accurate diagnosis, and personalised treatment to improve quality of life for every patient.
                 </p>
               </>
@@ -445,19 +402,19 @@ export default function SidebarTabs() {
               </div>
             )}
 
-            {id === "doctors" && (
+            {/* {id === "doctors" && (
               <>
-                <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
-                <DoctorSlider />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="ENT Surgeon" counter={3} />
               </>
-            )}
+            )} */}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
-            )} */}
+            )}
           </section>
         ))}
       </div>

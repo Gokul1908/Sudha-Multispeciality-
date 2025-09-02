@@ -159,7 +159,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Our neonatology team in Erode specialises in caring for premature and low birth weight newborns who need extra medical support in the first days of life. We provide round-the-clock monitoring, temperature regulation, respiratory support, and nutritional management to help babies grow stronger. Our advanced NICU ensures they receive the safest, most comfortable care for a healthy start.
+          Our neonatology team in Erode specialises in caring for premature and low birth weight newborns who need extra medical support in the first days of life. We provide round-the-clock monitoring, temperature regulation, respiratory support, and nutritional management to help babies grow stronger. Our advanced NICU ensures they receive the safest, most comfortable care for a healthy start. 
         </p>
 
 
@@ -178,7 +178,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Newborns with breathing difficulties require immediate, skilled intervention. Our NICU in Erode is equipped with high-frequency ventilators, CPAP machines, and continuous oxygen monitoring to manage neonatal respiratory distress effectively. Our experienced neonatologists and trained nurses work together to stabilise the baby’s breathing and ensure optimal oxygen supply for healthy organ function.
+          Newborns with breathing difficulties require immediate, skilled intervention. Our NICU in Erode is equipped with high-frequency ventilators, CPAP machines, and continuous oxygen monitoring to manage neonatal respiratory distress effectively. Our experienced neonatologists and trained nurses work together to stabilise the baby’s breathing and ensure optimal oxygen supply for healthy organ function. 
         </p>
 
 
@@ -199,7 +199,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Infections in newborns can progress quickly, which is why our hospital in Erode offers rapid diagnosis and targeted treatment. We follow strict hygiene protocols, use dedicated isolation units, and provide evidence-based antibiotic therapy to ensure effective recovery. Our infection control measures protect vulnerable babies while allowing parents to be part of the healing process.
+          Infections in newborns can progress quickly, which is why our hospital in Erode offers rapid diagnosis and targeted treatment. We follow strict hygiene protocols, use dedicated isolation units, and provide evidence-based antibiotic therapy to ensure effective recovery. Our infection control measures protect vulnerable babies while allowing parents to be part of the healing process. 
         </p>
 
 
@@ -218,7 +218,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Some newborns may be diagnosed with congenital anomalies or birth defects that require immediate attention. Our neonatology specialists in Erode coordinate with paediatric surgeons and other specialists to provide comprehensive care. From diagnosis to treatment planning, we focus on ensuring the best possible quality of life for your baby, with constant family support and counselling.
+          Some newborns may be diagnosed with congenital anomalies or birth defects that require immediate attention. Our neonatology specialists in Erode coordinate with paediatric surgeons and other specialists to provide comprehensive care. From diagnosis to treatment planning, we focus on ensuring the best possible quality of life for your baby, with constant family support and counselling. 
         </p>
 
 
@@ -237,7 +237,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Feeding is critical for newborn development, especially for those with health challenges. Our neonatology team provides breastfeeding assistance, formula feeding guidance, and customised nutrition plans. In Erode, our hospital’s lactation consultants work closely with mothers to ensure babies receive the right nutrients for healthy growth, while promoting the bond between parent and child.
+          Feeding is critical for newborn development, especially for those with health challenges. Our neonatology team provides breastfeeding assistance, formula feeding guidance, and customised nutrition plans. In Erode, our hospital’s lactation consultants work closely with mothers to ensure babies receive the right nutrients for healthy growth, while promoting the bond between parent and child. 
         </p>
 
 
@@ -256,7 +256,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Our commitment to newborn care in Erode extends beyond hospital discharge. We offer regular follow-up check-ups to monitor growth, developmental milestones, and overall health. Our neonatology team works with paediatricians, nutritionists, and therapists when needed, ensuring every baby gets the support they need during their crucial first year of life.
+          Our commitment to newborn care in Erode extends beyond hospital discharge. We offer regular follow-up check-ups to monitor growth, developmental milestones, and overall health. Our neonatology team works with paediatricians, nutritionists, and therapists when needed, ensuring every baby gets the support they need during their crucial first year of life. 
         </p>
 
 
@@ -301,7 +301,7 @@ export default function SidebarTabs() {
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
 
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -406,11 +406,14 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Comprehensive Neonatal Care at Sudha Multispeciality Hospital,   <span className="text-[#2B3990]"> Erode</span>
+                  Comprehensive Treatment for Newborn Babies at the Best Neonatology Hospital in     <span className="text-[#2B3990]"> Erode</span>
                 </h2>
                 <p className="mb-3">
-                  Our Neonatology Department in Sudha Multispeciality Hospital, Erode provides advanced medical care for newborns, especially those who are premature, have low birth weight, or face critical health conditions. With a team of experienced neonatologists, specialised nurses, and state-of-the-art facilities, we ensure that every baby receives the highest standard of care from birth to recovery.
-                  We follow evidence-based medical practices and a family-centred approach, ensuring that parents are actively involved in their newborn’s care journey. Whether your baby requires routine monitoring or intensive medical support, our neonatology services are designed to give them the best start in life.
+                  Our Neonatology Department in Sudha Multispeciality Hospital, Erode provides advanced medical care for newborns, especially those who are premature, have low birth weight, or face critical health conditions. With a team of experienced neonatologists, specialised nurses, and state-of-the-art facilities, we ensure that every baby receives the highest standard of care from birth to recovery. 
+                </p>
+
+                <p className="mb-3">
+                  As the best hospital for newborn baby treatment in Erode, we follow evidence-based medical practices and a family-centred approach, ensuring that parents are actively involved in their newborn’s care journey. Whether your baby requires routine monitoring or intensive medical support, our neonatology services are designed to give them the best start in life. 
                 </p>
 
               </>
@@ -423,19 +426,19 @@ export default function SidebarTabs() {
                 <h2 className="text-[24px] mt-5 mb-3">Facilities</h2>
                 <ul>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Level III Neonatal Intensive Care Unit (NICU) with advanced monitoring systems  </li>
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Level III Neonatal Intensive Care Unit (NICU) with advanced monitoring systems   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Level III Neonatal Intensive Care Unit (NICU) with advanced monitoring systems  </li>
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> High-frequency ventilators and CPAP machines for respiratory support    </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> 24/7 availability of neonatologists and trained neonatal nurses  </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Advanced phototherapy units for treating newborn jaundice  </li>
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> 24/7 availability of neonatologists and trained neonatal nurses   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Dedicated neonatal isolation units for infection control   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Family counselling and breastfeeding support rooms  </li>
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Advanced phototherapy units for treating newborn jaundice </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> In-house laboratory and diagnostic imaging for rapid results</li>
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> In-house laboratory and diagnostic imaging for rapid results   </li>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Family counselling and breastfeeding support rooms </li>
 
 
                 </ul>
@@ -452,16 +455,16 @@ export default function SidebarTabs() {
               </div>
             )}
 
-            {id === "doctors" && (
+           {/* {id === "doctors" && (
               <>
-                <h2 className="text-[24px]  mt-5 pb-3 pb-3">Doctors</h2>
-                <DoctorSlider />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="Neurology" counter={2} />
               </>
             )}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
             )} */}

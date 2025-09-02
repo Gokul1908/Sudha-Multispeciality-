@@ -158,9 +158,7 @@ const accordionData = [
     ),
     content: (
       <div className="text-sm  space-y-3">
-        <p>
-          Our neonatology team in Erode specialises in caring for premature and low birth weight newborns who need extra medical support in the first days of life. We provide round-the-clock monitoring, temperature regulation, respiratory support, and nutritional management to help babies grow stronger. Our advanced NICU ensures they receive the safest, most comfortable care for a healthy start.
-        </p>
+
 
         <div>
           <ul className="space-y-4">
@@ -169,50 +167,50 @@ const accordionData = [
               <div className="">
                 <h6>Nasopharyngolaryngoscopy with NBI: </h6>
                 <p className="mt-2">
-                   Early detection of laryngeal cancers using enhanced imaging techniques to improve treatment outcomes.
+                  Early detection of laryngeal cancers using enhanced imaging techniques to improve treatment outcomes.
                 </p>
               </div>
-             </li>
+            </li>
 
-             <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <li className="flex items-start gap-2 text-[14px] font-semibold">
               <Image src={Checklight} alt="tick" width={24} height={24} />
               <div className="">
                 <h6>Fibreoptic Endoscopic Evaluation of Swallowing (FEES): </h6>
                 <p className="mt-2">
-                   Real-time assessment of swallowing function to diagnose dysphagia and guide therapy.
+                  Real-time assessment of swallowing function to diagnose dysphagia and guide therapy.
                 </p>
               </div>
-             </li>
+            </li>
 
-             <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <li className="flex items-start gap-2 text-[14px] font-semibold">
               <Image src={Checklight} alt="tick" width={24} height={24} />
               <div className="">
                 <h6>Video fluoroscopic Swallowing Study (VFSS):</h6>
                 <p className="mt-2">
-                   Radiological swallowing examination performed in collaboration with the Radiology department for detailed analysis of swallowing mechanics.
+                  Radiological swallowing examination performed in collaboration with the Radiology department for detailed analysis of swallowing mechanics
                 </p>
               </div>
-             </li>
+            </li>
 
-             <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <li className="flex items-start gap-2 text-[14px] font-semibold">
               <Image src={Checklight} alt="tick" width={24} height={24} />
               <div className="">
                 <h6>Stroboscopy & Voice Analysis:  </h6>
                 <p className="mt-2">
-                   Specialist evaluation of vocal fold vibration to diagnose voice disorders precisely. 
+                  Specialist evaluation of vocal fold vibration to diagnose voice disorders precisely.
                 </p>
               </div>
-             </li>
+            </li>
 
-             <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <li className="flex items-start gap-2 text-[14px] font-semibold">
               <Image src={Checklight} alt="tick" width={24} height={24} />
               <div className="">
                 <h6>Airway & Laryngeal Function Tests:    </h6>
                 <p className="mt-2">
-                  Assess stridor and vocal cord mobility to determine airway patency and function. 
+                  Assess stridor and vocal cord mobility to determine airway patency and function.
                 </p>
               </div>
-             </li>
+            </li>
           </ul>
         </div>
 
@@ -225,46 +223,46 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Paediatrics and Neonatology" /> */}
-          Therapeutic Procedures 
+          Therapeutic Procedures
         </div>
       </>
     ),
     content: (
-       <div>
-          <ul className="space-y-4">
-            <li className="flex items-start gap-2 text-[14px] font-semibold">
-              <Image src={Checklight} alt="tick" width={24} height={24} />
-              <div className="">
-                <h6>Awake Biopsies: </h6>
-                <p className="mt-2">
-                   Minimally invasive biopsies of throat and voice box lesions without general anaesthesia. 
-                </p>
-              </div>
-             </li>
+      <div>
+        <ul className="space-y-4">
+          <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <Image src={Checklight} alt="tick" width={24} height={24} />
+            <div className="">
+              <h6>Awake Biopsies: </h6>
+              <p className="mt-2">
+                Minimally invasive biopsies of throat and voice box lesions without general anaesthesia.
+              </p>
+            </div>
+          </li>
 
-             <li className="flex items-start gap-2 text-[14px] font-semibold">
-              <Image src={Checklight} alt="tick" width={24} height={24} />
-              <div className="">
-                <h6>Botox Injections:   </h6>
-                <p className="mt-2">
-                   Treatment for spasmodic dysphonia and cricopharyngeal spasm delivered awake or under general anaesthesia via specialised techniques. 
-                </p>
-              </div>
-             </li>
+          <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <Image src={Checklight} alt="tick" width={24} height={24} />
+            <div className="">
+              <h6>Botox Injections:   </h6>
+              <p className="mt-2">
+                Treatment for spasmodic dysphonia and cricopharyngeal spasm is delivered awake or under general anaesthesia via specialised techniques.
+              </p>
+            </div>
+          </li>
 
-             <li className="flex items-start gap-2 text-[14px] font-semibold">
-              <Image src={Checklight} alt="tick" width={24} height={24} />
-              <div className="">
-                <h6>Injection Laryngoplasty:  </h6>
-                <p className="mt-2">
-                   Vocal fold augmentation to improve voice quality in cases of vocal fold paralysis. 
-                </p>
-              </div>
-             </li>
+          <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <Image src={Checklight} alt="tick" width={24} height={24} />
+            <div className="">
+              <h6>Injection Laryngoplasty:  </h6>
+              <p className="mt-2">
+                Vocal fold augmentation to improve voice quality in cases of vocal fold paralysis.
+              </p>
+            </div>
+          </li>
 
-             
-          </ul>
-        </div>
+
+        </ul>
+      </div>
     ),
   },
 
@@ -273,76 +271,76 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Paediatrics and Neonatology" /> */}
-          Surgical Treatments 
+          Surgical Treatments
         </div>
       </>
     ),
     content: (
       <div>
-          <ul className="space-y-4">
-            <li className="flex items-start gap-2 text-[14px] font-semibold">
-              <Image src={Checklight} alt="tick" width={24} height={24} />
-              <div className="">
-                <h6>Blue Laser Micro Laryngeal Surgery: </h6>
-                <p className="mt-2">
-                  Precision laser surgery for early cancers, laryngeal papillomas, and other lesions. 
-                </p>
-              </div>
-             </li>
+        <ul className="space-y-4">
+          <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <Image src={Checklight} alt="tick" width={24} height={24} />
+            <div className="">
+              <h6>Blue Laser Micro Laryngeal Surgery: </h6>
+              <p className="mt-2">
+                Precision laser surgery for early cancers, laryngeal papillomas, and other lesions.
+              </p>
+            </div>
+          </li>
 
-             <li className="flex items-start gap-2 text-[14px] font-semibold">
-              <Image src={Checklight} alt="tick" width={24} height={24} />
-              <div className="">
-                <h6>Micro laryngeal Excision:  </h6>
-                <p className="mt-2">
-                  Removal of polyps, nodules, and cysts with microsurgical techniques. 
-                </p>
-              </div>
-             </li>
+          <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <Image src={Checklight} alt="tick" width={24} height={24} />
+            <div className="">
+              <h6>Micro laryngeal Excision:  </h6>
+              <p className="mt-2">
+                Removal of polyps, nodules, and cysts with microsurgical techniques.
+              </p>
+            </div>
+          </li>
 
-             <li className="flex items-start gap-2 text-[14px] font-semibold">
-              <Image src={Checklight} alt="tick" width={24} height={24} />
-              <div className="">
-                <h6>Vocal Fold Paralysis Surgeries:    </h6>
-                <p className="mt-2">
-                   Procedures such as medialisation and reinnervation to restore vocal fold function
-                </p>
-              </div>
-             </li>
+          <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <Image src={Checklight} alt="tick" width={24} height={24} />
+            <div className="">
+              <h6>Vocal Fold Paralysis Surgeries:    </h6>
+              <p className="mt-2">
+                Procedures such as medialisation and reinnervation are used to restore vocal fold function.
+              </p>
+            </div>
+          </li>
 
-             <li className="flex items-start gap-2 text-[14px] font-semibold">
-              <Image src={Checklight} alt="tick" width={24} height={24} />
-              <div className="">
-                <h6>Thyroplasty & Laryngeal Reinnervation:   </h6>
-                <p className="mt-2">
-                   Procedures such as medialisation and reinnervation to restore vocal fold functionAdvanced surgeries aimed at voice restoration and airway improvement. 
-                </p>
-              </div>
-             </li>
+          <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <Image src={Checklight} alt="tick" width={24} height={24} />
+            <div className="">
+              <h6>Thyroplasty & Laryngeal Reinnervation:   </h6>
+              <p className="mt-2">
+                Advanced surgeries aimed at voice restoration and airway improvement.
+              </p>
+            </div>
+          </li>
 
-             <li className="flex items-start gap-2 text-[14px] font-semibold">
-              <Image src={Checklight} alt="tick" width={24} height={24} />
-              <div className="">
-                <h6>Voice Rehabilitation Post-Laryngectomy:   </h6>
-                <p className="mt-2">
-                  Techniques including tracheoesophageal puncture (TEP), electrolarynx use, and oesophageal speech training. 
-                </p>
-              </div>
-             </li>
+          <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <Image src={Checklight} alt="tick" width={24} height={24} />
+            <div className="">
+              <h6>Voice Rehabilitation Post-Laryngectomy:   </h6>
+              <p className="mt-2">
+                Techniques including tracheoesophageal puncture (TEP), electrolarynx use, and oesophageal speech training.
+              </p>
+            </div>
+          </li>
 
-             <li className="flex items-start gap-2 text-[14px] font-semibold">
-              <Image src={Checklight} alt="tick" width={24} height={24} />
-              <div className="">
-                <h6>Paediatric Rigid Bronchoscopy:    </h6>
-                <p className="mt-2">
-                 Safe removal of airway foreign bodies using optical forceps and spontaneous ventilation protocols. 
-                </p>
-              </div>
-             </li>
+          <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <Image src={Checklight} alt="tick" width={24} height={24} />
+            <div className="">
+              <h6>Paediatric Rigid Bronchoscopy:    </h6>
+              <p className="mt-2">
+                Safe removal of airway foreign bodies using optical forceps and spontaneous ventilation protocols.
+              </p>
+            </div>
+          </li>
 
-             
-          </ul>
-        </div>
+
+        </ul>
+      </div>
     ),
   },
   {
@@ -350,56 +348,56 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Paediatrics and Neonatology" /> */}
-          Swallowing & Airway Rehabilitation 
+          Swallowing & Airway Rehabilitation
         </div>
       </>
     ),
     content: (
       <div>
-          <ul className="space-y-4">
-            <li className="flex items-start gap-2 text-[14px] font-semibold">
-              <Image src={Checklight} alt="tick" width={24} height={24} />
-              <div className="">
-                <h6>Post Head & Neck Surgery Care:   </h6>
-                <p className="mt-2">
-                   Specialist speech and swallowing therapy for recovery after surgical interventions. 
-                </p>
-              </div>
-             </li>
+        <ul className="space-y-4">
+          <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <Image src={Checklight} alt="tick" width={24} height={24} />
+            <div className="">
+              <h6>Post Head & Neck Surgery Care:   </h6>
+              <p className="mt-2">
+                Safe removal of airway foreign bodies using optical forceps and spontaneous ventilation protocols.
+              </p>
+            </div>
+          </li>
 
-             <li className="flex items-start gap-2 text-[14px] font-semibold">
-              <Image src={Checklight} alt="tick" width={24} height={24} />
-              <div className="">
-                <h6>Neurogenic Dysphagia Management:  </h6>
-                <p className="mt-2">
-                   Rehabilitation for swallowing difficulties following traumatic brain injury and neurological conditions. 
-                </p>
-              </div>
-             </li>
+          <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <Image src={Checklight} alt="tick" width={24} height={24} />
+            <div className="">
+              <h6>Neurogenic Dysphagia Management:  </h6>
+              <p className="mt-2">
+                Rehabilitation for swallowing difficulties following traumatic brain injury and neurological conditions.
+              </p>
+            </div>
+          </li>
 
-             <li className="flex items-start gap-2 text-[14px] font-semibold">
-              <Image src={Checklight} alt="tick" width={24} height={24} />
-              <div className="">
-                <h6>Post-Thyroid Surgery Swallowing Support:    </h6>
-                <p className="mt-2">
-                   Targeted care to improve swallowing function after thyroidectomy.  
-                </p>
-              </div>
-             </li>
+          <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <Image src={Checklight} alt="tick" width={24} height={24} />
+            <div className="">
+              <h6>Post-Thyroid Surgery Swallowing Support:    </h6>
+              <p className="mt-2">
+                Targeted care to improve swallowing function after thyroidectomy.
+              </p>
+            </div>
+          </li>
 
-             <li className="flex items-start gap-2 text-[14px] font-semibold">
-              <Image src={Checklight} alt="tick" width={24} height={24} />
-              <div className="">
-                <h6>Tracheostomy Tube Care & Decannulation:    </h6>
-                <p className="mt-2">
-                   Expert management of tracheostomy tubes and safe removal when appropriate. 
-                </p>
-              </div>
-             </li>
+          <li className="flex items-start gap-2 text-[14px] font-semibold">
+            <Image src={Checklight} alt="tick" width={24} height={24} />
+            <div className="">
+              <h6>Tracheostomy Tube Care & Decannulation:    </h6>
+              <p className="mt-2">
+                Expert management of tracheostomy tubes and safe removal when appropriate.
+              </p>
+            </div>
+          </li>
 
-             
-          </ul>
-        </div>
+
+        </ul>
+      </div>
     ),
   },
 
@@ -546,10 +544,10 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Best Laryngology Treatments in Sudha Multispeciality Hospital in   <span className="text-[#2B3990]"> Erode.</span>
+                  Best Laryngology Treatments by the Best Laryngologist in    <span className="text-[#2B3990]"> Tamil Nadu.</span>
                 </h2>
                 <p className="mb-3">
-                  The laryngology department in Sudha Multispeciality Hospital offers expert laryngology care with the best laryngologists in Tamil Nadu. Our department specialises in diagnosing and treating disorders of the larynx (vocal cord), throat, and airway using cutting-edge diagnostic tools and advanced surgical and non-surgical therapies. We are committed to restoring voice, swallowing, and airway function with compassionate and personalised care.
+                  The laryngology department in Sudha Multispeciality Hospital offers expert laryngology care with the best laryngologists in Erode. Our department specialises in diagnosing and treating disorders of the larynx (vocal cord), throat, and airway using cutting-edge diagnostic tools and advanced surgical and non-surgical therapies. We are committed to restoring voice, swallowing, and airway function with compassionate and personalised care.
                 </p>
 
               </>
@@ -560,7 +558,7 @@ export default function SidebarTabs() {
             {id === "facilities" && (
               <>
                 <h2 className="text-[24px] mt-5 mb-3">Facilities</h2>
-                <p className="mb-3">Our world-class laryngology unit is equipped with the latest diagnostic and therapeutic technologies to provide comprehensive care for voice, swallowing, and airway disorders.   </p>
+                <p className="mb-3">Our world-class laryngology unit is equipped with the latest diagnostic and therapeutic technologies to provide comprehensive care for voice, swallowing, and airway disorders.     </p>
                 <ul>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Olympus Nasopharyngolaryngoscope with Narrow Band Imaging (NBI) for early cancer detection    </li>
@@ -591,16 +589,16 @@ export default function SidebarTabs() {
               </div>
             )}
 
-            {id === "doctors" && (
+            {/* {id === "doctors" && (
               <>
-                <h2 className="text-[24px]  mt-5 pb-3 pb-3">Doctors</h2>
-                <DoctorSlider />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="Neurology" counter={2} />
               </>
             )}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
             )} */}

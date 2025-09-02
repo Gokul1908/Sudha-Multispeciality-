@@ -194,9 +194,9 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Bedside X-Ray and Ultrasound </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> 24x7 radiologist availability </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Mobile units for critical care imaging</li>
-            
+
           </ul>
-         
+
         </div>
       </div>
     ),
@@ -216,16 +216,16 @@ const accordionData = [
         <p>
           Our Cath Lab enables minimally invasive, image-guided procedures to treat various conditions with less discomfort and faster recovery. These procedures reduce the need for open surgery and shorten hospital stays. The radiology team works closely with surgeons and physicians to guide biopsies, drainages, and cardiac interventions with precision.
         </p>
-       <h5 classsName="text-primary-blue text-[15px]">Includes: </h5>
+        <h5 classsName="text-primary-blue text-[15px]">Includes: </h5>
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Image-guided procedures and interventions </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Cardiac and vascular imaging </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Biopsy and drainage assistance </li>
-            
+
           </ul>
-        
-      </div>
+
+        </div>
       </div>
     ),
   },
@@ -368,7 +368,7 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Expert Radiology Care in <span className="text-[#2B3990]"> Erode</span> for All Specialties
+                  Best Radiology Hospital in <span className="text-[#2B3990]"> Erode</span> Offering Comprehensive Services
                 </h2>
                 <p className="mb-4">
                   The Radiology Department at Sudha Multispeciality Hospital in Erode combines medical expertise with advanced imaging technology to deliver fast, accurate, and non-invasive diagnostics. Our team of experienced radiologists and technicians work together with clinical departments to support timely diagnosis, treatment planning, and continuous monitoring. With a strong commitment to patient safety, we ensure high-quality imaging with minimal exposure.
@@ -432,15 +432,14 @@ export default function SidebarTabs() {
 
             {id === "doctors" && (
               <>
-                <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
-                <DoctorSlider
-                />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="Radiology" counter={2} />
               </>
             )}
 
             {/* {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
             )} */}

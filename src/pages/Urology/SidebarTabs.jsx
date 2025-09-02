@@ -164,8 +164,8 @@ const accordionData = [
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Lithotripsy (ESWL) for non-invasive stone removal</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Ureteroscopy (URS) for small ureteric stones </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> PCNL for large or complex kidney stones</li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Ureteroscopy (URS) for small ureteric stones  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> PCNL for large or complex kidney stones </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  C-Arm guided imaging for precision </li>
           </ul>
 
@@ -192,7 +192,7 @@ const accordionData = [
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Microscopic Varicocele Repair</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} />Micro-TESE for sperm retrieval</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Micro-TESE for sperm retrieval</li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Male infertility evaluation and counselling </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Collaboration with fertility specialists </li>
           </ul>
 
@@ -292,7 +292,7 @@ export default function SidebarTabs() {
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
 
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -396,10 +396,10 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover " />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Advanced Urology Treatments at <span className="text-[#2B3990]"> Sudha </span>  Multispeciality Hospital
+                  Advanced Urology Treatments at the Best Urology Hospital in  <span className="text-[#2B3990]"> Erode </span>
                 </h2>
                 <p className="mb-4">
-                  At Sudha Multispeciality Hospital, we offer comprehensive and compassionate care for all types of urological conditions affecting men, women, and children. As one of the best hospitals for urology treatments, our department is equipped with state-of-the-art technology and led by experienced urologists committed to delivering precise diagnosis and minimally invasive treatments. Whether it's kidney stones, prostate issues, or advanced urological cancers, our patient-centric approach ensures high success rates and faster recovery.
+                  At Sudha Multispeciality Hospital, we offer comprehensive and compassionate care for all types of urological conditions affecting men, women, and children. As one of the best hospitals for kidney-related treatments in Erode, our department is equipped with state-of-the-art technology and led by experienced urologists committed to delivering precise diagnosis and minimally invasive treatments. Whether it's kidney stones, prostate issues, or advanced urological cancers, our patient-centric approach ensures high success rates and faster recovery.
                 </p>
                 <p className="mb-4">
                   We specialise in both routine and complex urological procedures, including renal stone management, prostate surgery, incontinence treatment, and fertility-related microsurgeries. With advanced tools like Lithotripsy and Micro-TESE, we bring together innovation and care for your complete urinary health.
@@ -414,22 +414,27 @@ export default function SidebarTabs() {
                 <h2 className="text-[24px] mt-5 mb-3">Facilities</h2>
                 <ul>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>24x7 Emergency Urological Services: Immediate care for urinary obstructions, trauma, and renal colic emergencies.
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>24x7 Emergency Urological Services :
+                    Immediate care for urinary obstructions, trauma, and renal colic emergencies.
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Specialised Wards & Skilled Staff: General and private wards staffed with trained duty doctors and urology-trained nurses.
-                  </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    C-Arm Fluoroscopy Unit: Real-time imaging support for accurate surgical procedures.
-                  </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    Advanced Lithotripsy Equipment: Non-invasive stone-breaking technology for kidney and ureteric stones.
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Specialised Wards & Skilled Staff :
+                    General and private wards staffed with trained duty doctors and urology-trained nurses.
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    Microsurgical Fertility Equipment: Tools for high-precision procedures like Micro-TESE and Varicocele repair.
+                    C-Arm Fluoroscopy Unit :
+                    Real-time imaging support for accurate surgical procedures.
+                  </li>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
+                    Advanced Lithotripsy Equipment :
+                    Non-invasive stone-breaking technology for kidney and ureteric stones.
+                  </li>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
+                    Microsurgical Fertility Equipment :
+                    Tools for high-precision procedures like Micro-TESE and Varicocele repair.
                   </li>
                 </ul>
               </>
@@ -447,14 +452,14 @@ export default function SidebarTabs() {
 
             {id === "doctors" && (
               <>
-                <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
-                <DoctorSlider />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="Urologist" counter={1} />
               </>
             )}
 
             {/* {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
             )} */}

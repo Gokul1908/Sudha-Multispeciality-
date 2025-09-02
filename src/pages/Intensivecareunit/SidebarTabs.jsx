@@ -15,7 +15,7 @@ const serviceSections = [
   { id: "overview", label: "Overview" },
   { id: "treatmentsandprocedures", label: "Treatments & Procedures" },
   { id: "specialities", label: "Specialities" },
-  { id: "doctors", label: "Doctors" },
+  // { id: "doctors", label: "Doctors" },
   { id: "faqs", label: "FAQs" },
 ];
 
@@ -23,123 +23,59 @@ const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">What is cardiology? </div>
+        <div className="flex gap-3">What is the highest level of intensive care?  </div>
       </>
     ),
     content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
-          A branch of medicine dealing with disorders of heart and blood
-          vessels. The work of our cardiologists for adults includes diagnosis
-          and treatment of adult congenital heart disease, heart failure,
-          coronary artery disease, valvular heart disease and arrhythmias. All
-          the necessary investigations like ECG, Echocardiogram, Treadmill test,
-          Holter monitoring, Ambulatory BP monitoring, tilt table testing,
-          cardiac CT, cardiac MRI, and nuclear heart scanning are available to
-          provide you with the best adult cardiology treatment at our
-          multispeciality hospital in Erode.
-        </p>
-        <h4 className="font-semibold">
-          Diagnostic Tests Available in our Cardiology Hospital:
-        </h4>
-        <h2 className="font-semibold text-[#2B3990]">ECG:</h2>
-        <p>
-          Cardiac problems such as heart attack, heart block, etc. can be
-          detected by measuring the electrical activity of the heart, which is
-          done by electrocardiogram (ECG).
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">ECHOCARDIOGRAM:</h2>
-        <p>
-          The structure and function of the heart can be assessed by moving
-          images produced by sound waves. Various heart diseases can be
-          diagnosed by this readily available investigation.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">TREADMILL TEST:</h2>
-        <p>
-          Patients will walk on a treadmill at graded levels and their 12- lead
-          ECG will be monitored for heart rate, ST-T segment changes. The
-          presence or absence of changes will be interpreted accordingly to
-          detect heart problems like coronary artery disease, heart block,
-          etc..., that helps in determining the cardiology treatment that is to
-          proceed further accordingly.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">
-          STRESS ECHOCARDIOGRAPHY:
-        </h2>
-        <p>
-          Heart is exerted by exercise or medicines and its activity is
-          monitored by echocardiography. For those who are not able to walk to
-          perform treadmill test, this is a very useful test to rule out
-          coronary artery disease.
-        </p>
-      </div>
+      <p>
+        The highest level of intensive care is provided in a fully equipped ICU with continuous monitoring, advanced life support systems, and specialised critical care staff. Sudha Multispeciality Hospital, recognised as the best ICU hospital in Erode, provides a world-class ICU facility in Erode with 24/7 expert care for critically ill patients.
+      </p>
     ),
   },
   {
     title: (
       <>
         <div className="flex gap-3">
-          What is the main cause of heart problems?
+          Is ICU covered by insurance?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Most health insurance policies cover ICU treatment, depending on the plan and hospital. At Sudha Multispeciality Hospital, the best hospital for ICU in Erode, we assist patients in insurance claims to make ICU care accessible and stress-free.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Which hospital in Erode provides a world-class ICU facility?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Sudha Multispeciality Hospital provides a world-class ICU facility in Erode with modern monitoring equipment, ventilators, emergency care support, and a dedicated critical care team to manage serious and life-threatening conditions effectively.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What is the typical recovery period following discharge from the ICU?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Recovery after ICU depends on the severity of illness, the patient’s overall health, and the treatment received. At Sudha Multispeciality Hospital, patients are guided through post-ICU care and follow-ups to ensure smooth recovery in a safe and monitored environment. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What is the difference between ICU and NCU?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>ICU (Intensive Care Unit) is for critically ill patients needing constant monitoring and advanced life support. NCU (Neonatal Care Unit) is specifically for newborns requiring special care. Sudha Multispeciality Hospital, with the best ICU hospital in Erode and advanced neonatal facilities, provides specialised care for all critical patients.</p>,
   },
-  {
-    title: (
-      <>
-        <div className="flex gap-3">
-          {" "}
-          What is the main cause of heart problems?
-        </div>
-      </>
-    ),
-    content: <p>Details coming soon.</p>,
-  },
-  {
-    title: (
-      <>
-        <div className="flex gap-3">
-          {" "}
-          What is the main cause of heart problems?
-        </div>
-      </>
-    ),
-    content: <p>Details coming soon.</p>,
-  },
+
 ];
 
 const accordionData = [
@@ -155,11 +91,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Our dedicated isolation rooms are designed to care for patients
-          requiring advanced support, including those on ventilators or
-          undergoing dialysis. Each room features negative pressure technology
-          to ensure a controlled and secure environment for managing
-          droplet-spread infections.
+          Our dedicated isolation rooms are designed to care for patients requiring advanced support, including those on ventilators or undergoing dialysis. Each room features negative pressure technology to ensure a controlled and secure environment for managing droplet-spread infections.
         </p>
       </div>
     ),
@@ -176,29 +108,21 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          At Sudha Multispeciality Hospital, we offer compassionate and expert
-          care for newborns who need intensive support. Our NICU is built to
-          nurture even the tiniest lives with:
+          At Sudha Multispeciality Hospital, we offer compassionate and expert care for newborns who need intensive support. Our NICU is built to nurture even the tiniest lives with:
         </p>
 
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Advanced
-              life-support systems for premature and low-birth-weight babies</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Experienced
-              neonatologists and paediatricians available 24/7 </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Continuous
-              monitoring and specialized respiratory care</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  Family-centred approach that supports parents every step of the
-              way </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  A safe,
-              sterile environment designed for delicate immune systems </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Advanced life-support systems for premature and low-birth-weight babies  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Experienced neonatologists and paediatricians available 24/7    </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Continuous monitoring and specialized respiratory care</li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  Family-centred approach that supports parents every step of the way </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  A safe, sterile environment designed for delicate immune systems   </li>
 
           </ul>
 
           <p className="mt-3">
-            Every newborn deserves a healthy beginning and we’re here to make
-            that happen with care, comfort, and hope.
+            Every newborn deserves a healthy beginning, and we’re here to make that happen with care, comfort, and hope.
           </p>
         </div>
       </div>
@@ -217,21 +141,14 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          At Sudha Multispeciality Hospital, our PICU is a dedicated space for
-          children requiring intensive medical attention. The unit is equipped
-          to handle a wide range of paediatric emergencies with round-the-clock
-          care.
+          At Sudha Multispeciality Hospital, our PICU is a dedicated space for children requiring intensive medical attention. The unit is equipped to handle a wide range of paediatric emergencies with round-the-clock care.
         </p>
 
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Advanced
-              life-support systems for premature and low-birth-weight babies</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Specialised
-              care for life-threatening infections, neurological crises,
-              hematologic-oncologic emergencies, respiratory distress, trauma,
-              and complex post-operative recovery </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /><b>Procedural sedation provided for invasive procedures such as:</b> </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Equipped with ventilators, multiparameter monitors, dialysis units, infusion and syringe pumps for advanced life support </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Specialised care for life-threatening infections, neurological crises, hematologic-oncologic emergencies, respiratory distress, trauma, and complex post-operative recovery  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /><b>Procedural sedation is provided for invasive procedures such as:  </b> </li>
 
 
             <ul className="ml-10">
@@ -254,9 +171,9 @@ const accordionData = [
 
 
 
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  ECMO support available in collaboration with the paediatric cardiothoracic team for referred cases </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  ECMO support is available in collaboration with the paediatric cardiothoracic team for referred cases </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  Manned by an expert team of paediatric intensivists and specially trained PICU nurses </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  24/7 intensive monitoring and care tailored to the unique needs of children </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  24/7 intensive monitoring and care tailored to the unique needs of children   </li>
 
           </ul>
 
@@ -276,17 +193,16 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          Our ICCU is designed to provide advanced, lifesaving care for patients with severe cardiac conditions. Combining state-of-the-art technology with expert cardiac care, we ensure timely intervention and continuous monitoring for heart emergencies.
+          Our ICCU is designed to provide advanced, lifesaving care for patients with severe cardiac conditions. Combining state-of-the-art technology with expert cardiac care, we ensure timely intervention and continuous monitoring for heart emergencies. 
         </p>
 
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />24/7 care for heart attacks, arrhythmias, and cardiac arrest</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Equipped with advanced cardiac monitors, defibrillators, and ventilators</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Managed by a skilled team of cardiologists, intensivists, and critical care nurses </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  Family-centred approach that supports parents every step of the
-              way </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  Immediate access to ECG, echocardiography, and emergency interventions </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Support for post-cardiac surgery and high-risk cardiac patients </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  Managed by a skilled team of cardiologists, intensivists, and critical care nurses </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Immediate access to ECG, echocardiography, and emergency interventions   </li>
 
           </ul>
 
@@ -306,17 +222,17 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          Our CT-ICU is a specialised unit designed to provide intensive post-operative care for patients undergoing complex heart and lung surgeries. With a multidisciplinary team and advanced monitoring systems, we ensure safe recovery in the most critical hours following surgery.
+          Our CT-ICU is a specialised unit designed to provide intensive post-operative care for patients undergoing complex heart and lung surgeries. With a multidisciplinary team and advanced monitoring systems, we ensure safe recovery in the most critical hours following surgery. 
         </p>
 
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Continuous monitoring for patients after bypass surgery, valve replacement, thoracic procedures, and more</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Equipped with ventilators, cardiac monitors, infusion pumps, and defibrillators</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Equipped with advanced cardiac monitors, defibrillators, and ventilators </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Equipped with ventilators, cardiac monitors, infusion pumps, and defibrillators </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Managed by experienced cardiothoracic surgeons, cardiac intensivists, and ICU-trained nurses  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  Managed by experienced cardiothoracic surgeons, cardiac intensivists, and ICU-trained nurses </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  Focus on pain control, infection prevention, and early recovery </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  Round-the-clock care for optimum surgical outcomes and patient safet </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />  Round-the-clock care for optimum surgical outcomes and patient safety  </li>
 
           </ul>
 
@@ -357,7 +273,7 @@ export default function SidebarTabs() {
   return (
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -421,7 +337,7 @@ export default function SidebarTabs() {
             <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />24/7 On-Site Intensivists and Critical Care Specialists</li>
             <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Advanced Support for High-Risk Surgeries and ECMO</li>
           </ul>
-          
+
 
           <button className="btn-white mt-5">
             Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
@@ -464,57 +380,45 @@ export default function SidebarTabs() {
                   className="w-full h-[400px] rounded-2xl object-cover"
                 />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Advanced Intensive Care Units in
-                  <span className="text-[#2B3990]"> Erode</span>with World-Class
-                  Equipment
+                  Advanced Intensive Care in the Best ICU Hospital in 
+                  <span className="text-[#2B3990]"> Erode</span>
+                  
                 </h2>
                 <p className="mb-4">
-                  The Intensive Care Units at Sudha Multispeciality Hospital in
-                  Erode are built to deliver timely, high-quality care to
-                  patients facing critical and life-threatening conditions. Our
-                  facility is equipped with advanced critical care
-                  infrastructure and the latest medical technology to support
-                  rapid response and effective treatment.
+                  The Intensive Care Units at Sudha Multispeciality Hospital in Erode are built to deliver timely, high-quality care to patients facing critical and life-threatening conditions. Our hospital has the world class ICU facility in Erode equipped with advanced critical care infrastructure and the latest medical technology to support rapid response and effective treatment.  
+                </p>
+
+                
+
+                <p className="mb-4 ">
+                  A dedicated team of intensivists, doctors, and specially trained nurses ensures round-the-clock monitoring and expert care. Patient vitals and conditions are consistently tracked, allowing for immediate medical intervention whenever needed. 
                 </p>
 
                 <p className="mb-4 ">
-                  A dedicated team of intensivists, doctors, and specially
-                  trained nurses ensures round-the-clock monitoring and expert
-                  care. Patient vitals and conditions are consistently tracked,
-                  allowing for immediate medical intervention whenever needed.
-                </p>
-
-                <p className="mb-4 ">
-                  The ICU layout at Sudha Multispeciality Hospital is
-                  strategically designed to allow quick access for doctors and
-                  surgeons during emergencies, helping save crucial time. With
-                  expert staff, modern equipment, and a patient-first approach,
-                  we are committed to offering the highest standard of critical
-                  care when every second counts.
+                  As the best hospital for ICU the critical care layout at Sudha Multispeciality Hospital is strategically designed to allow quick access for doctors and surgeons during emergencies, helping save crucial time. With expert staff, modern equipment, and a patient-first approach, we are committed to offering the highest standard of critical care when every second counts
                 </p>
 
                 <p className="font-bold text-primary-blue mb-4">
-                  The department of critical care medicine holds the following
-                  units:
+                  The Department of Critical Care Medicine holds the following units
                 </p>
 
                 <ul className="space-y-4 text-start mt-4">
-                            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />   Critical Care Unit 1(Beds)</li>
-                            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} /> Critical Care Unit 2 (Beds)</li>
-                            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Isolation Rooms (Rooms)</li>
+                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />   Critical Care Unit 1</li>
+                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} /> Critical Care Unit 2</li>
+                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Isolation Rooms</li>
 
 
 
-                            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Paediatric Intensive Care Unit (beds)</li>
+                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Paediatric Intensive Care Unit   </li>
 
-                            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Medical Intensive Care Unit (Beds)</li>
+                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Medical Intensive Care Unit</li>
 
-                            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Cardiac Intensive Coronary Care Unit (beds)</li>
+                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Cardiac Intensive Coronary Care Unit </li>
 
-                            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Cardiothoracic Surgery Intensive Care Unit (beds)</li>
-                             <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} /> Neonatal Intensive Care Unit (Beds)</li>
-                          </ul>
-                
+                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} />Cardiothoracic Surgery Intensive Care Unit</li>
+                  <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={20} height={20} /> Neonatal Intensive Care Unit </li>
+                </ul>
+
               </>
             )}
 
@@ -524,8 +428,7 @@ export default function SidebarTabs() {
                   Treatments & Procedures
                 </h2>
                 <p className="mb-3">
-                  A wide range of critical procedures are routinely carried out,
-                  including but not limited to the following interventions:
+                  A wide range of critical procedures are routinely carried out, including but not limited to the following interventions:  
                 </p>
                 <ul>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
@@ -596,19 +499,19 @@ export default function SidebarTabs() {
               </div>
             )}
 
-            {id === "doctors" && (
+            {/* {id === "doctors" && (
               <>
-                <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
-                <DoctorSlider />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="General Medicine" counter={3} />
               </>
-            )}
+            )} */}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
-            )} */}
+            )}
           </section>
         ))}
       </div>

@@ -76,7 +76,7 @@ function Emergencycare() {
               transition={{ duration: 0.6 }}
               className="mb-6 text-white"
             >
-             Emergency Care That’s Always Ready to Save Lives
+              Emergency Care That’s Always Ready to Save Lives
             </motion.p>
 
             {/* Button */}

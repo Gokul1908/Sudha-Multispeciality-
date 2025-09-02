@@ -159,7 +159,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Reconstructive procedures are performed to correct structural abnormalities, congenital conditions, or damage caused by trauma or surgery. These surgeries focus on restoring both function and form for improved quality of life.
+          Reconstructive procedures are performed to correct structural abnormalities, congenital conditions, or damage caused by trauma or surgery. These surgeries focus on restoring both function and form for improved quality of life. 
         </p>
 
         <div>
@@ -188,7 +188,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Cosmetic plastic surgery aims to improve or enhance physical appearance through surgical techniques. Each procedure is designed to suit the patient’s body goals and aesthetic needs with a natural finish.
+          Cosmetic plastic surgery aims to improve or enhance physical appearance through surgical techniques. Each procedure is designed to suit the patient’s body goals and aesthetic needs with a natural finish. 
         </p>
 
 
@@ -218,7 +218,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Comprehensive care is offered for burn injuries including acute burn treatment, wound management, and long-term corrective surgery. Our multidisciplinary approach ensures functional and aesthetic recovery.
+          Comprehensive care is offered for burn injuries including acute burn treatment, wound management, and long-term corrective surgery. Our multidisciplinary approach ensures functional and aesthetic recovery. 
         </p>
 
         <div>
@@ -246,7 +246,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Specialised surgeries are provided for treating facial bone fractures and jaw alignment issues. These procedures restore facial structure, aesthetics, and oral functionality.
+          Specialised surgeries are provided for treating facial bone fractures and jaw alignment issues. These procedures restore facial structure, aesthetics, and oral functionality. 
         </p>
 
         <div>
@@ -300,7 +300,7 @@ export default function SidebarTabs() {
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
 
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -404,9 +404,9 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Plastic and Reconstructive Surgery Services at <span className="text-[#2B3990]"> Sudha</span>  Multispeciality Hospital
+                  Plastic and Reconstructive Surgery Services at the Best Hospital for Plastic Surgery  
                 </h2>
-                <p className="text-gray-700 mb-3">
+                <p className=" mb-3">
                   The Plastic Surgery Department at Sudha Multispeciality Hospital offers both reconstructive and aesthetic surgical solutions tailored to enhance appearance and restore function. Our team of experienced plastic and cosmetic surgeons uses advanced techniques and precision to treat congenital deformities, trauma-related injuries, burns, and cosmetic concerns. We prioritise safety, comfort, and natural-looking outcomes, helping patients regain their confidence and quality of life through compassionate and expert care.
                 </p>
 
@@ -446,16 +446,16 @@ export default function SidebarTabs() {
               </div>
             )}
 
-            {id === "doctors" && (
+            {/* {id === "doctors" && (
               <>
-                <h2 className="text-[24px]  mt-5 pb-3 pb-3">Doctors</h2>
-                <DoctorSlider />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="Neurology" counter={2} />
               </>
             )}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
             )} */}

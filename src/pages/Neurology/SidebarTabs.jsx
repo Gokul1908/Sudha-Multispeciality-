@@ -165,7 +165,7 @@ const accordionData = [
 
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Interventional Neuroradiology for Subarachnoid Haemorrhage & AVM </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Interventional Neuroradiology for Subarachnoid Haemorrhage & AVM  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Carotid Angioplasty for Carotid Artery Stenosis </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Neurovascular Surgery including Aneurysm and AVM clipping </li>
           </ul>
@@ -188,7 +188,7 @@ const accordionData = [
         <p>
           We offer advanced treatments for Parkinson’s, tremors, and dystonia using non-invasive and surgical options. Treatment plans are tailored based on the stage of the disease and patient needs. Our care focuses on improving motor control and enhancing life quality.
         </p>
-        <p className="mt-3 font-bold text-primary-blue">Key Treatments: </p>
+
 
         {/* <div>
           <ul className="space-y-4">
@@ -274,6 +274,7 @@ const accordionData = [
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Surgery for Spinal Cord Tumours</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Intraoperative Monitoring for Complex Surgeries</li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Sphincter EMG for Urinary & Sexual Dysfunction </li>
 
           </ul>
 
@@ -348,7 +349,7 @@ export default function SidebarTabs() {
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
 
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -452,10 +453,10 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Expert Neurology & Neurosurgery Services at Sudha Multispeciality Hospital in <span className="text-[#2B3990]"> Erode</span>
+                  Expert Neurology & Neurosurgery Services at the Best Neurology Hospital in   <span className="text-[#2B3990]"> Erode</span>
                 </h2>
                 <p className=" mb-3">
-                  At Sudha Multispeciality Hospital, our Neurology Department is a centre of excellence offering expert diagnosis, treatment, and surgical care for a wide range of neurological disorders. From acute stroke care to complex brain and spine surgeries, our multidisciplinary team of neurologists, neurosurgeons, and neuro-rehabilitation experts use the latest technology and research-backed approaches to deliver high-precision care. Whether it’s epilepsy, Parkinson’s, brain tumours, or spine conditions, we are equipped to offer comprehensive neuro care under one roof. Recognised as one of the best neurology hospitals, we strive to improve outcomes and quality of life for patients with complex neurological conditions.
+                  At Sudha Multispeciality Hospital, one of the leading Neurology hospitals in Erode, our Neurology Department is a centre of excellence offering expert diagnosis, treatment, and surgical care for a wide range of neurological disorders. From acute stroke care to complex brain and spine surgeries, our team of best neurologists, neurosurgeons, and neuro-rehabilitation experts in Erode use the latest technology and research-backed approaches to deliver high-precision care. Whether it’s epilepsy, Parkinson’s, brain tumours, or spine conditions, we as the best hospital for brain. Spinal cord, and nervous system, are equipped to offer comprehensive neuro care under one roof. Recognised as one of the best hospitals for stroke treatment in Erode, we strive to improve outcomes and quality of life for patients with complex neurological conditions.
                 </p>
 
               </>
@@ -468,22 +469,24 @@ export default function SidebarTabs() {
                 <h2 className="text-[24px] mt-5 mb-3">Facilities</h2>
                 <ul>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> <b>24 x 7 Emergency Neurology Services</b></li>
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> <b>24 x 7 Emergency Neurology Services
+                    </b></li>
                   <p className="ml-5"> Immediate care for stroke, seizures, head injuries, and neuro-emergencies. </p>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> <b>General & Special Wards</b></li>
-                  <p className="ml-5"> Dedicated neuro-care units with trained duty doctors and staff nurses for continuous patient monitoring.</p>
+                  <p className="ml-5"> Dedicated neuro-care units with trained duty doctors and staff nurses for continuous patient monitoring. </p>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> <b>State-of-the-Art Neuro Intensive Care Unit (Neuro-ICU)</b></li>
-                  <p className="ml-5">Equipped with advanced monitoring systems and ventilator support for critical neurological patients.</p>
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> <b>State-of-the-Art Neuro Intensive Care Unit (Neuro-ICU)
+                    </b></li>
+                  <p className="ml-5">Equipped with advanced monitoring systems and ventilator support for critical neurological patients. </p>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> <b>Neurodiagnostic Lab</b></li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
-                    <div className="w-2 h-2 ml-6 rounded-lg bg-[#bcbfc2]"></div>Electroencephalography (EEG) for seizure disorder diagnosis </li>
+                    <div className="w-2 h-2 ml-6 rounded-lg bg-[#bcbfc2]"></div>Electroencephalography (EEG) for seizure disorder diagnosis  </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
-                    <div className="w-2 h-2 ml-6 rounded-lg bg-[#bcbfc2]"></div>Nerve Conduction Studies (NCS), EMG & Evoked Potential Studies</li>
+                    <div className="w-2 h-2 ml-6 rounded-lg bg-[#bcbfc2]"></div>Nerve Conduction Studies (NCS), EMG & Evoked Potential Studies </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
-                    <div className="w-2 h-2 ml-6 rounded-lg bg-[#bcbfc2]"></div>Transcranial Doppler for stroke evaluation</li>
+                    <div className="w-2 h-2 ml-6 rounded-lg bg-[#bcbfc2]"></div>Transcranial Doppler for stroke evaluation </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
                     <div className="w-2 h-2 ml-6 rounded-lg bg-[#bcbfc2]"></div>Sleep Study & Video Telemetry for sleep and epilepsy disorders</li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3 text-sm">
@@ -513,14 +516,14 @@ export default function SidebarTabs() {
 
             {id === "doctors" && (
               <>
-                <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
-                <DoctorSlider />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="Neurology" counter={2} />
               </>
             )}
 
             {/* {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
             )} */}

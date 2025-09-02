@@ -25,56 +25,13 @@ const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">What is cardiology? </div>
+        <div className="flex gap-3">Which is the best orthopedic hospital in Erode? </div>
       </>
     ),
     content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
-          A branch of medicine dealing with disorders of heart and blood
-          vessels. The work of our cardiologists for adults includes diagnosis
-          and treatment of adult congenital heart disease, heart failure,
-          coronary artery disease, valvular heart disease and arrhythmias. All
-          the necessary investigations like ECG, Echocardiogram, Treadmill test,
-          Holter monitoring, Ambulatory BP monitoring, tilt table testing,
-          cardiac CT, cardiac MRI, and nuclear heart scanning are available to
-          provide you with the best adult cardiology treatment at our
-          multispeciality hospital in Erode.
+    <p>
+         Sudha Multispeciality Hospital, recognized as the best ortho hospital in Erode, provides comprehensive orthopedic care with advanced facilities and treatment led by the best orthopaedic doctors in Erode. 
         </p>
-        <h4 className="font-semibold">
-          Diagnostic Tests Available in our Cardiology Hospital:
-        </h4>
-        <h2 className="font-semibold text-[#2B3990]">ECG:</h2>
-        <p>
-          Cardiac problems such as heart attack, heart block, etc. can be
-          detected by measuring the electrical activity of the heart, which is
-          done by electrocardiogram (ECG).
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">ECHOCARDIOGRAM:</h2>
-        <p>
-          The structure and function of the heart can be assessed by moving
-          images produced by sound waves. Various heart diseases can be
-          diagnosed by this readily available investigation.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">TREADMILL TEST:</h2>
-        <p>
-          Patients will walk on a treadmill at graded levels and their 12- lead
-          ECG will be monitored for heart rate, ST-T segment changes. The
-          presence or absence of changes will be interpreted accordingly to
-          detect heart problems like coronary artery disease, heart block,
-          etc..., that helps in determining the cardiology treatment that is to
-          proceed further accordingly.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">
-          STRESS ECHOCARDIOGRAPHY:
-        </h2>
-        <p>
-          Heart is exerted by exercise or medicines and its activity is
-          monitored by echocardiography. For those who are not able to walk to
-          perform treadmill test, this is a very useful test to rule out
-          coronary artery disease.
-        </p>
-      </div>
     ),
   },
   {
@@ -82,66 +39,66 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-          What is the main cause of heart problems?
+          Which hospital is best for fractures and joint replacement in Erode?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>As the best ortho hospital in Erode, Sudha Multispeciality Hospital offers expert surgical and non-surgical treatments for fracture and joint replacements under the guidance of the best orthopaedic doctors in Erode. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What are the early symptoms of joint or bone disease? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Early signs of joint or bone disease include persistent pain, swelling, stiffness, difficulty moving, or deformities. Consulting an orthopaedist is crucial when noticing the symptoms.  Sudha Multispeciality Hospital, the best ortho hospital in Erode, provides advanced diagnostics for early detection and treatment.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What is the fastest way to increase bone density?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Bone density can be improved through a combination of calcium- and vitamin D-rich diet, regular weight-bearing exercises, and proper medical supervision. Orthopaedist at Sudha Multispeciality Hospital offers guidance and diet plans to strengthen bones effectively. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Under what circumstances is knee replacement surgery performed? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Knee replacement surgery is recommended for severe arthritis, significant joint damage, or chronic pain that cannot be managed with medications or therapy. Sudha Multispeciality Hospital, the best ortho hospital in Erode, provides expert knee replacement procedures for optimal outcomes.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+         What is the recovery time after orthopedic surgery? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Recovery time after orthopaedic surgery depends on the type of procedure, patient health, and adherence to rehabilitation. As the best hospital for orthopaedics, Sudha Multispeciality Hospital, ensures structured post-operative care to support smooth and safe recovery. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+         How painful is knee replacement surgery? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>The patient will not know the pain during the knee replacement surgery as they'll be under anaesthesia. Equipped with the best ortho doctors in Erode. Sudha Multispeciality Hospital offers advanced pain management and post-operative care for a comfortable recovery. </p>,
   },
 ];
 
@@ -153,19 +110,19 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Orthopaedics" />  */}
-        Trauma & Joint Care 
+          Trauma & Joint Care
         </div>
       </>
     ),
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Specialised in managing both simple and complex fractures, joint injuries, and emergency trauma cases with rapid response and advanced techniques. Our orthopaedic trauma team is available 24/7 to handle high-impact injuries with precision. 
+          Specialised in managing both simple and complex fractures, joint injuries, and emergency trauma cases with rapid response and advanced techniques. Our orthopaedic trauma team is available 24/7 to handle high-impact injuries with precision.
         </p>
 
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Polytrauma & fracture management </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Polytrauma & fracture management  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Pelvic and acetabular fracture management  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Hip, knee, shoulder, spine, and elbow fracture surgeries </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Endoscopic and minimally invasive procedures </li>
@@ -180,7 +137,7 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Orthopaedics" /> */}
-          Joint Replacement & Reconstruction 
+          Joint Replacement & Reconstruction
         </div>
       </>
     ),
@@ -235,7 +192,7 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Orthopaedics" /> */}
-          Specialised Orthopaedic Care 
+          Specialised Orthopaedic Care
         </div>
       </>
     ),
@@ -272,15 +229,7 @@ const accordionData = [
           Personalised care for sports injuries, with thorough analysis and advanced treatment options. This includes arthroscopic reconstruction of injured ligaments in the shoulder and knee joints, along with other specialised interventions to restore mobility and performance. 
         </p>
 
-        {/* <div>
-          <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Paediatric orthopaedics and deformity correction</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Geriatric orthopaedic care for ageing bones and joints </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Rheumatology and arthritis management</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Bone tumour evaluation and surgery </li>
-          </ul>
-
-        </div> */}
+        
       </div>
     ),
   },
@@ -321,7 +270,7 @@ export default function SidebarTabs() {
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
 
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -425,10 +374,10 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover " />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Best Orthopaedic Care at the Best Ortho Hospital in  <span className="text-[#2B3990]"> Erode</span> 
+                  Best Orthopaedic Care at the Best Ortho Hospital in   <span className="text-[#2B3990]"> Erode</span>
                 </h2>
                 <p className=" mb-3">
-                  The Department of Orthopaedics at Sudha Multispeciality Hospital is recognized as one of the best orthopaedic hospitals in Erode, offering comprehensive treatment for trauma, bone, joint, and spine conditions. With the expertise of the best orthopaedic doctors in Erode, the department specializes in joint replacement, complex fracture management, spinal disorders, and paediatric orthopaedics. Equipped with advanced surgical techniques and world-class infrastructure, the team ensures precise diagnosis, personalised treatment, and faster recovery. From emergency trauma care to advanced reconstructive surgeries, every orthopaedic challenge is managed with excellence, compassion, and confidence. 
+                 The Department of Orthopaedics at Sudha Multispeciality Hospital is recognized as one of the best orthopaedic hospitals in Erode, offering comprehensive treatment for trauma, bone, joint, and spine conditions. With the expertise of the best orthopaedic doctors in Erode, the department specializes in joint replacement, complex fracture management, spinal disorders, and paediatric orthopaedics. Equipped with advanced surgical techniques and world-class infrastructure, the team ensures precise diagnosis, personalised treatment, and faster recovery. From emergency trauma care to advanced reconstructive surgeries, every orthopaedic challenge is managed with excellence, compassion, and confidence.
                 </p>
 
               </>
@@ -441,14 +390,14 @@ export default function SidebarTabs() {
                 <h2 className="text-[24px] mt-5 mb-3">Facilities</h2>
                 <ul>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>24x7 Emergency & Trauma Services with immediate orthopaedic intervention 
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>24x7 Emergency & Trauma Services with immediate orthopaedic intervention
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Hi-Tech SICU (Surgical ICU) with specialised orthopaedic care 
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    Dedicated Orthopaedic Trauma OT for emergency and complex trauma cases
+                    Dedicated Orthopaedic Trauma OT for emergency and complex trauma cases 
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
@@ -456,7 +405,11 @@ export default function SidebarTabs() {
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    State-of-the-art OT Tables for joint, spine, and trauma procedures 
+                    State-of-the-art OT Tables for joint, spine, and trauma procedures
+                  </li>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
+                    Comprehensive care for polytrauma and complex musculoskeletal injuries 
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
@@ -464,11 +417,7 @@ export default function SidebarTabs() {
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                   Comprehensive care for polytrauma and complex musculoskeletal injuries
-                  </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    General & special wards with skilled duty doctors and orthopaedic nursing staff
+                    General & special wards with skilled duty doctors and orthopaedic nursing staff 
                   </li>
                 </ul>
               </>
@@ -486,17 +435,17 @@ export default function SidebarTabs() {
 
             {id === "doctors" && (
               <>
-                <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
-                <DoctorSlider />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="Orthopedic Surgeon" counter={2} />
               </>
             )}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
-            )} */}
+            )}
           </section>
         ))}
       </div>

@@ -24,56 +24,13 @@ const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">What is cardiology? </div>
+        <div className="flex gap-3">Which hospital is best for treating kidney disease? </div>
       </>
     ),
     content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
-          A branch of medicine dealing with disorders of heart and blood
-          vessels. The work of our cardiologists for adults includes diagnosis
-          and treatment of adult congenital heart disease, heart failure,
-          coronary artery disease, valvular heart disease and arrhythmias. All
-          the necessary investigations like ECG, Echocardiogram, Treadmill test,
-          Holter monitoring, Ambulatory BP monitoring, tilt table testing,
-          cardiac CT, cardiac MRI, and nuclear heart scanning are available to
-          provide you with the best adult cardiology treatment at our
-          multispeciality hospital in Erode.
-        </p>
-        <h4 className="font-semibold">
-          Diagnostic Tests Available in our Cardiology Hospital:
-        </h4>
-        <h2 className="font-semibold text-[#2B3990]">ECG:</h2>
-        <p>
-          Cardiac problems such as heart attack, heart block, etc. can be
-          detected by measuring the electrical activity of the heart, which is
-          done by electrocardiogram (ECG).
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">ECHOCARDIOGRAM:</h2>
-        <p>
-          The structure and function of the heart can be assessed by moving
-          images produced by sound waves. Various heart diseases can be
-          diagnosed by this readily available investigation.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">TREADMILL TEST:</h2>
-        <p>
-          Patients will walk on a treadmill at graded levels and their 12- lead
-          ECG will be monitored for heart rate, ST-T segment changes. The
-          presence or absence of changes will be interpreted accordingly to
-          detect heart problems like coronary artery disease, heart block,
-          etc..., that helps in determining the cardiology treatment that is to
-          proceed further accordingly.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">
-          STRESS ECHOCARDIOGRAPHY:
-        </h2>
-        <p>
-          Heart is exerted by exercise or medicines and its activity is
-          monitored by echocardiography. For those who are not able to walk to
-          perform treadmill test, this is a very useful test to rule out
-          coronary artery disease.
-        </p>
-      </div>
+      <p>
+        Sudha Multispeciality Hospital is known as the best hospital for kidney treatment in Erode, providing advanced nephrology care led by the best nephrologist in Erode. We offer the world-class treatments at an affordable price in Erode
+      </p>
     ),
   },
   {
@@ -81,66 +38,80 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-          What is the main cause of heart problems?
+          What does stage 3 kidney disease mean?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Stage 3 kidney disease indicates a moderate decline in kidney function, where the kidneys are not filtering waste effectively. At this stage, timely treatment at the best hospital for nephrology in Erode helps manage symptoms and prevent further progression. Sudha Multispeciality Hospital offers advanced treatments for kidney with the best nephrologists in Erode. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          How can kidney function be improved?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Kidney function can be improved and maintained through lifestyle changes such as controlling diabetes, managing blood pressure, eating a balanced diet, and staying hydrated. Regular monitoring can help you identify the underlying medical conditions. Consult the best nephrologists in Erode at Sudha Multispeciality Hospital. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What are the early signs of kidney disease?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <div className="">
+      <p>Early signs of kidney disease include, </p>
+      <ul className="space-y-4">
+        <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Swelling in legs, ankles, or face</li>
+        <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Frequent urination / foamy urine</li>
+        <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Blood in urine</li>
+        <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Poor appetite</li>
+        <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Muscle cramping</li>
+      </ul>
+
+      <p>It is important to consult a specialist immediately when noticing these symptoms. Consult the best doctors for kidney health in Erode at Sudha Multispeciality Hospital.  </p>
+    </div>
+
+
+
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          When should you consult a nephrologist?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>A nephrologist should be consulted in cases of persistent high blood pressure, blood in urine, swelling, or a family history of kidney disease. Sudha Multispeciality Hospital has the best nephrologist in Erode offering timely and expert care at an affordable price. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Can kidney disease be cured?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Kidney disease can be effectively managed with early diagnosis and timely treatment. Sudha Multispeciality Hospital, the best hospital for kidney treatment in Erode, provides advanced treatments and therapies to better the kidney health. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          When is kidney surgery necessary?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Kidney surgery is necessary in conditions such as severe kidney stones, tumours, or advanced damage that cannot be managed with medications alone. With skilled surgeons and best nephrologists in Erode, Sudha Multispeciality Hospital offers expert surgical care with high success rates. </p>,
   },
 ];
 
@@ -194,7 +165,7 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> ICU-based dialysis including CAVH </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Monitored by trained dialysis technicians and nephrologists</li>
           </ul>
-          
+
         </div>
       </div>
     ),
@@ -221,7 +192,7 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Plasmapheresis for immune-related kidney diseases </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Expert handling of high-risk and emergency cases</li>
           </ul>
-          
+
         </div>
       </div>
     ),
@@ -242,12 +213,12 @@ const accordionData = [
         </p>
 
         <div>
-           <ul className="space-y-4">
+          <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Routine CAPD (Continuous Ambulatory Peritoneal Dialysis) programs</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Counselling for dialysis and transplant readiness</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Nutritional guidance and long-term kidney care planning</li>
           </ul>
-         
+
         </div>
       </div>
     ),
@@ -289,7 +260,7 @@ export default function SidebarTabs() {
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
 
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -393,10 +364,10 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Best Nephrology Hospital in <span className="text-[#2B3990]"> Erode</span> for Advanced Kidney Care
+                  Best Hospital for Nephrology in<span className="text-[#2B3990]"> Erode</span> for Advanced Kidney Treatment
                 </h2>
                 <p className="mb-3">
-                  At Sudha Multispeciality Hospital, our Nephrology Department is committed to providing advanced and compassionate care for patients with all types of kidney-related conditions. With over 40+ years of experience in healthcare, we offer round-the-clock emergency services, a dedicated team of nephrologists, and the latest in renal care technology. Our expertise extends to both adult and paediatric nephrology, making us a trusted centre for comprehensive kidney care under one roof.
+                  At Sudha Multispeciality Hospital, our Nephrology Department is committed to providing advanced and compassionate care for patients with all types of kidney-related conditions. With over 40+ years of experience in healthcare, we offer round-the-clock emergency services, a dedicated team of best nephrologists in Erode, and the latest in renal care technology. Our expertise extends to both adult and paediatric nephrology, making us a trusted centre and the best hospital for kidney treatment in Erode.
                 </p>
 
               </>
@@ -446,17 +417,17 @@ export default function SidebarTabs() {
 
             {id === "doctors" && (
               <>
-                <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
-                <DoctorSlider />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="Nephrologist" counter={1} />
               </>
             )}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
-            )} */}
+            )}
           </section>
         ))}
       </div>

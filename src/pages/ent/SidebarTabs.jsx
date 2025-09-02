@@ -23,56 +23,13 @@ const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">What is cardiology? </div>
+        <div className="flex gap-3">Which is the Best ENT Hospital in Erode?  </div>
       </>
     ),
     content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
-          A branch of medicine dealing with disorders of heart and blood
-          vessels. The work of our cardiologists for adults includes diagnosis
-          and treatment of adult congenital heart disease, heart failure,
-          coronary artery disease, valvular heart disease and arrhythmias. All
-          the necessary investigations like ECG, Echocardiogram, Treadmill test,
-          Holter monitoring, Ambulatory BP monitoring, tilt table testing,
-          cardiac CT, cardiac MRI, and nuclear heart scanning are available to
-          provide you with the best adult cardiology treatment at our
-          multispeciality hospital in Erode.
-        </p>
-        <h4 className="font-semibold">
-          Diagnostic Tests Available in our Cardiology Hospital:
-        </h4>
-        <h2 className="font-semibold text-[#2B3990]">ECG:</h2>
-        <p>
-          Cardiac problems such as heart attack, heart block, etc. can be
-          detected by measuring the electrical activity of the heart, which is
-          done by electrocardiogram (ECG).
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">ECHOCARDIOGRAM:</h2>
-        <p>
-          The structure and function of the heart can be assessed by moving
-          images produced by sound waves. Various heart diseases can be
-          diagnosed by this readily available investigation.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">TREADMILL TEST:</h2>
-        <p>
-          Patients will walk on a treadmill at graded levels and their 12- lead
-          ECG will be monitored for heart rate, ST-T segment changes. The
-          presence or absence of changes will be interpreted accordingly to
-          detect heart problems like coronary artery disease, heart block,
-          etc..., that helps in determining the cardiology treatment that is to
-          proceed further accordingly.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">
-          STRESS ECHOCARDIOGRAPHY:
-        </h2>
-        <p>
-          Heart is exerted by exercise or medicines and its activity is
-          monitored by echocardiography. For those who are not able to walk to
-          perform treadmill test, this is a very useful test to rule out
-          coronary artery disease.
-        </p>
-      </div>
+      <p>
+        The best ENT hospital should provide advanced diagnostic tools, expert specialists, and treatments for all ear, nose, and throat conditions. In Erode, Sudha Multispeciality Hospital is recognized as one of the best ENT hospitals, offering comprehensive care and the best treatment for ear, nose, and throat issues with experienced ENT specialists.
+      </p>
     ),
   },
   {
@@ -80,66 +37,66 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-          What is the main cause of heart problems?
+          How much is an ENT check-up?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>The cost of an ENT check-up depends on the consultation fees and any diagnostic tests recommended. Sudha Multispeciality Hospital, the best ENT hospital in Erode, provides affordable ENT treatments and expert consultation with ENT specialists. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Which super-specialty hospital provides ENT Treatments?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>A super-specialty hospital offering ENT treatments should cover medical and surgical care for ear, nose, and throat problems. Sudha Multispeciality Hospital is a trusted super-specialty hospital in Erode, providing the best treatment for ear, nose, and throat conditions, supported by advanced technology and skilled ENT specialists. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What conditions require surgery for ENT?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Some ENT conditions that may require surgery include chronic sinusitis, nasal polyps, tonsillitis, adenoid problems, ear infections, hearing issues, and throat or voice disorders. At Sudha Multispeciality Hospital, the best ENT hospital in Erode, surgeries are performed by experienced ENT specialists, ensuring safe and effective outcomes. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What is the recovery time for ENT surgery?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Recovery time after ENT surgery depends on the type of procedure. Minor surgeries may require only a few days, while major ones like sinus or ear surgery may take a few weeks. At Sudha Multispeciality Hospital, ENT specialists provide personalized care plans to ensure faster recovery and complete follow-up support.  </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What is the most common surgery for ENT patients?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Common ENT surgeries include tonsillectomy, adenoidectomy, sinus surgery, and ear tube insertion. These procedures are performed to relieve chronic infections, improve breathing, and restore hearing. Sudha Multispeciality Hospital, the best hospital for ear, nose, and throat issues in Erode, offers advanced surgical care with skilled ENT specialists. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          How much does sinus surgery cost?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>The cost of sinus surgery varies based on the severity of the condition, the surgical method, and hospital facilities. Sudha Multispeciality Hospital in Erode provides sinus treatment and surgery from expert ENT specialists with advanced care at an affordable price.  </p>,
   },
 ];
 
@@ -151,22 +108,23 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Dentistry and Oral Surgery" />  */}
-          Acne and Scar Treatment
+          Diagnostic & Therapeutic Audiology
         </div>
       </>
     ),
     content: (
       <div className="text-sm space-y-3">
         <p>
-          We offer personalised treatment plans for acne and post-acne scarring, focusing on prevention, control, and skin rejuvenation. Treatments include topical or oral medication, chemical peels, and laser therapy to reduce inflammation and enhance skin texture.
+          Our audiology unit offers advanced diagnostic tools to evaluate hearing loss, balance issues, and auditory disorders. We cater to all age groups and ensure early detection and personalized treatment plans to improve hearing outcomes and quality of life.
         </p>
 
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Chemical peels </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Laser scar reduction </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Oral and topical </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Blackhead/whitehead extraction </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Hearing loss evaluation </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Audiometry for children and adults </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Tinnitus and vertigo assessments   </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Newborn hearing screening </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Customized hearing rehabilitation   </li>
           </ul>
 
         </div>
@@ -178,56 +136,30 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="ENT" />  */}
-          Diagnostic & Therapeutic Audiology
+          Endoscopic Nasal & Sinus Care
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Our audiology unit offers advanced diagnostic tools to evaluate hearing loss, balance issues, and auditory disorders. We cater to all age groups and ensure early detection and personalized treatment plans to improve hearing outcomes and quality of life.
-        </p>
-        <div>
-          <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Hearing loss evaluation </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Audiometry for children and adults </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Tinnitus and vertigo assessments </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} />Newborn hearing screening </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} />Customized hearing rehabilitation </li>
-
-          </ul>
-
-        </div>
-      </div>
-    ),
-  },
-
-  {
-    title: (
-      <>
-        <div className="flex gap-3">
-          <Image src={one} alt="ENT" />
-          Endoscopic Nasal & Sinus Care
-        </div>
-      </>
-    ),
-    content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
           We specialize in minimally invasive endoscopic procedures for nasal blockages, sinusitis, polyps, and more. Our ENT surgeons use cutting-edge equipment for faster recovery, minimal discomfort, and better precision in treating nasal and sinus conditions.
         </p>
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Functional Endoscopic Sinus Surgery (FESS)</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Diagnostic Nasal Endoscopy </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Surgery for deviated nasal septum </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Management of CSF leak </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Functional Endoscopic Sinus Surgery (FESS) </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Diagnostic Nasal Endoscopy   </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Sinus and skull-base surgeries </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} />Surgery for a deviated nasal septum </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} />Management of CSF leak </li>
+
           </ul>
 
         </div>
       </div>
     ),
   },
+
   {
     title: (
       <>
@@ -245,9 +177,10 @@ const accordionData = [
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Microscopic and endoscopic ear surgeries</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Mastoidectomy and tympanoplasty </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Paediatric otology care </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Ear trauma and infection management </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Mastoidectomy and tympanoplasty   </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Acoustic neuroma surgery </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Paediatric otology care </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Ear trauma and infection management  </li>
           </ul>
 
         </div>
@@ -266,24 +199,23 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          We address a wide range of throat conditions including voice disorders, snoring, and sleep-related issues. Our team ensures accurate diagnosis and offers surgical or therapeutic options for restoring voice quality and improving breathing during sleep.
+          We address a wide range of throat conditions, including voice disorders, snoring, and sleep-related issues. Our team ensures accurate diagnosis and offers surgical or therapeutic options for restoring voice quality and improving breathing during sleep.
         </p>
         <div>
-
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Laryngoscopy and speech therapy</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Surgery for voice disorders </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Snoring and sleep apnea treatment </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Vocal cord polyp/nodule removal </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Laryngology care </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Snoring and sleep apnea treatment   </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Vocal cord polyp/nodule removal   </li>
+
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Laryngology care     </li>
           </ul>
-
-
 
         </div>
       </div>
     ),
   },
+
 
 ];
 
@@ -319,7 +251,7 @@ export default function SidebarTabs() {
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
 
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -385,7 +317,7 @@ export default function SidebarTabs() {
 
 
 
-           <button className="btn-white mt-5">
+          <button className="btn-white mt-5">
             Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
           </button>
         </div>
@@ -422,13 +354,11 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Expert ENT (Ear, Nose & Throat) Care in
-                  <span className="text-[#2B3990]"> Erode </span> at Sudha Multispeciality Hospital
+                  Best ENT Hospital in
+                  <span className="text-[#2B3990]"> Erode </span> offering Expert ENT Care.
                 </h2>
                 <p className="mb-4">
-                  Our ENT department offers expert diagnosis and treatment for a wide spectrum of ENT disorders in both adults and children. Our department is equipped 
-                  with advanced diagnostic and surgical technologies for accurate evaluation and minimally invasive treatment. From common infections to complex 
-                  skull-base surgeries, we ensure comprehensive ENT care under one roof.
+                  Our ENT department offers expert diagnosis and treatment for a wide spectrum of ENT disorders in both adults and children. Our department is equipped with advanced diagnostic and surgical technologies and highly skilled ENT specialists in Erode. As the best ENT hospital in Erode, Sudha Multispeciality Hospital offers best treatment for ear, nose and throat in the Erode region from common infections to complex surgeries.
                 </p>
               </>
             )}
@@ -440,7 +370,7 @@ export default function SidebarTabs() {
                 <h2 className="text-[24px] mt-5">Facilities</h2>
                 <ul>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>24 x 7 emergency services for ENT emergencies
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>24/7 emergency services for ENT emergencies
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Dedicated general and special wards with skilled ENT-trained staff
@@ -481,17 +411,17 @@ export default function SidebarTabs() {
 
             {id === "doctors" && (
               <>
-                <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
-                <DoctorSlider />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="ENT Surgeon" counter={3} />
               </>
             )}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
-            )} */}
+            )}
           </section>
         ))}
       </div>

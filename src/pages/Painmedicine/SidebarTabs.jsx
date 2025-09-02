@@ -169,7 +169,7 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Facet joint injections</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Radiofrequency ablation</li>
           </ul>
-          
+
         </div>
       </div>
     ),
@@ -197,7 +197,7 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Spinal cord stimulation</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Medication management</li>
           </ul>
-          
+
         </div>
       </div>
     ),
@@ -224,7 +224,7 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Visco supplementation</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Physiotherapy support</li>
           </ul>
-          
+
         </div>
       </div>
     ),
@@ -241,7 +241,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Comprehensive pain care for patients undergoing cancer treatment or palliative care.
+          Comprehensive pain care for patients undergoing cancer treatment or palliative care
         </p>
 
         <div>
@@ -251,7 +251,7 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Nerve blocks for cancer-related pain</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Supportive therapy and counselling</li>
           </ul>
-          
+
         </div>
       </div>
     ),
@@ -277,7 +277,7 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Advanced wound care </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Early intervention for chronic pain prevention</li>
           </ul>
-          
+
         </div>
       </div>
     ),
@@ -423,7 +423,7 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Integrated Pain Care Services at Sudha Multispeciality Hospital in  <span className="text-[#2B3990]"> Erode</span>
+                  Integrated Pain Care Services at Sudha Multispeciality Hospital in <span className="text-[#2B3990]"> Erode</span>
                 </h2>
                 <p className=" mb-3">
                   At Sudha Multispeciality Hospital, our Pain Medicine Department is dedicated to diagnosing and treating all types of acute and chronic pain. Our multidisciplinary approach focuses not just on relieving pain but also on improving the patient’s overall quality of life. Whether your pain is related to post-surgery recovery, nerve disorders, spine conditions, or musculoskeletal injuries, our expert team combines advanced techniques with compassionate care to create a personalized treatment plan that brings lasting relief.
@@ -467,16 +467,16 @@ export default function SidebarTabs() {
               </div>
             )}
 
-            {id === "doctors" && (
+            {/* {id === "doctors" && (
               <>
-                <h2 className="text-[24px]  mt-5 pb-3 pb-3">Doctors</h2>
-                <DoctorSlider />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="Neurology" counter={2} />
               </>
             )}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
             )} */}

@@ -15,7 +15,7 @@ const serviceSections = [
   { id: "overview", label: "Overview" },
   { id: "facilities", label: "Facilities" },
   { id: "services", label: "Services" },
-  { id: "doctors", label: "Doctors" },
+  // { id: "doctors", label: "Doctors" },
   { id: "faqs", label: "FAQs" },
 ];
 
@@ -23,56 +23,14 @@ const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">What is cardiology? </div>
+        <div className="flex gap-3">What is the most common general surgery?  </div>
       </>
     ),
     content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
-          A branch of medicine dealing with disorders of heart and blood
-          vessels. The work of our cardiologists for adults includes diagnosis
-          and treatment of adult congenital heart disease, heart failure,
-          coronary artery disease, valvular heart disease and arrhythmias. All
-          the necessary investigations like ECG, Echocardiogram, Treadmill test,
-          Holter monitoring, Ambulatory BP monitoring, tilt table testing,
-          cardiac CT, cardiac MRI, and nuclear heart scanning are available to
-          provide you with the best adult cardiology treatment at our
-          multispeciality hospital in Erode.
-        </p>
-        <h4 className="font-semibold">
-          Diagnostic Tests Available in our Cardiology Hospital:
-        </h4>
-        <h2 className="font-semibold text-[#2B3990]">ECG:</h2>
-        <p>
-          Cardiac problems such as heart attack, heart block, etc. can be
-          detected by measuring the electrical activity of the heart, which is
-          done by electrocardiogram (ECG).
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">ECHOCARDIOGRAM:</h2>
-        <p>
-          The structure and function of the heart can be assessed by moving
-          images produced by sound waves. Various heart diseases can be
-          diagnosed by this readily available investigation.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">TREADMILL TEST:</h2>
-        <p>
-          Patients will walk on a treadmill at graded levels and their 12- lead
-          ECG will be monitored for heart rate, ST-T segment changes. The
-          presence or absence of changes will be interpreted accordingly to
-          detect heart problems like coronary artery disease, heart block,
-          etc..., that helps in determining the cardiology treatment that is to
-          proceed further accordingly.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">
-          STRESS ECHOCARDIOGRAPHY:
-        </h2>
-        <p>
-          Heart is exerted by exercise or medicines and its activity is
-          monitored by echocardiography. For those who are not able to walk to
-          perform treadmill test, this is a very useful test to rule out
-          coronary artery disease.
-        </p>
-      </div>
+      <p>
+        The most common general surgeries include appendectomy (removal of the appendix), hernia repair, gallbladder removal, and minor abdominal procedures. At Sudha Multispeciality Hospital, considered one of the best hospitals in Erode for general surgery, these procedures are performed by the best general surgeons with safe and effective care.
+      </p>
+
     ),
   },
   {
@@ -80,66 +38,66 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-          What is the main cause of heart problems?
+          What organs are involved in general surgery?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>General surgery mainly involves organs in the abdomen, including the stomach, intestines, appendix, liver, gallbladder, and hernia-affected areas. Equipped with experienced general surgeons in Erode, Sudha Multispeciality Hospital offers advanced treatments and a personalized recovery plan to every patient.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What disease is under general surgery?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>General surgeons treat conditions such as appendicitis, hernias, gallstones, intestinal blockages, tumors, and injuries requiring surgical care. Sudha Multispeciality Hospital, recognized as one of the best hospitals in Erode for general surgery, offers effective surgical management for these conditions with the best surgeons.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What is the major surgery in general surgery?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Major surgeries include abdominal operations, tumor removals, gallbladder and liver surgeries, and other complex procedures. At Sudha Multispeciality Hospital, one of the best hospitals in Erode for general surgery, major surgeries are performed by skilled surgeons with proper pre- and post-operative care. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What pre-operative preparations are needed — fasting, medications?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Before surgery, patients may need to fast for a few hours, avoid certain medications, and undergo basic investigations like blood tests and imaging. At Sudha Multispeciality Hospital, the best hospital for general surgery in Erode, doctors guide patients through all pre-operative steps to ensure safety and smooth recovery.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          How long will the surgery take and what is the expected recovery time?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>The duration of surgery depends on the type and complexity of the procedure. Minor surgeries may take less than an hour, while major procedures can take several hours. Recovery can range from a few days to several weeks. Sudha Multispeciality Hospital, recognized as one of the best hospitals in Erode for general surgery, ensures proper post-operative care and follow-up for faster recovery. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Who is the Best General Surgeon in Erode?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>The team of experienced and highly skilled general surgeons at Sudha Multispeciality Hospital is recognised as the best general surgeons in Erode, offering advanced treatments, modern surgical techniques, and personalised care for every patient.</p>,
   },
 ];
 
@@ -151,14 +109,14 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Generalsurgery"/> */}
-          Laparoscopic and Minimally Invasive Surgeries 
+          Laparoscopic and Minimally Invasive Surgeries
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-         Our team performs a wide range of laparoscopic surgeries that offer faster recovery, reduced pain, and smaller scars. Using high-definition imaging and precision instruments, our surgeons ensure better outcomes and minimal hospital stay for patients across all age groups.  
+          Our team performs a wide range of laparoscopic surgeries that offer faster recovery, reduced pain, and smaller scars. Using high-definition imaging and precision instruments, our surgeons ensure better outcomes and minimal hospital stay for patients across all age groups.
         </p>
 
         <div>
@@ -178,14 +136,14 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Generalsurgery" /> */}
-         Gastrointestinal and Abdominal Surgeries
+          Gastrointestinal and Abdominal Surgeries
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Comprehensive surgical management for conditions related to the stomach, intestines, liver, and abdominal organs. These surgeries are carried out using both open and laparoscopic techniques, ensuring effective care tailored to each patient's condition and severity.  
+          Comprehensive surgical management for conditions related to the stomach, intestines, liver, and abdominal organs. These surgeries are carried out using both open and laparoscopic techniques, ensuring effective care tailored to each patient's condition and severity.
         </p>
 
         <div>
@@ -215,7 +173,7 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          Our department handles all forms of surgical emergencies round-the-clock. Backed by intensive care and rapid diagnostics, we provide timely intervention for life-threatening conditions with a multidisciplinary team approach. 
+          Our department handles all forms of surgical emergencies round-the-clock. Backed by intensive care and rapid diagnostics, we provide timely intervention for life-threatening conditions with a multidisciplinary team approach.
         </p>
 
         <div>
@@ -235,14 +193,14 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Generalmedicine" /> */}
-          Oncology-Related Surgeries 
+          Oncology-Related Surgeries
         </div>
       </>
     ),
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          We perform cancer-related surgeries involving the gastrointestinal tract, breast, thyroid, and soft tissues, in coordination with oncology teams. These procedures are done with utmost precision to aid further treatment and recovery.  
+          We perform cancer-related surgeries involving the gastrointestinal tract, breast, thyroid, and soft tissues, in coordination with oncology teams. These procedures are done with utmost precision to aid further treatment and recovery.
         </p>
 
         <div>
@@ -295,7 +253,7 @@ export default function SidebarTabs() {
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
 
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -398,11 +356,11 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Best General Surgeons at the Best Hospital in  
+                  Best General Surgeons at the Best Hospital in
                   <span className="text-[#2B3990]"> Erode</span> for General Surgery
                 </h2>
                 <p className="mb-4">
-                  The General Surgery Department at Sudha Multispeciality Hospital in Erode is equipped to manage a wide spectrum of surgical needs with advanced technology and a team of best general surgeons in Erode. From routine procedures to complex operations, every patient receives personalised and evidence-based care. The department operates 24/7 with fully equipped operating rooms, modern tools like CUSA and Harmonic Scalpel, and dedicated ICU support to ensure optimal outcomes and faster recovery.  
+                  The General Surgery Department at Sudha Multispeciality Hospital in Erode is equipped to manage a wide spectrum of surgical needs with advanced technology and a team of best general surgeons in Erode. From routine procedures to complex operations, every patient receives personalised and evidence-based care. The department operates 24/7 with fully equipped operating rooms, modern tools like CUSA and Harmonic Scalpel, and dedicated ICU support to ensure optimal outcomes and faster recovery.
                 </p>
               </>
             )}
@@ -417,7 +375,7 @@ export default function SidebarTabs() {
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Fully equipped operating theatres with laminar airflow for infection control
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Advanced high-definition laparoscopic systems and surgical instruments 
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>Advanced high-definition laparoscopic systems and surgical instruments
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
@@ -425,11 +383,11 @@ export default function SidebarTabs() {
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    24/7 general and special wards with round-the-clock support staff  
+                    24/7 general and special wards with round-the-clock support staff
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    In-house diagnostic lab and pharmacy available at all times  
+                    In-house diagnostic lab and pharmacy available at all times
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
@@ -457,19 +415,19 @@ export default function SidebarTabs() {
               </div>
             )}
 
-            {id === "doctors" && (
+            {/* {id === "doctors" && (
               <>
-                <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
-                <DoctorSlider />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="General Medicine" counter={3} />
               </>
-            )}
+            )} */}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
-            )} */}
+            )}
           </section>
         ))}
       </div>

@@ -23,56 +23,13 @@ const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">What is cardiology? </div>
+        <div className="flex gap-3">When to consult a general medicine doctor?  </div>
       </>
     ),
     content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
-          A branch of medicine dealing with disorders of heart and blood
-          vessels. The work of our cardiologists for adults includes diagnosis
-          and treatment of adult congenital heart disease, heart failure,
-          coronary artery disease, valvular heart disease and arrhythmias. All
-          the necessary investigations like ECG, Echocardiogram, Treadmill test,
-          Holter monitoring, Ambulatory BP monitoring, tilt table testing,
-          cardiac CT, cardiac MRI, and nuclear heart scanning are available to
-          provide you with the best adult cardiology treatment at our
-          multispeciality hospital in Erode.
-        </p>
-        <h4 className="font-semibold">
-          Diagnostic Tests Available in our Cardiology Hospital:
-        </h4>
-        <h2 className="font-semibold text-[#2B3990]">ECG:</h2>
-        <p>
-          Cardiac problems such as heart attack, heart block, etc. can be
-          detected by measuring the electrical activity of the heart, which is
-          done by electrocardiogram (ECG).
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">ECHOCARDIOGRAM:</h2>
-        <p>
-          The structure and function of the heart can be assessed by moving
-          images produced by sound waves. Various heart diseases can be
-          diagnosed by this readily available investigation.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">TREADMILL TEST:</h2>
-        <p>
-          Patients will walk on a treadmill at graded levels and their 12- lead
-          ECG will be monitored for heart rate, ST-T segment changes. The
-          presence or absence of changes will be interpreted accordingly to
-          detect heart problems like coronary artery disease, heart block,
-          etc..., that helps in determining the cardiology treatment that is to
-          proceed further accordingly.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">
-          STRESS ECHOCARDIOGRAPHY:
-        </h2>
-        <p>
-          Heart is exerted by exercise or medicines and its activity is
-          monitored by echocardiography. For those who are not able to walk to
-          perform treadmill test, this is a very useful test to rule out
-          coronary artery disease.
-        </p>
-      </div>
+      <p>
+        A general medicine doctor, or general physician, should be consulted for routine check-ups, persistent symptoms, or early signs of illness such as fever, fatigue, infections, or digestive issues. They provide preventive care, diagnosis, and management of common health problems. At Sudha Multispeciality Hospital, the best hospital in Erode for general medicine, patients receive care from some of the best general physicians in Erode, ensuring accurate diagnosis and effective treatment.
+      </p>
     ),
   },
   {
@@ -80,66 +37,66 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-          What is the main cause of heart problems?
+          Best General Doctor in Erode?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>The team of general physicians at Sudha Multispeciality Hospital are among the best in Erode, backed by years of expertise. They focus on delivering accurate diagnosis, effective treatment, and compassionate care, ensuring patients receive trusted medical support for overall well-being. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What is the major surgery in general surgery?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Major surgeries in general surgery typically include procedures involving the abdomen, digestive organs, gallbladder, appendix, hernia repair, and certain tumor removals. At Sudha Multispeciality Hospital, experienced general surgeons provide advanced surgical care with high success rates, making it a leading center in Erode for surgical interventions.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What conditions are treated by general surgeons?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>General surgeons manage conditions such as appendicitis, hernias, gallstones, bowel obstruction, certain cancers, and trauma injuries. Sudha Multispeciality Hospital, the best hospital in Erode for general treatments, offers surgical expertise and comprehensive care for these conditions. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What problems can a general physician deal with?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>General physicians at Sudha Multispeciality Hospital handle a wide range of health issues, including infections, cold and cough, diabetes, high blood pressure, digestive problems, minor injuries, and preventive care. They also guide patients on lifestyle, diet, and exercise to maintain overall health. This makes Sudha one of the best hospitals in Erode for general treatments and consultations.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Can a general doctor treat serious health conditions?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>General physicians at Sudha Multispeciality Hospital manage chronic and serious health conditions like diabetes, hypertension, infections, and other illnesses. They provide early intervention, coordinate with specialists when necessary, and ensure continuous monitoring. The hospital is considered among the best in Erode for general medicine. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Can I consult a general doctor online?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>At Sudha Multispeciality Hospital, book your appointment online at your convenient time and have a personalised consultation and check-up at the hospital. As one of the best hospitals in Erode for general consultations and treatments, we offer personalised care with the best general physicians.  </p>,
   },
 ];
 
@@ -164,7 +121,7 @@ const accordionData = [
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Fever, cold, cough, pneumonia & flu  </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Allergies and infections </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Allergies and infections</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Gastritis, acidity, indigestion, and gastroenteritis  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Headaches and migraines </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Body pain, weakness, and fatigue </li>
@@ -196,7 +153,7 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Hypertension (High Blood Pressure) </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Asthma and COPD </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Thyroid disorders </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Heart disease </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Heart disease   </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Cholesterol disorders  </li>
 
           </ul>
@@ -329,7 +286,7 @@ export default function SidebarTabs() {
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
 
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -434,11 +391,11 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                  Advanced General Medicine Treatment with the Best General Physicians in  
+                  Advanced General Medicine Treatment with the Best General Physicians in
                   <span className="text-[#2B3990]"> Erode</span>
                 </h2>
                 <p className="mb-4">
-                  The Department of General Medicine offers round-the-clock, patient-centred care for a wide range of medical conditions. Equipped with modern diagnostic tools and a team of the best general physicians in Erode, Sudha Multispeciality Hospital is known as the best hospital in Erode for general medicine. Our General Medicine unit serves as the first point of contact for all non-surgical health issues. We focus on early diagnosis, preventive care, and long-term disease management for both acute and chronic illnesses. Our physicians collaborate with various specialties within the hospital to ensure integrated and personalized treatment for every patient. Our dedication towards providing quality healthcare at an affordable cost, earned us the position as the best hospital for general treatments and consultations. 
+                  The Department of General Medicine offers round-the-clock, patient-centred care for a wide range of medical conditions. Equipped with modern diagnostic tools and a team of the best general physicians in Erode, Sudha Multispeciality Hospital is known as the best hospital in Erode for general medicine. Our General Medicine unit serves as the first point of contact for all non-surgical health issues. We focus on early diagnosis, preventive care, and long-term disease management for both acute and chronic illnesses. Our physicians collaborate with various specialties within the hospital to ensure integrated and personalized treatment for every patient. Our dedication towards providing quality healthcare at an affordable cost, earned us the position as the best hospital for general treatments and consultations.
                 </p>
               </>
             )}
@@ -483,17 +440,17 @@ export default function SidebarTabs() {
 
             {id === "doctors" && (
               <>
-                <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
-                <DoctorSlider />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="General Medicine" counter={3} />
               </>
             )}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
-            )} */}
+            )}
           </section>
         ))}
       </div>

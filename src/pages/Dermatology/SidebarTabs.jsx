@@ -38,7 +38,7 @@ const accordionData = [
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Chemical peels </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Laser scar reduction   </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Laser scar reduction    </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Oral and topical medications  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Blackhead/whitehead extraction    </li>
           </ul>
@@ -52,21 +52,21 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" /> */}
-         Psoriasis and Eczema Care    
+          Psoriasis and Eczema Care
         </div>
       </>
     ),
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          Our dermatologists manage chronic skin conditions like psoriasis and eczema with a balanced approach that includes lifestyle counselling, medication, and advanced therapies. We aim to reduce flare-ups and improve the quality of life.  
+          Our dermatologists manage chronic skin conditions like psoriasis and eczema with a balanced approach that includes lifestyle counselling, medication, and advanced therapies. We aim to reduce flare-ups and improve the quality of life.
         </p>
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Topical and systemic treatments</li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Topical and systemic treatments  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Narrowband UVB therapy     </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Immunosuppressive therapy  </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Skin hydration and care routines   </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Immunosuppressive therapy    </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Skin hydration and care routines     </li>
           </ul>
         </div>
 
@@ -78,21 +78,21 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" /> */}
-          Hair & Scalp Disorders  
+          Hair & Scalp Disorders
         </div>
       </>
     ),
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          Hair loss, dandruff, and scalp infections are treated with scientifically backed procedures and trichology consultations. We offer diagnosis, customised regimens, and minimally invasive procedures.  
+          Hair loss, dandruff, and scalp infections are treated with scientifically backed procedures and trichology consultations. We offer diagnosis, customised regimens, and minimally invasive procedures.
         </p>
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> PRP therapy for hair regrowth</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Dandruff and scalp infection treatments      </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Hormonal hair loss management  </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Microneedling for hair follicles    </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Dandruff and scalp infection treatments     </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Hormonal hair loss management    </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Microneedling for hair follicles     </li>
           </ul>
         </div>
 
@@ -104,21 +104,21 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" /> */}
-          Allergy Testing & Treatment 
+          Allergy Testing & Treatment
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          We help identify triggers of skin allergies through patch testing and detailed assessments. Treatments are planned to minimise allergic reactions and manage associated symptoms.  
+          We help identify triggers of skin allergies through patch testing and detailed assessments. Treatments are planned to minimise allergic reactions and manage associated symptoms.
         </p>
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Skin prick and patch tests</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Urticaria management     </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Treatment for contact dermatitis    </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Hypoallergenic skincare solutions  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} />Hypoallergenic skincare solutions  </li>
           </ul>
         </div>
       </div>
@@ -129,21 +129,21 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" /> */}
-         Skin Infections & Fungal Diseases
+          Skin Infections & Fungal Diseases
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          From bacterial to fungal infections, we provide precise diagnosis and prompt treatment to avoid recurrence. Our team also handles resistant infections with targeted antifungal or antibiotic therapies.   
+          From bacterial to fungal infections, we provide precise diagnosis and prompt treatment to avoid recurrence. Our team also handles resistant infections with targeted antifungal or antibiotic therapies.
         </p>
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Antifungal and antibacterial therapies</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Management of cellulitis and abscess       </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Viral skin infections (e.g., warts, molluscum)    </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Personalised hygiene counselling   </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Management of cellulitis and abscess     </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Viral skin infections (e.g., warts, molluscum)   </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Personalised hygiene counselling    </li>
           </ul>
         </div>
       </div>
@@ -155,20 +155,20 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" /> */}
-        Skin Pigmentation & Whitening Treatments  
+          Skin Pigmentation & Whitening Treatments
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          We offer solutions for melasma, hyperpigmentation, and uneven skin tone through safe and effective dermatological techniques that restore radiance and clarity to your skin.  
+          We offer solutions for melasma, hyperpigmentation, and uneven skin tone through safe and effective dermatological techniques that restore radiance and clarity to your skin.
         </p>
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Laser toning</li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Glutathione-based therapies   </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Depigmentation peels    </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Glutathione-based therapies     </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Depigmentation peels  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Advanced topical formulations    </li>
           </ul>
         </div>
@@ -180,14 +180,14 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" /> */}
-        Anti-Aging & Aesthetic Dermatology  
+          Anti-Aging & Aesthetic Dermatology
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-         Our aesthetic dermatology services include skin tightening, wrinkle reduction, and non-surgical facial rejuvenation. We ensure visible results while maintaining natural expressions and safety. 
+          Our aesthetic dermatology services include skin tightening, wrinkle reduction, and non-surgical facial rejuvenation. We ensure visible results while maintaining natural expressions and safety.
         </p>
         <div>
           <ul className="space-y-4">
@@ -205,14 +205,14 @@ const accordionData = [
       <>
         <div className="flex gap-3">
           {/* <Image src={one} alt="Interventional Cardiology" /> */}
-        Wart & Mole Removal     
+          Wart & Mole Removal
         </div>
       </>
     ),
     content: (
       <div className="text-sm  space-y-3">
         <p>
-         Benign skin growths like warts, moles, and skin tags are removed with minimal discomfort using electrocautery or laser procedures, ensuring minimal scarring and quick healing.
+          Benign skin growths like warts, moles, and skin tags are removed with minimal discomfort using electrocautery or laser procedures, ensuring minimal scarring and quick healing.
         </p>
         <div>
           <ul className="space-y-4">
@@ -259,7 +259,7 @@ export default function SidebarTabs() {
   return (
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-6 lg:gap-8 xl:gap-10">
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-8">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -379,19 +379,12 @@ export default function SidebarTabs() {
                   className="w-full h-[400px] rounded-2xl object-cover"
                 />
                 <h2 className="text-[24px] mb-3 mt-5">
-                  Dermatology Services and Skin Treatments at{" "}
-                  <span className="text-[#2B3990]">Sudha</span>{" "}
-                  Multispeciality Hospital
+                  Comprehensive Dermatology Services from the Best Dermatologists in  {" "}
+                  <span className="text-[#2B3990]">Erode</span>{" "}
+                  at Sudha Multispeciality Hospital
                 </h2>
                 <p className="">
-                  The Dermatology Department at Sudha Multispeciality Hospital
-                  provides expert diagnosis and advanced treatment for a wide
-                  spectrum of skin, hair, and nail conditions. Our team of
-                  skilled dermatologists combines clinical excellence with the
-                  latest technology to deliver comprehensive care for both
-                  medical and cosmetic concerns. Whether managing chronic skin
-                  disorders or offering aesthetic solutions, we ensure
-                  patient-centred care with an emphasis on long-term skin health.
+                  The Dermatology Department at Sudha Multispeciality Hospital provides expert diagnosis and advanced treatment for a wide spectrum of skin, hair, and nail conditions. Our team of skilled dermatologists combines clinical excellence with the latest technology to deliver comprehensive care for both medical and cosmetic concerns. Whether managing chronic skin disorders or offering aesthetic solutions, we provide patient-centred care with the best doctors for skin issues in Erode.
                 </p>
               </div>
             )}
@@ -440,12 +433,12 @@ export default function SidebarTabs() {
                 <h2 className="text-[24px]  mt-5 pb-3">
                   Doctors
                 </h2>
-                <DoctorSlider />
+                <DoctorSlider specialty="Dermatologist" counter={2} />
               </>
             )}
             {/* {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[30px] font-semibold mt-5 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
             )} */}

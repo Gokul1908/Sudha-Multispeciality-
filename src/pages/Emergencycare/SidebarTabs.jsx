@@ -24,56 +24,13 @@ const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">What is cardiology? </div>
+        <div className="flex gap-3">Which is the Best Emergency Care Hospital in Erode? </div>
       </>
     ),
     content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
-          A branch of medicine dealing with disorders of heart and blood
-          vessels. The work of our cardiologists for adults includes diagnosis
-          and treatment of adult congenital heart disease, heart failure,
-          coronary artery disease, valvular heart disease and arrhythmias. All
-          the necessary investigations like ECG, Echocardiogram, Treadmill test,
-          Holter monitoring, Ambulatory BP monitoring, tilt table testing,
-          cardiac CT, cardiac MRI, and nuclear heart scanning are available to
-          provide you with the best adult cardiology treatment at our
-          multispeciality hospital in Erode.
-        </p>
-        <h4 className="font-semibold">
-          Diagnostic Tests Available in our Cardiology Hospital:
-        </h4>
-        <h2 className="font-semibold text-[#2B3990]">ECG:</h2>
-        <p>
-          Cardiac problems such as heart attack, heart block, etc. can be
-          detected by measuring the electrical activity of the heart, which is
-          done by electrocardiogram (ECG).
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">ECHOCARDIOGRAM:</h2>
-        <p>
-          The structure and function of the heart can be assessed by moving
-          images produced by sound waves. Various heart diseases can be
-          diagnosed by this readily available investigation.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">TREADMILL TEST:</h2>
-        <p>
-          Patients will walk on a treadmill at graded levels and their 12- lead
-          ECG will be monitored for heart rate, ST-T segment changes. The
-          presence or absence of changes will be interpreted accordingly to
-          detect heart problems like coronary artery disease, heart block,
-          etc..., that helps in determining the cardiology treatment that is to
-          proceed further accordingly.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">
-          STRESS ECHOCARDIOGRAPHY:
-        </h2>
-        <p>
-          Heart is exerted by exercise or medicines and its activity is
-          monitored by echocardiography. For those who are not able to walk to
-          perform treadmill test, this is a very useful test to rule out
-          coronary artery disease.
-        </p>
-      </div>
+      <p>
+        The best emergency care hospital is one that provides 24/7 critical care, advanced life-saving facilities, and immediate trauma care services. It should have a trained emergency response team capable of handling accidents, strokes, cardiac arrests, and other life-threatening situations. In Erode, Sudha Multispeciality Hospital is widely regarded as the best emergency care hospital, trusted for its quick response, state-of-the-art critical care unit, and expert trauma care services.
+      </p>
     ),
   },
   {
@@ -81,66 +38,66 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-          What is the main cause of heart problems?
+          When to call emergency service? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>You should call emergency services immediately if someone experiences chest pain, severe injury, breathing difficulty, unconsciousness, stroke symptoms, or heavy bleeding. Quick action in such cases saves lives. Sudha Multispeciality Hospital, the best emergency care hospital in Erode, provides 24/7 emergency response with highly trained doctors and nurses specializing in critical care and trauma care.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+         How do you perform CPR on a casualty? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Cardiopulmonary Resuscitation (CPR) involves chest compressions and rescue breaths to maintain blood flow and oxygen supply when someone’s heart has stopped. The standard method includes 30 compressions followed by 2 rescue breaths, repeated until help arrives. At Sudha Multispeciality Hospital, the emergency team is trained in advanced life support and provides immediate CPR and critical care for cardiac arrest and trauma patients. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+         How do we use CPR during emergencies? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>During emergencies such as cardiac arrest, drowning, or sudden collapse, CPR is the first step in keeping the brain and vital organs alive until advanced treatment is given. Performing CPR quickly and correctly increases survival chances. Sudha Multispeciality Hospital, the best emergency care hospital in Erode, has specialists trained in advanced CPR techniques as part of their emergency and trauma care services. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What are the steps of emergency care?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Emergency care begins with assessing the patient’s condition, securing the airway, supporting breathing and circulation, controlling bleeding, stabilizing vital signs, and shifting the patient to intensive or trauma care if required. Sudha Multispeciality, the best emergency care hospital in Erode follows global emergency protocols and provides seamless transition from first aid to advanced critical care. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What are emergency services in a hospital?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Emergency services typically include accident and trauma care, cardiac emergency treatment, stroke management, poison and burn care, ventilator support, and 24/7 ambulance availability. As the best emergency care hospital, Sudha Multispeciality Hospital offers comprehensive emergency and critical care services, ensuring patients receive immediate and specialized treatment when every second counts.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What is the contact number for Erode emergency care? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Hospitals provide dedicated emergency contact numbers to ensure quick medical help when needed. Sudha Multispeciality Hospital, one of the leading emergency care hospitals in Erode, offers 24/7 critical and trauma care support. In case of an emergency, call 042-424-54545 for immediate assistance. </p>,
   },
 ];
 
@@ -159,7 +116,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-         Our emergency team is trained to respond swiftly to cardiac events, including heart attacks, arrhythmias, and heart failure. With rapid diagnostics and interventional support, every second counts towards saving a life. 
+          Our emergency team is trained to respond swiftly to cardiac events, including heart attacks, arrhythmias, and heart failure. With rapid diagnostics and interventional support, every second counts towards saving a life.
         </p>
 
         <div>
@@ -167,7 +124,7 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Emergency ECG and cardiac enzyme analysis</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Pre-hospital thrombolysis </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Cardiac monitoring and resuscitation </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Immediate referral to Cath lab when needed </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Immediate referral to the Cath lab when needed </li>
           </ul>
 
 
@@ -217,18 +174,18 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-         Acute respiratory conditions such as severe asthma, COPD exacerbations, and pulmonary embolisms are managed with ventilator support and swift diagnosis.
+          Acute respiratory conditions such as severe asthma, COPD exacerbations, and pulmonary embolisms are managed with ventilator support and swift diagnosis.
         </p>
 
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Non-invasive and invasive ventilator support</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Arterial blood gas analysis  </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Pulmonary Edema and embolism care </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Pulmonary Edema and Embolism Care  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Asthma and COPD crisis management  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Bronchoscopy   </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Traumatic Rib & Lung Injuries   </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Emergency ICD  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Traumatic Rib & Lung Injuries    </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Emergency ICD </li>
           </ul>
 
         </div>
@@ -247,7 +204,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Conditions like gastrointestinal bleeding, severe blood vomiting, abdominal distension or liver complications are treated promptly to prevent further complications.   
+          Conditions like gastrointestinal bleeding, severe blood vomiting, abdominal distension or liver complications are treated promptly to prevent further complications.
         </p>
 
         <div>
@@ -274,14 +231,14 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Time-sensitive vascular conditions such as stroke, deep vein thrombosis, or arterial blockages are handled with coordinated care. 
+          Time-sensitive vascular conditions such as stroke, deep vein thrombosis, or arterial blockages are handled with coordinated care.
         </p>
 
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Stroke protocol activation</li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Doppler imaging for vascular flow </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Anticoagulation therapy administration </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Anticoagulation therapy administration  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Emergency vascular surgery coordination</li>
           </ul>
 
@@ -328,7 +285,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-         Trauma care, fractures, and dislocations are handled efficiently to reduce pain and restore mobility quickly. 
+          Trauma care, fractures, and dislocations are handled efficiently to reduce pain and restore mobility quickly.
         </p>
 
         <div>
@@ -355,7 +312,7 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          For any undifferentiated emergency, including high fever, seizures, snake bites, dog bites, infections, or collapse, our multidisciplinary team ensures timely and appropriate care. 
+          For any undifferentiated emergency, including high fever, seizures, snake bites, dog bites, infections, or collapse, our multidisciplinary team ensures timely and appropriate care.
         </p>
 
         <div>
@@ -408,7 +365,7 @@ export default function SidebarTabs() {
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
 
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -511,10 +468,10 @@ export default function SidebarTabs() {
               <>
                 <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
                 <h2 className="text-[24px] mb-4 mt-4">
-                 24/7 Critical Care at the Best Emergency Care hospital in <span className="text-[#2B3990]"> Erode</span>
+                  24/7 Critical Care at the Best Emergency Care hospital in  <span className="text-[#2B3990]"> Erode</span>
                 </h2>
                 <p className="mb-4">
-                 Sudha Multispeciality Hospital, with its Advanced Emergency Complex, is recognised as the best emergency care hospital in Erode for handling medical emergencies with speed, expertise, and compassion. Equipped with advanced infrastructure, trained personnel, and round-the-clock availability, our emergency department ensures every critical moment is managed with precision. Whether it’s a trauma case, cardiac emergency, or acute illness, we are prepared to provide rapid assessment, accurate diagnosis, and immediate intervention to save lives and stabilise patients effectively.
+                  Sudha Multispeciality Hospital, with its Advanced Emergency Complex, is recognised as the best emergency care hospital in Erode for handling medical emergencies with speed, expertise, and compassion. Equipped with advanced infrastructure, trained personnel, and round-the-clock availability, our emergency department ensures every critical moment is managed with precision. Whether it’s a trauma case, cardiac emergency, or acute illness, we are prepared to provide rapid assessment, accurate diagnosis, and immediate intervention to save lives and stabilise patients effectively.
                 </p>
 
               </>
@@ -529,15 +486,15 @@ export default function SidebarTabs() {
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Fully equipped emergency beds</li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Counselling room for families and support   </li>
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Counselling room for families and support  </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> 24/7 ambulance services with advanced life support  </li>
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> 24/7 ambulance services with advanced life support </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Regular staff training for rapid response and updated protocols  </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Dedicated adult immunisation for emergency preventive care </li>
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Regular staff training for rapid response and updated protocols </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Home care support for palliative and chronic emergency patients </li>
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Home care support for palliative and chronic emergency patients    </li>
 
                 </ul>
               </>
@@ -553,19 +510,19 @@ export default function SidebarTabs() {
               </div>
             )}
 
-            {id === "doctors" && (
+            {/* {id === "doctors" && (
               <>
-                <h3 className="text-[24px]  mt-5 pb-3">Doctors</h3>
-                <DoctorSlider />
+                <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
+                <DoctorSlider specialty="ENT Surgeon" counter={3} />
               </>
-            )}
+            )} */}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[24px]  mt-5 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
-            )} */}
+            )}
           </section>
         ))}
       </div>

@@ -23,55 +23,15 @@ const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">What is cardiology? </div>
+        <div className="flex gap-3">Which is the Best Dentistry and Oral Surgery Hospital in Erode?</div>
       </>
     ),
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          A branch of medicine dealing with disorders of heart and blood
-          vessels. The work of our cardiologists for adults includes diagnosis
-          and treatment of adult congenital heart disease, heart failure,
-          coronary artery disease, valvular heart disease and arrhythmias. All
-          the necessary investigations like ECG, Echocardiogram, Treadmill test,
-          Holter monitoring, Ambulatory BP monitoring, tilt table testing,
-          cardiac CT, cardiac MRI, and nuclear heart scanning are available to
-          provide you with the best adult cardiology treatment at our
-          multispeciality hospital in Erode.
+          The best dental and oral surgery hospital should offer advanced treatments, experienced dentists, and facilities for both routine care and complex surgeries. In Erode, Sudha Multispeciality Hospital is known as one of the best dental hospitals, providing comprehensive dental treatments and oral surgery with expert care from the best dentists in Erode.
         </p>
-        <h4 className="font-semibold">
-          Diagnostic Tests Available in our Cardiology Hospital:
-        </h4>
-        <h2 className="font-semibold text-[#2B3990]">ECG:</h2>
-        <p>
-          Cardiac problems such as heart attack, heart block, etc. can be
-          detected by measuring the electrical activity of the heart, which is
-          done by electrocardiogram (ECG).
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">ECHOCARDIOGRAM:</h2>
-        <p>
-          The structure and function of the heart can be assessed by moving
-          images produced by sound waves. Various heart diseases can be
-          diagnosed by this readily available investigation.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">TREADMILL TEST:</h2>
-        <p>
-          Patients will walk on a treadmill at graded levels and their 12- lead
-          ECG will be monitored for heart rate, ST-T segment changes. The
-          presence or absence of changes will be interpreted accordingly to
-          detect heart problems like coronary artery disease, heart block,
-          etc..., that helps in determining the cardiology treatment that is to
-          proceed further accordingly.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">
-          STRESS ECHOCARDIOGRAPHY:
-        </h2>
-        <p>
-          Heart is exerted by exercise or medicines and its activity is
-          monitored by echocardiography. For those who are not able to walk to
-          perform treadmill test, this is a very useful test to rule out
-          coronary artery disease.
-        </p>
+
       </div>
     ),
   },
@@ -80,66 +40,66 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-          What is the main cause of heart problems?
+          What does oral surgery mean in dentistry?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Oral surgery refers to surgical procedures performed in the mouth, such as wisdom tooth extraction, dental implants, jaw correction, or treatment of oral infections. At Sudha Multispeciality Hospital, patients receive specialized oral surgery services performed by skilled dental surgeons, ensuring safe and effective outcomes.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          How do I find the best dentist in Erode?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Finding the best dentist involves looking for qualifications, experience, modern facilities, and patient reviews. A good dentist provides personalized treatment and ensures comfort throughout the procedure. Sudha Multispeciality Hospital houses some of the best dentists in Erode, offering advanced dental care and treatments under one roof. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What is the cost of cavity removal?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>The cost of cavity removal depends on the size of the cavity, the material used for filling, and the overall treatment required. While prices may vary, at Sudha Multispeciality Hospital, the best dental hospital in Erode, patients receive the best dental treatments at affordable prices with expert guidance.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What is root canal treatment?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>A root canal treatment is a dental procedure used to treat infection or damage inside the tooth, saving it from extraction. It involves cleaning, disinfecting, and sealing the affected tooth. At Sudha Multispeciality Hospital, one of the best dental hospitals in Erode, root canal treatments are performed using advanced techniques to ensure long-term tooth health. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Is root canal treatment a painful procedure?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>With modern techniques and anesthesia, root canal treatment is generally not painful. Most patients feel only mild discomfort during or after the procedure. At Sudha Multispeciality Hospital, the best dentists in Erode ensure pain-free dental care, making root canal treatments comfortable and effective. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What is the treatment for a tooth gap?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Tooth gaps can be treated with options such as braces, aligners, dental bonding, veneers, or implants, depending on the severity and patient’s preference. At Sudha Multispeciality Hospital, patients receive personalized advice and some of the best dental treatments in Erode for correcting tooth gaps and restoring confident smiles. </p>,
   },
 ];
 
@@ -164,8 +124,8 @@ const accordionData = [
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Dental crowns and bridges </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Tooth-colored fillings </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Fluoride treatments and dental sealants </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Tooth-coloured fillings </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Fluoride treatments and dental sealants  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Routine dental cleanings and oral exams </li>
 
           </ul>
@@ -186,18 +146,59 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          We offer smile-enhancing procedures designed to improve the appearance, alignment, and brightness of your teeth. Using modern tools and materials, our cosmetic dentistry ensures natural-looking, durable results. These treatments boost self-confidence and improve oral aesthetics without compromising function. Every smile makeover is custom designed for your face and lifestyle.
+          We offer smile-enhancing procedures designed to improve the appearance, alignment, and brightness of your teeth. Using modern tools and materials, our cosmetic dentistry ensures natural-looking, durable results. These treatments boost self-confidence and improve oral aesthetics without compromising function.
         </p>
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Teeth whitening and polishing </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Dental veneers </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Smile correction and alignment </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Smile correction and alignment   </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Cosmetic reshaping and contouring </li>
 
           </ul>
 
         </div>
+      </div>
+    ),
+  },
+
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Dentistry and Oral Surgery" /> */}
+          Oral Surgery & Implants
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm text-gray-700 space-y-3">
+        <p>
+          Dental implants offer permanent tooth replacement, restoring both appearance and chewing function. We also address facial and jaw corrections. Our oral surgery unit handles everything from simple extractions to complex implant placements with precision and care. With sedation support and sterile surgical protocols, we ensure safety and patient comfort throughout.
+        </p>
+        <div>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Dental implants</li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Tooth extractions and minor oral surgeries   </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Bone grafting </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Rhinoplasty and maxillofacial procedures </li>
+
+
+          </ul>
+
+        </div>
+        {/* <div>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> <b>Prosthodontics -</b>Replacing missing teeth with crowns, dentures, and bridges </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> <b>Orthodontics -</b>Braces and aligners for teeth alignment </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> <b>Pedodontics -</b>Paediatric dental care </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> <b>Endodontics -</b>Root canal treatment </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> <b>Periodontics -</b>Gum disease treatment and maintenance </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> <b>Laser Dentistry -</b>Minimally invasive treatments for soft tissue and gum procedures </li>
+
+          </ul>
+
+        </div> */}
       </div>
     ),
   },
@@ -216,12 +217,13 @@ const accordionData = [
         <p>
           We bring together specialists from various dental disciplines to offer targeted and age-appropriate care. Each specialist follows an integrated treatment approach for optimal results and long-term oral health maintenance.
         </p>
+
         <div>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> <b>Prosthodontics -</b>Replacing missing teeth with crowns, dentures, and bridges </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> <b>Prosthodontics -</b>Replacing missing teeth with crowns, dentures, and bridges  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> <b>Orthodontics -</b>Braces and aligners for teeth alignment </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> <b>Pedodontics -</b>Paediatric dental care </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> <b>Endodontics -</b>Root canal treatment </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> <b>Endodontics -</b>Root canal treatment  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> <b>Periodontics -</b>Gum disease treatment and maintenance </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> <b>Laser Dentistry -</b>Minimally invasive treatments for soft tissue and gum procedures </li>
 
@@ -328,7 +330,7 @@ export default function SidebarTabs() {
           <ul className="space-y-4 text-start mt-4">
             <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Child-friendly environment with expert paediatric dental care </li>
             <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Painless root canal and laser-assisted dental procedures</li>
-            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Skilled dental surgeons offering comprehensive treatments under one roof</li>
+            <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />skilled dental surgeons offering comprehensive treatments under one roof </li>
           </ul>
 
 
@@ -373,14 +375,11 @@ export default function SidebarTabs() {
 
 
                   <h2 className="text-[24px] mb-3 mt-5">
-                    Comprehensive Dentistry and Oral Surgery in
-                    <span className="text-[#2B3990]"> Erode</span> at Sudha Multispeciality Hospital
+                    Best Dental Hospital in Erode Providing
+                    <span className="text-[#2B3990]"> Advanced Care</span> for Dental Problems.
                   </h2>
                   <p className="">
-                    The Department of Dentistry and Oral Surgery at Sudha Multispeciality Hospital provides advanced dental care through modern technology and
-                    a team of skilled dental surgeons. From routine dental check-ups to complex oral surgeries, our services cover preventive, restorative, cosmetic,
-                    and surgical dental solutions. We ensure a painless and comfortable experience for patients of all ages with strict hygiene protocols and patient-focused care.
-                    Whether it's cosmetic enhancement, tooth restoration, or oral rehabilitation, we offer tailored treatment plans under one roof.
+                    The Department of Dentistry and Oral Surgery at Sudha Multispeciality Hospital provides advanced dental care through modern technology and a team of the best dentists and dental surgeons in Erode. From routine dental check-ups to complex oral surgeries, our services cover preventive, restorative, cosmetic, and surgical dental solutions. We ensure a painless and comfortable experience for patients of all ages with strict hygiene protocols and patient-focused care. Whether it's cosmetic enhancement, tooth restoration, or oral rehabilitation, we offer th best dental treatments in Erode under one roof.
                   </p>
                 </div>
               </>
@@ -393,18 +392,18 @@ export default function SidebarTabs() {
                 <h2 className="text-[24px] mt-5 mb-3">Facilities</h2>
                 <ul>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> <b>Advanced Inspection Chair</b>with ergonomic design for comfort and accessibility
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> Advanced Inspection Chair with ergonomic design for comfort and accessibility
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> <b>OPG (Orthopantomography):</b>Complete digital dental X-ray for panoramic view of teeth and jaw
-                  </li>
-                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
-                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    <b>RVG (Radio Visuographic):</b>High-resolution imaging for root canal therapy, implants, and bone density analysis
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div> OPG (Orthopantomography): Complete digital dental X-ray for panoramic view of teeth and jaw
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    <b>Intraoral Camera:</b>Real-time visualisation for precise diagnosis and patient education
+                    RVG (Radio Visuographic): High-resolution imaging for root canal therapy, implants, and bone density analysis
+                  </li>
+                  <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
+                    <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
+                    Intraoral Camera: Real-time visualisation for precise diagnosis and patient education
                   </li>
                 </ul>
               </>
@@ -421,16 +420,16 @@ export default function SidebarTabs() {
             {id === "doctors" && (
               <>
                 <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
-                <DoctorSlider />
+                <DoctorSlider specialty="Dental" counter={2} />
               </>
             )}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[30px] font-semibold mt-5 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
-            )} */}
+            )}
           </section>
         ))}
       </div>

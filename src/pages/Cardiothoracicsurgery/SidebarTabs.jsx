@@ -17,7 +17,7 @@ const serviceSections = [
   { id: "facilities", label: "Facilities" },
   { id: "services", label: "Services" },
   { id: "doctors", label: "Doctors" },
-  { id: "faqs", label: "FAQs" },
+  // { id: "faqs", label: "FAQs" },
 ];
 
 const faq = [
@@ -159,13 +159,10 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Coronary Artery Bypass Surgery (CABG) is one of the most commonly performed procedures in adult cardiac care, often required to
-          treat severe blockages in the heart. At Sudha multispeciality centre, this life-saving surgery is carried out with exceptional precision and
-          care by a dedicated team of experienced cardiac surgeons.
+          Coronary Artery Bypass Surgery (CABG) is one of the most commonly performed procedures in adult cardiac care, often required to treat severe blockages in the heart. At Sudha Multispeciality Hospital, this life-saving surgery is carried out with exceptional precision and care by a dedicated team of experienced cardiac surgeons.  
         </p>
         <p>
-          Our cardiac department is recognized for its consistent outcomes and commitment to clinical excellence. With a strong foundation in research
-          and active involvement in national and international studies, we continuously strive to set high standards in heart care and surgical innovation.
+          Our cardiac department is recognized for its consistent outcomes and commitment to clinical excellence. With a strong foundation in research and active involvement in national and international studies, we continuously strive to set high standards in heart care and surgical innovation.
         </p>
 
       </div>
@@ -183,13 +180,10 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          Our cardiac care team offers specialized surgical services for children and young adults, addressing a wide range of heart conditions from infancy
-          through adolescence. With a focus on timely intervention and compassionate care, we are equipped to handle even the most delicate and urgent
-          procedures in young patients.
+          Our cardiac care team offers specialized surgical services for children and young adults, addressing a wide range of heart conditions from infancy through adolescence. With a focus on timely intervention and compassionate care, we are equipped to handle even the most delicate and urgent procedures in young patients.
         </p>
         <p>
-          The paediatric cardiac unit is known for its commitment to quality, safety, and positive outcomes. Our approach is guided by international standards
-          and best practices, ensuring every child receives expert care in a supportive environment tailored to their unique needs.
+          The paediatric cardiac unit is known for its commitment to quality, safety, and positive outcomes. Our approach is guided by international standards and best practices, ensuring every child receives expert care in a supportive environment tailored to their unique needs.
         </p>
 
       </div>
@@ -207,13 +201,10 @@ const accordionData = [
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          Our cardiac surgery department at Sudha Multispeciality Hospital is equipped to handle a wide range of advanced aortic procedures, offering
-          comprehensive care for conditions affecting the aorta. From complex surgeries involving the aortic root, arch, and descending segments to minimally invasive
-          and hybrid techniques, our team ensures precise and timely interventions.
+          Our cardiac surgery department at Sudha Multispeciality Hospital is equipped to handle a wide range of advanced aortic procedures, offering comprehensive care for conditions affecting the aorta. From complex surgeries involving the aortic root, arch, and descending segments to minimally invasive and hybrid techniques, our team ensures precise and timely interventions.
         </p>
         <p>
-          Aortic emergencies such as dissections require immediate attention, and our centre is well-prepared to manage these critical cases with expertise.
-          With a focus on safety, innovation, and patient outcomes, we are recognized for delivering high-quality care in complex aortic surgeries.
+          Aortic emergencies such as dissections require immediate attention, and our centre is well-prepared to manage these critical cases with expertise. With a focus on safety, innovation, and patient outcomes, we are recognized for delivering high-quality care in complex aortic surgeries.
         </p>
 
       </div>
@@ -231,14 +222,10 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Since its inception, the Cardiac Surgery Department at Sudha Multispeciality Hospital has been dedicated to preserving the heart’s natural function through
-          advanced valve repair procedures. Repairing heart valves is often preferred over replacement, especially for younger patients, as it helps maintain the integrity
-          of the native valve and reduces the need for long-term medication.
+          Since its inception, the Cardiac Surgery Department at Sudha Multispeciality Hospital has been dedicated to preserving the heart’s natural function through advanced valve repair procedures. Repairing heart valves is often preferred over replacement, especially for younger patients, as it helps maintain the integrity of the native valve and reduces the need for long-term medication.
         </p>
         <p>
-          Our team is experienced in performing intricate repairs of mitral, aortic, and tricuspid valves, including those with congenital conditions. With a strong emphasis
-          on skill enhancement and knowledge sharing, our cardiac surgeons have consistently engaged in collaborative learning, contributing to advancements in valve
-          repair techniques and outcomes.
+          Our team is experienced in performing intricate repairs of mitral, aortic, and tricuspid valves, including those with congenital conditions. With a strong emphasis on skill enhancement and knowledge sharing, our cardiac surgeons have consistently engaged in collaborative learning, contributing to advancements in valve repair techniques and outcomes.
         </p>
       </div>
     ),
@@ -384,24 +371,19 @@ export default function SidebarTabs() {
 
                 <div className="mt-6 space-y-4">
                   <h2 className="text-[24px]">
-                    Best Cardiothoracic Surgery Centre in
+                   Best Cardiothoracic Treatment in 
                     <span className="text-[#2B3990]"> Erode</span> for
-                    for Complex Cardiac Surgeries
+                     for Complex Cardiac Surgeries
                   </h2>
                   <p className="mb-4">
-                    The Cardiothoracic Surgery Department at Sudha Multispeciality Hospital has an impressive track record, with a (number) successful surgeries performed by
-                    some of the most experienced cardiothoracic surgeons in the region. The department is well-prepared to manage a full range of cardiac and thoracic conditions,
-                    from intricate neonatal surgeries to advanced treatments for heart failure, including heart transplantation.
+                    The Cardiothoracic Surgery Department at Sudha Multispeciality Hospital provides the best cardiothoracic treatments in Erode and has an impressive track record with high success rate surgeries performed by the most experienced cardiothoracic surgeons in the region. The department is well-prepared to manage a full range of cardiac and thoracic conditions, from intricate neonatal surgeries to advanced treatments for heart failure, including heart transplantation.
                   </p>
 
                   <p className=" mb-4">
-                    With cutting-edge infrastructure and modern surgical technology, the centre is committed to delivering high-quality cardiac care, including bypass surgeries,
-                    at cost-effective rates. The department is known for its expertise in valve repair, aortic surgeries, complex paediatric heart procedures, and surgical
-                    management of heart failure, including transplantation.
+                    With cutting-edge infrastructure and modern surgical technology, the centre is committed to delivering high-quality cardiac care, including bypass surgeries, at cost-effective rates. Sudha Multispeciality Hospital is known as the best cardiology hospital in Erode, for its expertise in valve repair, aortic surgeries, complex paediatric heart procedures, and surgical management of heart failure, including transplantation.
                   </p>
                   <p className=" mb-4">
-                    In addition to its cardiac services, this comprehensive unit is also equipped to perform thoracic surgeries such as video-assisted thoracic surgery (VATS) and
-                    advanced vascular procedures, including endovascular interventions like stenting for complex aortic aneurysms.
+                   In addition to its cardiac services, this comprehensive unit is also equipped to perform thoracic surgeries such as video-assisted thoracic surgery (VATS) and advanced vascular procedures, including endovascular interventions like stenting for complex aortic aneurysms.  
                   </p>
                 </div>
               </>
@@ -411,10 +393,7 @@ export default function SidebarTabs() {
               <>
                 <h2 className="text-[24px] mt-5">Treatments & Procedures </h2>
                 <p className=" mt-3">
-                  The department performs a full range of cardiac surgeries for patients of all ages, from newborns to the elderly. The paediatric unit handles complex procedures
-                  like arterial switch operations, while the adult unit specialises in coronary artery bypass grafting, including beating heart surgery, arterial grafts, and minimally
-                  invasive harvesting. Known for excellence in valve repair and aortic surgery, the centre is equipped with advanced facilities to manage both simple and
-                  complex heart conditions.
+                  The department performs a full range of cardiac surgeries for patients of all ages, from newborns to the elderly. The paediatric unit handles complex procedures like arterial switch operations, while the adult unit specialises in coronary artery bypass grafting, including beating heart surgery, arterial grafts, and minimally invasive harvesting. Known for excellence in valve repair and aortic surgery, the centre is equipped with advanced facilities to manage both simple and complex heart conditions.
                 </p>
               </>
             )}
@@ -437,7 +416,7 @@ export default function SidebarTabs() {
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    Intraoperative Transoesophageal Echocardiography (TEE)
+                    Intraoperative Transoesophageal Echocardiography (TEE) 
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
@@ -445,7 +424,7 @@ export default function SidebarTabs() {
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    Mechanical Ventilation and ECMO Support
+                    Mechanical Ventilation and ECMO Support  
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
@@ -453,7 +432,7 @@ export default function SidebarTabs() {
                   </li>
                   <li className="flex gap-2 items-center text-[#5E566A] text-[15px] font-semibold mt-3">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>{" "}
-                    Cardiac Catheterisation Lab (Cath Lab)
+                    Cardiac Catheterisation Lab (Cath Lab)  
                   </li>
                 </ul>
               </>
