@@ -217,7 +217,7 @@ const Healthpackage = () => {
                             Health Care Packages
                         </motion.h1>
                         <p className='text-white'>Stay Ahead of Health Risks with Regular Checkups</p>
-                        
+
                     </div>
 
 
@@ -225,14 +225,11 @@ const Healthpackage = () => {
                         <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
                             <div className="h-[30%] bg-transparent" />
                             <div className="bg-white p-5">
-                                <div
-                                    className="w-12 h-12 mb-2 bg-contain bg-no-repeat"
-                                    style={{ backgroundImage: `url(${HandIcon.src})` }}
-                                ></div>
-                                <p className="  text-black font-bold">
-                                    Government <br />
-                                    Approved <br />
-                                    Licence
+                                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
+                                <p className="text-[16px] text-black font-bold">
+                                    Years of Trusted <br />
+                                    Expertise in <br />
+                                    Healthcare
                                 </p>
                             </div>
                         </div>
@@ -242,11 +239,11 @@ const Healthpackage = () => {
             </section>
 
             {/* Intro Content */}
-            <section className="py-16 ">
+            <section className="py-16 mt-16">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start  gap-10">
                     {/* Left Text */}
-                    <div className="md:w-7/12 text-[#444] text-[15px] leading-[1.8]">
-                        <h2 className="text-[30px] text-black mb-4">
+                    <div className="md:w-7/12  ">
+                        <h2 className="text-[30px]  mb-4">
                             Executive Health Check–Up at Sudha Multispeciality Hospital
                         </h2>
                         <p className="">
@@ -284,7 +281,7 @@ const Healthpackage = () => {
                                 Benefits of an Executive Health Check–Up
                             </h2>
 
-                            <ul className="text-left mt-5">
+                            <ul className="text-left mt-5 text-[15px]">
                                 {[
                                     "Comprehensive Health Assessment",
                                     "Early Detection of Health Risks",
@@ -312,9 +309,9 @@ const Healthpackage = () => {
 
                     {/* Right Section (Accordion Content) */}
                     <div className="w-full px-4 sm:px-6 md:px-10 lg:w-[70%]">
-                        <h1 className='text-left text-[24px] sm:text-[28px] md:text-[30px] text-black mb-8'>
+                        <h2 className='text-left text-[30px]  text-black mb-8'>
                             Master Health Checkup Packages
-                        </h1>
+                        </h2>
                         <div className="flex flex-col gap-0">
                             {healthPackages.map((pkg, index) => (
                                 <div key={index} className="w-full border-b border-gray-200 last:border-b-0">
@@ -324,7 +321,7 @@ const Healthpackage = () => {
                                         className="w-full py-4 px-2 sm:px-4 text-left flex justify-between items-center bg-white hover:bg-gray-50 transition-colors duration-200"
                                     >
                                         <div className="flex items-center gap-4 pl-4">
-                                            <h3 className=" text-[18px]  text-black">
+                                            <h3 className=" text-[17px]  text-black">
                                                 {pkg.title}
                                             </h3>
                                         </div>
@@ -405,40 +402,41 @@ const Healthpackage = () => {
                                 </div>
                             ))}
                         </div>
+                        <div className="max-w-3xl ml-auto ">
+                            <section className="w-full sm:w-auto">
+                                <ul className="text-left text-[14px] mt-0 mb-7">
+                                    {[
+                                        "+ Rs. 1000/- Extra (Men - Serum PSA, Carotid Doppler)",
+                                        "+ Rs. 1000/- Extra (Women - Mammogram, PAP Smear)",
+                                    ].map((item, i) => (
+                                        <li
+                                            key={i}
+                                            className="flex items-start font-semibold text-[#5E566A] mb-3"
+                                        >
+                                            <span className="text-blue-600 mr-2 ">
+                                                <Image src={Check} alt="tick" width={18} height={18} />
+                                            </span>
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <div className="max-w-3xl ml-auto mr-36">
-                <section className="w-full sm:w-auto">
-                    <ul className="text-left mt-0 mb-7">
-                        {[
-                            "+ Rs. 1000/- Extra (Men - Serum PSA, Carotid Doppler)",
-                            "+ Rs. 1000/- Extra (Women - Mammogram, PAP Smear)",
-                        ].map((item, i) => (
-                            <li
-                                key={i}
-                                className="flex items-start font-semibold text-[#5E566A] mb-3"
-                            >
-                                <span className="text-blue-600 mr-2 leading-none">
-                                    <Image src={Check} alt="tick" width={24} height={24} />
-                                </span>
-                                {item}
-                            </li>
-                        ))}
-                    </ul>
-                </section>
-            </div>
+
 
             <section className="px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto px-4 ourteam pt-16 pb-20">
                     <div className="flex justify-center">
-                        <h2 className="bg-white text-[#2B3990] px-5 py-2 rounded-full text-sm font-semibold">
+                        <h6 className="bg-white text-[#2B3990] px-5 py-2 rounded-full text-sm font-semibold">
                             Our Medical Team
-                        </h2>
+                        </h6>
                     </div>
 
-                    <h2 className="text-center text-[24px] sm:text-[28px] md:text-[30px] text-white mt-4">
+                    <h2 className="text-center text-[30px] text-white mt-4">
                         Our Health Checkup Team
                     </h2>
 

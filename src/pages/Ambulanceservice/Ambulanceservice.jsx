@@ -96,13 +96,13 @@ const Ambulanceservice = () => {
           </div>
         </div>
       </section>
-      <div className='max-w-7xl mx-auto py-16 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain'>
+      <div className='max-w-7xl mx-auto py-16 mt-16 relative z-10 text-white bg-center bg-no-repeat bg-cover lg:bg-contain'>
         <div className="flex justify-center mb-2">
-          <div className="px-5  py-2 font-semibold text-primary-blue bg-white inline-block rounded-full mb-3">
+          <h5 className="px-5  py-2 font-semibold text-primary-blue bg-white text-[14px] inline-block rounded-full mb-3">
             Sudha Ambulance Services
-          </div>
+          </h5>
         </div>
-        <h2 className=" mt-4 text-[30px] text-black mb-10 text-center">
+        <h2 className=" text-[30px] text-black mb-10 text-center">
           24 X 7 Ambulance Services in <br />Erode for Emergency Care
         </h2>
         <div className="flex flex-col md:flex-col lg:flex-row gap-4 mt-10 items-stretch">
@@ -111,12 +111,12 @@ const Ambulanceservice = () => {
               <Slider {...settings}>
                 {Slides.map((img, idx) => (
                   <div key={idx}>
-                    <div className="overflow-hidden rounded-[20px]">
-                      <div className="doc">
+                    <div className="overflow-hidden rounded-3xl">
+                      <div className="">
                         <Image
                           src={Slide}
                           alt={`Consult ${idx + 1}`}
-                          className="w-full h-auto sm:h-[300px] md:h-[350px] object-cover"
+                          className="w-full h-[400px]   object-cover"
                         // className='w-full h-auto object-cover'
                         />
                       </div>
@@ -126,7 +126,7 @@ const Ambulanceservice = () => {
               </Slider>
             </div>
           </div>
-          <div className="w-full bg-[#2B3990] lg:w-1/2 rounded-xl flex overflow-hidden items-start justify-start text-left p-10 flex-col lg:mt-0 ">
+          <div className="w-full bg-[#2B3990] lg:w-1/2 rounded-3xl flex overflow-hidden items-start justify-start text-left p-10 flex-col lg:mt-0 ">
             <h3 className="text-white  text-[22px] sm:text-[23px]">
               For Booking Please Contact
             </h3>

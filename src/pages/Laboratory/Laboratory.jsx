@@ -478,7 +478,7 @@ function Laboratory() {
         </div>
       </section>
 
-      <section className=" py-16 ">
+      <section className=" py-16  mt-16">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
           {/* Left Text Section */}
           <motion.div
@@ -488,9 +488,9 @@ function Laboratory() {
             viewport={{ once: true }}
             className="flex-1"
           >
-            <span className="px-5  py-2 bg-white text-primary-blue inline-block font-semibold rounded-full mb-3">
+            <h6 className="px-5 text-[14px]  py-2 bg-white text-primary-blue inline-block font-semibold rounded-full mb-3">
               Sudha Laboratory
-            </span>
+            </h6>
             <h2 className="text-[30px] mb-4">
               Laboratory Overview
             </h2>
@@ -513,7 +513,7 @@ function Laboratory() {
             <Image
               src={one}
               alt="Sudha Hospital Overview"
-              className="rounded-2xl w-[100%] object-cover"
+              className="rounded-3xl w-[100%] h-[380px] object-cover"
               priority
             />
           </motion.div>
@@ -523,9 +523,9 @@ function Laboratory() {
       <section>
         <div className="max-w-7xl mx-auto py-16 bg-white rounded-3xl">
           <div className="text-center">
-            <p className="px-5  py-2 bg-blue inline-block font-semibold rounded-full mb-3">
+            <h6 className="px-5 text-[14px] py-2 bg-blue inline-block font-semibold  rounded-full mb-3">
               Sudha Laboratory
-            </p>
+            </h6>
             <h2 className=" text-[30px] ">Laboratory Service</h2>
           </div>
           <div className="flex flex-col md:flex-row gap-6 p-8 w-full max-w-7xl mx-auto mt-7">
@@ -580,9 +580,9 @@ function Laboratory() {
 
       <section>
         <div className="max-w-7xl mx-auto text-center  py-16">
-          <span className="px-5  py-2 bg-white text-primary-blue text-center inline-block font-semibold rounded-full mb-3">
+          <h6 className="px-5 text-[14px]  py-2 bg-white text-primary-blue text-center inline-block font-semibold rounded-full mb-3">
             Laboratory
-          </span>
+          </h6>
           <h2 className="text-[30px]  text-center">
             Advanced Diagnostic Laboratory with <br /> World-Class Equipment
           </h2>

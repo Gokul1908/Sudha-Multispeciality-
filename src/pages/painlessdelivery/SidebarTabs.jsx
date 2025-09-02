@@ -346,7 +346,7 @@ export default function SidebarTabs() {
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
 
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -410,8 +410,8 @@ export default function SidebarTabs() {
 
           </ul>
 
-          <button className="btn-sidebar inline-flex items-center gap-2 bg-white text-[#2B3990] font-semibold px-7 py-3 rounded-full   mt-5 text-[14px]">
-            Book Your Appointment  <ArrowUpRight className="w-5 h-5" />
+          <button className="btn-white mt-5">
+            Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
           </button>
         </div>
 
@@ -423,7 +423,7 @@ export default function SidebarTabs() {
           }}
         >
           <div className="text-left mb-4 sm:mb-0 sm:mr-4">
-            <h3 className="text-[26px]  font-bold">
+            <h3 className="text-[22px]  font-bold">
               Find a <br />
               Doctor?
             </h3>
@@ -445,7 +445,7 @@ export default function SidebarTabs() {
           <section key={id} id={id} className="scroll-mt-32 rounded-xl">
             {id === "overview" && (
               <>
-                <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover" />
+                <Image src={aboutOverview} alt="aboutOverview" className="w-full h-[400px] rounded-2xl object-cover"/>
 
                 <div className="mt-6 space-y-4">
                   {/* <h2 className="text-[24px]">

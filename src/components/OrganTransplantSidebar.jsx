@@ -15,16 +15,16 @@ import './bookappointment.css';
 const rightbar = [
   {
     head: "Renal Transplant ",
-    label: "The medical professional doctors available in the clinic",
+    label: "Leading You to a Healthier Tomorrow.",
     image: sidebar1,
     link: "/renal-transplant",
   },
-  {
-    head: "Lungs ",
-    label: "The medical professional doctors available in the clinic",
-    image: sidebar2,
-    link: "/#",
-  },
+  // {
+  //   head: "Lungs ",
+  //   label: "The medical professional doctors available in the clinic",
+  //   image: sidebar2,
+  //   link: "/#",
+  // },
 
 ];
 
@@ -52,7 +52,7 @@ const OrganTransplantSidebar = () => {
               and cutting-edge therapies.
             </p>
 
-            <Link href="#">
+            <Link href="#" className="mt-4">
               <div
                 className="btn-diagonal "
               >
@@ -91,8 +91,8 @@ const OrganTransplantSidebar = () => {
                     />
 
                     {/* Text Content */}
-                    <div className="flex flex-col flex-1 h-full w-full">
-                      <div className="flex justify-between items-start w-full">
+                    <div className="flex flex-col flex-1 justify-between h-full w-full">
+                      <div className="flex justify-between items-end w-full">
                         <h3 className="text-[20px] sm:text-[22px] ">
                           {item.head}
                         </h3>
@@ -105,9 +105,9 @@ const OrganTransplantSidebar = () => {
                         />
                       </div>
 
-                      <div className="pt-4">
+                      <div className="pt-4 absolute bottom-6 mr-4">
                         <div className="border-t border-gray-200 mt-4 mb-2" />
-                        <p className="text-gray-700 text-sm sm:text-base">
+                        <p className="text-gray-700 text-[14px] ">
                           {item.label}
                         </p>
                       </div>

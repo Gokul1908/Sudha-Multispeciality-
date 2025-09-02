@@ -111,9 +111,9 @@ const Pharmacyservice = () => {
                 </div>
                 <div className="flex flex-col md:flex-row items-start gap-6 rounded-xl ">
                     <div className="w-full md:w-1/2  text-start space-y-4 ">
-                        <div className="px-5  py-2 font-semibold text-primary-blue bg-white inline-block rounded-full ">
+                        <h5 className="px-5 text-[14px]  py-2 font-semibold text-primary-blue bg-white inline-block rounded-full ">
                             Pharmacy
-                        </div>
+                        </h5>
                         <h2 className='text-[30px] text-black '>Sudha Pharmacy </h2>
                         <p className=''>
                             Sudha Hospital has an in house pharmacy department established in the year 1982 working 24*7 which caters to the patients with its timely and
@@ -151,9 +151,9 @@ const Pharmacyservice = () => {
 
                 <div className="bg-white rounded-3xl py-16">
                     <div className=' flex flex-col justify-center items-center text-center  '>
-                        <div className="px-5  py-2 bg-blue inline-block font-semibold rounded-full mb-3">
+                        <h6 className="px-5 text-[14px]  py-2 bg-blue inline-block font-semibold rounded-full mb-3">
                             Sudha Pharmacy
-                        </div>
+                        </h6>
                         <h2 className='text-[#000000] text-[30px] mb-4'>Pharmacy Service</h2>
                     </div>
 
@@ -164,12 +164,12 @@ const Pharmacyservice = () => {
                             <Image
                                 src={Medicine}
                                 alt="Medicine"
-                                className="rounded-xl w-full h-[400px] object-cover"
+                                className="rounded-3xl w-full h-[400px] object-cover"
                             // style={{ height: "300px", width: "450px" }}
                             />
                         </div>
-                        <div className="w-full md:w-1/2 text-[#444] text-sm text-start space-y-4 tracking-[0.03em]">
-                            <h2 className='text-[#000000]  text-[30px] leading-[1.6]'> Safe, Reliable Medicines, Anytime You Need </h2>
+                        <div className="w-full md:w-1/2  text-start space-y-4">
+                            <h2 className="text-[30px] text-[#000000]"> Safe, Reliable Medicines, Anytime You Need </h2>
                             <ul className="flex flex-col list-none space-y-4">
                                 {checklist.map((item, index) => (
                                     <li key={index} className="flex items-start gap-2 text-[#5E566A]  font-semibold text-sm">
@@ -197,9 +197,9 @@ const Pharmacyservice = () => {
 
             <div className="max-w-7xl mx-auto py-12 px-4">
                 <div className="flex justify-center mb-2">
-                    <div className="px-5  py-2 bg-white text-primary-blue inline-block font-semibold rounded-full mb-3">
+                    <h6 className="px-5  py-2 bg-white text-[14px] text-primary-blue inline-block font-semibold rounded-full mb-3">
                         Sudha Pharmacy
-                    </div>
+                    </h6>
                 </div>
                 <h2 className=" text-[30px] text-center">
                     Pharmacy Gallery

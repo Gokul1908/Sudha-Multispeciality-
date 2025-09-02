@@ -40,13 +40,13 @@ const breadcrumbItems = [
 const Companies = [Icici, Sbi, Bajaj, Niva, Tata, Hdfc];
 
 const Insurance = () => {
-  const [active, setActive] = useState("Planned Admission");
+  const [active, setActive] = useState("ECHS");
 
   const buttons = [
-    "ECHS ",
-    "Railway Scheme ",
+    "ECHS",
+    "Railway Scheme",
     "ESI ",
-    "Government Employees/Pensioners ",
+    "Government Employees/Pensioners",
     "Discharge Process",
   ];
 
@@ -59,7 +59,7 @@ const Insurance = () => {
           <>
             <h3 className="text-[26px] text-black mb-3"> ECHS </h3>
             <p className="mb-3">ECHS patients must come with a valid referral form issued by their respective polyclinic. It is compulsory to carry their ECHS medical ID card at the time of consultation or treatment. The referral and ID card together confirm their eligibility under the scheme. Without these, services cannot be extended. Patients are advised to ensure all documents are up to date and presented for smooth and uninterrupted medical care at the hospital. </p>
-            
+
           </>
         ),
     },
@@ -157,7 +157,7 @@ const Insurance = () => {
             </motion.p>
           </div>
 
-         <div className="absolute bottom-0 right-0  z-30 hidden md:block">
+          <div className="absolute bottom-0 right-0  z-30 hidden md:block">
             <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
               <div className="h-[30%] bg-transparent" />
               <div className="bg-white p-5">
@@ -175,7 +175,7 @@ const Insurance = () => {
 
       <div className="max-w-7xl mx-auto px-4 pt-20 pb-16 h-full">
         <div className="flex flex-col md:flex-row items-center justify-center py-16">
-        
+
           <div className="w-full md:w-1/2  h-full">
             <div className="font-semibold text-blue-800 bg-white inline-block px-5  py-2 rounded-full mb-3">
               Insurance
@@ -184,11 +184,11 @@ const Insurance = () => {
               Insurance Support
             </h2>
             <p className="">
-              Sudha Hospital is empanelled with various health insurance schemes, offering eligible patients the benefit of cashless treatment. Our dedicated insurance support team ensures smooth coordination and assistance throughout the process, from verifying eligibility and obtaining approvals to managing documentation. We are committed to providing accessible, affordable care while helping patients and families focus on recovery without the stress of financial procedures. For more details, kindly contact our insurance helpdesk. 
+              Sudha Hospital is empanelled with various health insurance schemes, offering eligible patients the benefit of cashless treatment. Our dedicated insurance support team ensures smooth coordination and assistance throughout the process, from verifying eligibility and obtaining approvals to managing documentation. We are committed to providing accessible, affordable care while helping patients and families focus on recovery without the stress of financial procedures. For more details, kindly contact our insurance helpdesk.
             </p>
           </div>
 
-         
+
           <div className="w-full md:w-1/2 mx-auto flex items-end  justify-end">
             <Image
               src={Patient}
@@ -232,11 +232,11 @@ const Insurance = () => {
         {/* Admission procedure under cashless scheme */}
         <section className="py-12 px-4 bg-white rounded-3xl">
           <div className=" flex flex-col justify-center items-center text-center pb-10">
-            <div className=" font-semibold bg-blue inline-block px-6 py-3 rounded-full mb-4">
+            <h6 className=" font-semibold bg-blue text-[14px] inline-block px-6 py-3 rounded-full mb-4">
               Government Scheme
-            </div>
+            </h6>
             <h2 className="text-[30px] pb-5">
-              Cashless Treatment Process Under <br /> CMCHIS–PMJAY
+              Cashless Treatment Process Under <br /> Sudha
             </h2>
 
 
@@ -246,7 +246,7 @@ const Insurance = () => {
                   <button
                     key={label}
                     onClick={() => setActive(label)}
-                    className={`px-4 py-2 text-sm rounded-lg font-semibold whitespace-nowrap ${active === label
+                    className={`px-4 py-2 text-sm rounded-xl font-semibold whitespace-nowrap ${active === label
                       ? "bg-[#2B3990] text-white"
                       : "text-black hover:bg-blue-100"
                       }`}
@@ -297,7 +297,7 @@ const Insurance = () => {
 
         {/* Comprehensive Health Insurance Scheme (CMCHIS - PMJAY) */}
 
-        <div className=" flex flex-col justify-center items-center text-center p-5 rounded-lg pt-16">
+        {/* <div className=" flex flex-col justify-center items-center text-center p-5 rounded-lg pt-16">
           <div className="px-5  py-2 font-semibold text-primary-blue bg-white inline-block rounded-full mb-3">
             Health Insurance Scheme
           </div>
@@ -345,7 +345,7 @@ const Insurance = () => {
 
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 p-6 py-16">
@@ -373,11 +373,11 @@ const Insurance = () => {
           <hr className="border-gray-200" />
 
           <div>
-            <h3 className="text-[#2B3990] text-[18px]">For CMCHIS</h3>
+            <h3 className="text-[#2B3990] text-[18px]">For Government Scheme</h3>
             <p className="mt-2 mb-2">(Mon - Sat) 8:30 am - 6:00 pm</p>
             <div className="flex items-center gap-2 text-[14px] font-bold  text-[#2B3990] mt-4">
               <Image src={Phone} alt="Phone" width={32} height={32} />
-              <span>+91 0422-4305676</span>
+              <span>+91-424-454545</span>
             </div>
           </div>
         </div>
@@ -398,11 +398,11 @@ const Insurance = () => {
               Experience the great virtual care from anywhere and connect with
               medical professionals for expert guidance.
             </p>
-           <div>
-             <button className="btn-white ">
-              Call for More Information <ArrowUpRight className="w-5 h-5" />
-            </button>
-           </div>
+            <div>
+              <button className="btn-white ">
+                Call for More Information <ArrowUpRight className="w-5 h-5" />
+              </button>
+            </div>
 
           </div>
         </div>
