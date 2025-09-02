@@ -24,47 +24,35 @@ const accordionData = [
     content: (
       <div className=" space-y-4">
         <p>
-          Our general anaesthesia services are designed to ensure complete
-          patient safety, comfort, and optimal surgical conditions across a wide
-          range of specialities. Recognised as one of the best anaesthesiology
-          hospitals in Erode, our expert anaesthesia team delivers tailored care
-          to patients undergoing complex and routine surgeries alike.
+          Our general anaesthesia services are designed to ensure complete patient safety, comfort, and optimal surgical conditions across a wide range of specialities. Recognised as one of the best anaesthesiology hospitals, our best anaesthesia doctors' team in Erode team delivers tailored care to patients undergoing complex and routine surgeries alike.
         </p>
 
         <h4 className="font-bold text-[16px] text-[#2B3990]">
           {" "}
-          Our General Anaesthesia services are provided for:{" "}
+          Our General Anaesthesia services are provided for:  {" "}
         </h4>
         <div>
           <ul className="space-y-4">
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> General and Laparoscopic Surgeries </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Orthopaedic and Joint Replacement Procedures </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Paediatric and Neonatal Surgeries </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Urological and Gynaecological Interventions </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} /> Urological and Gynaecological Interventions  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Neurosurgical and Spine Procedures </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} />Oncological Surgeries </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold"> <Image src={Checklight} alt="tick" width={24} height={24} />Oncological Surgeries  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold"><Image src={Checklight} alt="tick" width={24} height={24} /> Emergency and Trauma Care </li>
           </ul>
         </div>
 
         <p className="mt-5">
-          Each patient receives a comprehensive pre-anaesthetic assessment,
-          where our anaesthetists review medical history, conduct necessary
-          investigations, and plan the safest anaesthetic approach.
+          Each patient receives a comprehensive pre-anaesthetic assessment, where our anaesthetists review medical history, conduct necessary investigations, and plan the safest anaesthetic approach.  
         </p>
 
         <p className="mt-5">
-          During surgery, patients are continuously monitored using advanced
-          haemodynamic and respiratory monitors, ensuring real-time tracking of
-          vital parameters. Our modern anaesthesia workstations are equipped
-          with precise gas delivery systems, integrated ventilation, and safety
-          mechanisms to maintain a stable and controlled environment.
+          During surgery, patients are continuously monitored using advanced haemodynamic and respiratory monitors, ensuring real-time tracking of vital parameters. Our modern anaesthesia workstations are equipped with precise gas delivery systems, integrated ventilation, and safety mechanisms to maintain a stable and controlled environment.
         </p>
 
         <p className="mt-5">
-          Postoperatively, patients are transferred to a well-equipped
-          Post-Anaesthesia Care Unit (PACU), where recovery from anaesthesia is
-          carefully managed by our trained staff.
+          Postoperatively, patients are transferred to a well-equipped Post-Anaesthesia Care Unit (PACU), where recovery from anaesthesia is carefully managed by our trained staff.
         </p>
       </div>
     ),
@@ -92,23 +80,23 @@ const accordionData = [
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Coronary Artery Bypass Grafting (CABG)  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Valve Repair and Replacement Surgeries  </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Congenital Heart Defect Corrections  </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Aortic Aneurysm Repairs </li>
-            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Minimally Invasive Cardiac Procedures  </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Aortic Aneurysm Repairs   </li>
+            <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Minimally Invasive Cardiac Procedures    </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} /> Interventional Cardiology Support in Cath Labs </li>
             <li className="flex items-center gap-2 text-[14px] font-semibold">  <Image src={Checklight} alt="tick" width={24} height={24} />Electrophysiology Procedures and Pacemaker Implantations </li>
           </ul>
         </div>
 
         <p>
-          Our cardiac operating theatres are equipped with advanced anaesthesia workstations, invasive monitoring systems, transoesophageal echocardiography (TOE), and real-time haemodynamic assessment tools to ensure precision and safety during surgery.
+          Our cardiac operating theatres are equipped with advanced anaesthesia workstations, invasive monitoring systems, transoesophageal echocardiography (TOE), and real-time haemodynamic assessment tools to ensure precision and safety during surgery.  
         </p>
 
         <p>
-          From pre-operative optimisation and intraoperative management to intensive postoperative care in a specialised cardiac ICU, our team ensures every patient receives personalised and vigilant care throughout their surgical journey.
+          From pre-operative optimisation and intraoperative management to intensive postoperative care in a specialised cardiac ICU, our team ensures every patient receives personalised and vigilant care throughout their surgical journey. 
         </p>
 
         <p>
-          With decades of experience and a commitment to excellence, Sudha Multispeciality Hospital continues to be recognised among the Best Cardiac Anaesthesia Centres in Erode, upholding the highest standards of clinical expertise and patient outcomes.
+         With decades of experience and a commitment to excellence, Sudha Multispeciality Hospital continues to be recognised among the Best Cardiac Anaesthesia Centres in Erode, upholding the highest standards of clinical expertise and patient outcomes.  
         </p>
       </div>
     ),
@@ -398,34 +386,19 @@ export default function SidebarTabs() {
                   </h2>
 
                   <p className="mb-4">
-                    At Sudha Multispeciality Hospital, our Department of Anaesthesia
-                    delivers round-the-clock perioperative care. This includes
-                    thorough pre-anaesthetic evaluation, expert intraoperative
-                    management, and attentive postoperative monitoring for a wide
-                    range of surgical specialities.
+                    At Sudha Multispeciality Hospital, our Department of Anaesthesia delivers round-the-clock perioperative care. This includes thorough pre-anaesthetic evaluation, expert intraoperative management, and attentive postoperative monitoring for a wide range of surgical specialities.  
                   </p>
 
                   <p className="mb-4">
-                    Our anaesthesia team extends its expertise beyond the operating
-                    theatre, providing safe and efficient anaesthetic support for
-                    procedures such as interventional pulmonology, radiological
-                    interventions, obstetric pain relief, and assisted reproductive
-                    techniques.
+                    Our anaesthesia team extends its expertise beyond the operating theatre, providing safe and efficient anaesthesia treatment for procedures such as interventional pulmonology, radiological interventions, obstetric pain relief, and assisted reproductive techniques. 
                   </p>
 
                   <p className="mb-4">
-                    The department comprises state-of-the-art operating theatres
-                    catering to General Surgery, Paediatrics, Orthopaedics, Urology,
-                    Oncology, Obstetrics, and Neurosurgery. Each theatre is equipped
-                    with modern anaesthesia workstations, high-end haemodynamic
-                    monitoring systems, and ultrasound guidance for vascular access
-                    and regional nerve blocks.
+                    The department comprises state-of-the-art operating theatres catering to General Surgery, Paediatrics, Orthopaedics, Urology, Oncology, Obstetrics, and Neurosurgery. Each theatre is equipped with modern anaesthesia workstations, high-end haemodynamic monitoring systems, and ultrasound guidance for vascular access and regional nerve blocks.  
                   </p>
 
                   <p className="mb-4">
-                    With an unwavering commitment to patient safety and surgical
-                    excellence, Sudha Multispeciality Hospital stands as the Best
-                    Anesthesiology Hospital in Erode.
+                   With an unwavering commitment to patient safety, surgical excellence, and offering quality anaesthesia treatment in Erode, Sudha Multispeciality Hospital stands as the Best Anesthesiology Hospital in Erode.  
                   </p>
                 </div>
               </>
@@ -440,9 +413,9 @@ export default function SidebarTabs() {
                     "Well-equipped Operating Theatres (OTs) with modern anaesthesia machines, ventilators, and scavenging systems.",
                     "Post-Anaesthesia Care Unit (PACU) for close monitoring and recovery after anaesthesia.",
                     "Central Gas Supply System with uninterrupted supply of oxygen, nitrous oxide, compressed air, and suction.",
-                    "Advanced Anaesthesia Workstations",
+                    "Advanced Anaesthesia Workstations  ",
                     "Ultrasound Machines for regional anaesthesia and vascular access.",
-                    "Anaesthesia Services for Non-Operating Room Procedures (NORA) for radiology, gastroenterology, pulmonology, and other required specialities.",
+                    "Anaesthesia Services for Non-Operating Room Procedures (NORA) for radiology, gastroenterology, pulmonology, and other required specialities. ",
                   ].map((facility, index) => (
                     <li
                       key={index}

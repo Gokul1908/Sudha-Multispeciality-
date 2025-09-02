@@ -3,7 +3,7 @@ import React from 'react';
 
 export const metadata = {
   title: "Privacy Policy | Sudha Multispeciality Hospital",
-  description: "",
+  description: "Sudha Multispeciality Hospital respects your privacy. Read our privacy policy to understand how we collect, use, and protect your personal information.",
 
   keywords: "",
 };

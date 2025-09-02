@@ -4,7 +4,7 @@ import React from 'react';
 
 export const metadata = {
   title: "Terms and Conditions | Sudha Multispeciality Hospital",
-  description: "",
+  description: "Learn about the rules, policies, and guidelines for using Sudha Multispeciality Hospital services in our Terms & Conditions page.",
 
   keywords: "",
 };

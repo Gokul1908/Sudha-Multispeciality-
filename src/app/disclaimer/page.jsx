@@ -5,7 +5,7 @@ export const metadata = {
   title: "Disclaimer and Events | Sudha Multispeciality Hospital",
   description: "",
 
-  keywords: "",
+  keywords: "Sudha Multispeciality Hospital’s disclaimer informs users about the accuracy and limitations of content provided on our website.",
 };
 
 

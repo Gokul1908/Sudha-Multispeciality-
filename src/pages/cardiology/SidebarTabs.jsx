@@ -118,7 +118,7 @@ const accordionData = [
             BMV – Balloon Mitral Valvotomy
           </h4>
           <p>
-            BMV is a safe and effective catheter-based procedure for treating severe mitral valve stenosis. Patients are selected based on clinical evaluation and echocardiographic findings. Given the prevalence of rheumatic fever in our country, which can lead to mitral stenosis, BMV offers significant benefits.Shape
+            BMV is a safe and effective catheter-based procedure for treating severe mitral valve stenosis. Patients are selected based on clinical evaluation and echocardiographic findings. Given the prevalence of rheumatic fever in our country, which can lead to mitral stenosis, BMV offers significant benefits.
           </p>
         </div>
 
@@ -140,7 +140,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p className="mt-2">
-          Cardiac Electrophysiology is a subspecialty of cardiology focused on diagnosing and treating abnormal heart rhythms, whether too fast or too slow. Our Cardiac Electrophysiology centre is well-established and offers advanced treatments including electrophysiological studies with 3D mapping, radiofrequency ablation, pacemaker implantation, Implantable Cardioverter Defibrillator (ICD), and cardiac resynchronization therapy. These procedures are carried out by highly skilled electrophysiologists to help manage arrhythmias and improve symptoms of heart failure effectively.
+          Cardiac Electrophysiology is a subspecialty of cardiology focused on diagnosing and treating abnormal heart rhythms, whether too fast or too slow. Our Cardiac Electrophysiology centre is well-established and offers advanced treatments, including electrophysiological studies with 3D mapping, radiofrequency ablation, pacemaker implantation, Implantable Cardioverter Defibrillator (ICD), and cardiac resynchronization therapy. These procedures are carried out by highly skilled electrophysiologists to help manage arrhythmias and improve symptoms of heart failure effectively.
         </p>
 
       </div>
@@ -236,55 +236,15 @@ const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">What is cardiology? </div>
+        <div className="flex gap-3">Which is the Best Heart specialist Hospital in Erode? </div>
       </>
     ),
     content: (
       <div className="text-sm text-gray-700 space-y-3">
         <p>
-          A branch of medicine dealing with disorders of heart and blood
-          vessels. The work of our cardiologists for adults includes diagnosis
-          and treatment of adult congenital heart disease, heart failure,
-          coronary artery disease, valvular heart disease and arrhythmias. All
-          the necessary investigations like ECG, Echocardiogram, Treadmill test,
-          Holter monitoring, Ambulatory BP monitoring, tilt table testing,
-          cardiac CT, cardiac MRI, and nuclear heart scanning are available to
-          provide you with the best adult cardiology treatment at our
-          multispeciality hospital in Erode.
+          The best heart specialist hospital should have advanced technology, experienced cardiologists, and comprehensive emergency care to handle critical cases. In Erode, Sudha Multispeciality Hospital is recognized as the best cardiology hospital, trusted for providing world-class cardiac care. With its reputation as the best heart care hospital in Erode, Sudha ensures accurate diagnosis and the best treatment for heart and related issues.
         </p>
-        <h4 className="font-semibold">
-          Diagnostic Tests Available in our Cardiology Hospital:
-        </h4>
-        <h2 className="font-semibold text-[#2B3990]">ECG:</h2>
-        <p>
-          Cardiac problems such as heart attack, heart block, etc. can be
-          detected by measuring the electrical activity of the heart, which is
-          done by electrocardiogram (ECG).
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">ECHOCARDIOGRAM:</h2>
-        <p>
-          The structure and function of the heart can be assessed by moving
-          images produced by sound waves. Various heart diseases can be
-          diagnosed by this readily available investigation.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">TREADMILL TEST:</h2>
-        <p>
-          Patients will walk on a treadmill at graded levels and their 12- lead
-          ECG will be monitored for heart rate, ST-T segment changes. The
-          presence or absence of changes will be interpreted accordingly to
-          detect heart problems like coronary artery disease, heart block,
-          etc..., that helps in determining the cardiology treatment that is to
-          proceed further accordingly.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">
-          STRESS ECHOCARDIOGRAPHY:
-        </h2>
-        <p>
-          Heart is exerted by exercise or medicines and its activity is
-          monitored by echocardiography. For those who are not able to walk to
-          perform treadmill test, this is a very useful test to rule out
-          coronary artery disease.
-        </p>
+
       </div>
     ),
   },
@@ -293,66 +253,66 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-          What is the main cause of heart problems?
+          When to see a heart doctor?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>You should see a heart doctor if you experience chest pain, irregular heartbeat, shortness of breath, dizziness, or unexplained fatigue. People with diabetes, high cholesterol, obesity, or a family history of heart disease should also undergo regular check-ups. At Sudha Multispeciality Hospital, the best hospital in Erode for heart treatment, expert cardiologists offer timely diagnosis and the best heart care for long-term wellness. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          How can I improve my heart health quickly?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Quick ways to improve heart health include eating a balanced diet, exercising regularly, reducing stress, and avoiding smoking or alcohol. Regular monitoring is also essential to track heart performance. At Sudha Multispeciality Hospital, the best cardiology hospital in Erode, patients are guided by the best heart specialists to adopt healthy habits while receiving advanced treatment for heart and related issues. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          How can I prevent heart attacks?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Heart attack prevention relies on lifestyle changes such as controlling blood pressure, managing diabetes, exercising, and following a heart-healthy diet. Regular screenings help detect risks early and prevent complications. Sudha Multispeciality Hospital, known as the best heart care hospital in Erode, offers preventive cardiology programs and advanced treatment, making it the best hospital in Erode for heart treatment.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Can heart diseases be cured?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Some heart diseases can be managed or reversed with lifestyle changes and modern treatments, while others may need lifelong care. Medical advancements such as angioplasty, bypass surgery, and valve repair help patients live longer and healthier lives. At Sudha Multispeciality Hospital, the best cardiology hospital in Erode, patients receive world-class care from the best heart specialists, ensuring the best treatment for heart and related issues. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What is a normal heart rate?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>For most adults, a normal resting heart rate is between 60 and 100 beats per minute, though athletes may have a lower rate. If your heart rate is consistently outside this range, medical consultation is advised. Sudha Multispeciality Hospital, the best heart care hospital in Erode, provides expert evaluation and treatment by the best heart specialists in Erode. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What is the normal BP for heart patients?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>A normal blood pressure for heart patients is usually around 120/80 mmHg, though the exact target may differ based on individual conditions. Regular monitoring helps control risks and prevent complications. At Sudha Multispeciality Hospital, the best hospital in Erode for heart treatment, cardiologists provide personalized guidance to maintain healthy blood pressure and ensure the best treatment for heart and related issues. </p>,
   },
 ];
 
@@ -446,12 +406,13 @@ export default function SidebarTabs() {
             Sudha Multispeciality Hospital
           </h3>
           <hr className="border-light" />
-
-          <ul className="space-y-4 text-start mt-4">
+          <p className="mt-3 text-white text-[13px]">Performed 1,00,000+ successful cardiology surgeries with the best heart surgeons, world-class medical equipment, and international facilities.</p>
+          <p className="mt-3 text-white text-[13px]">Your dedicated health partner for every medical requirement.  </p>
+          {/* <ul className="space-y-4 text-start mt-4">
             <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />24/7 cardiac intensive care and monitoring specialties </li>
             <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Expert team for adult and paediatric cardiac careworkstations</li>
             <li className="flex items-start  gap-1 text-[14px] font-semibold">  <Image className="mt-1" src={Checklight} alt="tick" width={12} height={10} />Comprehensive facilities ensuring the best outcomes</li>
-          </ul>
+          </ul> */}
           <button className="btn-white mt-5">
             Book Your Appointment  <ArrowUpRight className="w-5 h-5" />
           </button>
@@ -495,16 +456,11 @@ export default function SidebarTabs() {
                     <span className="text-[#2B3990]">Erode</span> for The Best Heart Care
                   </h2>
                   <p className="mb-4">
-                    The cardiology department of Sudha Multispeciality Hospital is well-recognised for its trusted name in diagnosing and treating heart-related conditions.
-                    Beginning the journey as a hospital focusing on cardiology by Dr.D.Kandaswamy, the cardiology department has helped lakhs of patients recover from heart
-                    conditions. Backed by the best cardiology doctors and well-skilled surgeons, Sudha Multispeciality Hospitals remains the best multispeciality hospital and
-                    the leading cardiology hospital in Erode.
+                    The cardiology department of Sudha Multispeciality Hospital is well recognised for its trusted name in diagnosing and treating heart-related conditions. Beginning its journey as a hospital focusing on cardiology by Dr.D.Kandaswamy, the cardiology department has helped lakhs of patients recover from heart conditions. Backed by the best heart specialists in Erode and highly skilled surgeons, Sudha Multispeciality Hospitals remains the best multispeciality hospital and the leading cardiology hospital by providing the best treatment for heart and related issues in Erode.
                   </p>
 
                   <p className="mt-4 mb-4">
-                    We are one of the best cardiology hospitals in Tamil Nadu with the best cardiologists in Erode. We are driven by the motto to serve people with heartfelt care,
-                    offering the best healthcare solutions with the best doctors and international facilities. We are specialized in treating from pediatric heart conditions to coronary
-                    heart diseases and other heart-related conditions. Our dedication and excellence have made us a pioneer in cardiology healthcare services.
+                    We are one of the best heart care hospitals in Erode, with the best cardiologists. We are driven by the motto to serve people with heartfelt care, offering the best healthcare solutions with the best doctors and international facilities. We are specialised in treating from paediatric heart conditions to coronary heart diseases and other heart-related conditions. Our dedication and excellence have made us a pioneer in cardiology healthcare services.
                   </p>
                 </div>
               </>
@@ -548,16 +504,16 @@ export default function SidebarTabs() {
             {id === "doctors" && (
               <>
                 <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
-                  <DoctorSlider specialty="Cardiology" counter={3} />
+                <DoctorSlider specialty="Cardiology" counter={3} />
               </>
             )}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[30px] font-semibold mt-5 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
-            )} */}
+            )}
           </section>
         ))}
       </div>

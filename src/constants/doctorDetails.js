@@ -40,6 +40,10 @@ import Balaji from "../assets/specialites/Anaesthesia/balajimani.webp";
 import Aarthi from "../assets/specialites/Anaesthesia/aarthi.webp";
 import Sountharajan from "../assets/specialites/Anaesthesia/soundhararjan.webp";
 
+
+import Kandaswami from "../assets/specialites/cardiology/kandhasami.webp";
+
+
 //Cardiology
 // import Rajasekar from "../assets/specialites/cardiology/rajasekar.jpg";
 
@@ -456,12 +460,12 @@ export const doctorsData = [
     speciality: "Cardiology",
     qualification: "Cardiology",
     degrees: "MD, DTCD",
-    image: Rajasekar,
+    image: Kandaswami,
     doctordetail: [
       {
         name: "Dr.D.Kandaswami",
         specialist: "Cardiology",
-        image: Rajasekar,
+        image: Kandaswami,
         menulabel: "MD, DTCD",
         role: "Cardiology",
         experience: "33",

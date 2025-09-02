@@ -119,7 +119,7 @@ function Cardiology() {
       </section>
 
       {/* Clinic + Info Section */}
-     <section className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 relative">
+      <section className="max-w-7xl mx-auto py-16   relative">
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10">
           <div className="relative w-full lg:w-1/2 mx-auto rounded-3xl overflow-hidden">
             <Image src={Clinic} alt="Clinic" className="w-full h-[466px] object-cover rounded-3xl" />
@@ -145,7 +145,7 @@ function Cardiology() {
                 World-Class Care for Everyone
               </h4>
               <p className="mt-4  text-white">
-                We are dedicated to providing top-quality treatments and healthcare services,<br className="hidden sm:block" />
+                We are dedicated to providing top-quality treatments and healthcare services, <br className="hidden sm:block" />
                 supported by advanced international technology and a team of highly experienced <br className="hidden sm:block" />
                 medical professionals.
               </p>
