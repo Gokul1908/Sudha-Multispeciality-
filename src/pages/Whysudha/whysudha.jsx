@@ -26,7 +26,14 @@ import s5 from "@/assets/whysudha/s5.svg";
 import s6 from "@/assets/whysudha/s6.svg";
 import s7 from "@/assets/whysudha/s7.svg";
 import s8 from "@/assets/whysudha/emergency-call.svg";
-import ATM from "@/assets/whysudha/atm.png";
+import Gallery1 from "@/assets/whysudha/gallery/gallery-1.webp";
+import Gallery2 from "@/assets/whysudha/gallery/gallery-2.webp";
+import Gallery3 from "@/assets/whysudha/gallery/gallery-3.webp";
+import Gallery4 from "@/assets/whysudha/gallery/gallery-4.webp";
+import Gallery5 from "@/assets/whysudha/gallery/gallery-5.webp";
+import Gallery6 from "@/assets/whysudha/gallery/gallery-6.webp";
+import Gallery7 from "@/assets/whysudha/gallery/gallery-7.webp";
+
 import CampusFacilitySlider from "@/components/FacilitySlider/CampusFacilitySlider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -51,19 +58,20 @@ const consultSlides = [consult1, consult2, consult3];
 
 const facilities = [
   {
-    image: ATM,
-    title: (
-      <p className="text-primary-blue">
-        Gift Shop for <br />
-        the New born
-      </p>
-    ),
+    image: Gallery1,
+    // title: (
+    //   <p className="text-primary-blue">
+    //     Gift Shop for <br />
+    //     the New born
+    //   </p>
+    // ),
   },
-  { image: ATM, title: "Canteen" },
-  { image: ATM, title: "ATM" },
-  { image: ATM, title: "ATM" },
-  { image: ATM, title: "ATM" },
-  { image: ATM, title: "ATM" },
+  { image: Gallery2 },
+  { image: Gallery3 },
+  { image: Gallery4 },
+  { image: Gallery5 },
+  { image: Gallery6 },
+  { image: Gallery7 },
 ];
 
 const hospitalscards = [
@@ -402,37 +410,40 @@ function Whysudha() {
           <h2 className="text-[30px] mb-10 text-center">
             Patient Amenities & Support For a <br />peaceful Healing Journey
           </h2>
-          <div className="flex justify-center align-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-6">
-              {services.map((service, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-2xl p-6 text-center flex justify-center items-center hover:shadow-lg transition"
-                >
-                  <div>
-                    <div className="flex justify-center mb-4">
-                      <Image
-                        src={service.icon}
-                        alt={service.title}
-                        width={40}
-                        height={40}
-                      />
+           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {services.map((service, index) => {
+                const isLastRow = index >= services.length - 3; // last 3 items
+                return (
+                  <div
+                    key={index}
+                    className={`bg-white rounded-2xl p-6 text-center flex justify-center items-center hover:shadow-lg transition ${isLastRow ? "lg:col-span-1" : ""
+                      }`}
+                  >
+                    <div>
+                      <div className="flex justify-center mb-4">
+                        <Image
+                          src={service.icon}
+                          alt={service.title}
+                          width={40}
+                          height={40}
+                        />
+                      </div>
+                      <h3 className="text-[18px] text-[#2B3990]">
+                        {service.title}
+                      </h3>
+                      <p className="mt-2">{service.desc}</p>
                     </div>
-                    <h3 className="text-[18px]  text-[#2B3990]">
-                      {service.title}
-                    </h3>
-                    <p className=" mt-2">{service.desc}</p>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
-          </div>
+
 
         </div>
       </section>
 
       <section>
-        <div className="max-w-7xl mx-auto py-12 px-4">
+        <div className="max-w-7xl mx-auto py-12 ">
 
           <h6 className="px-5  py-2 rounded-full text-[14px] font-semibold bg-white text-[#2B3990] w-[140px] mx-auto">
             Infrastructure

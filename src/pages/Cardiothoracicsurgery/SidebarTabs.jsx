@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Frame from "@/assets/about/frame.png";
 import doctorImg from "@/assets/about/doctorImg.png";
-import aboutOverview from "@/assets/about/about_overview.png";
+import aboutOverview from "@/assets/specialites/cardiology/cardiology.webp";
 import Accordion from "../../components/Accordion";
 import DoctorSlider from "../../components/Slicksliderdoctor";
 import Faq from "../../components/Faq";
@@ -265,7 +265,7 @@ export default function SidebarTabs() {
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
 
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">

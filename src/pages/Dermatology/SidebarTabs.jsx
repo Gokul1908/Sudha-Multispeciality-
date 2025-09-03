@@ -433,7 +433,7 @@ export default function SidebarTabs() {
                 <h2 className="text-[24px]  mt-5 pb-3">
                   Doctors
                 </h2>
-                <DoctorSlider specialty="Dermatologist" counter={2} />
+                <DoctorSlider specialty="Dermatologist" counter={1} />
               </>
             )}
             {/* {id === "faqs" && (

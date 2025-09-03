@@ -39,7 +39,7 @@ const CustomNext = ({ currentSlide, slideCount, ...props }) => (
 
 
 
-export default function CampusFacilitySlider({data}) {
+export default function CampusFacilitySlider({ data }) {
   const settings = {
     dots: false,
     infinite: true,
@@ -65,22 +65,25 @@ export default function CampusFacilitySlider({data}) {
   };
 
   return (
-    <section className=" py-12 px-4">
+    <section className="py-12 ">
       <div className="max-w-7xl mx-auto">
         <Slider {...settings}>
           {data.map((facility, index) => (
             <div key={index} className="px-4">
-              <div className="relative rounded-3xl ">
-                <div className='card_img '>
-                  <Image
+              <div className="relative rounded-3xl overflow-hidden">
+                <Image
                   src={facility.image}
-                  alt={facility.title}
-                  className="object-cover rounded-xl w-full h-auto"
+
+                  width={800} // ✅ add width
+                  height={500} // ✅ add height
+                  className="object-cover w-full h-auto rounded-3xl"
                 />
-                </div>
-                <div className="absolute  text-center text-[#2B3990] font-semibold -mt-11 z-30 mb-6 right-10">
+                {/* Optional title overlay */}
+                {/* 
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/80 px-4 py-2 rounded-xl text-[#2B3990] font-semibold">
                   {facility.title}
-                </div>
+                </div> 
+                */}
               </div>
             </div>
           ))}

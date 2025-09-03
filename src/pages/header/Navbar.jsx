@@ -161,7 +161,7 @@ export default function Navbar() {
               <div
                 ref={subRef}
                 className={cn(
-                  "absolute top-20 left-0 px-4 sm:px-0 py-0 pb-4 pt-4 w-full bg-white text-black transition-all ease-in-out",
+                  "absolute top-20 left-0 px-4 sm:px-0 py-0 pb-6 pt-6 w-full bg-white text-black transition-all ease-in-out",
                   hovering || hovering === 0
                     ? "opacity-100 border-t shadow-[0_4px_15px_rgba(0,0,0,0.08)] border-accent"
                     : "opacity-0 border-none pointer-events-none"
@@ -352,13 +352,13 @@ export default function Navbar() {
             </Link>
             <div className="hidden lg:block  items-center gap-x-4">
               <div className="  rounded-full overflow-hidden relative">
-                <button
+                <Link href="/contact-us"
                   className=
                     "btn-white letter-space"
                    
                 >
                   Consult Our Specialists <ArrowUpRight className="w-5 h-5" />
-                </button>
+                </Link>
 
               </div>
             </div>

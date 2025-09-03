@@ -291,7 +291,7 @@ export default function SidebarTabs() {
                       <ArrowUpRight className="w-4 h-4 text-black group-hover:text-[#2b3990] transition-all duration-300 transform group-hover:scale-110" />
                     )}
                   </a>
-                  <hr className="my-3 border-t border-gray-100" />
+                  <hr className="my-3 border-t border-gray-100 last:hidden" />
                 </li>
               );
             })}

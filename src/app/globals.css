@@ -21,7 +21,10 @@
 }
 
 
-
+.slick-slide > div {
+  display: flex !important;
+  justify-content: start;
+}
 
 body {
   background: #F0F7FD;

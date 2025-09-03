@@ -36,10 +36,10 @@ export default function DoctorSlider({ specialty, counter }) {
     (doctor) => doctor.speciality === specialty
   );
   const settings = {
-    arrows: counter > 3, // ✅ disables arrows for 1, 2, 3
-    infinite: true,
+    arrows: filteredDoctors.length > 3,
+    infinite: filteredDoctors.length > counter,
     speed: 500,
-    slidesToShow: counter,
+    slidesToShow: Math.min(filteredDoctors.length, counter), // ✅ only show available doctors
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
@@ -63,39 +63,34 @@ export default function DoctorSlider({ specialty, counter }) {
     <div className="relative bg-[#f0f7ff] py-6   max-w-4xl mx-auto">
       <Slider {...settings}>
         {filteredDoctors.map((doc, index) => (
-          <div key={index} className="px-3">
-            <div className="bg-white h-[520px] rounded-2xl text-start relative">
-              <div className=" self-start">
-                <Image
-                  src={doc.image}
-                  alt={doc.name}
-                  width={300}
-                  height={300}
-                  className="mx-auto w-[100%] h-[320px] rounded-t-2xl object-cover"
-                />
-              </div>
+          <div key={index} className="pr-3">
+            <div className="bg-white h-[500px] max-w-[300px] rounded-2xl text-start flex flex-col overflow-hidden">
+              {/* Doctor Image */}
+              <Image
+                src={doc.image}
+                alt={doc.name}
+                width={300}
+                height={300}
+                className="w-full h-[300px] object-cover rounded-t-2xl"
+              />
 
-
-              <div className="p-6 flex flex-col justify-between">
-                {/* Text centered below */}
-                <div className="">
-                  <h3 className="text-md   text-[#2B3990]">
-                    {doc.name}
-                  </h3>
-                  <p className="text-sm mt-2 ">
-                    {doc.degrees}
-                  </p>
+              {/* Content */}
+              <div className="p-6 flex flex-col justify-between flex-1">
+                <div>
+                  <h3 className="text-md font-bold text-[#2B3990]">{doc.name}</h3>
+                  <p className="text-sm mt-2">{doc.degrees}</p>
                 </div>
-                <div className="absolute bottom-6 ">
-                  <Link
-                    href={`/doctor-detail/${doc.id}`}
-                    className="btn-diagonal-outline px-8  w-full mt-8" >
-                    View Profile <ArrowUpRight className="w-5 h-5" />
 
-                  </Link>
-                </div>
+                {/* Button aligned at bottom */}
+                <Link
+                  href={`/doctor-detail/${doc.id}`}
+                  className="btn-diagonal-outline px-8 w-full mt-6 flex items-center justify-center gap-2"
+                >
+                  View Profile <ArrowUpRight className="w-5 h-5" />
+                </Link>
               </div>
             </div>
+
           </div>
         ))
         }

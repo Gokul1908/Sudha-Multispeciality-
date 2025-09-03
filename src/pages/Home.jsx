@@ -345,7 +345,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto  pt-16 pb-6 mb-m">
+      <section className="max-w-7xl mx-auto  pt-8 pb-6 mb-m">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Image Block */}
           <motion.div
@@ -358,7 +358,7 @@ function Home() {
             <Image
               src={play}
               alt="hospital building"
-              className="w-full custom-h-380 object-cover rounded-2xl"
+              className="w-full custom-h-380 object-cover rounded-3xl"
             />
 
             {/* Play Button */}
@@ -386,7 +386,7 @@ function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="max-w-4xl mx-auto"
+              className="max-w-4xl mx-auto "
             >
               <h2 className="text-[30px] mb-4 leading-[1.4]">
                 Welcome to <span className="text-primary-blue">Sudha</span> —
@@ -415,7 +415,7 @@ function Home() {
                 choice and the best hospital in Erode.
               </p>
 
-              <Link href="#">
+              <Link href="/why-sudha">
                 <motion.div
                   className="btn-diagonal "
                 >
