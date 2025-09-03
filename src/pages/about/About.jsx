@@ -12,7 +12,7 @@ import hospitalTwo from "@/assets/home/cards/c2.svg";
 import hospitalThree from "@/assets/home/cards/c3.svg";
 import hospitalFour from "@/assets/home/cards/c4.svg";
 import TimelineSlider from "@/components/Timeline";
-import kandaswamy from "@/assets/aboutus/kandaswamy.png";
+import kandaswamy from "@/assets/aboutus/kandhasami.webp";
 import Marquee from "react-fast-marquee";
 import Breadcrumb from "@/components/Breadcrumb";
 
@@ -229,14 +229,14 @@ function Aboutus() {
             <Image
               src={kandaswamy} // Replace with your image path
               alt="Founder"
-              className="w-[50%] h-auto object-cover"
+              className="w-full h-auto rounded-3xl object-cover"
             />
             {/* </div> */}
 
             {/* Overlay Card */}
-            <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 md:left-auto md:right-0 md:-translate-x-[20%] bg-[#EEF8FF] rounded-2xl  p-6 w-56 text-center">
+            <div className="absolute bottom-5  md:left-auto md:right-5  bg-[#ffffff] rounded-2xl  p-6 w-100 ">
               <h4 className="font-semibold text-sm ">Founder</h4>
-              <h3 className="font-bold text-[#2B3990] text-lg mt-1">
+              <h3 className="font-bold text-[#2B3990] text-[24px] mt-1">
                 Dr. D. Kandasamy
               </h3>
               <p className="text-xs text-[#5E566A] mt-1">

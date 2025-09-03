@@ -161,7 +161,7 @@ export default function Navbar() {
               <div
                 ref={subRef}
                 className={cn(
-                  "absolute top-20 left-0 px-4 sm:px-0 py-0 pt-4 w-full bg-white text-black transition-all ease-in-out",
+                  "absolute top-20 left-0 px-4 sm:px-0 py-0 pb-4 pt-4 w-full bg-white text-black transition-all ease-in-out",
                   hovering || hovering === 0
                     ? "opacity-100 border-t shadow-[0_4px_15px_rgba(0,0,0,0.08)] border-accent"
                     : "opacity-0 border-none pointer-events-none"
@@ -304,7 +304,7 @@ export default function Navbar() {
                         )}
 
                         {/* Additional sections like facilities, etc., can go here */}
-                        <div className="py-5 px-6 mt-3 flex justify-between items-center border-t border-gray-200">
+                        {/* <div className="py-5 px-6 mt-3 flex justify-between items-center border-t border-gray-200">
                           <p className="text-black text-md font-bold">
                             24x7 healthcare support for your needs.{" "}
                             <span className="text-[#2B3990] text-md font-bold">
@@ -335,7 +335,7 @@ export default function Navbar() {
                              
                             </div>
                           </div>
-                        </div>
+                        </div> */}
                       </motion.div>
                     </>
                   )}

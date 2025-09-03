@@ -173,16 +173,16 @@ const Ourmanagement = () => {
               <h4 className=" text-black text-md mb-2 font-bold">
                 Founder
               </h4>
-              <h2 className='text-[#2B3990] text-[24px] mb-2 '>
+              <h2 className='text-[#2B3990] text-[20px] mb-2 '>
                 Dr. D. Kandasamy
               </h2>
-              <p className='text-[#5E566A]'>MD, DTCD Preventive Cardiologist</p>
+              <p>MD, DTCD Preventive Cardiologist</p>
             </div>
           </div>
         </div>
         <div className='w-full md:w-[70%] rounded-3xl px-4'>
           <h1 className='text-[#000000] text-[24px]  pb-5'>Chairman’s Message</h1>
-          <p className='text-[#2B3990]  pb-5'> "My dream was to ensure no one had to leave my hometown for quality medical care"</p>
+          <p className='text-[#2B3990] font-bold  pb-5'> "My dream was to ensure no one had to leave my hometown for quality medical care"</p>
           <p className='pb-5'>
             Sudha Hospitals has proudly served people for more than four decades, offering dependable, cost-effective, ethical, compassionate, advanced, inclusive, and patient-centred care. Our strength lies in the unwavering dedication of our doctors, nurses, and paramedical staff, whose service continues to earn trust and admiration across generations. 
           </p>
@@ -192,7 +192,7 @@ const Ourmanagement = () => {
         </div>
       </div>
       <div className='max-w-7xl mx-auto px-4 mt-16 relative'>
-        <h2 className='text-[30px] '>Our Executive Team</h2>
+        <h2 className='text-[30px] text-center'>Our Executive Team</h2>
       </div>
       <div className='max-w-7xl mx-auto px-4 py-10 relative'>
         <Executiveteam />
