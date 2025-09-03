@@ -40,10 +40,10 @@ import Balaji from "../assets/specialites/Anaesthesia/balajimani.webp";
 import Aarthi from "../assets/specialites/Anaesthesia/aarthi.webp";
 import Sountharajan from "../assets/specialites/Anaesthesia/soundhararjan.webp";
 
-
+import Doctor2 from "@/assets/ourmanagement/vice-president.webp";
 import Kandaswami from "../assets/specialites/cardiology/kandhasami.webp";
 
-
+import Doctor1 from "@/assets/ourmanagement/president.webp";
 //Cardiology
 // import Rajasekar from "../assets/specialites/cardiology/rajasekar.jpg";
 import Aafia from "../assets/specialites/dental/aafia-parveen.webp";
@@ -743,38 +743,43 @@ export const doctorsData = [
         name: "Dr.M.P.Kavin Kumar",
         specialist: "ENT Surgeon",
         image: Kavin,
-        menulabel: "MD, DVL ",
+        menulabel: "MBBS, MD, DVL ",
         role: "ENT Surgeon",
         experience: "33",
         newopdays: "Tuesday 8am-5pm",
         reviewopdays: "Mon & Thu 8am-5pm",
         personalDetails: {
-          title: "Personal Details",
+          title: "About the Doctor",
           description:
-            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+            "Dr. M P Kavin Kumar is an accomplished ENT surgeon of Sudha Multispeciality Hospital. He is the first formally trained Laryngologist from Tamil Nadu, having completed his Post-Doctoral Fellowship in Phono surgery at CMC, Vellore. He is known for his precision in voice and airway surgeries and his commitment to restoring patients’ quality of life. ",
         },
         clinicalExpertise: {
           title: "Clinical Expertise",
           list: [
-            "Interventional Cardiology",
-            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
-            "Started the first peripheral thrombolysis program.",
-            "One of the co course directors for the Radial Live program.",
+            "Comprehensive care for professional voice users: Politicians, Teachers, VJs, RJs, Lawyers, and Singers ",
+            "Office-based laryngeal surgeries for voice disorders",
+            "Surgical treatment of vocal fold cysts and polyps ",
+            "Management of vocal fold paralysis ",
+            "Advanced voice surgeries using Blue Laser, Coblation, and Microdebrider technologies  ",
+
           ],
         },
         researchandpublications: {
-          title: "Research And Publications",
+          title: "Academic Roles & Contributions ",
           list: [
-            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
-            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
-            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
+            "Faculty in various national and regional Laryngology conferences",
+            "Organizer of Voice and Larynx – Exclusive Laryngology Conference in Erode ",
+            "1st Edition: 2023",
+            "2nd Edition: 2025 ",
           ],
         },
         awards: {
-          title: "Awards & Achievements",
+          title: "Professional Milestones ",
           list: [
-            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
-            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
+            "Life Member: Indian Medical Association (IMA) ",
+            "Member: Association of Phono surgeons of India ",
+            "Founding Member & Executive Member – Tamil Nadu Association of Phono surgeons of India",
+            "First to perform Blue Laser-Assisted Voice Surgery in Tamil Nadu ",
           ],
         },
       },
@@ -1394,6 +1399,363 @@ export const doctorsData = [
     ],
   },
 
+
+  {
+    id: 26,
+    name: "Dr.S.Rangesh",
+    speciality: "Paediatrician",
+    qualification: "Paediatrician",
+    degrees: "M.D.,Consultant Paediatrics",
+    image: Rangesh,
+    doctordetail: [
+      {
+        name: "Dr.S.Rangesh",
+        specialist: "Paediatrician",
+        image: Rangesh,
+        menulabel: "M.D.,Consultant Paediatrics",
+        role: "Paediatrician",
+        experience: "33",
+        newopdays: "Tuesday 8am-5pm",
+        reviewopdays: "Mon & Thu 8am-5pm",
+        personalDetails: {
+          title: "Personal Details",
+          description:
+            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+        },
+        clinicalExpertise: {
+          title: "Clinical Expertise",
+          list: [
+            "Interventional Cardiology",
+            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
+            "Started the first peripheral thrombolysis program.",
+            "One of the co course directors for the Radial Live program.",
+          ],
+        },
+        researchandpublications: {
+          title: "Research And Publications",
+          list: [
+            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
+            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
+            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
+          ],
+        },
+        awards: {
+          title: "Awards & Achievements",
+          list: [
+            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
+            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
+          ],
+        },
+      },
+
+    ],
+  },
+
+   {
+    id: 27,
+    name: "Dr.N.Gowrishankar",
+    speciality: "Paediatrician",
+    qualification: "Consultant Paediatrics",
+    degrees: "MBBS, DNB .,",
+    image: Gowrishankar,
+    doctordetail: [
+      {
+        name: "Dr.N.Gowrishankar",
+        specialist: "Consultant Paediatrics",
+        image: Gowrishankar,
+        menulabel: "DNB .,Consultant Paediatrics",
+        role: "Paediatrician",
+        experience: "33",
+        newopdays: "Tuesday 8am-5pm",
+        reviewopdays: "Mon & Thu 8am-5pm",
+        personalDetails: {
+          title: "Personal Details",
+          description:
+            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+        },
+        clinicalExpertise: {
+          title: "Clinical Expertise",
+          list: [
+            "Interventional Cardiology",
+            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
+            "Started the first peripheral thrombolysis program.",
+            "One of the co course directors for the Radial Live program.",
+          ],
+        },
+        researchandpublications: {
+          title: "Research And Publications",
+          list: [
+            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
+            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
+            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
+          ],
+        },
+        awards: {
+          title: "Awards & Achievements",
+          list: [
+            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
+            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
+          ],
+        },
+      },
+
+    ],
+  },
+
+   {
+    id: 28,
+    name: "Dr.P.Duraikannan",
+    speciality: "Pulmonology",
+    qualification: "Pulmonary Medicine",
+    degrees: "MBBS, DNB ., Pulmonary Medicine",
+    image: Duraikannan,
+    doctordetail: [
+      {
+        name: "Dr.P.Duraikannan",
+        specialist: "Pulmonary Medicine",
+        image: Duraikannan,
+        menulabel: "MBBS, MD., Pulmonary Medicine",
+        role: "Pulmonology",
+        experience: "33",
+        newopdays: "Tuesday 8am-5pm",
+        reviewopdays: "Mon & Thu 8am-5pm",
+        personalDetails: {
+          title: "Personal Details",
+          description:
+            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+        },
+        clinicalExpertise: {
+          title: "Clinical Expertise",
+          list: [
+            "Interventional Cardiology",
+            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
+            "Started the first peripheral thrombolysis program.",
+            "One of the co course directors for the Radial Live program.",
+          ],
+        },
+        researchandpublications: {
+          title: "Research And Publications",
+          list: [
+            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
+            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
+            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
+          ],
+        },
+        awards: {
+          title: "Awards & Achievements",
+          list: [
+            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
+            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
+          ],
+        },
+      },
+
+    ],
+  },
+
+  {
+    id: 29,
+    name: "Dr.P.Vanitha ",
+    speciality: "Gynecologist",
+    qualification: "Gynecologist",
+    degrees: "MBBS, DGO",
+    image: Vanitha,
+    doctordetail: [
+      {
+        name: "Dr.P.Vanitha ",
+        specialist: "Gynecologist",
+        image: Vanitha,
+        menulabel: "MBBS, DGO",
+        role: "Gynecologist",
+        experience: "33",
+        newopdays: "Tuesday 8am-5pm",
+        reviewopdays: "Mon & Thu 8am-5pm",
+        personalDetails: {
+          title: "Personal Details",
+          description:
+            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+        },
+        clinicalExpertise: {
+          title: "Clinical Expertise",
+          list: [
+            "Interventional Cardiology",
+            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
+            "Started the first peripheral thrombolysis program.",
+            "One of the co course directors for the Radial Live program.",
+          ],
+        },
+        researchandpublications: {
+          title: "Research And Publications",
+          list: [
+            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
+            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
+            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
+          ],
+        },
+        awards: {
+          title: "Awards & Achievements",
+          list: [
+            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
+            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
+          ],
+        },
+      },
+
+    ],
+  },
+
+  {
+    id: 30,
+    name: "Dr.Deepika",
+    speciality: "Gynecologist",
+    qualification: "Gynecologist",
+    degrees: "MBBS, DGO",
+    image: Deepika,
+    doctordetail: [
+      {
+        name: "Dr.Deepika",
+        specialist: "Gynecologist",
+        image: Deepika,
+        menulabel: "MBBS, DGO",
+        role: "Gynecologist",
+        experience: "33",
+        newopdays: "Tuesday 8am-5pm",
+        reviewopdays: "Mon & Thu 8am-5pm",
+        personalDetails: {
+          title: "Personal Details",
+          description:
+            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+        },
+        clinicalExpertise: {
+          title: "Clinical Expertise",
+          list: [
+            "Interventional Cardiology",
+            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
+            "Started the first peripheral thrombolysis program.",
+            "One of the co course directors for the Radial Live program.",
+          ],
+        },
+        researchandpublications: {
+          title: "Research And Publications",
+          list: [
+            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
+            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
+            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
+          ],
+        },
+        awards: {
+          title: "Awards & Achievements",
+          list: [
+            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
+            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
+          ],
+        },
+      },
+
+    ],
+  },
+
+    {
+    id: 31,
+    name: "Dr.S.Pradeepa",
+    speciality: "Gynecologist",
+    qualification: "Gynecologist",
+    degrees: "DNB, DGO, MNAMS, ART,FICOG",
+    image: Doctor2,
+    doctordetail: [
+      {
+        name: "Dr.S.Pradeepa",
+        specialist: "Gynecologist",
+        image: Doctor2,
+        menulabel: "DNB, DGO, MNAMS, ART,FICOG",
+        role: "Gynecologist",
+        experience: "33",
+        newopdays: "Tuesday 8am-5pm",
+        reviewopdays: "Mon & Thu 8am-5pm",
+        personalDetails: {
+          title: "Personal Details",
+          description:
+            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+        },
+        clinicalExpertise: {
+          title: "Clinical Expertise",
+          list: [
+            "Interventional Cardiology",
+            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
+            "Started the first peripheral thrombolysis program.",
+            "One of the co course directors for the Radial Live program.",
+          ],
+        },
+        researchandpublications: {
+          title: "Research And Publications",
+          list: [
+            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
+            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
+            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
+          ],
+        },
+        awards: {
+          title: "Awards & Achievements",
+          list: [
+            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
+            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
+          ],
+        },
+      },
+
+    ],
+  },
+
+  {
+    id: 32,
+    name: "Dr.S.Dhanabagyam",
+    speciality: "Gynecologist",
+    qualification: "Gynecologist",
+    degrees: "MBBS, MD, O&G, ART",
+    image: Doctor1,
+    doctordetail: [
+      {
+        name: "Dr.S.Dhanabagyam",
+        specialist: "Gynecologist",
+        image: Doctor1,
+        menulabel: "MBBS, MD, O&G, ART",
+        role: "Gynecologist",
+        experience: "33",
+        newopdays: "Tuesday 8am-5pm",
+        reviewopdays: "Mon & Thu 8am-5pm",
+        personalDetails: {
+          title: "Personal Details",
+          description:
+            "Here’s a situation that comes up for many people: you move in later life. For most older adults, establishing a good working relationship with a new doctor is a challenge. If nothing else, it can take some time to feel that each party knows and understands the other. And they leave it to the new doctors to request health information from the previous doctors, which often arrives well after that first new patient visit. In this post, I’ll share my list of the most useful health information",
+        },
+        clinicalExpertise: {
+          title: "Clinical Expertise",
+          list: [
+            "Interventional Cardiology",
+            "Brought in the first over the wire Balloon Mitral Valvuloplas prowith the help of Dr George Joseph.",
+            "Started the first peripheral thrombolysis program.",
+            "One of the co course directors for the Radial Live program.",
+          ],
+        },
+        researchandpublications: {
+          title: "Research And Publications",
+          list: [
+            "Direct communication between left pulmonary artery and left atrium- indian heart journal, jan.-feb. 1995, 40-41",
+            "Beneficial effect of balloon mitral valvotomy in reducing severity of associated tricuspid regurgitation.Indian heart journal, may-june1997, 271-273",
+            "Single coronary artery with atherosclerosis,indian heart journal, may-june 1997,49: 309-310",
+          ],
+        },
+        awards: {
+          title: "Awards & Achievements",
+          list: [
+            "Recipient of 'Distinguished Service to Community Award' by IMA Erode chapter and Indian Association of Clinical Cardiology, Tamilnadu Chapter-2014",
+            "Recipient of 'Distinguished Service Award' by Sudha  Hospital-2017",
+          ],
+        },
+      },
+
+    ],
+  },
 
 
 

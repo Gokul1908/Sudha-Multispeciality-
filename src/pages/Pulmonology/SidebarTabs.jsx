@@ -406,7 +406,7 @@ export default function SidebarTabs() {
             {id === "doctors" && (
               <>
                 <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
-                <DoctorSlider specialty="" counter={2} />
+                <DoctorSlider specialty="Pulmonology" counter={1} />
               </>
             )}
 

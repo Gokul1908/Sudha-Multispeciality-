@@ -12,6 +12,8 @@ import Accordion from "../../components/Accordion";
 import DoctorSlider from "../../components/Slicksliderdoctor";
 import Faq from "../../components/Faq";
 import one from "@/assets/about/1.svg";
+
+
 const serviceSections = [
   { id: "overview", label: "Overview" },
   { id: "facilities", label: "Facilities" },
@@ -24,56 +26,13 @@ const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">What is cardiology? </div>
+        <div className="flex gap-3">What is the difference between a neonatologist and a pediatrician?  </div>
       </>
     ),
     content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
-          A branch of medicine dealing with disorders of heart and blood
-          vessels. The work of our cardiologists for adults includes diagnosis
-          and treatment of adult congenital heart disease, heart failure,
-          coronary artery disease, valvular heart disease and arrhythmias. All
-          the necessary investigations like ECG, Echocardiogram, Treadmill test,
-          Holter monitoring, Ambulatory BP monitoring, tilt table testing,
-          cardiac CT, cardiac MRI, and nuclear heart scanning are available to
-          provide you with the best adult cardiology treatment at our
-          multispeciality hospital in Erode.
-        </p>
-        <h4 className="font-semibold">
-          Diagnostic Tests Available in our Cardiology Hospital:
-        </h4>
-        <h2 className="font-semibold text-[#2B3990]">ECG:</h2>
-        <p>
-          Cardiac problems such as heart attack, heart block, etc. can be
-          detected by measuring the electrical activity of the heart, which is
-          done by electrocardiogram (ECG).
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">ECHOCARDIOGRAM:</h2>
-        <p>
-          The structure and function of the heart can be assessed by moving
-          images produced by sound waves. Various heart diseases can be
-          diagnosed by this readily available investigation.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">TREADMILL TEST:</h2>
-        <p>
-          Patients will walk on a treadmill at graded levels and their 12- lead
-          ECG will be monitored for heart rate, ST-T segment changes. The
-          presence or absence of changes will be interpreted accordingly to
-          detect heart problems like coronary artery disease, heart block,
-          etc..., that helps in determining the cardiology treatment that is to
-          proceed further accordingly.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">
-          STRESS ECHOCARDIOGRAPHY:
-        </h2>
-        <p>
-          Heart is exerted by exercise or medicines and its activity is
-          monitored by echocardiography. For those who are not able to walk to
-          perform treadmill test, this is a very useful test to rule out
-          coronary artery disease.
-        </p>
-      </div>
+      <p>
+        A paediatrician provides healthcare for children from infancy to adolescence, while a neonatologist specialises in the care of newborns, particularly those who are premature, critically ill, or require specialised treatment. Sudha Multispeciality Hospital, recognised as a leading neonatology hospital in Erode, has expert neonatologists providing advanced newborn care.
+      </p>
     ),
   },
   {
@@ -81,67 +40,69 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-          What is the main cause of heart problems?
+          What age group does neonatology cover?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Neonatology primarily covers newborns from birth up to 28 days of age. Sudha Multispeciality Hospital, the best neonatology hospital in Erode, offers specialised treatment for all newborns during this critical period with the best neonatologists.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What is the difference between a newborn and a neonate?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>A newborn refers to any baby recently born, while a neonate specifically refers to a baby within the first 28 days of life. Sudha Multispeciality Hospital provides comprehensive treatment for newborn and neonate with advanced NICU and expert neonatologists, ensuring specialised monitoring and care.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What is the life expectancy of a baby under neonatal care?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>With expert care, modern NICU facilities, and early interventions, babies under neonatal care have excellent survival prospects. Sudha Multispeciality Hospital, the best hospital for newborn baby treatment in Erode, has a high success rate and maintains 24/7 monitoring and support for all neonates. </p>,
+  },
+
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {" "}
+          Is the NICU only for premature babies?
+        </div>
+      </>
+    ),
+    content: <p>NICU is for any newborn requiring specialised medical attention, including those with birth complications, low birth weight, infections, or congenital issues. Sudha Multispeciality Hospital, a top neonatology hospital in Erode, provides round-the-clock care in its advanced NICU. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Can a baby born at 7 months survive?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>With specialised neonatal care and advanced NICU support, babies born at 7 months can survive and thrive. Sudha Multispeciality Hospital, the best neonatology hospital in Erode, offers expert treatment and continuous monitoring for premature and critically ill newborns.  </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          How much does NICU cost per day?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>NICU costs vary depending on the level of care required. At Sudha Multispeciality Hospital in Erode, the NICU provides transparent, affordable treatment options while maintaining high standards of care for newborn babies.  </p>,
   },
-  {
-    title: (
-      <>
-        <div className="flex gap-3">
-          {" "}
-          What is the main cause of heart problems?
-        </div>
-      </>
-    ),
-    content: <p>Details coming soon.</p>,
-  },
+
 ];
 
 
@@ -159,7 +120,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Our neonatology team in Erode specialises in caring for premature and low birth weight newborns who need extra medical support in the first days of life. We provide round-the-clock monitoring, temperature regulation, respiratory support, and nutritional management to help babies grow stronger. Our advanced NICU ensures they receive the safest, most comfortable care for a healthy start. 
+          Our neonatology team in Erode specialises in caring for premature and low birth weight newborns who need extra medical support in the first days of life. We provide round-the-clock monitoring, temperature regulation, respiratory support, and nutritional management to help babies grow stronger. Our advanced NICU ensures they receive the safest, most comfortable care for a healthy start.
         </p>
 
 
@@ -178,7 +139,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Newborns with breathing difficulties require immediate, skilled intervention. Our NICU in Erode is equipped with high-frequency ventilators, CPAP machines, and continuous oxygen monitoring to manage neonatal respiratory distress effectively. Our experienced neonatologists and trained nurses work together to stabilise the baby’s breathing and ensure optimal oxygen supply for healthy organ function. 
+          Newborns with breathing difficulties require immediate, skilled intervention. Our NICU in Erode is equipped with high-frequency ventilators, CPAP machines, and continuous oxygen monitoring to manage neonatal respiratory distress effectively. Our experienced neonatologists and trained nurses work together to stabilise the baby’s breathing and ensure optimal oxygen supply for healthy organ function.
         </p>
 
 
@@ -199,7 +160,7 @@ const accordionData = [
     content: (
       <div className="text-sm  space-y-3">
         <p>
-          Infections in newborns can progress quickly, which is why our hospital in Erode offers rapid diagnosis and targeted treatment. We follow strict hygiene protocols, use dedicated isolation units, and provide evidence-based antibiotic therapy to ensure effective recovery. Our infection control measures protect vulnerable babies while allowing parents to be part of the healing process. 
+          Infections in newborns can progress quickly, which is why our hospital in Erode offers rapid diagnosis and targeted treatment. We follow strict hygiene protocols, use dedicated isolation units, and provide evidence-based antibiotic therapy to ensure effective recovery. Our infection control measures protect vulnerable babies while allowing parents to be part of the healing process.
         </p>
 
 
@@ -218,7 +179,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Some newborns may be diagnosed with congenital anomalies or birth defects that require immediate attention. Our neonatology specialists in Erode coordinate with paediatric surgeons and other specialists to provide comprehensive care. From diagnosis to treatment planning, we focus on ensuring the best possible quality of life for your baby, with constant family support and counselling. 
+          Some newborns may be diagnosed with congenital anomalies or birth defects that require immediate attention. Our neonatology specialists in Erode coordinate with paediatric surgeons and other specialists to provide comprehensive care. From diagnosis to treatment planning, we focus on ensuring the best possible quality of life for your baby, with constant family support and counselling.
         </p>
 
 
@@ -237,7 +198,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Feeding is critical for newborn development, especially for those with health challenges. Our neonatology team provides breastfeeding assistance, formula feeding guidance, and customised nutrition plans. In Erode, our hospital’s lactation consultants work closely with mothers to ensure babies receive the right nutrients for healthy growth, while promoting the bond between parent and child. 
+          Feeding is critical for newborn development, especially for those with health challenges. Our neonatology team provides breastfeeding assistance, formula feeding guidance, and customised nutrition plans. In Erode, our hospital’s lactation consultants work closely with mothers to ensure babies receive the right nutrients for healthy growth, while promoting the bond between parent and child.
         </p>
 
 
@@ -256,7 +217,7 @@ const accordionData = [
     content: (
       <div className="text-sm space-y-3">
         <p>
-          Our commitment to newborn care in Erode extends beyond hospital discharge. We offer regular follow-up check-ups to monitor growth, developmental milestones, and overall health. Our neonatology team works with paediatricians, nutritionists, and therapists when needed, ensuring every baby gets the support they need during their crucial first year of life. 
+          Our commitment to newborn care in Erode extends beyond hospital discharge. We offer regular follow-up check-ups to monitor growth, developmental milestones, and overall health. Our neonatology team works with paediatricians, nutritionists, and therapists when needed, ensuring every baby gets the support they need during their crucial first year of life.
         </p>
 
 
@@ -409,11 +370,11 @@ export default function SidebarTabs() {
                   Comprehensive Treatment for Newborn Babies at the Best Neonatology Hospital in     <span className="text-[#2B3990]"> Erode</span>
                 </h2>
                 <p className="mb-3">
-                  Our Neonatology Department in Sudha Multispeciality Hospital, Erode provides advanced medical care for newborns, especially those who are premature, have low birth weight, or face critical health conditions. With a team of experienced neonatologists, specialised nurses, and state-of-the-art facilities, we ensure that every baby receives the highest standard of care from birth to recovery. 
+                  Our Neonatology Department in Sudha Multispeciality Hospital, Erode provides advanced medical care for newborns, especially those who are premature, have low birth weight, or face critical health conditions. With a team of experienced neonatologists, specialised nurses, and state-of-the-art facilities, we ensure that every baby receives the highest standard of care from birth to recovery.
                 </p>
 
                 <p className="mb-3">
-                  As the best hospital for newborn baby treatment in Erode, we follow evidence-based medical practices and a family-centred approach, ensuring that parents are actively involved in their newborn’s care journey. Whether your baby requires routine monitoring or intensive medical support, our neonatology services are designed to give them the best start in life. 
+                  As the best hospital for newborn baby treatment in Erode, we follow evidence-based medical practices and a family-centred approach, ensuring that parents are actively involved in their newborn’s care journey. Whether your baby requires routine monitoring or intensive medical support, our neonatology services are designed to give them the best start in life.
                 </p>
 
               </>
@@ -455,19 +416,19 @@ export default function SidebarTabs() {
               </div>
             )}
 
-           {/* {id === "doctors" && (
+            {/* {id === "doctors" && (
               <>
                 <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
                 <DoctorSlider specialty="Neurology" counter={2} />
               </>
-            )}
+            )} */}
 
             {id === "faqs" && (
               <div className="mt-8">
                 <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
-            )} */}
+            )}
           </section>
         ))}
       </div>

@@ -367,7 +367,7 @@ export default function SidebarTabs() {
     <div className="flex flex-col-reverse md:flex-col lg:flex-row gap-8">
 
       {/* Sidebar */}
-      <aside className="w-full lg:w-1/3 lg:sticky top-24 h-fit space-y-6">
+      <aside className="w-full lg:w-1/4 lg:sticky top-24 h-fit space-y-6">
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
@@ -533,7 +533,7 @@ export default function SidebarTabs() {
             {id === "doctors" && (
               <>
                 <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
-                <DoctorSlider specialty="" counter={2} />
+                <DoctorSlider specialty="Gynecologist" counter={3} />
               </>
             )}
 

@@ -24,56 +24,14 @@ const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">What is cardiology? </div>
+        <div className="flex gap-3">Can you recover from neurological issues?  </div>
       </>
     ),
     content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
-          A branch of medicine dealing with disorders of heart and blood
-          vessels. The work of our cardiologists for adults includes diagnosis
-          and treatment of adult congenital heart disease, heart failure,
-          coronary artery disease, valvular heart disease and arrhythmias. All
-          the necessary investigations like ECG, Echocardiogram, Treadmill test,
-          Holter monitoring, Ambulatory BP monitoring, tilt table testing,
-          cardiac CT, cardiac MRI, and nuclear heart scanning are available to
-          provide you with the best adult cardiology treatment at our
-          multispeciality hospital in Erode.
+      <p>
+          Recovery from neurological issues depends on the type and severity of the condition. With early diagnosis and appropriate interventions, patients can experience significant improvement. Sudha Multispeciality Hospital, recognised as one of the leading neurology hospitals in Erode, offers personalised treatment plans under the guidance of the best neurologists in Erode. 
         </p>
-        <h4 className="font-semibold">
-          Diagnostic Tests Available in our Cardiology Hospital:
-        </h4>
-        <h2 className="font-semibold text-[#2B3990]">ECG:</h2>
-        <p>
-          Cardiac problems such as heart attack, heart block, etc. can be
-          detected by measuring the electrical activity of the heart, which is
-          done by electrocardiogram (ECG).
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">ECHOCARDIOGRAM:</h2>
-        <p>
-          The structure and function of the heart can be assessed by moving
-          images produced by sound waves. Various heart diseases can be
-          diagnosed by this readily available investigation.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">TREADMILL TEST:</h2>
-        <p>
-          Patients will walk on a treadmill at graded levels and their 12- lead
-          ECG will be monitored for heart rate, ST-T segment changes. The
-          presence or absence of changes will be interpreted accordingly to
-          detect heart problems like coronary artery disease, heart block,
-          etc..., that helps in determining the cardiology treatment that is to
-          proceed further accordingly.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">
-          STRESS ECHOCARDIOGRAPHY:
-        </h2>
-        <p>
-          Heart is exerted by exercise or medicines and its activity is
-          monitored by echocardiography. For those who are not able to walk to
-          perform treadmill test, this is a very useful test to rule out
-          coronary artery disease.
-        </p>
-      </div>
+     
     ),
   },
   {
@@ -81,66 +39,66 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-          What is the main cause of heart problems?
+          What are the serious symptoms of neurological disorders? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Serious neurological symptoms include sudden weakness, numbness, severe headaches, loss of coordination, seizures, or difficulties in speech and vision. Sudha Multispeciality Hospital, the best hospital for brain, spinal cord, and nervous system treatment in Erode, provides comprehensive diagnostics and immediate care for such conditions. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+         Are neurological problems treatable?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Many neurological problems are treatable with a combination of medications, therapies, and surgical interventions. Sudha Multispeciality Hospital, offering the best treatment for stroke in Erode and other neurological disorders, ensures advanced care by expert neurologists. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Which hospital in Erode is best for treating neurological problems?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Sudha Multispeciality Hospital is regarded as one of the top neurology hospitals in Erode, equipped with state-of-the-art facilities and experienced neurologists for treating a wide range of brain, spinal cord, and nervous system disorders. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Can stress lead to neurological issues?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Prolonged stress can contribute to neurological problems, including headaches, nerve pain, and sleep disturbances. The best neurologists in Erode at Sudha Multispeciality Hospital provide assessment and treatment to manage stress-related neurological conditions.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          How do neurological problems begin?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Neurological problems can begin due to genetic factors, infections, trauma, lifestyle-related issues, or age-related degeneration. Sudha Multispeciality Hospital, recognised as the best hospital for stroke treatment in Erode, offers early detection and intervention to prevent progression. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Can stress cause nerve pain? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Chronic stress can aggravate nerve pain or trigger neuropathic symptoms. At Sudha Multispeciality Hospital, one of the leading neurology hospitals in Erode, patients receive comprehensive care and personalised treatment from the best neurologists in Erode. </p>,
   },
 ];
 
@@ -521,12 +479,12 @@ export default function SidebarTabs() {
               </>
             )}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
                 <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
-            )} */}
+            )}
           </section>
         ))}
       </div>

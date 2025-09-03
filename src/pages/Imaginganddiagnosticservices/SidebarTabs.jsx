@@ -15,8 +15,8 @@ import one from "@/assets/about/1.svg";
 const serviceSections = [
   { id: "overview", label: "Overview" },
   { id: "services", label: "Services" },
-  { id: "doctors", label: "Doctors" },
-  { id: "faqs", label: "FAQs" },
+  // { id: "doctors", label: "Doctors" },
+  // { id: "faqs", label: "FAQs" },
 ];
 
 const faq = [

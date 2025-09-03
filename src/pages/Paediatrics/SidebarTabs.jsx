@@ -24,56 +24,13 @@ const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">What is cardiology? </div>
+        <div className="flex gap-3">Who is the Best Pediatrician in Erode? </div>
       </>
     ),
     content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
-          A branch of medicine dealing with disorders of heart and blood
-          vessels. The work of our cardiologists for adults includes diagnosis
-          and treatment of adult congenital heart disease, heart failure,
-          coronary artery disease, valvular heart disease and arrhythmias. All
-          the necessary investigations like ECG, Echocardiogram, Treadmill test,
-          Holter monitoring, Ambulatory BP monitoring, tilt table testing,
-          cardiac CT, cardiac MRI, and nuclear heart scanning are available to
-          provide you with the best adult cardiology treatment at our
-          multispeciality hospital in Erode.
+      <p>
+          Sudha Multispeciality Hospital is equipped with the team of the best paediatricians in Erode offering expert care for children across all age groups. The hospital provides comprehensive evaluations, preventive care, and treatment for a wide range of paediatric conditions. 
         </p>
-        <h4 className="font-semibold">
-          Diagnostic Tests Available in our Cardiology Hospital:
-        </h4>
-        <h2 className="font-semibold text-[#2B3990]">ECG:</h2>
-        <p>
-          Cardiac problems such as heart attack, heart block, etc. can be
-          detected by measuring the electrical activity of the heart, which is
-          done by electrocardiogram (ECG).
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">ECHOCARDIOGRAM:</h2>
-        <p>
-          The structure and function of the heart can be assessed by moving
-          images produced by sound waves. Various heart diseases can be
-          diagnosed by this readily available investigation.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">TREADMILL TEST:</h2>
-        <p>
-          Patients will walk on a treadmill at graded levels and their 12- lead
-          ECG will be monitored for heart rate, ST-T segment changes. The
-          presence or absence of changes will be interpreted accordingly to
-          detect heart problems like coronary artery disease, heart block,
-          etc..., that helps in determining the cardiology treatment that is to
-          proceed further accordingly.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">
-          STRESS ECHOCARDIOGRAPHY:
-        </h2>
-        <p>
-          Heart is exerted by exercise or medicines and its activity is
-          monitored by echocardiography. For those who are not able to walk to
-          perform treadmill test, this is a very useful test to rule out
-          coronary artery disease.
-        </p>
-      </div>
     ),
   },
   {
@@ -81,67 +38,46 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-          What is the main cause of heart problems?
+          What is the maximum age to see a pediatrician?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Paediatric care typically covers children from birth up to 18 years of age. Sudha Multispeciality Hospital, recognised as the best paediatrics hospital in Erode, provides expert guidance and treatment throughout this period to ensure healthy growth and development. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What are the common health problems of children? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Common health issues in children include respiratory infections, nutritional deficiencies, allergies, skin problems, and developmental concerns. The best child specialists in Erode at Sudha Multispeciality Hospital offer accurate diagnosis and effective treatment for these conditions at an affordable price. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What are the best ways to improve child health? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Child health can be improved through balanced nutrition, regular physical activity, adequate sleep, timely vaccinations, and routine health check-ups. At Sudha Multispeciality Hospital, the best paediatricians in Erode provide personalised care plans to promote overall well-being. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          How can health problems be prevented in children? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Preventive care includes vaccinations, hygiene practices, routine screenings, proper nutrition, and parental education. Sudha Multispeciality Hospital, recognised as the best paediatrics hospital in Erode, focuses on preventive strategies to ensure long-term health for children. </p>,
   },
-  {
-    title: (
-      <>
-        <div className="flex gap-3">
-          {" "}
-          What is the main cause of heart problems?
-        </div>
-      </>
-    ),
-    content: <p>Details coming soon.</p>,
-  },
-  {
-    title: (
-      <>
-        <div className="flex gap-3">
-          {" "}
-          What is the main cause of heart problems?
-        </div>
-      </>
-    ),
-    content: <p>Details coming soon.</p>,
-  },
+  
 ];
 
 
@@ -485,10 +421,10 @@ export default function SidebarTabs() {
               </div>
             )}
 
-            {/* {id === "doctors" && (
+            {id === "doctors" && (
               <>
                 <h2 className="text-[24px] mt-5 pb-3">Doctors</h2>
-                <DoctorSlider specialty="Neurology" counter={2} />
+                <DoctorSlider specialty="Paediatrician" counter={3} />
               </>
             )}
 
@@ -497,7 +433,7 @@ export default function SidebarTabs() {
                 <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
-            )} */}
+            )}
           </section>
         ))}
       </div>

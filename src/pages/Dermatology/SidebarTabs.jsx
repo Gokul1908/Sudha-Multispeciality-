@@ -19,6 +19,87 @@ const serviceSections = [
   { id: "faqs", label: "FAQs" },
 ];
 
+const faq = [
+  {
+    title: (
+      <>
+        <div className="flex gap-3">Which hospital in Erode is best for skin problems?   </div>
+      </>
+    ),
+    content: (
+      <p>
+          Sudha Multispeciality Hospital is regarded as one of the best hospitals for skin problems, with the best dermatologists in Erode providing advanced diagnosis and treatments for a wide range of skin conditions. 
+        </p>
+     
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+
+       Which vitamins are beneficial for healthy skin? 
+        </div>
+      </>
+    ),
+    content: <p>Vitamins such as Vitamin C, Vitamin E, and Vitamin D are highly beneficial for maintaining healthy skin. The best doctors for skin issues in Erode at Sudha Multispeciality Hospital often recommend a balanced approach combining nutrition and clinical care for long-term skin health.  </p>,
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {" "}
+         What is the best treatment for damaged skin? 
+        </div>
+      </>
+    ),
+    content: <p>The best treatment for damaged skin depends on the cause and severity. At Sudha Multispeciality Hospital, the best dermatologists in Erode provide advanced treatments and medications for effective results.   </p>,
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {" "}
+          Is it possible to treat severely damaged skin? 
+        </div>
+      </>
+    ),
+    content: <p>Severely damaged skin can be treated with certain lifestyle changes, diet, and specialised skincare. he dermatology department at Sudha Multispeciality Hospital in Erode offers comprehensive treatments under the guidance of the best doctors for skin issues in Erode, helping restore skin health.  </p>,
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {" "}
+          What are the common causes of poor skin quality?
+        </div>
+      </>
+    ),
+    content: <p>Poor skin quality is often caused by factors such as sun exposure, pollution, dehydration, nutritional deficiencies, and ageing. At Sudha Multispeciality Hospital, the best dermatologists in Erode provide preventive care and customised treatments to address these concerns.</p>,
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {" "}
+         Which skin diseases are treated by dermatologists? 
+        </div>
+      </>
+    ),
+    content: <p>Dermatologists treat a wide range of skin diseases including acne, eczema, psoriasis, fungal infections, pigmentation disorders, and skin allergies. The dermatologists at Sudha Multispeciality Hospital in Erode ensure holistic care and effective treatment for all conditions.  </p>,
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {" "}
+          Who is the best dermatologist in Erode, Tamil Nadu?
+        </div>
+      </>
+    ),
+    content: <p>The team of skilled and experienced doctors at Sudha Multispeciality Hospital are recognised as the best dermatologists in Erode, Tamil Nadu, offering advanced treatments, personalised care, and comprehensive solutions for all types of skin problems.   </p>,
+  },
+];
 
 const accordionData = [
   {
@@ -436,12 +517,12 @@ export default function SidebarTabs() {
                 <DoctorSlider specialty="Dermatologist" counter={1} />
               </>
             )}
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
                 <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
-            )} */}
+            )}
           </section>
         ))}
       </div>

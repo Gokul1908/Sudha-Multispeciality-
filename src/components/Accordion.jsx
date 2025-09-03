@@ -27,7 +27,7 @@ export default function Accordion({ accordionData }) {
           >
             {/* Header */}
             <button
-              className={`w-full flex justify-between items-center px-4 py-4 text-left transition ${isOpen ? "border-b border-[#2b3990]" : ""
+              className={`w-full flex justify-between items-center px-4 py-4 text-left transition ${isOpen ? "border-b" : ""
                 }`}
               onClick={() => toggleAccordion(index)}
             >
