@@ -19,9 +19,11 @@ const serviceSections = [
   { id: "overview", label: "Overview" },
   { id: "facilities", label: "Facilities" },
   { id: "services", label: "Services" },
-  { id: "doctors", label: "Doctors" },
+  // { id: "doctors", label: "Doctors" },
   { id: "faqs", label: "FAQs" },
 ];
+
+
 const accordionData = [
   {
     title: (
@@ -194,56 +196,13 @@ const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">What is cardiology? </div>
+        <div className="flex gap-3">What are the signs of poor nutrition? </div>
       </>
     ),
     content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
-          A branch of medicine dealing with disorders of heart and blood
-          vessels. The work of our cardiologists for adults includes diagnosis
-          and treatment of adult congenital heart disease, heart failure,
-          coronary artery disease, valvular heart disease and arrhythmias. All
-          the necessary investigations like ECG, Echocardiogram, Treadmill test,
-          Holter monitoring, Ambulatory BP monitoring, tilt table testing,
-          cardiac CT, cardiac MRI, and nuclear heart scanning are available to
-          provide you with the best adult cardiology treatment at our
-          multispeciality hospital in Erode.
+     <p>
+          Signs of poor nutrition may include fatigue, weakness, hair loss, brittle nails, frequent illnesses, digestive issues, and delayed wound healing. The best dietitians in Erode at Sudha Multispeciality Hospital provide assessments and personalised plans to address nutritional deficiencies. 
         </p>
-        <h4 className="font-semibold">
-          Diagnostic Tests Available in our Cardiology Hospital:
-        </h4>
-        <h2 className="font-semibold text-[#2B3990]">ECG:</h2>
-        <p>
-          Cardiac problems such as heart attack, heart block, etc. can be
-          detected by measuring the electrical activity of the heart, which is
-          done by electrocardiogram (ECG).
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">ECHOCARDIOGRAM:</h2>
-        <p>
-          The structure and function of the heart can be assessed by moving
-          images produced by sound waves. Various heart diseases can be
-          diagnosed by this readily available investigation.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">TREADMILL TEST:</h2>
-        <p>
-          Patients will walk on a treadmill at graded levels and their 12- lead
-          ECG will be monitored for heart rate, ST-T segment changes. The
-          presence or absence of changes will be interpreted accordingly to
-          detect heart problems like coronary artery disease, heart block,
-          etc..., that helps in determining the cardiology treatment that is to
-          proceed further accordingly.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">
-          STRESS ECHOCARDIOGRAPHY:
-        </h2>
-        <p>
-          Heart is exerted by exercise or medicines and its activity is
-          monitored by echocardiography. For those who are not able to walk to
-          perform treadmill test, this is a very useful test to rule out
-          coronary artery disease.
-        </p>
-      </div>
     ),
   },
   {
@@ -251,66 +210,66 @@ const faq = [
       <>
         <div className="flex gap-3">
 
-          What is the main cause of heart problems?
+         Which vitamin deficiencies are most harmful to health?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Deficiencies in vitamins such as A, D, B12, and C can lead to vision problems, weakened immunity, anaemia, and bone disorders. At Sudha Multispeciality Hospital, recognised as the best dietetics hospital in Erode, these deficiencies are detected early and managed with expert guidance.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What are the signs of good nutrition? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Signs of good nutrition include healthy skin and hair, proper weight, strong immunity, high energy levels, and good mental focus. The best dietitians in Erode at Sudha Multispeciality Hospital design personalised diets to help achieve and maintain these health indicators. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What diseases are caused by poor dietary habits?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Poor dietary habits can contribute to obesity, diabetes, heart disease, hypertension, digestive disorders, and nutrient deficiencies. Sudha Multispeciality Hospital, the best dietetics hospital in Erode, offers dietary counselling to prevent and manage these conditions effectively.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+         What is a healthy diet for the human body? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>A healthy diet includes balanced portions of proteins, carbohydrates, healthy fats, vitamins, and minerals. Fresh fruits, vegetables, whole grains, lean proteins, and hydration are essential. Expert dietitians at Sudha Multispeciality Hospital provide customized meal plans for optimal health.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          How to start eating healthy? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Starting a healthy diet involves gradual changes such as incorporating more whole foods, reducing processed foods, controlling portion sizes, and maintaining regular meal timings. Sudha Multispeciality Hospital, recognised as the best dietetics hospital in Erode, offers guidance and follow-up support for a sustainable healthy lifestyle.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What foods should you avoid for good health? 
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Highly processed foods, excessive sugar, trans fats, and deep-fried items should be limited. The best dietitians in Erode at Sudha Multispeciality Hospital provide practical advice on food choices to support long-term health and prevent lifestyle diseases.</p>,
   },
 ];
 
@@ -350,7 +309,7 @@ export default function SidebarTabs() {
         {/* Tabs Box */}
         <div className="bg-white  rounded-2xl p-4 sm:p-6">
           <h3 className="text-[16px]  text-center font-bold  mb-5">
-            Effective Dietetics Care 
+            Effective Dietetics Care
           </h3>
           <ul className="space-y-3">
             {serviceSections.map((item) => {
@@ -450,7 +409,7 @@ export default function SidebarTabs() {
                 <div className="mt-6 space-y-4">
                   <h2 className="text-[24px]">
                     Advanced Nutrition & Dietetics Support in
-                    <span className="text-[#2B3990]"> Erode </span> 
+                    <span className="text-[#2B3990]"> Erode </span>
                     at Sudha Multispeciality Hospital
                   </h2>
                   <p className="mb-4">
@@ -507,19 +466,19 @@ export default function SidebarTabs() {
               </div>
             )}
 
-            {id === "doctors" && (
+            {/* {id === "doctors" && (
               <>
                 <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
                 <DoctorSlider />
               </>
-            )}
+            )} */}
 
-            {/* {id === "faqs" && (
+            {id === "faqs" && (
               <div className="mt-8">
-                <h2 className="text-[30px] font-semibold mt-5 pb-3">FAQ</h2>
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
                 <Faq faq={faq} />
               </div>
-            )} */}
+            )}
           </section>
         ))}
       </div>

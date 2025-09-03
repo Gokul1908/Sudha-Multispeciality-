@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useRef, useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import Banner from "@/assets/facilities/insurance-banner.webp";
 import Image from "next/image";
@@ -29,6 +29,37 @@ import "../Insurance-hospital/Insurance.css"
 import Breadcrumb from "@/components/Breadcrumb";
 
 
+const faqData = [
+  {
+    question: "Does Sudha Hospital cover insurance?",
+    answer: "Sudha Multispeciality Hospital in Erode offers insurance facilities. Patients can avail cashless or reimbursement options depending on their eligibility and policy terms. The insurance desk at the hospital will assist with the entire insurance process.",
+  },
+  {
+    question: "What insurance plans are accepted at Sudha Hospitals?",
+    answer: "Sudha Multispeciality Hospital accepts a variety of national and private health insurance plans. The staff of insurance desk at the hospital will provide detailed guidance on eligibility and coverage. ",
+  },
+
+  {
+    question: "What is the time limit for health insurance claims? ",
+    answer: "The time limit for submitting claims depends on the terms of the individual insurance policy. Patients are advised to contact the insurance provider for specific claim timelines. ",
+  },
+  {
+    question: "How to use health insurance in a hospital?  ",
+    answer: "To use health insurance, patients must present valid insurance documents at the hospital. Sudha Multispeciality Hospital’s insurance desk assists with the process for both cashless and reimbursement options.  ",
+  },
+  {
+    question: "Is health insurance valid in all hospitals? ",
+    answer: "Health insurance validity depends on whether the hospital is listed under the insurer’s network. Contact the helpline of Sudha Multispeciality hospital or insurance provider to confirm coverage. ",
+  },
+  {
+    question: "Which illness is not covered by health insurance? ",
+    answer: "Some pre-existing conditions, cosmetic procedures, and treatments not mentioned in the policy may not be covered. For detailed information, patients should consult the hospital’s insurance desk or their insurance provider.  ",
+  },
+
+
+
+];
+
 const breadcrumbItems = [
   { label: "Home", href: "/" },
 
@@ -50,6 +81,29 @@ const Insurance = () => {
     "Discharge Process",
   ];
 
+
+  const sectionRef = useRef(null);
+    const [hoverIndex, setHoverIndex] = useState(null);
+    const [openIndex, setOpenIndex] = useState(0); // open first by default
+    const { scrollYProgress } = useScroll({
+      target: sectionRef,
+      offset: ["start end", "end start"], // when element enters and exits viewport
+    });
+  
+    const toggle = (index) => {
+      setOpenIndex(openIndex === index ? null : index);
+    };
+  
+    const [activeAccordion, setActiveAccordion] = useState(null);
+    const [showCount, setShowCount] = useState(5);
+  
+    const handleAccordionToggle = (index) => {
+      setActiveAccordion(activeAccordion === index ? null : index);
+    };
+  
+    const handleViewMore = () => {
+      setShowCount(faqData.length);
+    };
 
   const Content = [
     {
@@ -116,6 +170,7 @@ const Insurance = () => {
     "Srilankan refugees' card with VAO certificate",
   ];
 
+  
   return (
     <div>
       <section className="relative px-7 hero-section -mt-28 mb-hero-section">
@@ -347,6 +402,52 @@ const Insurance = () => {
           </div>
         </div> */}
       </div>
+
+
+      <section className=""  ref={sectionRef}>
+        <div>
+          <div className="max-w-3xl mx-auto py-16">
+            <h2 className="text-center text-[30px] mb-6">
+              Frequently Asked Questions
+            </h2>
+
+            <div className="space-y-3">
+              {faqData.slice(0, showCount).map((item, index) => (
+                <div
+                  key={index}
+                  className=" rounded-2xl bg-white  transition duration-300"
+                >
+                  <button
+                    onClick={() => handleAccordionToggle(index)}
+                    className="w-full text-left px-4 py-3 flex justify-between items-center  font-bold text-[16px]"
+                  >
+                    {item.question}
+                    <h4 className="text-[16px] text-[#2b3990] ">
+                      {activeAccordion === index ? "−" : "+"}
+                    </h4>
+                  </button>
+                  {activeAccordion === index && (
+                    <p className="p-4 pb-3 ">
+                      {item.answer}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {showCount < faqData.length && (
+              <div className="text-center mt-6">
+                <button
+                  onClick={handleViewMore}
+                  className="btn-diagonal "
+                >
+                  View More <ArrowUpRight className="w-5 h-5" />
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 p-6 py-16">
         {/* Left - Contact Info */}
