@@ -560,7 +560,7 @@ export const links = [
 
   {
     label: "Academics",
-    hrefs: "/fellow-of-national-board",
+    hrefs: "/academics/fellow-of-national-board",
     type: "academics",
     imagestatic: Academics,
     navImage: "",
@@ -570,7 +570,7 @@ export const links = [
 
       {
         header: "Fellow of National Board (FNB) ",
-        hrefs: "/fellow-of-national-board",
+        hrefs: "/academics/fellow-of-national-board",
         image: National,
         hoverImage: National,
         subMenu: [
@@ -582,7 +582,7 @@ export const links = [
       },
       {
         header: "Post MBBS Diploma Courses (DNB)",
-        hrefs: "/post-mbbs-diploma-courses",
+        hrefs: "/academics/post-mbbs-diploma-courses",
         image: Diploma,
         hoverImage: Diploma,
         subMenu: [
@@ -594,7 +594,7 @@ export const links = [
       },
       {
         header: " Ethics Committee",
-        hrefs: "/ethics-committee",
+        hrefs: "/academics/ethics-committee",
         image: Ethics,
         hoverImage: Ethics,
         subMenu: [
@@ -606,7 +606,7 @@ export const links = [
       },
       {
         header: "Vocational Degree Courses",
-        hrefs: "/vocational-degree-courses",
+        hrefs: "/academics/vocational-degree-courses",
         image: Diploma,
         hoverImage: Diploma,
         subMenu: [
@@ -618,7 +618,7 @@ export const links = [
       },
       {
         header: "BSS Vocational Courses",
-        hrefs: "/bss-vocational-courses",
+        hrefs: "/academics/bss-vocational-courses",
         image: Diploma,
         hoverImage: Diploma,
         subMenu: [
