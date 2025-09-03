@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Banner from "@/assets/facilities/ambulance-banner.webp";
 import "../Ambulanceservice/Ambulanceservice.css";
 import Slider from "react-slick";
-import Slide from "@/assets/ambulanceservice/slider.png";
+import Slide from "@/assets/ambulanceservice/ambulance-img.png";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

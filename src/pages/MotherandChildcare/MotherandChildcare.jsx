@@ -48,16 +48,16 @@ import IconHovereight from "@/assets/motherandchildcare/hover/8.svg";
 import Couple from "@/assets/motherandchildcare/couple.webp";
 import Whychoicebg from "@/assets/motherandchildcare/whychoicebg.png";
 import Whychoiceone from "@/assets/motherandchildcare/year-of-motherly-care.webp";
-import Whychoicetwo from "@/assets/motherandchildcare/year-of-motherly-care.webp";
-import Whychoicethree from "@/assets/motherandchildcare/why3.jpg";
+import Whychoicetwo from "@/assets/motherandchildcare/savedelivery.webp";
+import Whychoicethree from "@/assets/motherandchildcare/yearofexperience.webp";
 import Whychoiceiconone from "@/assets/motherandchildcare/whyicon1.svg";
 import Whychoiceicontwo from "@/assets/motherandchildcare/whyicon2.svg";
 import Whychoiceiconthree from "@/assets/motherandchildcare/whyicon3.svg";
 import OurAchivementOne from "@/assets/motherandchildcare/our-achiement.webp";
 import OurAchivementTwo from "@/assets/motherandchildcare/our-achiement-1.webp";
 import Contact_us from "@/assets/motherandchildcare/contact_us.png";
-import Sudhacare from "@/assets/motherandchildcare/sudhacare_one.png";
-import Sudhacaretwo from "@/assets/motherandchildcare/sudhacare_two.png";
+import Sudhacare from "@/assets/motherandchildcare/maternal-health-care.webp";
+import Sudhacaretwo from "@/assets/motherandchildcare/paediatric-health-care.webp";
 import { AiOutlineClose } from "react-icons/ai";
 import { AiOutlinePlus } from "react-icons/ai";
 import { MdLocationPin } from "react-icons/md";
@@ -286,29 +286,36 @@ const NextArrow = ({ onClick }) => (
 
 const faqData = [
   {
-    question: "What is the eligibility for the course?",
-    answer: "Answer coming soon...",
+    question: "Which is the best Mother and Child Care Hospital in Erode?",
+    answer: "Sudha Multispeciality Hospital is recognised as the best Mother and Child Care Hospital in Erode, offering expert gynaecologists, advanced neonatal care, and dedicated facilities for women and children’s health. ",
   },
   {
-    question: "How do I apply for the course?",
-    answer: "Answer coming soon...",
+    question: "When should I start prenatal care? ",
+    answer: "Prenatal care should ideally begin as soon as pregnancy is confirmed. Early care ensures regular monitoring, nutritional guidance, and the prevention of complications. Sudha Multispeciality Hospital provides trusted prenatal care in Erode with experienced specialists. ",
   },
-  { question: "Is there a registration fee?", answer: "Answer coming soon..." },
+
   {
-    question: "Can I get a refund if I cancel?",
-    answer: "Answer coming soon...",
-  },
-  {
-    question: "Are there any placement opportunities?",
-    answer: "Answer coming soon...",
+    question: "How important are vaccines for children’s health?",
+    answer: "Vaccines are essential to protect children against life-threatening diseases and strengthen immunity. Sudha Multispeciality Hospital, the best baby care hospital in Erode, follows the recommended immunisation schedule to ensure children’s long-term health and safety.",
   },
   {
-    question: "What is the duration of the course?",
-    answer: "Answer coming soon...",
+    question: "What services are offered at a Sudha Mother and Child Care Centre? ",
+    answer: "Comprehensive services include antenatal and postnatal care, high-risk pregnancy management, advanced labour facilities, neonatal intensive care, paediatric care, and emergency childcare. Sudha Multispeciality Hospital is regarded as the best Mother and Child Care Centre in Erode for complete family care. ",
   },
-  { question: "Is attendance mandatory?", answer: "Answer coming soon..." },
-  { question: "Is attendance mandatory?", answer: "Answer coming soon..." },
-  { question: "Is attendance mandatory?", answer: "Answer coming soon..." },
+  {
+    question: "Why should I choose a specialized Mother and Child Care Centre?",
+    answer: "Specialised centres provide focused care with expert obstetricians, neonatologists, and paediatricians. Sudha Multispeciality Hospital, the best women care hospital in Erode, ensures safe deliveries, holistic women’s health services, and dedicated childcare under one roof. ",
+  },
+  {
+    question: "What neonatal services are available for newborn babies at Sudha Hospital? ",
+    answer: "Sudha Multispeciality Hospital, the best Mother and Child Care Centre in Erode, provides advanced NICU facilities, premature baby care, respiratory support, neonatal monitoring, and emergency childcare services for critically ill newborns. ",
+  },
+  {
+    question: "How can I book an appointment at the Sudha Mother and Child Care Centre?  ",
+    answer: "Appointments at Sudha Multispeciality Hospital can be booked through the official website using the Book Appointment option, via the dedicated helpline at 0424 351 4545, or by visiting the hospital directly. The process is designed to be simple and accessible for families.  ",
+  },
+
+
 ];
 
 const textVariants = {
@@ -444,20 +451,20 @@ function MotherandChildcare() {
             transition={{ duration: 0.7 }}
             className="relative flex justify-center"
           >
-            <div className="relative w-[90%] md:w-full max-w-md">
+            <div className="relative w-[100%] md:w-full max-w-md">
               <Image
                 src={family}
                 alt="Family"
                 width={500}
                 height={500}
-                className="w-full h-auto"
+                className="w-full object-cover"
                 priority
               />
               {/* Parallax Animated Bubble */}
               <motion.div
                 style={{ y: bubbleY }}
                 transition={{ duration: 6, repeat: Infinity }}
-                className="absolute -top-6 -left-6 bg-purple-200 rounded-full w-48 h-48 -z-10 blur-2xl opacity-30"
+                className="absolute -top-10 -left-6 bg-purple-200 rounded-full w-50 h-50 -z-10 blur-2xl opacity-30"
               />
             </div>
           </motion.div>
@@ -496,7 +503,7 @@ function MotherandChildcare() {
             className="relative"
           >
             {/* Main Image */}
-            <div className="rounded-2xl overflow-hidden ">
+            <div className="rounded-3xl overflow-hidden ">
               <Image
                 src={Mother}
                 alt="Doctor and child"
@@ -505,15 +512,7 @@ function MotherandChildcare() {
             </div>
 
             {/* 40+ Years Box */}
-            <div className="absolute top-52 left-0 bg-white text-blue-700 text-sm font-bold p-6 rounded-2xl ">
-              <p className="text-[30px] text-primary-blue font-extrabold font-nunito">40+</p>
-              <p className=" text-black font-semibold font-nunito">
-                Years of Trusted
-                <br />
-                Expertise in <br />
-                Healthcare
-              </p>
-            </div>
+
 
             {/* Small thumbnails */}
           </motion.div>
@@ -607,18 +606,18 @@ function MotherandChildcare() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
-                className={`rounded-2xl p-8 text-left transition-all duration-500 relative h-80 flex items-end overflow-hidden cursor-pointer 
-          ${hoverIndex === index && service.image ? "text-white" : "bg-white text-gray-800"}`}
-                style={
-                  hoverIndex === index && service.image
-                    ? {
-                      backgroundImage: `url(${service.image.src})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }
-                    : {}
-                }
+                className="rounded-2xl p-8 text-left transition-all duration-500 relative h-80 flex items-end overflow-hidden cursor-pointer"
+                style={{
+                  backgroundImage: `url(${service.image?.src})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
               >
+                {/* Gradient Overlay */}
+                <div
+                  className="absolute inset-0 rounded-2xl bg-gradient-to-t from-[#2B3990]/90 via-[#2B3990]/60 to-transparent transition-all duration-500"
+                ></div>
+
                 {/* Icon */}
                 {(service.icon || service.hoverIcon) && (
                   <div className="absolute top-4 left-4 z-10">
@@ -631,25 +630,15 @@ function MotherandChildcare() {
                       alt={service.title}
                       width={60}
                       height={60}
-                      className="transition-all duration-300"
+                      className="transition-all duration-300 brightness-0 invert"
                     />
                   </div>
                 )}
 
                 {/* Title */}
-                <p
-                  className={`absolute text-[16px] font-extrabold bottom-6 left-5 z-10 text-start ${hoverIndex === index && service.image
-                    ? "text-white"
-                    : "bg-white text-gray-800"
-                    }`}
-                >
+                <p className="absolute text-[16px] font-extrabold bottom-6 left-5 z-10 text-white">
                   {service.title}
                 </p>
-
-                {/* Gradient Overlay */}
-                {hoverIndex === index && service.image && (
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#2B3990]/90 to-transparent rounded-2xl"></div>
-                )}
               </motion.div>
             );
 
@@ -662,6 +651,10 @@ function MotherandChildcare() {
             );
           })}
         </div>
+
+
+
+
 
 
         {/* CTA */}
@@ -1117,7 +1110,7 @@ function MotherandChildcare() {
             <Image
               src={Sudhacaretwo}
               alt="Child Care"
-              className="w-[100%] mx-auto h-[440px] rounded-2xl object-cover"
+              className="w-[100%] mx-auto h-[440px] rounded-3xl object-cover"
             />
           </motion.div>
 
@@ -1131,47 +1124,47 @@ function MotherandChildcare() {
               Paediatric Health Care
             </h2>
 
-             <div className="flex justify-between">
-               <ul className="space-y-4 text-[15px] font-semibold text-[#5E566A]">
-              {[
-                "Seasonal & Tropical Infections (Dengue, Malaria etc.)",
-                "Chronic Infections",
-                "Congenital Infections",
-                "Vaccinations",
-                "Paediatric Neurology",
-                "Paediatric Pulmonology",
-                "Paediatric Cardiology",
-                
-              ].map((item, index) => (
-                <li key={index} className="flex items-start gap-4">
-                  <div className="text-primary-blue w-6 h-6 bg-white shadow-sm flex justify-center items-center p-1 rounded-2xl">
-                    <TickCircle className="min-w-4 min-h-4" />
-                  </div>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            <ul className="space-y-4 text-[15px] font-semibold text-[#5E566A]">
-              {[
-                "Paediatric Surgery",
-                "Paediatric Diet",
-                "Paediatric Diabetes",
-                "Paediatric Thyroid",
-                "Preterm Baby Care",
-                "Jaundice Management in Newborns",
-                "Feeding & Lactation Support for Infants",
-                "Child Psychology",
-              ].map((item, index) => (
-                <li key={index} className="flex items-start gap-4">
-                  <div className="text-primary-blue w-7 h-7 bg-white shadow-sm flex justify-center items-center p-1 rounded-2xl">
-                    <TickCircle className="min-w-5 min-h-5" />
-                  </div>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-             </div>
-            
+            <div className="flex justify-between">
+              <ul className="space-y-4 text-[15px] font-semibold text-[#5E566A]">
+                {[
+                  "Seasonal & Tropical Infections (Dengue, Malaria etc.)",
+                  "Chronic Infections",
+                  "Congenital Infections",
+                  "Vaccinations",
+                  "Paediatric Neurology",
+                  "Paediatric Pulmonology",
+                  "Paediatric Cardiology",
+
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-4">
+                    <div className="text-primary-blue w-6 h-6 bg-white shadow-sm flex justify-center items-center p-1 rounded-2xl">
+                      <TickCircle className="min-w-4 min-h-4" />
+                    </div>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <ul className="space-y-4 text-[15px] font-semibold text-[#5E566A]">
+                {[
+                  "Paediatric Surgery",
+                  "Paediatric Diet",
+                  "Paediatric Diabetes",
+                  "Paediatric Thyroid",
+                  "Preterm Baby Care",
+                  "Jaundice Management in Newborns",
+                  "Feeding & Lactation Support for Infants",
+                  "Child Psychology",
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-4">
+                    <div className="text-primary-blue w-7 h-7 bg-white shadow-sm flex justify-center items-center p-1 rounded-2xl">
+                      <TickCircle className="min-w-5 min-h-5" />
+                    </div>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
           </motion.div>
         </div>
       </div>
@@ -1249,21 +1242,21 @@ function MotherandChildcare() {
               {faqData.slice(0, showCount).map((item, index) => (
                 <div
                   key={index}
-                  className=" rounded-xl bg-white  transition duration-300"
+                  className=" rounded-2xl bg-white  transition duration-300"
                 >
                   <button
                     onClick={() => handleAccordionToggle(index)}
                     className="w-full text-left px-4 py-3 flex justify-between items-center  font-bold text-[16px]"
                   >
                     {item.question}
-                    <span className="text-xl">
+                    <h4 className="text-[18px]">
                       {activeAccordion === index ? "−" : "+"}
-                    </span>
+                    </h4>
                   </button>
                   {activeAccordion === index && (
-                    <div className="px-4 pb-3 text-gray-600 text-[15px]">
+                    <p className="px-4 pb-3 ">
                       {item.answer}
-                    </div>
+                    </p>
                   )}
                 </div>
               ))}
@@ -1285,16 +1278,16 @@ function MotherandChildcare() {
 
       <section className={`${nunito.className}`}>
         <div
-          className="max-w-7xl mx-auto py-0 px-4 rounded-3xl"
+          className="max-w-7xl mx-auto py-8 rounded-3xl"
           style={{
             backgroundImage: `url(${Background.src})`,
             backgroundSize: "cover",
           }}
         >
-          <div className="flex flex-col md:flex-row  w-full min-h-screen items-center justify-center px-4 py-10">
+          <div className="flex flex-col md:flex-row  w-full py-16  justify-center px-8 ">
             {/* Left Image + Info */}
             <div
-              className="w-full md:w-1/2 h-[500px] md:h-[600px] bg-cover bg-center rounded-2xl overflow-hidden relative mb-8 md:mb-0"
+              className="w-full md:w-1/2 h-[500px] md:h-[600px] bg-cover bg-center rounded-3xl overflow-hidden relative md:mb-0"
               style={{ backgroundImage: `url(${Motherandchild.src})` }}
             >
               <div className="absolute inset-0 bg-[#2B3990]/60 flex flex-col justify-end p-6 text-white space-y-4">

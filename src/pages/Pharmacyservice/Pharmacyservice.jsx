@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Banner from "@/assets/facilities/pharmacy-banner.webp";
 
-import Sudha1 from "@/assets/pharmacyservice/sudha.png";
+import Sudha1 from "@/assets/pharmacyservice/sudha-pharmacy.webp";
 import Image from "next/image";
 import "./pharmacy.css";
-import Medicine from "@/assets/pharmacyservice/medicine.png";
+import Medicine from "@/assets/pharmacyservice/pharmacy-rack.webp";
 import Check from "@/assets/insurance/check.svg";
 import CampusFacilitySlider from "@/components/FacilitySlider/CampusFacilitySlider";
 import Slider1 from "@/assets/pharmacyservice/slider1.png";
-import Slider2 from "@/assets/pharmacyservice/slider2.png";
+import Slider2 from "@/assets/pharmacyservice/pharmacy-rack.webp";
 import Slider3 from "@/assets/pharmacyservice/slider3.png";
 import Breadcrumb from "@/components/Breadcrumb";
 
@@ -109,7 +109,7 @@ const Pharmacyservice = () => {
             <div className="max-w-7xl mx-auto   relative z-10 text-white bg-center bg-no-repeat bg-cover md:bg-contain py-16">
                 <div className=' flex flex-col justify-center items-center text-center p-5 rounded-lg '>
                 </div>
-                <div className="flex flex-col md:flex-row items-start gap-6 rounded-xl ">
+                <div className="flex flex-col md:flex-row items-center gap-6 rounded-xl ">
                     <div className="w-full md:w-1/2  text-start space-y-4 ">
                         <h5 className="px-5 text-[14px]  py-2 font-semibold text-primary-blue bg-white inline-block rounded-full ">
                             Pharmacy
@@ -135,7 +135,7 @@ const Pharmacyservice = () => {
                         <Image
                             src={Sudha1}
                             alt="Sudha"
-                            className="rounded-2xl w-full h-auto object-cover"
+                            className="rounded-3xl w-full h-auto object-cover"
                         />
                     </div>
                 </div>

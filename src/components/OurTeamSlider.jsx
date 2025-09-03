@@ -75,7 +75,7 @@ export default function OurTeamSlider() {
         </div>
 
         <h1 className="text-center text-[30px] text-white mt-4">
-          Our Multi-Specialty Experts
+          Our Multi-Speciality Experts
         </h1>
 
         <p className=" text-white mt-2 text-center">

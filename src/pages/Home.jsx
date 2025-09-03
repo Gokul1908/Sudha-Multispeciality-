@@ -31,7 +31,7 @@ import holistic from "../assets/home/quality.svg";
 import modern from "../assets/home/blood-bank.svg";
 import review from "../assets/home/review-patient.svg";
 
-import Expect from "../assets/home/expert-care.svg";
+import Expect from "../assets/home/expert-care.webp";
 import FacilitySlider from "../components/FacilitySlider";
 import OurTeamSlider from "../components/OurTeamSlider";
 import InfiniteMovingReviews from "../components/InfiniteMovingReviews";
@@ -57,7 +57,7 @@ const cards = [
     title: (
       <p className="text-md font-extrabold text-black">
         Master <span className="text-[#2b3990] font-extrabold"> Health  </span>   <br />Check Up
-         
+
       </p>
     ),
     link: "/maternity",
@@ -530,15 +530,22 @@ function Home() {
         <OurTeamSlider />
       </section>
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-[#FFFFFF] mt-10 rounded-2xl">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-[#FFFFFF] mt-10 rounded-3xl">
         <div className="flex flex-col md:flex-row gap-8">
           {/* Image Block */}
           <div className="w-full md:w-1/2">
-            <div className="rounded-2xl overflow-hidden relative">
+            <div className="rounded-3xl overflow-hidden relative">
+              <h2 className="text-[30px] mb-4">
+                Expert Care Across
+                Every Medical
+                Speciality
+              </h2>
+              <p className="mb-4">Providing comprehensive, compassionate treatment tailored to every <br /> patient’s unique needs.</p>
+
               <Image
                 src={Expect}
                 alt="Pregnant Woman"
-                className="rounded-2xl w-full h-auto object-cover"
+                className="rounded-3xl w-full h-[450px] object-cover"
               />
 
               {/* Floating Info Badges */}
@@ -611,7 +618,7 @@ function Home() {
           </span>
         </Marquee>
 
-        <div className="max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto  pb-16">
+        <div className="max-w-7xl    mx-auto  pb-16">
           <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {cardData.map((item, index) => (
               <motion.div
@@ -620,7 +627,7 @@ function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className={`${item.bg} p-8 rounded-2xl flex flex-col items-start justify-between min-h-[280px]`}
+                className={`${item.bg} p-8 rounded-3xl flex flex-col items-start justify-between min-h-[280px]`}
               >
                 <Image
                   src={item.icon}
@@ -630,7 +637,7 @@ function Home() {
                   className="mb-4"
                 />
                 <div className="">{item.title}</div>
-                <p className="text-[#000000] mt-4">{item.desc}</p>
+                <p className="text-[#000000] mt-2">{item.desc}</p>
               </motion.div>
             ))}
           </div>
