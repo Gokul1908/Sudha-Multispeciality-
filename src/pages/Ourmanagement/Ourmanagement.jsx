@@ -6,7 +6,7 @@ import Banner from "@/assets/about/board-of-directors.webp";
 import Contactusmain from '@/components/contactusmain';
 import Marquee from "react-fast-marquee";
 import Image from 'next/image';
-import Chairmen from "@/assets/ourmanagement/chairman.jpg";
+import Chairmen from "@/assets/ourmanagement/kandhasami.webp";
 import HospitalCard from "@/components/Hospital";
 import Executiveteam from '@/components/Executiveteam';
 import "../Ourmanagement/Ourmanagement.css";
@@ -164,25 +164,25 @@ const Ourmanagement = () => {
             <Image
               src={Chairmen}
               alt='Image'
-              className="rounded-2xl w-full h-auto object-cover"
+              className="rounded-3xl w-full h-auto object-cover"
               style={{ height: "350px", width: "650px" }}
             />
           </div>
-          <div className="absolute top-7 left-0 md:left-10 w-full h-full flex items-end justify-start p-7 ">
+          <div className="absolute top-16 left-0 md:left-10 w-full h-full flex items-end justify-start p-5 ">
             <div className='bg-white px-8 py-7 w-full rounded-2xl  text-center items-center justify-center'>
               <h4 className=" text-black text-md mb-2 font-bold">
                 Founder
               </h4>
-              <h1 className='text-[#2B3990] text-xl mb-2 font-bold'>
+              <h2 className='text-[#2B3990] text-[24px] mb-2 '>
                 Dr. D. Kandasamy
-              </h1>
-              <p className='text-[#5E566A] text-sm font-semibold'>MD, DTCD Preventive Cardiologist</p>
+              </h2>
+              <p className='text-[#5E566A]'>MD, DTCD Preventive Cardiologist</p>
             </div>
           </div>
         </div>
-        <div className='w-full md:w-[70%] rounded-xl px-4'>
-          <h1 className='text-[#000000] text-[30px]  pb-5'>Chairman’s Message</h1>
-          <p className='text-[#2B3990] text-sm md:text-base font-semibold pb-5'> "My dream was to ensure no one had to leave my hometown for quality medical care"</p>
+        <div className='w-full md:w-[70%] rounded-3xl px-4'>
+          <h1 className='text-[#000000] text-[24px]  pb-5'>Chairman’s Message</h1>
+          <p className='text-[#2B3990]  pb-5'> "My dream was to ensure no one had to leave my hometown for quality medical care"</p>
           <p className='pb-5'>
             Sudha Hospitals has proudly served people for more than four decades, offering dependable, cost-effective, ethical, compassionate, advanced, inclusive, and patient-centred care. Our strength lies in the unwavering dedication of our doctors, nurses, and paramedical staff, whose service continues to earn trust and admiration across generations. 
           </p>
@@ -191,8 +191,8 @@ const Ourmanagement = () => {
           </p>
         </div>
       </div>
-      <div className='max-w-7xl mx-auto px-4 mt-10 relative'>
-        <h2 className='text-[30px] mb-6'>Our Executive Team</h2>
+      <div className='max-w-7xl mx-auto px-4 mt-16 relative'>
+        <h2 className='text-[30px] '>Our Executive Team</h2>
       </div>
       <div className='max-w-7xl mx-auto px-4 py-10 relative'>
         <Executiveteam />
@@ -205,7 +205,7 @@ const Ourmanagement = () => {
         className="py-8"
       >
         <span className="mx-4 text-[#D5DAE5] font-extrabold text-[76px]">
-          Trusted Healthcare Partners
+          Trusted Healthcare Partners + Trusted Healthcare Partners
         </span>
       </Marquee>
     </div>
