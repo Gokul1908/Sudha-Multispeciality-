@@ -642,7 +642,7 @@ export const links = [
     subLinks: [
       {
         header: "Alied Health Service",
-        hrefs: "/allied-health-services",
+        hrefs: "/resources/allied-health-services",
         image: Alied,
         hoverImage: Alied,
         subMenu: [
@@ -654,7 +654,7 @@ export const links = [
       },
       {
         header: "Find a Doctor",
-        hrefs: "/doctorlist",
+        hrefs: "/resources/doctorlist",
         image: Doctor,
         hoverImage: Doctor,
         subMenu: [
@@ -692,7 +692,7 @@ export const links = [
       },
       {
         header: "Contact Us",
-        hrefs: "/contact-us",
+        hrefs: "/resources/contact-us",
         image: Contact,
         hoverImage: Contact,
         subMenu: [

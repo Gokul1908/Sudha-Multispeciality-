@@ -15,8 +15,13 @@ import Checklight from "@/assets/home/check-light.svg";
 import hospitalTwo from "@/assets/home/cards/c2.svg";
 import hospitalThree from "@/assets/home/cards/c3.svg";
 import hospitalFour from "@/assets/home/cards/c4.svg";
+import Breadcrumb from "@/components/Breadcrumb";
 import './Centreofexcellence.css';
-
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+   { label: "Specialities", href: "" },
+  { label: "Centre of Excellence", href: "/centre-of-excellence" },
+];
 const hospitalscards = [
     {
         number: <h3 className="text-[48px] text-[#2B3990]">40+</h3>,
@@ -152,14 +157,14 @@ const Centreofexcellence = () => {
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
                     <div className="max-w-7xl mx-auto">
-                        <motion.p
+                        <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4 }}
                             className=" mb-4 text-white"
                         >
-                            Home / Centre of Excellence
-                        </motion.p>
+                           <Breadcrumb items={breadcrumbItems} />
+                        </motion.div>
 
                         <motion.h1
                             initial={{ opacity: 0, y: 10 }}

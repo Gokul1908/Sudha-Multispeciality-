@@ -22,6 +22,7 @@ const consultSlides = [consult1, consult2, consult3];
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
+   { label: "Specialities", href: "" },
   { label: "General Surgery", href: "/general-surgery" },
 ];
 
