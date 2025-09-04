@@ -107,7 +107,7 @@ const OrganTransplantSidebar = () => {
 
                       <div className="pt-4 absolute bottom-6 mr-4">
                         <div className="border-t border-gray-200 mt-4 mb-2" />
-                        <p className="text-gray-700 text-[14px] ">
+                        <p className=" text-[14px] ">
                           {item.label}
                         </p>
                       </div>

@@ -1,13 +1,14 @@
 "use client";
 import React from "react";
-import Banner from "@/assets/alliedhealthservice/Banner.png";
+import Banner from "@/assets/alliedhealthservice/alied-banner.webp";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import SidebarTabs from "@/pages/cardiology/SidebarTabs";
-
+import inter from "@/assets/home/inter.svg";
+import patient from "@/assets/home/patient.svg";
 import Marquee from "react-fast-marquee";
 import Slider from "react-slick";
-import Main from "@/assets/nursingservice/main.jpg";
+import Main from "@/assets/alliedhealthservice/alliedhealth.webp";
 import Bookappointment from "@/components/Bookappointment";
 import Image from "next/image";
 import hospitalOne from "@/assets/home/cards/c1.svg";
@@ -23,6 +24,7 @@ import Alliedhealthsidebar from "@/components/AlliedhealthSidebar";
 
 const breadcrumbItems = [
     { label: "Home", href: "/" },
+    { label: "Resources", href: "" },
     { label: "Allied Health Services", href: "/allied-health-services" },
 ];
 
@@ -204,25 +206,15 @@ const Alliedhealthservice = () => {
                 <Alliedhealthsidebar />
             </div>
 
-            <div className="max-w-7xl mx-auto px-4 py-8 sm:py-16 ">
+            <div className="max-w-7xl mx-auto  py-8 sm:py-16 ">
                 <div className="flex flex-col lg:flex-row gap-10">
                     {/* Slider Section */}
                     <div className="w-full lg:w-1/2">
-                        <div className="w-full">
-                            <Slider {...settings}>
-                                {customerSlides.map((img, idx) => (
-                                    <div key={idx}>
-                                        <div className="doc">
-                                            <Image
-                                                src={Main}
-                                                alt={`Consult ${idx + 1}`}
-                                                className="w-full h-auto rounded-3xl  "
-                                            />
-                                        </div>
-                                    </div>
-                                ))}
-                            </Slider>
-                        </div>
+                        <Image
+                            src={Main}
+                            alt=""
+                            className="w-full h-auto rounded-3xl h-[360px] w-full object-cover  "
+                        />
                     </div>
 
                     {/* Content Section */}
@@ -248,7 +240,7 @@ const Alliedhealthservice = () => {
                         </p>
 
                         {/* Metrics Row */}
-                        <div className="flex flex-col sm:flex-row gap-6 w-full mt-7">
+                        <div className="flex flex-col sm:flex-row gap-6 w-full ">
                             {/* Award */}
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
@@ -258,10 +250,17 @@ const Alliedhealthservice = () => {
                                 className="flex-1"
                             >
                                 <div className="flex items-center gap-3">
-                                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
-                                        <p className="text-[#2B3990] text-xl font-extrabold">80+</p>
+                                    <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                                        <Image
+                                            src={patient}
+                                            alt="icon"
+                                            width={40}
+                                            height={40}
+                                            className="sm:w-[36px] sm:h-[36px]"
+                                        />
                                     </div>
-                                    <p className="text-white font-bold text-md">Winning Awards</p>
+                                    <p className="text-white font-bold text-md">World Class
+                                        Health Care</p>
                                 </div>
                             </motion.div>
 
@@ -274,10 +273,17 @@ const Alliedhealthservice = () => {
                                 className="flex-1"
                             >
                                 <div className="flex items-center gap-3">
-                                    <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
-                                        <p className="text-[#2B3990] text-xl font-extrabold">24m</p>
+                                    <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                                        <Image
+                                            src={inter}
+                                            alt="icon"
+                                            width={40}
+                                            height={40}
+                                            className="sm:w-[36px] sm:h-[36px]"
+                                        />
                                     </div>
-                                    <p className="text-white font-bold text-md">Happy Clients</p>
+                                    <p className="text-white font-bold text-md">100% Patient
+                                        Satisfaction</p>
                                 </div>
                             </motion.div>
                         </div>

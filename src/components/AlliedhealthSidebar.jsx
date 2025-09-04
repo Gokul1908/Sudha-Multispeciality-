@@ -2,46 +2,58 @@
 
 import { ArrowUpRight } from "lucide-react";
 import React from "react";
-import sidebar1 from "@/assets/alliedhealthservice/1.png";
-import sidebar2 from "@/assets/alliedhealthservice/2.png";
-import sidebar3 from "@/assets/alliedhealthservice/3.png";
-import sidebar4 from "@/assets/alliedhealthservice/4.png";
-import sidebar5 from "@/assets/alliedhealthservice/5.png";
+import Physiotherapy from "@/assets/alliedhealthservice/physiotherapy.webp";
+import Dietetics from "@/assets/alliedhealthservice/dietetics-cover.webp";
+import Lactation from "@/assets/alliedhealthservice/lactation-maternal.webp";
+import Nursing from "@/assets/alliedhealthservice/nursingservices/nursing-inner.webp";
+import Psychology from "@/assets/alliedhealthservice/psychology.webp";
 import Image from "next/image";
-import Logo from "../assets/nursingservice/Group.png";
+
+
+import Physio from "@/assets/alliedhealthservice/physical.svg";
+import Diet from "@/assets/alliedhealthservice/gymnast-diet.svg";
+import Maternal from "@/assets/alliedhealthservice/maternity-care.svg";
+import Nurse from "@/assets/alliedhealthservice/nursing-services.svg";
+import Psycho from "@/assets/alliedhealthservice/psycho.svg";
+
 import Link from "next/link";
 import './bookappointment.css';
 
 const rightbar = [
   {
     head: "Physiotherapy ",
-    label: "The medical professional doctors available in the clinic",
-    image: sidebar1,
+    label: "Empowering recovery through expert therapy for strength and confident movement.",
+    image: Physiotherapy,
     link: "/physiotherapy",
+    icon: Physio,
   },
   {
     head: "Dietetics ",
-    label: "The medical professional doctors available in the clinic",
-    image: sidebar2,
+    label: "Personalized nutrition plans supporting health, recovery, and lifelong wellness.",
+    image: Dietetics,
     link: "/dietetics",
+    icon: Diet,
   },
   {
     head: "Lactation & Maternal Health ",
-    label: "The medical professional doctors available in the clinic",
-    image: sidebar3,
+    label: "Expert lactation and maternal health support for stronger motherhood journeys.",
+    image: Lactation,
     link: "/lactation-and-maternal-health",
+    icon: Maternal,
   },
   {
     head: "Nursing Services ",
-    label: "The medical professional doctors available in the clinic",
-    image: sidebar4,
+    label: "Trusted nursing care delivering comfort, healing, and continuous medical support.",
+    image: Nursing,
     link: "/nursing-service",
+    icon: Nurse,
   },
   {
     head: "Psychology ",
-    label: "The medical professional doctors available in the clinic",
-    image: sidebar5,
+    label: "Expert psychological care promoting emotional wellbeing and balanced mental health.",
+    image: Psychology,
     link: "/psychology",
+    icon: Psycho,
   },
 ];
 
@@ -108,21 +120,21 @@ const Alliedhealthsidebar = () => {
                     {/* Text Content */}
                     <div className="flex flex-col flex-1 h-full w-full">
                       <div className="flex justify-between items-start w-full">
-                        <h3 className="text-[20px] sm:text-[22px] ">
+                        <h3 className="text-[18px] ">
                           {item.head}
                         </h3>
                         <Image
                           height={40}
                           width={40}
                           alt="Logo"
-                          src={Logo}
+                          src={item.icon}
                           className="hidden sm:block"
                         />
                       </div>
 
-                      <div className="pt-4">
+                      <div className="pt-4 absolute bottom-6 mr-4">
                         <div className="border-t border-gray-200 mt-4 mb-2" />
-                        <p className="">
+                        <p className="text-[14px]">
                           {item.label}
                         </p>
                       </div>

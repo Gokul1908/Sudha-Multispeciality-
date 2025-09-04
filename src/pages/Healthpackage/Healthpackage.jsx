@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Banner from "@/assets/facilities/health-packages.webp";
-
+import Accordion from "../../components/Accordion";
 import HandIcon from "@/assets/healthpackage/nephrology.svg";
 import Doctors from "@/assets/healthpackage/doctors.webp";
 import Checking from "@/assets/healthpackage/checking.webp";
@@ -29,36 +29,140 @@ const breadcrumbItems = [
 ];
 
 
+const accordionData = [
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Cardiothoracic Surgery" />  */}
+          Which hospital is best for health checkups? 
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p>
+         Sudha Multispeciality Hospital is considered the best hospital for master health checkup in Erode, as it has affordable health packages, advanced diagnostic facilities, and experienced doctors. 
+        </p>
 
-const doctors = [
-    {
-        name: "Dr. U. Shyla",
-        qualification: "MBBS., DGO., DNB(OG)., DRM., MNAMS",
-        image: shyla,
-    },
-    {
-        name: "Dr. T. Naga Tejaswi",
-        qualification: "MBBS., MS(OBG) FRM",
-        image: shyla,
-    },
-    {
-        name: "Dr. Aruna Saradha K",
-        qualification: "MBBS, MS(OBG), FRM",
-        image: shyla,
-    },
-    {
-        name: "Dr. V. Indhumathy",
-        qualification: "MBBS., MS(OBG) FRM",
-        image: shyla,
-    },
-    {
-        name: "Dr. Nadiya Hameed",
-        qualification: "MBBS., MS(OBG) FRM",
-        image: shyla,
-    },
-    { name: "Dr. Jane Doe", qualification: "MBBS., MS(OBG) FRM", image: shyla },
-    { name: "Dr. Priya Raj", qualification: "MBBS., MS(OBG) FRM", image: shyla },
+
+      </div>
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+  Which test is best for a full body checkup? 
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm text-gray-700 space-y-3">
+        <p>
+          A comprehensive health checkup is regarded as the best test for a full-body evaluation, and Sudha Multispeciality Hospital provides this at an affordable price with all essential tests included. 
+        </p>
+
+
+      </div>
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+          Which hospital provides a master health checkup for a low cost? 
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm text-gray-700 space-y-3">
+        <p>
+          Sudha Multispeciality Hospital in Erode provides master health checkup at a low cost through affordable health packages that cover a wide range of tests without compromising quality. 
+        </p>
+
+
+      </div>
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+         What is the importance of a medical check-up every year? 
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p>
+          An annual medical checkup is important to detect health issues at an early stage and prevent future complications. Sudha Multispeciality Hospital offers different health packages suitable to the patient’s health records. 
+        </p>
+
+      </div>
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+          What is the price of a master health checkup in Erode?
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p>
+          The price of a master health checkup in Erode at Sudha Multispeciality Hospital is affordable, with packages starting from Rs.2000, at a cost-effective range, ensuring complete care within budget. 
+        </p>
+
+      </div>
+    ),
+  },
+
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+          What tests are recommended for women? 
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p>
+          A comprehensive health checkup for women, including mammogram, Pap smear, blood profile, and essential screenings, is recommended to diagnose underlying medical conditions. Sudha Multispeciality Hospital, the best hospital for master health checkup in Erode, offers these tests as part of its affordable health packages.
+        </p>
+
+      </div>
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+          How many tests are included in a full-body checkup for men? 
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p>
+          A general full-body checkup for men includes 13 to 15 essential tests, with additional investigations recommended based on specific medical conditions. Sudha Multispeciality Hospital in Erode provides these under affordable health packages designed for men’s overall well-being. 
+        </p>
+
+      </div>
+    ),
+  },
+
 ];
+
 
 const PrevArrow = ({ onClick }) => (
     <button
@@ -402,7 +506,7 @@ const Healthpackage = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className="max-w-3xl ml-auto ">
+                        <div className="max-w-3xl ml-auto  mt-5">
                             <section className="w-full sm:w-auto">
                                 <ul className="text-left text-[14px] mt-0 mb-7">
                                     {[
@@ -426,9 +530,16 @@ const Healthpackage = () => {
                 </div>
             </section>
 
+            <section className="max-w-3xl mx-auto py-16" >
+                <div>
+                    <h2 className="text-center text-[30px] mb-8">
+                        Frequently Asked Questions
+                    </h2>
+                    <Accordion accordionData={accordionData} />
+                </div>
+            </section>
 
-
-            <section className="px-4 sm:px-6 lg:px-8">
+            {/* <section className="px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto px-4 ourteam pt-16 pb-20">
                     <div className="flex justify-center">
                         <h6 className="bg-white text-[#2B3990] px-5 py-2 rounded-full text-sm font-semibold">
@@ -456,7 +567,7 @@ const Healthpackage = () => {
                                         />
                                     </div>
 
-                                    {/* Arrow Button */}
+                                  
                                     <Link
                                         href=""
                                         className="absolute bottom-28 sm:bottom-32 right-2 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white flex items-center justify-center z-30 group"
@@ -491,7 +602,7 @@ const Healthpackage = () => {
                         </Slider>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <Bookappointment />
         </div>

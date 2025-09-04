@@ -22,6 +22,8 @@ const consultSlides = [consult1, consult2, consult3];
 
 const breadcrumbItems = [
     { label: "Home", href: "/" },
+    { label: "Resources", href: "" },
+
     { label: "Allied Health Services", href: "/allied-health-services" },
     { label: "Lactation and Maternal Health ", href: "/lactation-and-maternal-health" },
 ];
