@@ -20,8 +20,8 @@ const consultSlides = [consult1, consult2, consult3];
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
-  { label: "Allied Health Services", href: "/allied-health-services" },
-  { label: "Post-Partum Care", href: "/post-partum-care" },
+  { label: "Mother & Child Care", href: "/mother-and-childcare" },
+  { label: "Post-Partum Care", href: "/mother-and-childcare/post-partum-care" },
 ];
 
 

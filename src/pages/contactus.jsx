@@ -18,6 +18,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 const breadcrumbItems = [
     { label: "Home", href: "/" },
+      { label: "Resources", href: "" },
     { label: "Contact Us", href: "/contact-us" },
   ];
 
