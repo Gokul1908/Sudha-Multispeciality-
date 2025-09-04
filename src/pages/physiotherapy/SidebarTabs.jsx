@@ -19,8 +19,8 @@ const serviceSections = [
   { id: "overview", label: "Overview" },
   { id: "facilities", label: "Facilities" },
   { id: "services", label: "Services" },
-  { id: "doctors", label: "Doctors" },
-  { id: "faqs", label: "FAQs" },
+  // { id: "doctors", label: "Doctors" },
+  // { id: "faqs", label: "FAQs" },
 ];
 const accordionData = [
   {
@@ -440,12 +440,12 @@ export default function SidebarTabs() {
               </div>
             )}
 
-            {id === "doctors" && (
+            {/* {id === "doctors" && (
               <>
                 <h2 className="text-[24px]  mt-5 pb-3">Doctors</h2>
                 <DoctorSlider />
               </>
-            )}
+            )} */}
 
             {/* {id === "faqs" && (
               <div className="mt-8">

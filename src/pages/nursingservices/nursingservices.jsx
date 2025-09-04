@@ -21,8 +21,8 @@ const breadcrumbItems = [
   { label: "Home", href: "/" },
   { label: "Resources", href: "" },
 
-  { label: "Allied Health Services", href: "/allied-health-services" },
-  { label: "Nursing Services ", href: "/nursing-service " },
+  { label: "Allied Health Services", href: "/resources/allied-health-services" },
+  { label: "Nursing Services ", href: "/resources/allied-health-services/nursing-service " },
 ];
 
 
@@ -99,12 +99,10 @@ function nursingservices() {
             <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
               <div className="h-[30%] bg-transparent" />
               <div className="bg-white p-5">
-                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
-                <p className="text-[16px] text-black font-bold">
-                  Years of Trusted <br />
-                  Expertise in <br />
-                  Healthcare
+                <p className="text-[16px] text-black font-bold mb-2">
+                  Quality care <br /> backed by skilled <br /> professionals
                 </p>
+                <h3 className="text-[20px] font-extrabold text-[#2B3990]">Since 1985</h3>
               </div>
             </div>
           </div>
