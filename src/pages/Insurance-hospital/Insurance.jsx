@@ -83,27 +83,27 @@ const Insurance = () => {
 
 
   const sectionRef = useRef(null);
-    const [hoverIndex, setHoverIndex] = useState(null);
-    const [openIndex, setOpenIndex] = useState(0); // open first by default
-    const { scrollYProgress } = useScroll({
-      target: sectionRef,
-      offset: ["start end", "end start"], // when element enters and exits viewport
-    });
-  
-    const toggle = (index) => {
-      setOpenIndex(openIndex === index ? null : index);
-    };
-  
-    const [activeAccordion, setActiveAccordion] = useState(null);
-    const [showCount, setShowCount] = useState(5);
-  
-    const handleAccordionToggle = (index) => {
-      setActiveAccordion(activeAccordion === index ? null : index);
-    };
-  
-    const handleViewMore = () => {
-      setShowCount(faqData.length);
-    };
+  const [hoverIndex, setHoverIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0); // open first by default
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"], // when element enters and exits viewport
+  });
+
+  const toggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const [activeAccordion, setActiveAccordion] = useState(null);
+  const [showCount, setShowCount] = useState(5);
+
+  const handleAccordionToggle = (index) => {
+    setActiveAccordion(activeAccordion === index ? null : index);
+  };
+
+  const handleViewMore = () => {
+    setShowCount(faqData.length);
+  };
 
   const Content = [
     {
@@ -170,7 +170,7 @@ const Insurance = () => {
     "Srilankan refugees' card with VAO certificate",
   ];
 
-  
+
   return (
     <div>
       <section className="relative px-7 hero-section -mt-28 mb-hero-section">
@@ -404,7 +404,7 @@ const Insurance = () => {
       </div>
 
 
-      <section className=""  ref={sectionRef}>
+      <section className="" ref={sectionRef}>
         <div>
           <div className="max-w-3xl mx-auto py-16">
             <h2 className="text-center text-[30px] mb-6">

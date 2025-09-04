@@ -549,7 +549,7 @@ function Home() {
               />
 
               {/* Floating Info Badges */}
-              <div className="absolute bottom-10 right-6  z-20 bg-white shadow-lg rounded-2xl flex flex-col sm:flex-row gap-6 sm:gap-6 px-8 py-8 text-md font-semibold text-[#2B3990]">
+              <div className="absolute bottom-10 left-8  z-20 bg-white shadow-lg rounded-2xl flex flex-col sm:flex-row gap-6 sm:gap-6 px-8 py-8 text-md font-semibold text-[#2B3990]">
                 <div className="flex items-center gap-3 sm:gap-4">
                   <Image
                     src={inter}

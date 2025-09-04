@@ -1,4 +1,4 @@
-import Kandasamy from "@/assets/home/doc/kandasamy.webp";
+import Kandasamy from "@/assets/home/doc/kandhasami.webp";
 import Sudhakar from "@/assets/home/doc/sudhakar.webp";
 import Gopinath from "@/assets/home/doc/gopinath.webp";
 import Mohan from "@/assets/home/doc/mohan.webp";
@@ -20,10 +20,10 @@ import Deepika from "@/assets/home/doc/deepika.webp";
 import Gowrishankar from "@/assets/home/doc/gowrishankar.webp";
 import Rangesh from "@/assets/home/doc/rangesh.webp";
 import Anand from "@/assets/home/doc/anand.webp";
-import Sugashwaran from "@/assets/home/doc/sugashwaran.webp";
+import Sugashwaran from "@/assets/home/doc/sugeshwaran.jpg";
 import Prabakaran from "@/assets/home/doc/prabakaran.webp";
 import Roopak from "@/assets/home/doc/roopak.webp";
-import Prathap from "@/assets/home/doc/prathap.webp";
+import Prathap from "@/assets/home/doc/prathap.jpg";
 import Praveen from "@/assets/home/doc/praveen.webp";
 import Rajasekar from "@/assets/home/doc/rajasekar.webp";
 
@@ -1890,7 +1890,7 @@ export const doctorsDatarenal = [
     speciality: "Urologist",
     qualification: "Consultant Urology",
     degrees: "MS, MCH (Urologist)",
-    image: Amutha,
+    image: Gopinath,
     doctordetail: [
       {
         name: "Dr.M.Gopinath",
@@ -2126,7 +2126,7 @@ export const doctorsDatarenal = [
     speciality: "Aneathesia",
     qualification: "Consultant Anesthetist & Intensivist",
     degrees: "MD (Aneathesia)",
-    image: Vanitha,
+    image: Nithiyanandhan,
     doctordetail: [
       {
         name: "Dr.P.Nithiyanandhan",

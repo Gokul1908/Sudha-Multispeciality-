@@ -3,7 +3,7 @@ import React from "react";
 import Banner from "@/assets/organtransplant/organ-transplant.webp";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-
+import Accordion from "../../components/Accordion";
 import Marquee from "react-fast-marquee";
 import Slider from "react-slick";
 import Main from "@/assets/nursingservice/main.jpg";
@@ -18,6 +18,121 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 import OrganTransplantSidebar from "@/components/OrganTransplantSidebar";
 
+const accordionData = [
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Cardiothoracic Surgery" />  */}
+          What is the most common organ transplant?
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p>
+          Kidney transplant is the most commonly performed organ transplant worldwide. Sudha Multispeciality Hospital, recognised as the best hospital in Erode for organ transplant, provides advanced renal transplant care with expert surgical teams. 
+        </p>
+
+
+      </div>
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+          What is the procedure for a liver transplant? 
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm text-gray-700 space-y-3">
+        <p>
+          A liver transplant involves removing a diseased liver and replacing it with a healthy liver from a donor. Pre-surgical evaluation, donor matching, and post-operative care are critical for success. Sudha Multispeciality Hospital is recognised as the best hospital for liver transplant in Erode, offering comprehensive care throughout the process. 
+        </p>
+
+
+      </div>
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+          Which hospital in India is best for liver transplant? 
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm text-gray-700 space-y-3">
+        <p>
+          There are many hospitals in India offer advanced liver transplant services. Sudha Multispeciality Hospital is considered the best hospital for organ transplant in Erode, providing specialised liver transplant services with experienced surgeons. 
+        </p>
+
+
+      </div>
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+         What is the ideal age for a liver transplant? 
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p>
+          Liver transplants are typically performed in adults and children when liver function is severely compromised. The suitability depends on overall health rather than age alone. Sudha Multispeciality Hospital, the best hospital for liver transplant in Erode, conducts thorough assessments to determine eligibility.
+        </p>
+
+      </div>
+    ),
+  },
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+          Can a person live with one kidney? 
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p>
+          It is possible to live a healthy life with one kidney. Donors and patients are carefully evaluated and monitored by specialists at Sudha Multispeciality Hospital, the best hospital for renal transplants in Erode, to ensure safe outcomes. 
+        </p>
+
+      </div>
+    ),
+  },
+
+  {
+    title: (
+      <>
+        <div className="flex gap-3">
+          {/* <Image src={one} alt="Interventional Cardiology" /> */}
+          What's the recovery time after donating a kidney?
+        </div>
+      </>
+    ),
+    content: (
+      <div className="text-sm  space-y-3">
+        <p>
+          Recovery after kidney donation usually takes 4 to 6 weeks, depending on individual health and adherence to post-operative care. Sudha Multispeciality Hospital, recognised as the best hospital for organ transplant in Erode, provides complete guidance and monitoring for a safe recovery. 
+        </p>
+
+      </div>
+    ),
+  },
+  
+];
 
 const breadcrumbItems = [
     { label: "Home", href: "/" },
@@ -198,6 +313,15 @@ const OrganTransplant = () => {
             <div className="max-w-7xl mx-auto py-16 ">
                 <OrganTransplantSidebar />
             </div>
+
+            <section className="max-w-3xl mx-auto py-16" >
+                <div>
+                    <h2 className="text-center text-[30px] mb-8">
+                        Frequently Asked Questions
+                    </h2>
+                    <Accordion accordionData={accordionData} />
+                </div>
+            </section>
 
             <section id="contactus">
                 <Bookappointment />

@@ -18,129 +18,67 @@ const serviceSections = [
   { id: "overview", label: "Overview" },
   { id: "postsurgerycare", label: "Post-surgery Care " },
   { id: "facilities", label: "Facilities" },
+  { id: "faqs", label: "FAQs" },
+
 ];
 
 const faq = [
   {
     title: (
       <>
-        <div className="flex gap-3">What is cardiology? </div>
+        <div className="flex gap-3">What is the cost of a kidney transplant? </div>
       </>
     ),
     content: (
-      <div className="text-sm text-gray-700 space-y-3">
-        <p>
-          A branch of medicine dealing with disorders of heart and blood
-          vessels. The work of our cardiologists for adults includes diagnosis
-          and treatment of adult congenital heart disease, heart failure,
-          coronary artery disease, valvular heart disease and arrhythmias. All
-          the necessary investigations like ECG, Echocardiogram, Treadmill test,
-          Holter monitoring, Ambulatory BP monitoring, tilt table testing,
-          cardiac CT, cardiac MRI, and nuclear heart scanning are available to
-          provide you with the best adult cardiology treatment at our
-          multispeciality hospital in Erode.
-        </p>
-        <h4 className="font-semibold">
-          Diagnostic Tests Available in our Cardiology Hospital:
-        </h4>
-        <h2 className="font-semibold text-[#2B3990]">ECG:</h2>
-        <p>
-          Cardiac problems such as heart attack, heart block, etc. can be
-          detected by measuring the electrical activity of the heart, which is
-          done by electrocardiogram (ECG).
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">ECHOCARDIOGRAM:</h2>
-        <p>
-          The structure and function of the heart can be assessed by moving
-          images produced by sound waves. Various heart diseases can be
-          diagnosed by this readily available investigation.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">TREADMILL TEST:</h2>
-        <p>
-          Patients will walk on a treadmill at graded levels and their 12- lead
-          ECG will be monitored for heart rate, ST-T segment changes. The
-          presence or absence of changes will be interpreted accordingly to
-          detect heart problems like coronary artery disease, heart block,
-          etc..., that helps in determining the cardiology treatment that is to
-          proceed further accordingly.
-        </p>
-        <h2 className="font-semibold text-[#2B3990]">
-          STRESS ECHOCARDIOGRAPHY:
-        </h2>
-        <p>
-          Heart is exerted by exercise or medicines and its activity is
-          monitored by echocardiography. For those who are not able to walk to
-          perform treadmill test, this is a very useful test to rule out
-          coronary artery disease.
-        </p>
-      </div>
+      <p>
+        The cost of a kidney transplant varies depending on the hospital, type of procedure, and post-operative care required. Sudha Multispeciality Hospital, recognised as the best hospital for renal transplant in Erode, offers transparent and comprehensive cost estimates for patients.
+      </p>
     ),
   },
   {
     title: (
       <>
         <div className="flex gap-3">
-          What is the main cause of heart problems?
+          Which Hospital is best for Kidney Transplant in India?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Several hospitals in India provide advanced kidney transplant services. For patients in Erode, Sudha Multispeciality Hospital is regarded as the best hospital for organ transplant in Erode, providing expert surgical care and post-transplant support. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Who pays for the medical bill when donating a kidney?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Medical expenses for the donor are typically covered by the recipient or as per hospital policy and applicable regulations. Sudha Multispeciality Hospital ensures that all transplant-related procedures follow legal and ethical guidelines while providing support for both donor and recipient.</p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          Can a person live with one kidney?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>It is possible to live a healthy life with one kidney. Regular medical monitoring is essential, and Sudha Multispeciality Hospital, the best hospital for renal transplants in Erode, provides guidance and follow-up care for safe long-term outcomes. </p>,
   },
   {
     title: (
       <>
         <div className="flex gap-3">
           {" "}
-          What is the main cause of heart problems?
+          What's the recovery time after donating a kidney?
         </div>
       </>
     ),
-    content: <p>Details coming soon.</p>,
+    content: <p>Recovery after kidney donation usually takes 4 to 6 weeks, depending on overall health and adherence to post-operative care. At Sudha Multispeciality Hospital, recognised as the best hospital for organ transplant in Erode, both donors and recipients receive comprehensive care to ensure safe recovery. </p>,
   },
-  {
-    title: (
-      <>
-        <div className="flex gap-3">
-          {" "}
-          What is the main cause of heart problems?
-        </div>
-      </>
-    ),
-    content: <p>Details coming soon.</p>,
-  },
-  {
-    title: (
-      <>
-        <div className="flex gap-3">
-          {" "}
-          What is the main cause of heart problems?
-        </div>
-      </>
-    ),
-    content: <p>Details coming soon.</p>,
-  },
+
 ];
 
 const accordionData = [
@@ -359,8 +297,8 @@ export default function SidebarTabs() {
 
           <p className="text-center text-white mb-3 text-[14px] mt-3"> Your dedicated health partner for every medical requirement. </p>
 
-          <button className="btn-sidebar inline-flex items-center gap-2 bg-white text-[#2B3990] font-semibold px-7 py-3 rounded-full   mt-5 text-[14px] hover:-translate-y-[3px] transition-transform duration-200">
-            Book Your Appointment  <ArrowUpRight className="w-5 h-5" />
+          <button className="btn-white mt-5">
+            Book an Appointment <ArrowUpRight className="w-4 sm:w-5 h-4 sm:h-5" />
           </button>
         </div>
 
@@ -373,7 +311,7 @@ export default function SidebarTabs() {
             }}
           >
             <div className="text-left mb-4 sm:mb-0 sm:mr-4">
-              <h3 className="text-[26px] font-bold">
+              <h3 className="text-[22px] font-bold">
                 Find a <br />
                 Doctor?
               </h3>
@@ -886,7 +824,12 @@ export default function SidebarTabs() {
               </div>
             )}
 
-
+            {id === "faqs" && (
+              <div className="mt-8">
+                <h2 className="text-[24px]  mt-5 pb-3">Frequently Asked Questions</h2>
+                <Faq faq={faq} />
+              </div>
+            )}
 
           </section>
         ))}

@@ -25,8 +25,8 @@ import { doctorsData } from "@/constants/doctorDetails";
 import OurTeamSlider from "@/components/OurTeamSlider";
 import Sliderdoctor from "@/components/Sliderdoctor";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import kandaswamyImg from "@/assets/organtransplant/doctorimages/kandaswamy.png";
-import shylaImg from "@/assets/organtransplant/doctorimages/shyla.png";
+import Senthur from "@/assets/renal/senthur.jpg";
+import Chitra from "@/assets/renal/chitra.png";
 import DonorDataTable from '@/components/donordatatable';
 import { ArrowUpRight } from "lucide-react";
 
@@ -65,14 +65,14 @@ function Organtransplant() {
       name: "Dr.C.Senthur Raj",
       qualification: "MBBS",
       designation: "Senior Medical Resident",
-      image: kandaswamyImg,
+      image: Senthur,
     },
     {
       id: 2,
       name: "Mrs.G.Chitra",
       qualification: "Dialysis Tech",
       designation: "Professional Transplant Coordinator",
-      image: shylaImg,
+      image: Chitra,
     },
   ];
 
@@ -106,7 +106,7 @@ function Organtransplant() {
     speed: 500,
     autoplay: true,
     autoplaySpeed: 2000,
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
@@ -154,7 +154,7 @@ function Organtransplant() {
               transition={{ duration: 0.5 }}
               className=" text-[40px]  mb-4"
             >
-             Best Hospital for Renal Transplant in Erode
+              Best Hospital for Renal Transplant in Erode
             </motion.h1>
 
             {/* Subtitle */}
@@ -174,8 +174,8 @@ function Organtransplant() {
               transition={{ duration: 0.7 }}
             >
               <Link
-                href="#"
-                className="btn-white inline-flex  text-[16px] tracking-wide items-center px-7 py-3 bg-white text-[#2B3990] font-semibold rounded-full  hover:-translate-y-[3px] transition-transform duration-200"
+                href="#contactus"
+                className="btn-white"
               >
                 Book an Appointment <ArrowUpRight className="w-5 h-5" />
               </Link>
@@ -208,67 +208,60 @@ function Organtransplant() {
       </section>
 
       <section className="mt-5">
-        <div className="max-w-7xl mx-auto px-4 py-8 relative">
+        <div className="max-w-7xl mx-auto  py-8 relative">
 
           <Sliderdoctor />
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto px-4 pt-0 pb-2">
-          <h1 className="text-center text-[30px] text-black mt-4">
-            Our Transplant Co-Ordinators
-          </h1>
+      <section className="max-w-7xl mx-auto pt-0 pb-2 ">
+        <h2 className="text-center text-[30px]  mt-4">
+          Our Transplant Co-Ordinators
+        </h2>
 
-          <div className="relative mt-10">
-            <Slider {...setting}>
-              {doctorsData.slice(0, 2).map((doc, index) => (
-                <div
-                  key={index}
-                  className="w-[160px] sm:w-[160px] md:w-[180px] h-[400px] rounded-xl overflow-hidden text-center relative"
-                >
+        <div className="relative mt-10">
+          <Slider {...setting}>
+            {doctorsData.slice(0, 2).map((doc, index) => (
+              <div key={index} className="pr-3">
+                {/* Card wrapper */}
+                <div className="bg-white h-[500px] max-w-[300px] rounded-2xl text-start flex flex-col overflow-hidden">
+                  {/* Image */}
                   <Image
                     src={doc.image}
                     alt={doc.name}
-                    width={100}
-                    height={120}
-                    className="mx-auto rounded-lg mb-2 w-[80%] h-auto"
+                    width={300}
+                    height={300}
+                    className="w-full h-[300px] object-cover rounded-t-2xl"
                   />
-                  <Link
-                    href={`/doctor-detail/${doc.id}`}
-                    className="absolute bottom-33 right-2 w-10 h-10 rounded-full bg-white flex items-center justify-center z-30 group"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-5 h-5 text-black transform transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 7L7 17M7 7h10v10"
-                      />
-                    </svg>
-                  </Link>
 
-                  <h3 className="text-[16px] sm:text-[16px] mt-5 font-bold text-[#2B3990]">
-                    {doc.name}
-                  </h3>
-                  <p className="text-[12px] font-bold font-black mt-1">
-                    {doc.qualification}
-                  </p>
-                  <p className="text-[12px] font-bold font-black mt-1">
-                    {doc.designation}
-                  </p>
+                  {/* Content */}
+                  <div className="p-4 flex flex-col justify-between flex-1">
+                    <div>
+                      <h3 className="text-[16px] sm:text-[16px] font-bold text-[#2B3990]">
+                        {doc.name}
+                      </h3>
+                      <p className="text-[12px]  mt-1">
+                        {doc.qualification}
+                      </p>
+                      <p className="text-[12px]  mt-1">
+                        {doc.designation}
+                      </p>
+                    </div>
+
+                    {/* Button aligned at bottom */}
+                    <Link
+                      href={`/doctor-detail/${doc.id}`}
+                      className="btn-diagonal-outline px-8 w-full mt-6 flex items-center justify-center gap-2"
+                    >
+                      View Profile <ArrowUpRight className="w-5 h-5" />
+                    </Link>
+                  </div>
                 </div>
-              ))}
-            </Slider>
-          </div>
+              </div>
+            ))}
+          </Slider>
         </div>
-      </section>
+      </section >
 
 
       <section>
@@ -338,7 +331,7 @@ function Organtransplant() {
       <section>
         <Bookappointment />
       </section>
-    </div>
+    </div >
   );
 }
 
