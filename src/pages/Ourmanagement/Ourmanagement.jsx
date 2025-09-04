@@ -116,9 +116,11 @@ const Ourmanagement = () => {
             <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
               <div className="h-[30%] bg-transparent" />
               <div className="bg-white p-5">
-                <h3 className="text-[20px] text-primary-blue  mt-1 mb-1">Providing Quality Healthcare</h3>
-
-                <p className="text-black font-semibold mb-6">Since 1985</p>
+               <p className="text-[16px] text-black font-bold mb-2">
+                  Excellence in healthcare,  <br />
+                  always by your side 
+                </p>
+                <h3 className="text-[20px] font-extrabold text-[#2B3990]">Since 1985</h3>
               </div>
             </div>
           </div>

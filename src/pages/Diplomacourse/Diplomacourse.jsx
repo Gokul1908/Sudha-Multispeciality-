@@ -2,13 +2,13 @@
 
 import React, { useState } from 'react';
 import Banner from "@/assets/fellownationalboard/Banner.png";
-import Doctors from "@/assets/fellownationalboard/Doctors.png";
+import Diploma from "@/assets/fellownationalboard/diplomacourses.webp";
 import { motion } from 'framer-motion';
-import cardone from "@/assets/home/cards/1.svg";
-import cardtwo from "@/assets/home/cards/2.svg";
-import cardthree from "@/assets/home/cards/3.svg";
-import cardfour from "@/assets/home/cards/4.svg";
-import ServiceCard from "@/components/ServiceCard";
+import HospitalCard from "@/components/Hospital";
+import hospitalOne from "@/assets/home/cards/c1.svg";
+import hospitalTwo from "@/assets/home/cards/c2.svg";
+import hospitalThree from "@/assets/home/cards/c3.svg";
+import hospitalFour from "@/assets/home/cards/c4.svg";
 import Slider from "react-slick";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,51 +30,51 @@ const breadcrumbItems = [
 ];
 
 
-const cards = [
+const hospitalscards = [
     {
-        icon: cardone,
+        number: <h3 className="text-[48px] text-[#2B3990]">40+</h3>,
         title: (
-            <p className="text-md font-extrabold text-black">
-                <span className="text-[#2b3990] font-extrabold">Sudha </span>Integrated <br />
-                out patient centre
-            </p>
+            <p className="text-md font-bold text-black">Years of Experience</p>
         ),
-        link: "/contact-us",
+        link: "/op-centre",
+        icon: hospitalOne,
     },
     {
-        icon: cardtwo,
-        title: (
-            <p className="text-md font-extrabold text-black">
-                <span className="text-[#2b3990] font-extrabold"> Master </span> Health<br />
-                Check Up
-            </p>
-        ),
+        number: <h3 className="text-[48px] text-[#2B3990]">300+</h3>,
+        title: <p className="text-md font-bold text-black">Patient Beds</p>,
         link: "/maternity",
+        icon: hospitalTwo,
     },
     {
-        icon: cardfour,
-        title: (
-            <p className="text-md font-extrabold text-black">
-                {" "}
-                <br />
-                Find a<span className="text-[#2b3990] font-extrabold "> Doctor</span>
-            </p>
-        ),
-        link: "/find-doctor",
+        number: <h3 className="text-[48px] text-[#2B3990]">24+</h3>,
+        title: <p className="text-md font-bold text-black">Departments</p>,
+        link: "/heart-care",
+        icon: hospitalThree,
     },
     {
-        icon: cardthree,
-        title: (
-            <p className="text-md font-extrabold text-black">
-                <br />
-                Book an
-                <span className="text-[#2b3990] font-extrabold"> Appointment </span>
-            </p>
-        ),
-        link: "/#book-appointment",
+        number: <h3 className="text-[48px] text-[#2B3990]">100+</h3>,
+        title: <p className="text-md font-bold text-black">Doctor's</p>,
+        link: "/heart-care",
+        icon: hospitalFour,
     },
 ];
 
+const containerVariants = {
+    hidden: {},
+    show: {
+        transition: {
+            staggerChildren: 0.2,
+        },
+    },
+};
+const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5, ease: "easeOut" },
+    },
+};
 
 // Animation variants
 const container = {
@@ -102,7 +102,7 @@ const Diplomacourse = () => {
             seats: "Approved Seats : 4 No’s",
             img: Anaesthesia,
             since: "Since 2002",
-            link: '/dnb-anaesthesiology',
+            link: '/academics/post-mbbs-diploma-courses/dnb-anaesthesiology',
         },
         {
             title: "DNB – Radio Diagnosis",
@@ -110,7 +110,7 @@ const Diplomacourse = () => {
             seats: "Approved Seats : 4 No’s",
             img: Radiology,
             since: "Since 2002",
-            link: '/dnb-radio-diagnosis',
+            link: '/academics/post-mbbs-diploma-courses/dnb-radio-diagnosis',
         },
     ];
 
@@ -147,7 +147,7 @@ const Diplomacourse = () => {
                             transition={{ duration: 0.6 }}
                             className="mb-6 text-white"
                         >
-                            Offering the Advanced Healthcare Education. 
+                            Offering the Advanced Healthcare Education.
                         </motion.p>
 
                         <motion.div className='mt-12'
@@ -169,12 +169,11 @@ const Diplomacourse = () => {
                         <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
                             <div className="h-[30%] bg-transparent" />
                             <div className="bg-white p-5">
-                                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
-                                <p className="text-[16px] text-black font-bold">
-                                    Years of Trusted <br />
-                                    Expertise in <br />
-                                    Healthcare
+                                <p className="text-[16px] text-black font-bold mb-2">
+                                    Empowering Future <br /> Healthcare
+                                    Professionals  <br />
                                 </p>
+                                <h3 className="text-[20px] font-extrabold text-[#2B3990]">Since 1985</h3>
                             </div>
                         </div>
                     </div>
@@ -182,25 +181,30 @@ const Diplomacourse = () => {
             </section>
 
             <section>
-                <div className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
+                <div className=" max-w-7xl mx-auto  my-20 h-full">
                     <motion.div
-                        variants={container}
+                        variants={containerVariants}
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true, amount: 0.2 }}
-                        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
+                        className="
+                  grid 
+                  grid-cols-1        
+                  sm:grid-cols-2     
+                  md:grid-cols-2     
+                  lg:grid-cols-3     
+                  xl:grid-cols-4     
+                  gap-4 sm:gap-6 lg:gap-8
+                "
                     >
-                        {cards.map((card, idx) => (
-                            <motion.div key={idx} variants={item}>
-                                <div className="cursor-pointer  duration-300">
-
-                                    <ServiceCard
-                                        icon={card.icon}
-                                        title={card.title}
-                                        link={card.link}
-                                    />
-
-                                </div>
+                        {hospitalscards.map((card, idx) => (
+                            <motion.div key={idx} variants={cardVariants}>
+                                <HospitalCard
+                                    number={card.number}
+                                    icon={card.icon}
+                                    title={card.title}
+                                    link={card.link}
+                                />
                             </motion.div>
                         ))}
                     </motion.div>
@@ -210,43 +214,107 @@ const Diplomacourse = () => {
 
             {/* Intro Content */}
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-                <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-10 rounded-xl">
+                <div className="flex flex-col md:flex-row items-center md:items-center gap-8 md:gap-10 rounded-xl">
                     {/* Left Content */}
-                    <div className="w-full md:w-1/2">
-                        <h5 className="inline-block mb-4 px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm ">
-                            Diplomate of National Board (DNB)
+                    <div className="w-full md:w-1/2 text-center md:text-left">
+                        <h5 className="inline-block mb-4 px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm">
+                            Diploma Courses
                         </h5>
 
-                        <h2 className="text-[30px]  ">
-                            Reproductive Medicine <br />
-
+                        <h2 className="text-[30px]">
+                            Diplomate of National Board (DNB)
                         </h2>
 
                         <p className="mb-4 mt-4">
-                            The Diplomate of National Board (DNB) is a prestigious postgraduate medical qualification awarded by the National Board of Examinations in
-                            Medical Sciences (NBEMS), Government of India. It is offered in approved broad specialties, super specialties, and sub-specialties to ensure high and
-                            uniform standards of medical education and training across the country.
+                            Sudha Multispeciality Hospital offers accredited DNB Post MBBS Diploma courses in Anaesthesiology and Radio-diagnosis, designed to provide comprehensive postgraduate training for aspiring specialists. These diploma programmes equip candidates with advanced theoretical knowledge and extensive practical experience in their respective fields.
                         </p>
 
                         <p className="mb-4 mt-4">
-                            Sudha Multispeciality Hospital, accredited by NBEMS, offers structured training for DNB trainees with expert faculty guidance and access to
-                            advanced medical facilities. The DNB qualification is recognized by the Government of India, included in the First Schedule of the IMC Act, 1956,
-                            and is considered equivalent to MD/MS degrees—qualifying doctors for specialist roles and faculty positions in hospitals and medical institutions nationwide.
+                            Under the guidance of experienced faculty and access to modern clinical facilities, trainees gain expertise in perioperative care, pain management, and critical care (Anaesthesiology), as well as state-of-the-art imaging techniques and diagnostic interpretation (Radio-diagnosis). Our structured curriculum, combined with hands-on patient care, ensures well-rounded clinical competence.
+                        </p>
+
+                        <p className="mb-4 mt-4">
+                            We support our trainees with dedicated mentorship and a conducive learning environment to prepare them for successful careers as competent specialists.
                         </p>
                     </div>
 
                     {/* Right Image */}
                     <div className="w-full md:w-1/2">
                         <img
-                            src={Doctors.src}
+                            src={Diploma.src}
                             alt="Doctors"
-                            className="rounded-2xl object-cover w-full h-[250px] sm:h-[300px] md:h-[400px]"
+                            className="rounded-3xl object-cover w-full h-auto"
                         />
                     </div>
                 </div>
             </section>
 
-            <section className="text-center px-4 py-6 md:px-8 lg:px-16">
+
+
+
+            <section className="px-4 sm:px-6 md:px-8 lg:px-16 py-10 sm:py-14 lg:py-8">
+
+                <div className="text-center">
+                    <h5 className="inline-block mb-4 px-4 sm:px-5 py-1.5 sm:py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm">
+                           Courses offered 
+                    </h5>
+                    <h2 className="text-[30px]">
+                       DNB Courses Offered by <br/>Sudha Multispeciality Hospital 
+                    </h2>
+                </div>
+                {/* Heading */}
+
+
+                {/* Card Grid */}
+                <div className="bg-[#f0f7fd] flex justify-center items-center mt-8 rounded-2xl p-4 sm:p-6 ">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 w-full max-w-7xl">
+                        {courses.map((course, index) => (
+                            <div
+                                key={index}
+                                className="bg-white rounded-3xl flex flex-col md:flex-row w-full p-4 sm:p-5"
+                            >
+                                {/* Image Section */}
+                                <div className="relative w-full md:w-[40%] flex justify-center items-center">
+                                    <div className="rounded-3xl overflow-hidden w-full">
+                                        <Image
+                                            src={course.img}
+                                            alt={course.title}
+                                            width={500}
+                                            height={300}
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+                                    <span className="absolute top-3 sm:top-4 left-3 sm:left-4 bg-white text-[#2A3F92] text-[12px] font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full shadow">
+                                        {course.since}
+                                    </span>
+                                </div>
+
+                                {/* Text Section */}
+                                <div className="flex flex-col justify-between mt-4 md:mt-0 md:ml-5 w-full md:w-[60%]">
+                                    <div>
+                                        <h3 className="text-[20px] ">
+                                            {course.title}
+                                        </h3>
+                                        <p className="mt-2">{course.duration}</p>
+                                        <p className="mt-4">{course.seats}</p>
+                                    </div>
+
+                                    <div className="mt-4 border-t pt-6">
+                                        <Link href={course.link}>
+                                            <button className="btn-diagonal w-full mx-auto sm:w-auto">
+                                                View Details
+                                            </button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+            </section>
+
+            <section className="text-center px-4 py-6 md:px-8 lg:px-8">
                 <h5 className="inline-block mb-4 px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm ">
                     Meet Our Expert Faculty
                 </h5>
@@ -257,68 +325,6 @@ const Diplomacourse = () => {
                     <Faculties />
                 </div>
             </section>
-
-            <section className="px-4 sm:px-6 md:px-8 lg:px-16 py-10 sm:py-14 lg:py-20">
-
-                <div className="text-center">
-                    <h5 className="inline-block mb-4 px-4 sm:px-5 py-1.5 sm:py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm">
-                        Diplomate of National Board (DNB)
-                    </h5>
-                    <h2 className="text-[30px]">
-                        Academic Structure & <br /> Course Details
-                    </h2>
-                </div>
-                {/* Heading */}
-
-
-                {/* Card Grid */}
-                <div className="bg-[#f0f7fd] flex justify-center items-center mt-8 rounded-2xl p-4 sm:p-6 lg:p-10">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 w-full max-w-7xl">
-                        {courses.map((course, index) => (
-                            <div
-                                key={index}
-                                className="bg-white rounded-3xl flex flex-col md:flex-row w-full p-4 sm:p-5"
-                            >
-                                {/* Image Section */}
-                                <div className="relative w-full md:w-[75%] flex justify-center items-center bg-white">
-                                    <div className="rounded-3xl overflow-hidden w-full ">
-                                        <Image
-                                            src={course.img}
-                                            alt={course.title}
-                                            className="w-full h-full object-cover"
-                                        />
-                                    </div>
-                                    <span className="absolute top-3 sm:top-4 left-3 sm:left-4 bg-white text-[#2A3F92] text-[12px]  font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full ">
-                                        {course.since}
-                                    </span>
-                                </div>
-
-                                {/* Text Section */}
-                                <div className="flex flex-col justify-between ml-5 w-full">
-                                    <div>
-                                        <h3 className="text-[20px]  ">
-                                            {course.title}
-                                        </h3>
-                                        <p className="mt-2 ">
-                                            {course.duration}
-                                        </p>
-                                        <p className="mt-4">{course.seats}</p>
-                                    </div>
-
-                                    <div className="mt-4 border-t pt-6">
-                                        <Link href={course.link}>
-                                            <button className="btn-diagonal w-75">
-                                                View Details
-                                            </button>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
 
             <section className="px-4 sm:px-6 lg:px-10 py-10 sm:py-14 lg:py-20">
                 <Bookappointment />

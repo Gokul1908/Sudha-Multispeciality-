@@ -8,11 +8,11 @@ import { motion } from 'framer-motion';
 import HandIcon from "@/assets/healthpackage/nephrology.svg";
 import { ArrowUpRight } from "lucide-react";
 import DocsGroup from "@/assets/fellownationalboard/DocsGroup.png";
-import cardone from "@/assets/home/cards/1.svg";
-import cardtwo from "@/assets/home/cards/2.svg";
-import cardthree from "@/assets/home/cards/3.svg";
-import cardfour from "@/assets/home/cards/4.svg";
-import ServiceCard from "@/components/ServiceCard";
+import HospitalCard from "@/components/Hospital";
+import hospitalOne from "@/assets/home/cards/c1.svg";
+import hospitalTwo from "@/assets/home/cards/c2.svg";
+import hospitalThree from "@/assets/home/cards/c3.svg";
+import hospitalFour from "@/assets/home/cards/c4.svg";
 import Slider from "react-slick";
 import Image from "next/image";
 import shyla from "@/assets/fellownationalboard/shyla.png";
@@ -25,73 +25,82 @@ import "slick-carousel/slick/slick-theme.css";
 import Doc1 from "@/assets/ethicscommittee/doc1.png";
 import Doc2 from "@/assets/ethicscommittee/doc2.png";
 import EthicsCommitteTable from '@/components/ethicscommitteetable';
+import Breadcrumb from "@/components/Breadcrumb";
 
+const breadcrumbItems = [
+    { label: "Home", href: "/" },
 
-const cards = [
+    { label: "Academics", href: "" },
+
+    { label: "Ethics Committee", href: "/academics/ethics-committee" },
+];
+
+const hospitalscards = [
     {
-        icon: cardone,
+        number: <h3 className="text-[48px] text-[#2B3990]">40+</h3>,
         title: (
-            <p className="text-md font-extrabold text-black">
-                <span className="text-[#2b3990] font-extrabold">Sudha </span>Integrated <br />
-                out patient centre
-            </p>
+            <p className="text-md font-bold text-black">Years of Experience</p>
         ),
-        link: "/contact-us",
+        link: "/op-centre",
+        icon: hospitalOne,
     },
     {
-        icon: cardtwo,
-        title: (
-            <p className="text-md font-extrabold text-black">
-                <span className="text-[#2b3990] font-extrabold"> Master </span> Health<br />
-                Check Up
-            </p>
-        ),
+        number: <h3 className="text-[48px] text-[#2B3990]">300+</h3>,
+        title: <p className="text-md font-bold text-black">Patient Beds</p>,
         link: "/maternity",
+        icon: hospitalTwo,
     },
     {
-        icon: cardfour,
-        title: (
-            <p className="text-md font-extrabold text-black">
-                {" "}
-                <br />
-                Find a<span className="text-[#2b3990] font-extrabold "> Doctor</span>
-            </p>
-        ),
-        link: "/find-doctor",
+        number: <h3 className="text-[48px] text-[#2B3990]">24+</h3>,
+        title: <p className="text-md font-bold text-black">Departments</p>,
+        link: "/heart-care",
+        icon: hospitalThree,
     },
     {
-        icon: cardthree,
-        title: (
-            <p className="text-md font-extrabold text-black">
-                <br />
-                Book an
-                <span className="text-[#2b3990] font-extrabold"> Appointment </span>
-            </p>
-        ),
-        link: "/#book-appointment",
+        number: <h3 className="text-[48px] text-[#2B3990]">100+</h3>,
+        title: <p className="text-md font-bold text-black">Doctor's</p>,
+        link: "/heart-care",
+        icon: hospitalFour,
     },
 ];
 
+const containerVariants = {
+    hidden: {},
+    show: {
+        transition: {
+            staggerChildren: 0.2,
+        },
+    },
+};
+const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5, ease: "easeOut" },
+    },
+};
+
 const terms = [
-    "Ensure the highest scientific and ethical standards of research",
-    "Review and approve proposals for clinical, basic or translation research projects (intra and extra mural) for scientific and ethical content",
-    "Improve ethical standards and issue guidelines.",
-    "To malfunction as a forum to advise the administration in case of any ethical issues that may rise form patients, families or public.",
-    "To maintain leadership as a national standard of reference to all fields.",
-    "To issue and periodically update and revise SOPs and guidelines for effective functioning of EC as and when necessary.",
-    "Continuing education to clinical research, bioethical and ethical aspects of clinical practices by seminars, workshops and interactive discussion for all categories of staff members including nursing and paramedical staff.",
-    "To initiate and commission research studies on ethical aspects of practice.",
+    "Uphold the highest scientific and ethical standards in research. ",
+    "Review and approve clinical, basic, and translational research proposals (both intramural and extramural) to ensure scientific rigor and ethical integrity.",
+    "Enhance ethical standards by developing and issuing clear guidelines. ",
+    "Serve as a consultative forum for the administration on any ethical concerns raised by patients, their families, or the public. ",
+    "Maintain leadership as a national benchmark in all related fields. ",
+    "Regularly issue, update, and revise Standard Operating Procedures (SOPs) and guidelines to ensure the effective functioning of the Ethics Committee. ",
+    "Promote continuing education on clinical research, bioethics, and ethical clinical practice through seminars, workshops, and interactive discussions for all staff categories, including nursing and paramedical personnel. ",
+    "Initiate and commission research studies focusing on the ethical aspects of medical practice. ",
 ]
 
 const roles = [
-    "To protect and safeguard the dignity, rights, safety and well-being of all actual or potential research participants.",
-    "To ensure that the research projects that are carried out are sound in design, have statistical validity and are conducted according to the New Drugs and Clinical Trial Rule 2019, ICH GCP and ICMR guidelines.",
-    "To consider the principle of justice, that the benefits and burdens of research be distributed fairly among all groups and classes in society taking into account age, gender, economic status, culture and ethics consideration.",
-    "To provide advice to the researchers on all aspects of the welfare and safety of research participants ensuring the scientific soundness of the proposed research.",
-    "To ensure the research are conducted under the supervision of trained medical / bio-medical persons with the required expertise.",
-    "To ensure that research will include solely patients or participants who have given voluntary and informed consent.",
-    "It may be ensured that no research projects shall be started unless ethics clearance is obtained.",
-    "It will review the proposals before start of the studies as well as monitor the research throughout the study and after completion by examining the annual reports and final reports. The committee will also examine whether all regulatory requirements and laws are complied with or not."
+    "To protect and safeguard the dignity, rights, safety and well-being of all actual or potential research participants. ",
+    "To ensure that the research projects that are carried out are sound in design, have statistical validity and are conducted according to the new drugs and clinical trial rule 2019 ICH/ GCP and ICMR guidelines ",
+    "To consider the principle of justice, that the benefits and burdens of research be distributed fairly among all groups and classes in society taking into account age, gender, economic status, culture and ethics consideration. ",
+    "To provide advice to the researchers on all aspects of the welfare and safety of research participants, ensuring the scientific soundness of the proposed research.",
+    "To ensure the research is conducted under the supervision of trained medical/biomedical persons with the required expertise. ",
+    "To ensure that research will include solely patients or participants who have given voluntary and informed consent. ",
+    "It may be ensured that no research projects shall be / can be started unless ethics clearance/approval is obtained.",
+    "It will review the proposals before start of the studies as well as monitor the research throughout the study until and after completion by examining the annual reports and final reports the commitee will also examine whether all regulatory requirements and laws are complied with or not.  "
 ]
 
 const TickCircle = () => (
@@ -167,11 +176,11 @@ const EthicsCommitte = () => {
         prevArrow: <PrevArrow />,
         nextArrow: <NextArrow />,
         responsive: [
-            { breakpoint: 1536, settings: { slidesToShow: 5 } }, 
-            { breakpoint: 1280, settings: { slidesToShow: 4 } }, 
-            { breakpoint: 1024, settings: { slidesToShow: 3 } }, 
-            { breakpoint: 768, settings: { slidesToShow: 2 } }, 
-            { breakpoint: 640, settings: { slidesToShow: 1 } }, 
+            { breakpoint: 1536, settings: { slidesToShow: 5 } },
+            { breakpoint: 1280, settings: { slidesToShow: 4 } },
+            { breakpoint: 1024, settings: { slidesToShow: 3 } },
+            { breakpoint: 768, settings: { slidesToShow: 2 } },
+            { breakpoint: 640, settings: { slidesToShow: 1 } },
         ]
     };
 
@@ -186,14 +195,14 @@ const EthicsCommitte = () => {
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
                     <div className="max-w-7xl mx-auto">
-                        <motion.p
+                        <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4 }}
                             className="text-sm mb-2 text-white"
                         >
-                            Home / Academic /  Ethics Committee
-                        </motion.p>
+                            <Breadcrumb items={breadcrumbItems} />
+                        </motion.div>
 
                         <motion.h1
                             initial={{ opacity: 0, y: 10 }}
@@ -203,6 +212,15 @@ const EthicsCommitte = () => {
                         >
                             Ethics Committee
                         </motion.h1>
+                        <motion.p
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                            className="mb-6 text-white"
+                        >
+                            Commitment to Ethical Excellence
+                        </motion.p>
+
 
                         <motion.div className='mt-12'
                             initial={{ opacity: 0, y: 10 }}
@@ -223,12 +241,11 @@ const EthicsCommitte = () => {
                         <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
                             <div className="h-[30%] bg-transparent" />
                             <div className="bg-white p-5">
-                                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
-                                <p className="text-[16px] text-black font-bold">
-                                    Years of Trusted <br />
-                                    Expertise in <br />
-                                    Healthcare
+                                <p className="text-[16px] text-black font-bold mb-2">
+                                    Empowering Future <br /> Healthcare
+                                    Professionals  <br />
                                 </p>
+                                <h3 className="text-[20px] font-extrabold text-[#2B3990]">Since 1985</h3>
                             </div>
                         </div>
                     </div>
@@ -236,26 +253,30 @@ const EthicsCommitte = () => {
             </section>
 
             <section>
-                <div className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
+                <div className=" max-w-7xl mx-auto  my-20 h-full">
                     <motion.div
-                        variants={container}
+                        variants={containerVariants}
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: true, amount: 0.2 }}
-                        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6"
+                        className="
+                              grid 
+                              grid-cols-1        
+                              sm:grid-cols-2     
+                              md:grid-cols-2     
+                              lg:grid-cols-3     
+                              xl:grid-cols-4     
+                              gap-4 sm:gap-6 lg:gap-8
+                            "
                     >
-
-                        {cards.map((card, idx) => (
-                            <motion.div key={idx} variants={item}>
-                                <div className="cursor-pointer  duration-300">
-
-                                    <ServiceCard
-                                        icon={card.icon}
-                                        title={card.title}
-                                        link={card.link}
-                                    />
-
-                                </div>
+                        {hospitalscards.map((card, idx) => (
+                            <motion.div key={idx} variants={cardVariants}>
+                                <HospitalCard
+                                    number={card.number}
+                                    icon={card.icon}
+                                    title={card.title}
+                                    link={card.link}
+                                />
                             </motion.div>
                         ))}
                     </motion.div>
@@ -269,7 +290,7 @@ const EthicsCommitte = () => {
                     {/* Left Content */}
                     <div className="md:col-span-8">
                         <h2 className="text-[30px]">
-                            Institutional Ethics Committee at Sudha Hospitals
+                           Institutional Ethics Committee at Sudha Multispeciality Hospitals 
                         </h2>
                         <p className=" mt-5 mb-2 text-primary-blue font-bold">
                             Registration No:
@@ -290,10 +311,7 @@ const EthicsCommitte = () => {
                             </span>
                         </p>
                         <p className='mt-4'>
-                            The EC shall be established to formalize and specify the institution's
-                            commitment to the promotion of high scientific and ethical standards in
-                            patient care, professional education, clinical research, and community
-                            interests.
+                            The Ethics Committee was established to formalize and affirm the Institution’s dedication to upholding the highest scientific and ethical standards in patient care, professional education, clinical research, and community welfare. 
                         </p>
                     </div>
                     {/* right image */}
@@ -322,7 +340,7 @@ const EthicsCommitte = () => {
                     {/* Text (8 cols) */}
                     <div className="md:col-span-8">
                         <h2 className="text-[30px] mb-4 ">
-                            Terms Of Reference Of EC
+                            Terms of Reference of EC
                         </h2>
                         {terms.map((term, idx) => (
                             <div key={idx} className="flex gap-3 mb-3">

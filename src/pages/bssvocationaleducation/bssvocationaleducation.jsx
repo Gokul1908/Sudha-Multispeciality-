@@ -18,14 +18,67 @@ import Ortho from '@/assets/bssvocationaleducational/ortho.png';
 import Highlight1 from "@/assets/bssvocationaleducational/highlight1.png";
 import { courses } from '@/constants/bssCourseDetails';
 import Breadcrumb from "@/components/Breadcrumb";
+import HospitalCard from "@/components/Hospital";
+import hospitalOne from "@/assets/home/cards/c1.svg";
+import hospitalTwo from "@/assets/home/cards/c2.svg";
+import hospitalThree from "@/assets/home/cards/c3.svg";
+import hospitalFour from "@/assets/home/cards/c4.svg";
 
 const breadcrumbItems = [
     { label: "Home", href: "/" },
     { label: "Academics", href: "" },
-    { label: "BSS Vocational Courses", href: "/bss-vocational-courses" },
+    { label: "BSS Vocational Courses", href: "/academics/bss-vocational-courses" },
 ];
 const course = courses.find(c => c.id === 1);
 
+
+const hospitalscards = [
+    {
+        number: <h3 className="text-[48px] text-[#2B3990]">40+</h3>,
+        title: (
+            <p className="text-md font-bold text-black">Years of Experience</p>
+        ),
+        link: "/op-centre",
+        icon: hospitalOne,
+    },
+    {
+        number: <h3 className="text-[48px] text-[#2B3990]">300+</h3>,
+        title: <p className="text-md font-bold text-black">Patient Beds</p>,
+        link: "/maternity",
+        icon: hospitalTwo,
+    },
+    {
+        number: <h3 className="text-[48px] text-[#2B3990]">24+</h3>,
+        title: <p className="text-md font-bold text-black">Departments</p>,
+        link: "/heart-care",
+        icon: hospitalThree,
+    },
+    {
+        number: <h3 className="text-[48px] text-[#2B3990]">100+</h3>,
+        title: <p className="text-md font-bold text-black">Doctor's</p>,
+        link: "/heart-care",
+        icon: hospitalFour,
+    },
+];
+
+
+
+const containerVariants = {
+    hidden: {},
+    show: {
+        transition: {
+            staggerChildren: 0.2,
+        },
+    },
+};
+const cardVariants = {
+    hidden: { opacity: 0, y: 30 },
+    show: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5, ease: "easeOut" },
+    },
+};
 
 
 
@@ -192,23 +245,53 @@ const VocationalEducation = () => {
                         <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
                             <div className="h-[30%] bg-transparent" />
                             <div className="bg-white p-5">
-                                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
-                                <p className="text-[16px] text-black font-bold">
-                                    Years of Trusted <br />
-                                    Expertise in <br />
-                                    Healthcare
+                                <p className="text-[16px] text-black font-bold mb-2">
+                                    Empowering Future <br /> Healthcare
+                                    Professionals  <br />
                                 </p>
+                                <h3 className="text-[20px] font-extrabold text-[#2B3990]">Since 1985</h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
+            <section>
+                <div className=" max-w-7xl mx-auto  my-20 h-full">
+                    <motion.div
+                        variants={containerVariants}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true, amount: 0.2 }}
+                        className="
+                    grid 
+                    grid-cols-1        
+                    sm:grid-cols-2     
+                    md:grid-cols-2     
+                    lg:grid-cols-3     
+                    xl:grid-cols-4     
+                    gap-4 sm:gap-6 lg:gap-8
+                  "
+                    >
+                        {hospitalscards.map((card, idx) => (
+                            <motion.div key={idx} variants={cardVariants}>
+                                <HospitalCard
+                                    number={card.number}
+                                    icon={card.icon}
+                                    title={card.title}
+                                    link={card.link}
+                                />
+                            </motion.div>
+                        ))}
+                    </motion.div>
+                </div>
+            </section>
+
             {/* All Courses Grid Section */}
-            <section className=" sm:py-16">
+            <section className=" ">
                 <div className="max-w-7xl mx-auto py-16 ">
                     {/* Header */}
-                    <div className="mb-12 text-center">
+                    <div className="mb-8 text-center">
                         <div className="inline-block mb-3 px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm  ">
                             BSS Vocational Courses
                         </div>
@@ -250,7 +333,7 @@ const VocationalEducation = () => {
                                 {/* Spacer to push button down */}
                                 <div className="flex-grow"></div>
                                 <Link
-                                    href={`/bss-course/${course.id}`}
+                                    href={`/academics/bss-vocational-courses/bss-course/${course.id}`}
                                     className="btn-diagonal w-full mx-auto text-center justify-center mt-5"
                                 >
                                     View Details
@@ -260,84 +343,83 @@ const VocationalEducation = () => {
                     </div>
 
                     {/* content */}
-                    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
-                        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 md:gap-10 items-start">
-                            <div className="order-2 md:order-1 md:col-span-6">
-                                <h2 className="text-[30px] mb-4">
+                    <section className="max-w-7xl mx-auto  pt-16 sm:py-8 md:py-10">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
+
+                            {/* Text Column */}
+                            <div className="order-2 md:order-1">
+                                <h2 className="text-[26px] sm:text-[30px] mb-6">
                                     Highlights of the Course
                                 </h2>
-                                {terms.map((term, idx) => (
-                                    <div key={idx} className="flex gap-3 mb-3">
-                                        <div className="flex-shrink-0 mt-1">
-                                            <TickCircle className="w-5 h-5 text-[#2B3990]" />
+                                <div className="space-y-3">
+                                    {terms.map((term, idx) => (
+                                        <div key={idx} className="flex gap-3">
+                                            <TickCircle className="w-5 h-5 text-[#2B3990] mt-1" />
+                                            <p className="text-gray-700 leading-relaxed">{term}</p>
                                         </div>
-                                        <p className="">
-                                            {term}
-                                        </p>
-                                    </div>
-                                ))}
+                                    ))}
+                                </div>
                             </div>
 
-                            <div className="order-1 md:order-2 md:col-span-6">
+                            {/* Image Column */}
+                            <div className="order-1 md:order-2">
                                 <img
                                     src={Highlight1.src}
-                                    alt="Highlight1"
-                                    className="rounded-2xl object-cover w-full 
-                                       h-[200px] sm:h-[260px] md:h-[380px] lg:h-[420px]"
+                                    alt="Highlight"
+                                    className="rounded-3xl object-cover w-full h-auto max-h-[450px]"
                                 />
                             </div>
 
                         </div>
                     </section>
 
-                    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
-                        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 md:gap-10">
-                            <div className="md:col-span-6">
+
+                    <section className="max-w-7xl mx-auto py-6 sm:py-8 md:py-10">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
+
+                            {/* Left Image */}
+                            <div>
                                 <img
                                     src={Highlight1.src}
-                                    alt="Highlight1"
-                                    className="rounded-2xl object-cover w-full h-[200px] sm:h-[280px] md:h-[400px] lg:h-[450px]"
+                                    alt="Highlight"
+                                    className="rounded-3xl object-cover w-full  h-auto"
                                 />
                             </div>
 
-
-                            <div className="md:col-span-6">
-                                <h2 className="text-[30px] mb-4">
+                            {/* Right Text */}
+                            <div>
+                                <h2 className="text-[26px] sm:text-[30px]  mb-6">
                                     Documents Required with Application
                                 </h2>
-                                {documents.map((doc, idx) => (
-                                    <div key={idx} className="flex gap-3 mb-3">
-                                        <div className="flex-shrink-0 mt-1">
-                                            <TickCircle className="w-5 h-5 text-[#2B3990]" />
+                                <div className="space-y-3">
+                                    {documents.map((doc, idx) => (
+                                        <div key={idx} className="flex gap-3">
+                                            <TickCircle className="w-5 h-5 text-[#2B3990] mt-1" />
+                                            <p className="text-gray-700 leading-relaxed">{doc}</p>
                                         </div>
-                                        <p className="">
-                                            {doc}
-                                        </p>
-                                    </div>
-                                ))}
+                                    ))}
+                                </div>
                             </div>
 
                         </div>
                     </section>
 
-                    <div className="order-2 md:order-1 md:col-span-12">
-                        <h2 className="text-[30px] mb-3">
-                            Important Note :
-                        </h2>
-                        {notes.map((note, idx) => {
-                            const hasLink = note.includes("www.sudhahospitals.com");
+                    <section className="max-w-7xl mx-auto py-6 sm:py-8 md:py-10">
+                        <div className="order-2 md:order-1 md:col-span-12">
+                            <h2 className="text-[26px] sm:text-[30px] mb-4">
+                                Important Note :
+                            </h2>
 
-                            return (
-                                <div key={idx} className="flex gap-3 mb-3">
-                                    <div className="flex-shrink-0 mt-1">
-                                        <TickCircle className="w-5 h-5 text-[#2B3990]" />
-                                    </div>
+                            <div className="space-y-3">
+                                {notes.map((note, idx) => {
+                                    const hasLink = note.includes("www.sudhahospitals.com");
 
-                                    {hasLink ? (
-                                        (() => {
-                                            const parts = note.split("www.sudhahospitals.com");
-                                            return (
-                                                <p className="">
+                                    if (hasLink) {
+                                        const parts = note.split("www.sudhahospitals.com");
+                                        return (
+                                            <div key={idx} className="flex gap-3">
+                                                <TickCircle className="w-5 h-5 text-[#2B3990] mt-1" />
+                                                <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                                                     {parts[0]}
                                                     <a
                                                         href="https://www.sudhahospitals.com"
@@ -349,17 +431,23 @@ const VocationalEducation = () => {
                                                     </a>
                                                     {parts[1]}
                                                 </p>
-                                            );
-                                        })()
-                                    ) : (
-                                        <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
-                                            {note}
-                                        </p>
-                                    )}
-                                </div>
-                            );
-                        })}
-                    </div>
+                                            </div>
+                                        );
+                                    }
+
+                                    return (
+                                        <div key={idx} className="flex gap-3">
+                                            <TickCircle className="w-5 h-5 text-[#2B3990] mt-1" />
+                                            <p className=" ">
+                                                {note}
+                                            </p>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    </section>
+
                 </div>
             </section>
 

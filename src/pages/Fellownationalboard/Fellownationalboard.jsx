@@ -2,16 +2,17 @@
 
 import React, { useState } from 'react';
 import Banner from "@/assets/fellownationalboard/Banner.png";
-import Doctors from "@/assets/fellownationalboard/Doctors.png";
+import Doctors from "@/assets/fellownationalboard/fellowboards.jpg";
 import Rectangle from "@/assets/fellownationalboard/Rectangle.png";
 import { motion } from 'framer-motion';
 import HandIcon from "@/assets/healthpackage/nephrology.svg";
 import { ArrowUpRight } from "lucide-react";
 import DocsGroup from "@/assets/fellownationalboard/DocsGroup.png";
-import cardone from "@/assets/home/cards/1.svg";
-import cardtwo from "@/assets/home/cards/2.svg";
-import cardthree from "@/assets/home/cards/3.svg";
-import cardfour from "@/assets/home/cards/4.svg";
+import HospitalCard from "@/components/Hospital";
+import hospitalOne from "@/assets/home/cards/c1.svg";
+import hospitalTwo from "@/assets/home/cards/c2.svg";
+import hospitalThree from "@/assets/home/cards/c3.svg";
+import hospitalFour from "@/assets/home/cards/c4.svg";
 import ServiceCard from "@/components/ServiceCard";
 import Slider from "react-slick";
 import Image from "next/image";
@@ -35,49 +36,32 @@ const breadcrumbItems = [
     { label: "Fellow of National Board (FNB)", href: "/fellow-of-national-board" },
 ];
 
-
-const cards = [
+const hospitalscards = [
     {
-        icon: cardone,
+        number: <h3 className="text-[48px] text-[#2B3990]">40+</h3>,
         title: (
-            <p className="text-md font-extrabold text-black">
-                <span className="text-[#2b3990] font-extrabold">Sudha </span>Integrated <br />
-                out patient centre
-            </p>
+            <p className="text-md font-bold text-black">Years of Experience</p>
         ),
-        link: "/contact-us",
+        link: "/op-centre",
+        icon: hospitalOne,
     },
     {
-        icon: cardtwo,
-        title: (
-            <p className="text-md font-extrabold text-black">
-                <span className="text-[#2b3990] font-extrabold"> Master </span> Health<br />
-                Check Up
-            </p>
-        ),
+        number: <h3 className="text-[48px] text-[#2B3990]">300+</h3>,
+        title: <p className="text-md font-bold text-black">Patient Beds</p>,
         link: "/maternity",
+        icon: hospitalTwo,
     },
     {
-        icon: cardfour,
-        title: (
-            <p className="text-md font-extrabold text-black">
-                {" "}
-                <br />
-                Find a<span className="text-[#2b3990] font-extrabold "> Doctor</span>
-            </p>
-        ),
-        link: "/find-doctor",
+        number: <h3 className="text-[48px] text-[#2B3990]">24+</h3>,
+        title: <p className="text-md font-bold text-black">Departments</p>,
+        link: "/heart-care",
+        icon: hospitalThree,
     },
     {
-        icon: cardthree,
-        title: (
-            <p className="text-md font-extrabold text-black">
-                <br />
-                Book an
-                <span className="text-[#2b3990] font-extrabold"> Appointment </span>
-            </p>
-        ),
-        link: "/#book-appointment",
+        number: <h3 className="text-[48px] text-[#2B3990]">100+</h3>,
+        title: <p className="text-md font-bold text-black">Doctor's</p>,
+        link: "/heart-care",
+        icon: hospitalFour,
     },
 ];
 
@@ -234,7 +218,7 @@ const Fellownationalboard = () => {
                     style={{ backgroundImage: `url(${Banner.src})` }}
                 >
                     <div className="max-w-7xl mx-auto">
-                        <motion.p
+                        <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4 }}
@@ -243,7 +227,7 @@ const Fellownationalboard = () => {
                             <Breadcrumb items={breadcrumbItems} />
 
 
-                        </motion.p>
+                        </motion.div>
 
                         <motion.h1
                             initial={{ opacity: 0, y: 10 }}
@@ -260,7 +244,7 @@ const Fellownationalboard = () => {
                             transition={{ duration: 0.6 }}
                             className="mb-6 text-white"
                         >
-                            Offering the best medical courses in Erode 
+                            Offering the best medical courses in Erode
                         </motion.p>
 
                         <motion.div className='mt-12'
@@ -282,12 +266,12 @@ const Fellownationalboard = () => {
                         <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
                             <div className="h-[30%] bg-transparent" />
                             <div className="bg-white p-5">
-                                <h3 className="text-[36px] font-extrabold text-[#2B3990]">40+</h3>
-                                <p className="text-[16px] text-black font-bold">
-                                    Years of Trusted <br />
-                                    Expertise in <br />
-                                    Healthcare
+
+                                <p className="text-[16px] text-black font-bold mb-2">
+                                    Empowering Future <br /> Healthcare
+                                    Professionals  <br />
                                 </p>
+                                <h3 className="text-[20px] font-extrabold text-[#2B3990]">Since 1985</h3>
                             </div>
                         </div>
                     </div>
@@ -295,37 +279,48 @@ const Fellownationalboard = () => {
             </section>
 
 
-            <section className="max-w-7xl mx-auto px-4 py-8 sm:py-16">
-                <motion.div
-                    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-10"
-                >
-                    {cards.map((card, idx) => (
-                        <motion.div key={idx} variants={item}>
-                            <div className="cursor-pointer  duration-300">
-
-                                <ServiceCard
+            <section>
+                <div className=" max-w-7xl mx-auto  my-20 h-full">
+                    <motion.div
+                        variants={containerVariants}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true, amount: 0.2 }}
+                        className="
+        grid 
+        grid-cols-1        
+        sm:grid-cols-2     
+        md:grid-cols-2     
+        lg:grid-cols-3     
+        xl:grid-cols-4     
+        gap-4 sm:gap-6 lg:gap-8
+      "
+                    >
+                        {hospitalscards.map((card, idx) => (
+                            <motion.div key={idx} variants={cardVariants}>
+                                <HospitalCard
+                                    number={card.number}
                                     icon={card.icon}
                                     title={card.title}
                                     link={card.link}
                                 />
-
-                            </div>
-                        </motion.div>
-                    ))}
-                </motion.div>
+                            </motion.div>
+                        ))}
+                    </motion.div>
+                </div>
             </section>
 
 
             {/* Intro Content */}
             <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-10 sm:py-14 lg:py-20">
-                <div className="flex flex-col md:flex-row items-center md:items-start gap-6 sm:gap-8 lg:gap-12">
+                <div className="flex flex-col md:flex-row items-center md:items-center gap-6 sm:gap-8 lg:gap-12">
                     {/* Left Content */}
-                    <div className="flex-1">
-                        <h5 className="inline-block px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm ">
+                    <div className="flex-1 text-center md:text-left">
+                        <h5 className="inline-block px-4 sm:px-5 py-2 font-semibold bg-white text-[#2B3990] rounded-full text-sm">
                             Fellow of National Board (FNB)
                         </h5>
 
-                        <h2 className="text-[30px]  mt-4 sm:mt-6">
+                        <h2 className="text-[30px] mt-2 ">
                             Reproductive Medicine
                         </h2>
                         <p className="mb-4 mt-4">
@@ -344,11 +339,12 @@ const Fellownationalboard = () => {
                         <img
                             src={Doctors.src}
                             alt="Doctors"
-                            className="rounded-2xl object-cover w-full h-[220px] sm:h-[300px] md:h-[400px] lg:h-[500px]"
+                            className="rounded-3xl object-cover w-full h-auto "
                         />
                     </div>
                 </div>
             </section>
+
 
 
             <section className="text-center px-4 sm:px-6 lg:px-10 py-10 sm:py-14 lg:py-20">

@@ -1,10 +1,12 @@
 import Image from 'next/image'
 import React from 'react';
-import Doctor from "@/assets/fellownationalboard/doctor.png";
-import Doctor1 from "@/assets/fellownationalboard/dhanabagyam.png";
-import Doctor2 from "@/assets/fellownationalboard/pradeepa.png";
-import Doctor4 from "@/assets/fellownationalboard/sangeetha.png";
-import Doctor5 from "@/assets/fellownationalboard/amutha.png";
+import Doctor from "@/assets/aboutus/kandhasami.webp";
+import Doctor1 from "@/assets/ourmanagement/president.webp";
+import Doctor2 from "@/assets/ourmanagement/vice-president.webp";
+import Doctor4 from "@/assets/fellownationalboard/sangeeth.jpg";
+import Doctor5 from "@/assets/fellownationalboard/amutha.jpg";
+import Ramya from "@/assets/fellownationalboard/user-dummy.avif";
+
 
 
 import Link from 'next/link';
@@ -15,7 +17,7 @@ const Faculties = () => {
         { image: Doctor, post: "Head of Institution, Chairman", name: "Dr. D. Kandasamy", specilist: "MD, DTCD Preventive Cardiologist" },
         { image: Doctor1, post: "Head of the Department", name: "Dr. S. Dhanabagyam MD, (OG), ART", specilist: "IVF & ART Specialist" },
         { image: Doctor2, post: "Senior Faculty", name: "Dr. S. Pradeepa DGO, DNB(OG), MNAMS, FICOG", specilist: "IVF & ART Specialist" },
-        { image: Doctor, post: "Faculty ", name: "Dr. Ramya Selvaraj", specilist: "Anaesthesia/Intensive Care" },
+        { image: Ramya, post: "Faculty ", name: "Dr. Ramya Selvaraj", specilist: "Anaesthesia/Intensive Care" },
         { image: Doctor4, post: "Faculty", name: "Dr. K.Sangeeth", specilist: "Microbiologist & Embryologist" },
         { image: Doctor5, post: "Faculty", name: "Dr. V. Amutha", specilist: "Anaesthesia/Intensive Care" },
     ]
@@ -38,7 +40,7 @@ const Faculties = () => {
                                 alt="Doctor"
                                 width={295}
                                 height={200}
-                                className="rounded-2xl z-10 object-fill w-full"
+                                className="rounded-t-2xl z-10 object-cover w-full h-[300px]"
                             />
                         </div>
                         <div className="text-start p-4 w-full">
