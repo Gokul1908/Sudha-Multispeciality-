@@ -116,9 +116,9 @@ const Ourmanagement = () => {
             <div className="w-[220px] overflow-hidden rounded-tl-3xl rounded-br-3xl">
               <div className="h-[30%] bg-transparent" />
               <div className="bg-white p-5">
-               <p className="text-[16px] text-black font-bold mb-2">
+                <p className="text-[16px] text-black font-bold mb-2">
                   Excellence in healthcare,  <br />
-                  always by your side 
+                  always by your side
                 </p>
                 <h3 className="text-[20px] font-extrabold text-[#2B3990]">Since 1985</h3>
               </div>
@@ -171,14 +171,14 @@ const Ourmanagement = () => {
             />
           </div>
           <div className="absolute top-16 left-0 md:left-10 w-full h-full flex items-end justify-start p-5 ">
-            <div className='bg-white px-8 py-7 w-full rounded-2xl  text-center items-center justify-center'>
+            <div className='bg-white w-full px-2 py-4 rounded-2xl  text-center items-center justify-center'>
               <h4 className=" text-black text-md mb-2 font-bold">
                 Founder
               </h4>
-              <h2 className='text-[#2B3990] text-[20px] mb-2 '>
+              <h2 className='text-[#2B3990] text-[18px] mb-2 '>
                 Dr. D. Kandasamy
               </h2>
-              <p>MD, DTCD Preventive Cardiologist</p>
+              <p className="text-[12px] ">MD, DTCD Preventive Cardiologist</p>
             </div>
           </div>
         </div>
@@ -186,17 +186,17 @@ const Ourmanagement = () => {
           <h1 className='text-[#000000] text-[24px]  pb-5'>Chairman’s Message</h1>
           <p className='text-[#2B3990] font-bold  pb-5'> "My dream was to ensure no one had to leave my hometown for quality medical care"</p>
           <p className='pb-5'>
-            Sudha Hospitals has proudly served people for more than four decades, offering dependable, cost-effective, ethical, compassionate, advanced, inclusive, and patient-centred care. Our strength lies in the unwavering dedication of our doctors, nurses, and paramedical staff, whose service continues to earn trust and admiration across generations. 
+            Sudha Hospitals has proudly served people for more than four decades, offering dependable, cost-effective, ethical, compassionate, advanced, inclusive, and patient-centred care. Our strength lies in the unwavering dedication of our doctors, nurses, and paramedical staff, whose service continues to earn trust and admiration across generations.
           </p>
           <p className=''>
-           We have always delivered, and will continue to deliver, healthcare that people can rely on with trust and confidence through evolving technologies, continuous learning, compassionate service, and an unwavering commitment to improving lives every day. 
+            We have always delivered, and will continue to deliver, healthcare that people can rely on with trust and confidence through evolving technologies, continuous learning, compassionate service, and an unwavering commitment to improving lives every day.
           </p>
         </div>
       </div>
-      <div className='max-w-7xl mx-auto px-4 mt-16 relative'>
+      <div className='max-w-7xl mx-auto px-4 mt-16 py-16 relative'>
         <h2 className='text-[30px] text-center'>Our Executive Team</h2>
       </div>
-      <div className='max-w-7xl mx-auto px-4 py-10 relative'>
+      <div className='max-w-7xl mx-auto px-4  relative'>
         <Executiveteam />
       </div>
 
@@ -204,7 +204,7 @@ const Ourmanagement = () => {
         speed={50}
         gradient={false}
         pauseOnHover={true}
-        className="py-8"
+        className="py-16"
       >
         <span className="mx-4 text-[#D5DAE5] font-extrabold text-[76px]">
           Trusted Healthcare Partners + Trusted Healthcare Partners
