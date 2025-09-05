@@ -211,7 +211,7 @@ const Footer = () => {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
-              className="order-2 flex flex-col "
+              className="order-2 flex flex-col items-center lg:items-start text-center lg:text-left"
             >
               <h4 className=" text-white text-lg mb-4">Accredited By</h4>
               <div className="">
