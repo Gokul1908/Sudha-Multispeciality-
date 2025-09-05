@@ -29,10 +29,10 @@
 select option {
 
   background-color: #ffffff;
-  font-size:14px;
+  font-size: 14px;
   font-weight: 600;
-  padding:12px;
-  border:none;
+  padding: 12px;
+  border: none;
   /* default */
 }
 
@@ -40,14 +40,14 @@ select option {
 select option:hover {
   background-color: #2b3990;
   color: #ffffff;
-    padding:12px;
+  padding: 12px;
 }
 
 /* Selected option */
 select option:checked {
   background-color: #2b3990;
   color: #ffffff;
-    padding:12px;
+  padding: 12px;
   font-weight: 600;
 }
 
