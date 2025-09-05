@@ -22,7 +22,7 @@ const consultSlides = [consult1, consult2, consult3];
 const breadcrumbItems = [
   { label: "Home", href: "/" },
    { label: "Specialities", href: "" },
-  { label: "Cardiothoracic Surgery", href: "/cardiothoracic-surgery" },
+  { label: "Cardiothoracic Surgery", href: "/specialities/cardiothoracic-surgery" },
 ];
 
 function Cardiothoracicsurgery() {

@@ -24,7 +24,7 @@ const consultSlides = [consult1, consult2, consult3];
 const breadcrumbItems = [
   { label: "Home", href: "/" },
    { label: "Specialities", href: "" },
-  { label: "Intensive Care Unit", href: "/intensive-care-unit" },
+  { label: "Intensive Care Unit", href: "/specialities/intensive-care-unit" },
 ];
 
 function Intensivecareunit() {

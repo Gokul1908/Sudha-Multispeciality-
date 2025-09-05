@@ -22,7 +22,7 @@ const consultSlides = [consult1, consult2, consult3];
 const breadcrumbItems = [
   { label: "Home", href: "/" },
    { label: "Specialities", href: "" },
-  { label: "Dentistry and Oral Surgery", href: "/dentistry-and-oral-surgery" },
+  { label: "Dentistry and Oral Surgery", href: "/specialities/dentistry-and-oral-surgery" },
 ];
 
 function Dentistryandoralsurgery() {

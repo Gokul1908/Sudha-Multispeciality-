@@ -24,7 +24,7 @@ const consultSlides = [consult1, consult2, consult3];
 const breadcrumbItems = [
   { label: "Home", href: "/" },
    { label: "Specialities", href: "" },
-  { label: "Obstetrics and Gynaecology", href: "/obstetrics-and-gynaecology" },
+  { label: "Obstetrics and Gynaecology", href: "/specialities/obstetrics-and-gynaecology" },
 ];
 
 function Obstetricsandgynaecology() {

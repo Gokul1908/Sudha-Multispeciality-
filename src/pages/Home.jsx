@@ -505,13 +505,13 @@ function Home() {
         <SpecialitySection />
       </section>
 
-      <section className="py-16">
+      <section className="py-16 pt-0">
         <CentreOfExcellence />
       </section>
 
       
 
-      <section className="max-w-7xl mx-auto py-16 pt-0">
+      <section className="max-w-7xl mx-auto py-16 pt-0 ">
         <FacilitySlider />
       </section>
 

@@ -24,7 +24,7 @@ const consultSlides = [consult1, consult2, consult3];
 const breadcrumbItems = [
   { label: "Home", href: "/" },
    { label: "Specialities", href: "" },
-  { label: "Urology", href: "/urology" },
+  { label: "Urology", href: "/specialities/urology" },
 ];
 
 function Urology() {

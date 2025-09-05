@@ -22,7 +22,7 @@ const consultSlides = [consult1, consult2, consult3];
 const breadcrumbItems = [
   { label: "Home", href: "/" },
    { label: "Specialities", href: "" },
-  { label: "Dermatology", href: "/dermatology" },
+  { label: "Dermatology", href: "/specialities/dermatology" },
 ];
 
 function Dermatology() {

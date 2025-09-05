@@ -24,7 +24,7 @@ const consultSlides = [consult1, consult2, consult3];
 const breadcrumbItems = [
   { label: "Home", href: "/" },
    { label: "Specialities", href: "" },
-  { label: "Neonatology", href: "/neonatology" },
+  { label: "Neonatology", href: "/specialities/neonatology" },
 ];
 
 function Neonatology() {

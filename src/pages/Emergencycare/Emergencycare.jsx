@@ -23,7 +23,7 @@ const consultSlides = [consult1, consult2, consult3];
 const breadcrumbItems = [
   { label: "Home", href: "/" },
    { label: "Specialities", href: "" },
-  { label: "Emergency Care", href: "/emergency-care" },
+  { label: "Emergency Care", href: "/specialities/emergency-care" },
 ];
 
 function Emergencycare() {

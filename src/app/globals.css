@@ -298,6 +298,9 @@ span {
     top: 24px;
 
   }
+  .mb-custom-h{
+    height: 100%;
+  }
   .mb-homebanner{
     height:80vh;
   }

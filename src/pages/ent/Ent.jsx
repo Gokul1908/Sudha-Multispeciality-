@@ -22,7 +22,7 @@ const consultSlides = [consult1, consult2, consult3];
 const breadcrumbItems = [
     { label: "Home", href: "/" },
      { label: "Specialities", href: "" },
-    { label: "ENT", href: "/ent" },
+    { label: "ENT", href: "/specialities/ent" },
   ];
 
 function Ent() {

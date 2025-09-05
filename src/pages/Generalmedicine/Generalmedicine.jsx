@@ -22,7 +22,7 @@ const consultSlides = [consult1, consult2, consult3];
 const breadcrumbItems = [
   { label: "Home", href: "/" },
    { label: "Specialities", href: "" },
-  { label: "General Medicine", href: "/general-medicine" },
+  { label: "General Medicine", href: "/specialities/general-medicine" },
 ];
 
 function Generalmedicine() {

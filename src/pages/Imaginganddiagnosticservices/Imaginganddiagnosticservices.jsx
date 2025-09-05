@@ -24,7 +24,7 @@ const consultSlides = [consult1, consult2, consult3];
 const breadcrumbItems = [
   { label: "Home", href: "/" },
    { label: "Specialities", href: "" },
-  { label: "Imaging and Diagnostic Services", href: "/imaging-and-diagnostic-services" },
+  { label: "Imaging and Diagnostic Services", href: "/specialities/imaging-and-diagnostic-services" },
 ];
 
 function Imaginganddiagnosticservices() {

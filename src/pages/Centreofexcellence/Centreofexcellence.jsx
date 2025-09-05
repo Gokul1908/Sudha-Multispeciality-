@@ -20,7 +20,7 @@ import './Centreofexcellence.css';
 const breadcrumbItems = [
   { label: "Home", href: "/" },
    { label: "Specialities", href: "" },
-  { label: "Centre of Excellence", href: "/centre-of-excellence" },
+  { label: "Centre of Excellence", href: "/specialities/centre-of-excellence" },
 ];
 const hospitalscards = [
     {

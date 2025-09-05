@@ -22,7 +22,7 @@ const consultSlides = [consult1, consult2, consult3];
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
-  { label: "Pain Medicine", href: "/pain-medicine" },
+  { label: "Pain Medicine", href: "/specialities/pain-medicine" },
 ];
 function Painmedicine() {
   const settings = {
