@@ -100,7 +100,7 @@ export default function OurTeamSlider() {
                   {/* Content */}
                   <div className="p-6 flex flex-col justify-between flex-1">
                     <div>
-                      <h3 className="text-[14px] sm:text-[16px] font-semibold text-[#2b3990]">
+                      <h3 className="text-[14px] sm:text-[16px] text-[#2b3990]">
                         {doc.name}
                       </h3>
                       <p className="text-[12px] mt-2">{doc.degrees}</p>
