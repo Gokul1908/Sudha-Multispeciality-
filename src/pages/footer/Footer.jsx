@@ -15,6 +15,9 @@ import { ChevronUp, CalendarDays } from "lucide-react";
 import BookAppointmentModal from "@/components/bookappointmentmodal";
 import FindDoc from "@/assets/footer/socialIcons/doctor.svg";
 import Emergency from "@/assets/footer/socialIcons/emergency.svg";
+import branchLogo1 from "@/assets/home/footer-nabh.webp";
+
+
 
 
 const Footer = () => {
@@ -73,12 +76,12 @@ const Footer = () => {
   ];
 
   const specialties2 = [
-    
+
     "Urology",
     "Orthopedics",
     "Nephrology",
     "Neurology",
-    
+
     "Obstetrics & Gynaecology",
     "Imaging & Diagnostic Services",
     "Pulmonology",
@@ -92,19 +95,19 @@ const Footer = () => {
 
   const about = [
     { name: "Our Growth Story", link: "our-growth-story" },
-    { name: "Board of Trustees", link: "board-of-trustees" },
+    { name: "Board of Management", link: "board-of-management" },
     { name: "Awards & Honours", link: "awards-and-honours" },
-    { name: "Infrastructure", link: "infrastructure" },
+    // { name: "Infrastructure", link: "infrastructure" },
     { name: "Why Sudha?", link: "why-sudha" },
   ];
 
   const academicLinks = [
-   
+
     {
       name: "Fellow of National Board (FNB)",
       link: "fellow-national-board",
     },
-     {
+    {
       name: "Post MBBS Diploma Courses (DNB)",
       link: "post-mbbs-diploma-courses",
     },
@@ -120,8 +123,8 @@ const Footer = () => {
       name: "BSS Vocational Courses",
       link: "bss-vocational-courses",
     },
-    
-    
+
+
   ];
 
   const careersLinks = [
@@ -151,26 +154,27 @@ const Footer = () => {
 
       <BookAppointmentModal open={openModal} onClose={() => setOpenModal(false)} />
 
-      <div className=" text-gray-700 pt-9 relative z-20 mb-m">
-        <div className="max-w-7xl mx-auto p-8  bg-gradient-to-r from-[#2A3D90] to-[#0C122A] text-white rounded-3xl">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 ">
-            {/* Left: Logo + About */}
+      <div className="text-gray-700 pt-9 relative z-20 mb-m">
+        <div className="max-w-7xl mx-auto p-8 bg-gradient-to-r from-[#2A3D90] to-[#0C122A] text-white rounded-3xl">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
+
+            {/* Left: About + Social Media */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-center md:text-start order-1 lg:order-1"
+              className="order-1 flex flex-col items-center lg:items-start text-center lg:text-left"
             >
-              <div className="flex justify-center md:justify-start ">
-                <Image src={logo} alt="Logo" className="h-10 w-auto mb-4" />
-              </div>
-              <p className="text-[#FFF] mb-4">
+              <Image src={logo} alt="Sudha Hospital Logo" className="h-14 w-auto" />
+
+              <p className="text-[#FFF] mb-4 mt-4 max-w-sm">
                 Sudha Hospital is a leading multispeciality hospital in Erode,
                 known for its exceptional healthcare services.
               </p>
+
               <h4 className="font-bold text-[#FFF] mb-4">Social Media</h4>
               <div className="flex gap-3 justify-center md:justify-start">
-                <a
+                <Link
                   href="https://www.facebook.com/sudhahospitals"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -178,9 +182,8 @@ const Footer = () => {
                   <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                     <Facebook className="w-4 h-4 text-blue-900 fill-current" stroke="none" />
                   </div>
-
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://www.youtube.com/@sudhafertilitycentre"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -188,8 +191,8 @@ const Footer = () => {
                   <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                     <SiYoutube className="w-4 h-4 text-blue-900" />
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://www.instagram.com/sudhahospitals/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -197,49 +200,59 @@ const Footer = () => {
                   <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                     <Instagram className="w-4 h-4 text-blue-900" />
                   </div>
-                </a>
+                </Link>
               </div>
+
+
             </motion.div>
 
-            {/* Empty / spacer or future middle content */}
-            <div className="order-2 hidden lg:block"></div>
-
-            {/* Middle: Two Hospital Locations */}
+            {/* Middle: NABH Accreditation */}
             <motion.div
-              className="order-2 lg:order-3 grid grid-cols-1 sm:grid-cols-1 gap-6"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+              className="order-2 flex flex-col "
+            >
+              <h4 className=" text-white text-lg mb-4">Accredited By</h4>
+              <div className="">
+                <Image
+                  src={branchLogo1}
+                  alt="NABH Accreditation"
+                  className="h-[100px] w-auto object-cover"
+                />
+
+              </div>
+
+            </motion.div>
+
+            {/* Right: Hospital Location & Contact */}
+            <motion.div
+              className="order-3 flex flex-col items-center lg:items-start text-center lg:text-left"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              {/* Location 1 */}
-              <div className="mb-center text-start">
-                <h4 className="mb-2">Sudha Multispeciality Hospital</h4>
-                <p className="text-[#FFF] flex gap-3 mt-7 mb-center">
-                  <MdOutlineLocationOn className="size-8" />
-                  No. 162, 1B1, Perundurai Rd, Edayankattuvalsu, Erode, Tamil Nadu 638011
-                </p>
-                <p className="text-[#FFF] mt-7 flex gap-3 mb-center">
-                  <IoMail className="size-5" />
-                  care@sudhahospitals.com
-                </p>
-                <div className="text-[#FFF] flex gap-3 mt-7 mb-center">
-                  <IoCall className="size-6" />
-                  <div>
-                    <a
-                      href="tel:+914242454545"
-                      className="text-white font-semibold text-sm"
-                    >
-                      +91-424-454545
-                    </a>
-                    <p>
-                      <a
-                        href="tel:+7670076006"
-                        className="text-white font-semibold text-sm"
-                      >
-                        +91 76-7007-6006
-                      </a>
-                    </p>
-                  </div>
+              <h4 className="mb-2 text-lg">Sudha Multispeciality Hospital</h4>
+
+              <p className="text-[#FFF] flex items-start gap-3 mt-4 max-w-xs">
+                <MdOutlineLocationOn className="size-6 flex-shrink-0" />
+                No. 162, 1B1, Perundurai Rd, Edayankattuvalsu, Erode, Tamil Nadu 638011
+              </p>
+
+              <p className="text-[#FFF] mt-4 flex items-center gap-3">
+                <IoMail className="size-5" />
+                care@sudhahospitals.com
+              </p>
+
+              <div className="text-[#FFF] flex gap-3 mt-4">
+                <IoCall className="size-6 flex-shrink-0" />
+                <div>
+                  <Link href="tel:+914242454545" className="text-white font-semibold text-sm block">
+                    +91-424-454545
+                  </Link>
+                  <Link href="tel:+7670076006" className="text-white font-semibold text-sm block">
+                    +91 76-7007-6006
+                  </Link>
                 </div>
               </div>
             </motion.div>
@@ -249,8 +262,10 @@ const Footer = () => {
 
 
 
+
+
       {/* Floating Action Icons */}
-     
+
 
       <section className="bg-[#FFFFFF] rounded-t-3xl -z-20 pt-40 -mt-36">
         {/* Top Grid Section */}
@@ -273,7 +288,7 @@ const Footer = () => {
                     className="text-[14px] font-semibold text-[#5E566A] hover:text-primary-blue cursor-pointer flex gap-2 items-center"
                   >
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>
-                    <Link href={`/${slug}`}>{item}</Link>
+                    <Link href={`/specialities/${slug}`}>{item}</Link>
                   </li>
                 );
               })}
@@ -302,7 +317,7 @@ const Footer = () => {
                     className="text-[14px] font-semibold text-[#5E566A] hover:text-primary-blue cursor-pointer flex gap-3 items-center"
                   >
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>
-                    <Link href={`/${slug}`}>{item}</Link>
+                    <Link href={`/specialities/${slug}`}>{item}</Link>
                   </li>
                 );
               })}
@@ -325,7 +340,7 @@ const Footer = () => {
                     className="flex gap-3 items-center text-[14px] font-semibold text-[#5E566A] hover:text-primary-blue cursor-pointer"
                   >
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>
-                    <Link href={`/${item.link}`}>{item.name}</Link>
+                    <Link href={`/about-us/${item.link}`}>{item.name}</Link>
                   </li>
                 ))}
               </ul>
@@ -340,7 +355,7 @@ const Footer = () => {
                     className="flex gap-3 items-center text-[14px] font-semibold text-[#5E566A] hover:text-primary-blue cursor-pointer"
                   >
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>
-                    <Link href={`/${item.link}`}>{item.name}</Link>
+                    <Link href={`/academics/${item.link}`}>{item.name}</Link>
                   </li>
                 ))}
               </ul>
@@ -388,7 +403,7 @@ const Footer = () => {
                     key={i}
                     className="flex gap-3 items-center text-[14px] font-semibold text-[#5E566A] hover:text-primary-blue">
                     <div className="w-2 h-2 rounded-lg bg-[#2B3990]"></div>
-                    <Link href={`/${item.link}`}>{item.name}</Link>
+                    <Link href={`/resources/${item.link}`}>{item.name}</Link>
                   </li>
                 ))}
               </ul>
@@ -448,7 +463,7 @@ const Footer = () => {
 
 
 
-       <section className="relative">
+      <section className="relative">
         <div className=" fixed bottom-0 right-0  flex justify-around items-center py-2 bg-white shadow-md border-t sm:bg-transparent sm:shadow-none sm:border-0 z-[9999] sm:bottom-3 sm:right-2 sm:w-auto sm:flex-col sm:items-end sm:space-y-2 sm:py-0  ">
 
           {/* Emergency Button */}

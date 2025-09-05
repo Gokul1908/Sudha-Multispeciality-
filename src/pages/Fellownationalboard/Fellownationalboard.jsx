@@ -33,7 +33,7 @@ const breadcrumbItems = [
 
     { label: "Academics", href: "" },
 
-    { label: "Fellow of National Board (FNB)", href: "/fellow-of-national-board" },
+    { label: "Fellow of National Board (FNB)", href: "/academics/fellow-of-national-board" },
 ];
 
 const hospitalscards = [
