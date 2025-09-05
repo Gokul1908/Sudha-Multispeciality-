@@ -111,17 +111,9 @@ export default function Navbar() {
         </div>
       </div>
 
-      <section   className={cn(
-          "sticky top-0 z-50 mb-navbar transition-all supports-[backdrop-filter]:bg-background-transparent",
-          isScrolled
-            ? "w-full bg-white text-black"
-            : isWhitePage
-              ? "max-w-7xl mx-auto bg-transparent text-black lg:text-white"
-              : "max-w-7xl mx-auto bg-transparent text-white"
-        )}>
-        <header
+      <section
         className={cn(
-          "sticky top-0 z-50 py-3  mb-navbar max-w-7xl mx-auto text-sm transition-all supports-[backdrop-filter]:bg-background-transparent",
+          "sticky top-0 z-50 mb-top mb-pl transition-all supports-[backdrop-filter]:bg-background-transparent",
           isScrolled
             ? "w-full bg-white text-black"
             : isWhitePage
@@ -129,84 +121,83 @@ export default function Navbar() {
               : "max-w-7xl mx-auto bg-transparent text-white"
         )}
       >
-        <div className="container flex h-14 max-w-screen-2xl items-center justify-between mx-auto">
-          <Link
-            href="/"
-            className="hidden lg:flex relative items-center gap-x-3  font-bold text-muted hover:text-accent text-3xl transition ease-in-out"
-          >
-            <Image src={currentLogo} alt="img" />
-          </Link>
-
-          <div className="hidden lg:flex items-center gap-x-10">
-            <nav
-              className="flex items-center "
-              onMouseLeave={() => {
-                if (!subRef.current) {
-                  setHovering(null);
-                }
-              }}
+        <header
+          className={cn(
+            "sticky top-0 z-50 py-3  max-w-7xl mx-auto text-sm transition-all supports-[backdrop-filter]:bg-background-transparent",
+            isScrolled
+              ? "w-full bg-white text-black"
+              : isWhitePage
+                ? "max-w-7xl mx-auto bg-transparent text-black lg:text-white"
+                : "max-w-7xl mx-auto bg-transparent text-white"
+          )}
+        >
+          <div className="container flex h-14 max-w-screen-2xl items-center justify-between mx-auto px-4">
+            {/* Logo (desktop + mobile) */}
+            <Link
+              href="/"
+              className="flex items-center gap-x-3 font-bold text-muted hover:text-accent text-2xl sm:text-3xl transition"
             >
-              {links
-                ?.filter((link) => link && link.hrefs && link.label)
-                .map((link, index) => (
-                  <NavLink
-                    key={index}
-                    handleMouseEnter={handleMouseEnter}
-                    hovering={hovering}
-                    index={index}
-                    link={link}
-                  />
-                ))}
+              <Image src={currentLogo} alt="Logo" className="h-10 w-auto" />
+            </Link>
 
-              <div
-                ref={subRef}
-                className={cn(
-                  "absolute top-20 left-0 px-4 sm:px-0 py-0 pb-6 pt-6 w-full bg-white text-black transition-all ease-in-out",
-                  hovering || hovering === 0
-                    ? "opacity-100 border-t shadow-[0_4px_15px_rgba(0,0,0,0.08)] border-accent"
-                    : "opacity-0 border-none pointer-events-none"
-                )}
-                onMouseLeave={() => setHovering(null)}
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center gap-x-10">
+              <nav
+                className="flex items-center"
+                onMouseLeave={() => {
+                  if (!subRef.current) setHovering(null);
+                }}
               >
-                <AnimatePresence>
-                  {hovering !== null && links[hovering].subLinks && (
-                    <>
+                {links
+                  ?.filter((link) => link?.hrefs && link?.label)
+                  .map((link, index) => (
+                    <NavLink
+                      key={index}
+                      handleMouseEnter={handleMouseEnter}
+                      hovering={hovering}
+                      index={index}
+                      link={link}
+                    />
+                  ))}
+
+                {/* Mega Menu */}
+                <div
+                  ref={subRef}
+                  className={cn(
+                    "absolute top-20 left-0 w-full px-4 sm:px-0 py-6 bg-white text-black transition-all ease-in-out",
+                    hovering || hovering === 0
+                      ? "opacity-100 border-t shadow-[0_4px_15px_rgba(0,0,0,0.08)] border-accent"
+                      : "opacity-0 border-none pointer-events-none"
+                  )}
+                  onMouseLeave={() => setHovering(null)}
+                >
+                  <AnimatePresence>
+                    {hovering !== null && links[hovering]?.subLinks && (
                       <motion.div
                         key="mega-menu"
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 10 }}
                         transition={{ duration: 0.3, ease: "easeOut" }}
-                        // className="absolute left-0 top-full w-full z-50 bg-white px-6 py-8 shadow-md border-t border-gray-200"
-                        onMouseLeave={() => setHovering(null)}
                       >
-                        {/* For 'aboutus' without image preview */}
+                        {/* About Us */}
                         {links[hovering]?.type === "aboutus" && (
                           <div className="flex flex-col lg:flex-row gap-6 max-w-[1560px] px-6 mx-auto">
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-6">
-                              {links[hovering].subLinks.map(
-                                (subLink, index) => (
-                                  <SubLink
-                                    key={index}
-                                    index={index}
-                                    subLink={subLink}
-                                    setHoveredSubLinkImage={
-                                      setHoveredSubLinkImage
-                                    }
-                                  />
-                                )
-                              )}
+                              {links[hovering].subLinks.map((subLink, index) => (
+                                <SubLink
+                                  key={index}
+                                  index={index}
+                                  subLink={subLink}
+                                  setHoveredSubLinkImage={setHoveredSubLinkImage}
+                                />
+                              ))}
                             </div>
-
-
-
-                            {/* Image preview on right */}
                             <div className="hidden lg:block w-[300px] shrink-0 rounded-2xl overflow-hidden">
                               <MenuImage
                                 image={
-                                  hoveredSubLinkImage == null
-                                    ? links[hovering].imagestatic
-                                    : hoveredSubLinkImage
+                                  hoveredSubLinkImage ??
+                                  links[hovering].imagestatic
                                 }
                                 width={300}
                                 height={200}
@@ -215,51 +206,40 @@ export default function Navbar() {
                           </div>
                         )}
 
-                        {/* For 'specialites' without image preview */}
+                        {/* Specialties */}
                         {links[hovering]?.type === "specialites" && (
                           <div className="max-w-[1560px] mx-auto px-6">
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
-                              {links[hovering].subLinks.map(
-                                (subLink, index) => (
-                                  <SpecialSubLink
-                                    key={index}
-                                    index={index}
-                                    subLink={subLink}
-                                    setHoveredSubLinkImage={
-                                      setHoveredSubLinkImage
-                                    }
-                                  />
-                                )
-                              )}
+                              {links[hovering].subLinks.map((subLink, index) => (
+                                <SpecialSubLink
+                                  key={index}
+                                  index={index}
+                                  subLink={subLink}
+                                  setHoveredSubLinkImage={setHoveredSubLinkImage}
+                                />
+                              ))}
                             </div>
                           </div>
                         )}
 
-                        {/* For 'facilities' with image preview */}
+                        {/* Facilities */}
                         {links[hovering]?.type === "facilities" && (
-                          <div className="flex flex-col lg:flex-row gap-6 max-w-[1560px] px-6  mx-auto">
+                          <div className="flex flex-col lg:flex-row gap-6 max-w-[1560px] px-6 mx-auto">
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-6">
-                              {links[hovering].subLinks.map(
-                                (subLink, index) => (
-                                  <SubLink
-                                    key={index}
-                                    index={index}
-                                    subLink={subLink}
-                                    setHoveredSubLinkImage={
-                                      setHoveredSubLinkImage
-                                    }
-                                  />
-                                )
-                              )}
+                              {links[hovering].subLinks.map((subLink, index) => (
+                                <SubLink
+                                  key={index}
+                                  index={index}
+                                  subLink={subLink}
+                                  setHoveredSubLinkImage={setHoveredSubLinkImage}
+                                />
+                              ))}
                             </div>
-
-                            {/* Image preview only for aboutus */}
                             <div className="hidden lg:block w-[300px] shrink-0 rounded-2xl overflow-hidden">
                               <MenuImage
                                 image={
-                                  hoveredSubLinkImage == null
-                                    ? links[hovering].imagestatic
-                                    : hoveredSubLinkImage
+                                  hoveredSubLinkImage ??
+                                  links[hovering].imagestatic
                                 }
                                 width={300}
                                 height={200}
@@ -268,33 +248,24 @@ export default function Navbar() {
                           </div>
                         )}
 
-                        {/* For 'academics' with image preview */}
+                        {/* Academics */}
                         {links[hovering]?.type === "academics" && (
                           <div className="flex flex-col lg:flex-row gap-6 max-w-[1560px] px-6 mx-auto">
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full gap-6">
-                              {links[hovering].subLinks.map(
-                                (subLink, index) => (
-                                  <Academics
-                                    key={index}
-                                    index={index}
-                                    subLink={subLink}
-                                    setHoveredSubLinkImage={
-                                      setHoveredSubLinkImage
-                                    }
-                                  />
-                                )
-                              )}
+                              {links[hovering].subLinks.map((subLink, index) => (
+                                <Academics
+                                  key={index}
+                                  index={index}
+                                  subLink={subLink}
+                                  setHoveredSubLinkImage={setHoveredSubLinkImage}
+                                />
+                              ))}
                             </div>
-
-
-                            {console.log("links[hovering].image", links[hovering].image)}
-                            {/* Image preview only for aboutus */}
                             <div className="hidden lg:block w-[300px] shrink-0 rounded-2xl overflow-hidden">
                               <MenuImage
                                 image={
-                                  hoveredSubLinkImage == null
-                                    ? links[hovering].imagestatic
-                                    : hoveredSubLinkImage
+                                  hoveredSubLinkImage ??
+                                  links[hovering].imagestatic
                                 }
                                 width={300}
                                 height={200}
@@ -302,74 +273,33 @@ export default function Navbar() {
                             </div>
                           </div>
                         )}
-
-                        {/* Additional sections like facilities, etc., can go here */}
-                        {/* <div className="py-5 px-6 mt-3 flex justify-between items-center border-t border-gray-200">
-                          <p className="text-black text-md font-bold">
-                            24x7 healthcare support for your needs.{" "}
-                            <span className="text-[#2B3990] text-md font-bold">
-                              Book Your Appointment
-                            </span>
-                          </p>
-
-                          <div className="flex gap-5">
-                            <div className="flex items-center gap-4">
-
-                              <Image src={HeaderOne} alt="HeaderOne" className="w-[36px] h-[36px]" />
-                              <Link
-                                href="tel:+7670076006"
-                                className="text-[#2B3990] font-semibold text-sm"
-                              >
-                                +91 76-7007-6006
-                              </Link>
-
-                            </div>
-                            <div className="flex items-center gap-4">
-                              <Image src={HeaderTwo} alt="HeaderTwo" className="w-[36px] h-[36px]" />
-                              <Link
-                                href="tel:+9042065454"
-                                className="text-[#2B3990] font-semibold text-sm"
-                              >
-                                +91 90-4206-5454
-                              </Link>
-                             
-                            </div>
-                          </div>
-                        </div> */}
                       </motion.div>
-                    </>
-                  )}
-                </AnimatePresence>
-              </div>
-            </nav>
-          </div>
-          <div className="flex flex-row-reverse justify-center gap-x-10 lg:gap-x-0  ">
-            <Link
-              href="/"
-              className="block lg:hidden relative items-center gap-x-3 flex font-bold text-muted hover:text-accent text-3xl transition ease-in-out"
-            >
-              <Image src={currentLogo} alt="img" />
-            </Link>
-            <div className="hidden lg:block  items-center gap-x-4">
-              <div className="  rounded-full overflow-hidden relative">
-                <Link href="/contact-us"
-                  className=
-                    "btn-white letter-space"
-                   
-                >
-                  Consult Our Specialists <ArrowUpRight className="w-5 h-5" />
-                </Link>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </nav>
+            </div>
 
+            {/* CTA + MobileNav */}
+            <div className="flex items-center gap-2">
+              {/* CTA visible in all screens */}
+              <Link
+                href="/contact-us"
+                className="hidden sm:flex btn-white  items-center gap-x-2 rounded-full"
+              >
+                Contact Us 
+              </Link>
+
+              {/* Mobile Menu Toggle */}
+              <div className="lg:hidden">
+                <MobileNav links={links} />
               </div>
             </div>
           </div>
-          {/* Mobile sidebar */}
-          <MobileNav />
-        </div>
-      </header>
+        </header>
       </section>
 
-      
+
     </>
   );
 }

@@ -102,7 +102,7 @@ const BannerSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-[90vh] overflow-hidden top-6">
+    <div className="relative w-full h-[90vh] mb-homebanner overflow-hidden top-6">
       {/* Swiper */}
       <Swiper
         ref={swiperRef}
@@ -170,7 +170,7 @@ const BannerSlider = () => {
       </Swiper>
 
       {/* Bottom Titles + Progress Bars */}
-      <div className="absolute bottom-0 left-0 w-full px-16 mb-p py-10 z-50 ">
+      <div className="absolute bottom-0 left-0 w-full px-16 mb-pl py-10 z-50 ">
         <div className="flex justify-between text-white text-sm font-medium gap-6">
           {slides.map((slide, index) => (
             <div

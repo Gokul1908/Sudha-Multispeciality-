@@ -244,11 +244,12 @@ span {
     padding-left: 16px;
     padding-right: 16px;
   }
- 
-.sm-none{
-  display: none;
-}
-  .sm-width-full{
+
+  .sm-none {
+    display: none;
+  }
+
+  .sm-width-full {
     width: 100% !important;
   }
 
@@ -273,28 +274,41 @@ span {
     padding-left: 16px;
     padding-right: 16px;
   }
- .sm-text{
+
+  .sm-text {
     font-size: 40px;
   }
-  
-  .mb-footer{
-    width:100%;
+
+  .mb-top {
+    top: 1rem;
   }
 
-  
+  .mb-footer {
+    width: 100%;
+  }
+
+
   .mb-hero-section {
     margin-top: -5rem;
   }
 
   .mb-navbar {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     top: 24px;
 
+  }
+  .mb-homebanner{
+    height:80vh;
   }
 
   .mb-m {
     margin: 16px;
+  }
+
+  .mb-pl {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .mb-p {

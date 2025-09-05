@@ -634,7 +634,7 @@ export const links = [
 
   {
     label: "Resources",
-    hrefs: "/allied-health-services",
+    hrefs: "/resources/allied-health-services",
     type: "academics",
     imagestatic: Alied,
     navImage: "",
