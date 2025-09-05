@@ -467,7 +467,7 @@ const Footer = () => {
         <div className=" fixed bottom-0  right-0   flex justify-around items-center py-2 bg-white shadow-md border-t sm:bg-transparent sm:shadow-none sm:border-0 z-[9999] sm:bottom-3 mb-footer sm:right-2 sm:w-auto sm:flex-col sm:items-end sm:space-y-2 sm:py-0  ">
 
           {/* Emergency Button */}
-          <Link href="#">
+          <Link href="tel:+919042065454">
             <button
               onMouseEnter={() => setShowEmergencyText(true)}
               onMouseLeave={() => setShowEmergencyText(false)}
@@ -494,7 +494,7 @@ const Footer = () => {
 
 
           {/* Find Doctor Button */}
-          <Link href="#">
+          <Link href="/resources/find-a-doctor">
             <button
               onMouseEnter={() => setShowDocText(true)}
               onMouseLeave={() => setShowDocText(false)}
@@ -517,7 +517,7 @@ const Footer = () => {
           </Link>
 
           {/* Appointment Button */}
-          <Link href="#">
+          <Link href="/resources/contact-us">
             <button
               onMouseEnter={() => setShowCalendarText(true)}
               onMouseLeave={() => setShowCalendarText(false)}
@@ -540,7 +540,7 @@ const Footer = () => {
             </button>
           </Link>
           {/* WhatsApp Button */}
-          <Link href="#">
+          <Link href="https://wa.me/917670076006">
             <button
               onMouseEnter={() => setShowMessageText(true)}
               onMouseLeave={() => setShowMessageText(false)}
