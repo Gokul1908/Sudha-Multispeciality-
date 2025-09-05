@@ -287,7 +287,7 @@ export default function Navbar() {
                 href="/contact-us"
                 className="hidden sm:flex btn-white  items-center gap-x-2 rounded-full"
               >
-                Contact Us 
+                Consult Our Specialists
               </Link>
 
               {/* Mobile Menu Toggle */}
