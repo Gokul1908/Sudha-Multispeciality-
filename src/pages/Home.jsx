@@ -319,8 +319,8 @@ function Home() {
         <BannerSlider />
       </section>
 
-      <section>
-        <div className="max-w-7xl mx-auto my-20 h-full">
+      <section className="my-20 ">
+        <div className="max-w-7xl mx-auto h-full">
           <motion.div
             variants={container}
             initial="hidden"
@@ -345,7 +345,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto  pt-8 pb-6 mb-m">
+      <section className="max-w-7xl mx-auto   mb-m">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Image Block */}
           <motion.div
@@ -380,7 +380,7 @@ function Home() {
           </motion.div>
 
           {/* Content Block */}
-          <section className="px-4 mb-p lg:px-8 py-10">
+          <section className="px-4 mb-p lg:px-8 py-10 pb-0">
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -478,8 +478,8 @@ function Home() {
         )}
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto py-12">
+      <section className="">
+        <div className="max-w-7xl mx-auto py-16">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -501,7 +501,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16 pt-0">
         <SpecialitySection />
       </section>
 
@@ -509,24 +509,13 @@ function Home() {
         <CentreOfExcellence />
       </section>
 
-      <section className="max-w-7xl mx-auto h-full py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center">
-          <h2 className="bg-white text-[#2B3990] px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold">
-            Cutting-Edge Facilities
-          </h2>
-        </div>
+      
 
-        <h2 className="text-center text-[30px]  mt-4 sm:mt-6 ">
-          Advanced Medical Devices and <br className="hidden sm:block" />
-          International Technology
-        </h2>
+      <section className="max-w-7xl mx-auto py-16 pt-0">
+        <FacilitySlider />
       </section>
 
-      <div>
-        <FacilitySlider />
-      </div>
-
-      <section className="py-8">
+      <section className="max-w-7xl mx-auto py-16">
         <OurTeamSlider />
       </section>
 
@@ -549,7 +538,7 @@ function Home() {
               />
 
               {/* Floating Info Badges */}
-              <div className="absolute bottom-10 left-8  z-20 bg-white shadow-lg rounded-2xl flex flex-col sm:flex-row gap-6 sm:gap-6 px-8 py-8 text-md font-semibold text-[#2B3990]">
+              <div className="absolute bottom-10 left-8 sm-none  z-20 bg-white shadow-lg rounded-2xl flex flex-col sm:flex-row gap-6 sm:gap-6 px-8 py-8 text-md font-semibold text-[#2B3990]">
                 <div className="flex items-center gap-3 sm:gap-4">
                   <Image
                     src={inter}
@@ -611,14 +600,14 @@ function Home() {
           speed={50}
           gradient={false}
           pauseOnHover={true}
-          className="py-16"
+          className="py-8"
         >
-          <span className="mx-4 text-[#D5DAE5] font-extrabold text-[76px]">
+          <span className="mx-4 text-[#D5DAE5] font-extrabold text-[76px] sm-text">
             Quality Health Care Beyond Generations
           </span>
         </Marquee>
 
-        <div className="max-w-7xl    mx-auto  pb-16">
+        <div className="max-w-7xl  mb-m  mx-auto  pb-16">
           <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {cardData.map((item, index) => (
               <motion.div

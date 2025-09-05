@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import Link from "next/link";
-import "swiper/css/autoplay";
 import { GoThumbsup } from "react-icons/go";
 import { ArrowUpRight } from "lucide-react";
 
@@ -18,11 +17,12 @@ const slides = [
         All In One Place.
       </>
     ),
-    link:"/centre-of-excellence",
+    link: "/centre-of-excellence",
     description:
       "Sudha Multispeciality Hospital, a healthcare icon delivering quality healthcare for 40+ years.",
     buttonText: "Discover Our Service",
-    video: "https://ship-crm-img.s3.eu-north-1.amazonaws.com/happy-family-tiny-newborn-infant-male-or-female.mp4",
+    video:
+      "https://ship-crm-img.s3.eu-north-1.amazonaws.com/happy-family-tiny-newborn-infant-male-or-female.mp4",
   },
   {
     heading: "Motherly Care For Every Mother and Child",
@@ -33,11 +33,12 @@ const slides = [
         Child Care
       </>
     ),
-    link:"/mother-and-childcare",
+    link: "/mother-and-childcare",
     description:
       "Because Every mother deserves care that comforts, every step of the way.",
     buttonText: "Discover Our Service ",
-    video: "https://ship-crm-img.s3.eu-north-1.amazonaws.com/mother-child.mp4",
+    video:
+      "https://ship-crm-img.s3.eu-north-1.amazonaws.com/mother-child.mp4",
   },
   {
     heading: "Nurturing Parenthood for Over 40 Years",
@@ -48,11 +49,12 @@ const slides = [
         Care
       </>
     ),
-    link:"https://sudhafertilitycentre.com/",
+    link: "https://sudhafertilitycentre.com/",
     description:
       "Sudha Fertility Centre has been a beacon of hope for lakhs of families, helping turn parenthood dreams into joyful realities.",
     buttonText: "Discover Our Service ",
-    video: "https://ship-crm-img.s3.eu-north-1.amazonaws.com/happy-family-tiny-newborn-infant-male-or-female.mp4",
+    video:
+      "https://ship-crm-img.s3.eu-north-1.amazonaws.com/happy-family-tiny-newborn-infant-male-or-female.mp4",
   },
   {
     heading: "Standing with You Through Every Battle",
@@ -65,57 +67,57 @@ const slides = [
     ),
     description: "The Only Comprehensive Cancer Care in Erode.",
     buttonText: "Discover Our Service ",
-    link:"https://sudhacancercentre.com/",
-    video: "https://ship-crm-img.s3.eu-north-1.amazonaws.com/sudha-cancercentre.mp4",
+    link: "https://sudhacancercentre.com/",
+    video:
+      "https://ship-crm-img.s3.eu-north-1.amazonaws.com/sudha-cancercentre.mp4",
   },
 ];
-
 
 const BannerSlider = () => {
   const swiperRef = useRef(null);
   const progressRefs = useRef([]);
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // 🔹 Progress bar animation
   useEffect(() => {
     progressRefs.current.forEach((ref, i) => {
-      if (ref) {
-        ref.style.transition = "none";
-        ref.style.width = "0%";
-        if (i === activeIndex) {
-          setTimeout(() => {
-            ref.style.transition = "width 5s linear";
-            ref.style.width = "100%";
-          }, 50);
-        }
+      if (!ref) return;
+      ref.style.transition = "none";
+      ref.style.width = "0%";
+
+      if (i === activeIndex) {
+        setTimeout(() => {
+          ref.style.transition = "width 5s linear";
+          ref.style.width = "100%";
+        }, 50);
       }
     });
   }, [activeIndex]);
 
+  // 🔹 Bottom tab click
   const handleTabClick = (index) => {
-    if (swiperRef.current && swiperRef.current.swiper) {
+    if (swiperRef.current?.swiper) {
       swiperRef.current.swiper.slideToLoop(index);
     }
   };
 
   return (
-    <div className="relative w-full h-[90vh] overflow-hidden">
+    <div className="relative w-full h-[90vh] overflow-hidden top-6">
+      {/* Swiper */}
       <Swiper
         ref={swiperRef}
         modules={[Autoplay]}
         spaceBetween={0}
         slidesPerView={1}
-        loop={true}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-        }}
+        loop
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        className=" h-full top-6  mx-auto px-4 py-36 rounded-3xl"
+        className="h-full py-36  rounded-3xl"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="relative w-full h-[90vh]">
-              {/* 🔹 Background Video */}
+              {/* Background Video */}
               <video
                 src={slide.video}
                 autoPlay
@@ -125,7 +127,7 @@ const BannerSlider = () => {
                 className="w-full h-full object-cover"
               />
 
-              {/* 🔹 Gradient Overlay */}
+              {/* Gradient Overlay */}
               <div
                 className="absolute inset-0"
                 style={{
@@ -134,68 +136,72 @@ const BannerSlider = () => {
                 }}
               />
 
-              {/* 🔹 Text Content */}
+              {/* Text Content */}
               <div className="max-w-7xl mx-auto">
-                <div className="absolute z-10 top-[50%] -translate-y-[50%] text-white max-w-xl">
-                  <div className=" mb-p">
-                    <div className="flex">
-                      <h2 className="bg-white text-[#2B3990] flex gap-4 px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold">
-                        <GoThumbsup className="size-5 text-[#1ED348]" />
-                        {slide.btnText}
-                      </h2>
-                    </div>
-                    <h2 className="text-[44px] mb-4 mt-4">{slide.heading}</h2>
-                    <p className="text-[16px] mb-6 text-[#fff]">
+                <div className="absolute inset-0 flex items-center mb-p max-w-7xl mx-auto">
+                  <div className="text-white max-w-xl">
+                    <h6 className="bg-white text-[#2B3990] flex gap-3 px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-semibold w-fit mb-4">
+                      <GoThumbsup className="size-5 text-[#1ED348]" />
+                      {slide.btnText}
+                    </h6>
+
+                    <h1 className="text-[40px]   mb-4">
+                      {slide.heading}
+                    </h1>
+
+                    <p className="text-[16px] mb-6 text-white/90">
                       {slide.description}
                     </p>
-                    
-                    <Link className="btn-outline-white" href="#">
+
+                    <Link
+                      href={slide.link}
+                      className="btn-outline-white"
+                    >
                       {slide.buttonText}
-                      <ArrowUpRight className="w-5 h-5 mt-0.5" />
+                      <ArrowUpRight className="w-5 h-5" />
                     </Link>
                   </div>
                 </div>
               </div>
+
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
-      {/* 🔹 Bottom Titles with Progress Bars */}
-      <div className="absolute bottom-0 left-0 w-full px-16 py-6 z-50">
-        <div className="flex justify-between text-white text-sm font-medium">
+      {/* Bottom Titles + Progress Bars */}
+      <div className="absolute bottom-0 left-0 w-full px-16 mb-p py-10 z-50 ">
+        <div className="flex justify-between text-white text-sm font-medium gap-6">
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="cursor-pointer flex-shrink-0 w-[25%] ml-4"
+              className="cursor-pointer flex-1"
               onClick={() => handleTabClick(index)}
             >
-              <div className="flex flex-col items-start mr-16">
+              <div className="">
                 <p className="hidden md:block">
                   <span
                     className={
                       activeIndex === index ? "text-white" : "text-white/70"
                     }
-                    style={{ whiteSpace: "pre-line" }}
                   >
                     {slide.title}
                   </span>
                 </p>
-                <div className="w-full h-[3px] bg-white/20 mt-1 overflow-hidden">
-                  <div
-                    ref={(el) => (progressRefs.current[index] = el)}
-                    className={`h-full ${activeIndex === index ? "bg-white" : "bg-transparent"
-                      }`}
-                    style={{ width: "0%" }}
-                  />
-                </div>
+              </div>
+
+              <div className="w-full h-[3px] bg-white/20 mt-1 overflow-hidden">
+                <div
+                  ref={(el) => (progressRefs.current[index] = el)}
+                  className="h-full bg-white"
+                  style={{ width: "0%" }}
+                />
               </div>
             </div>
           ))}
         </div>
       </div>
     </div>
-
   );
 };
 

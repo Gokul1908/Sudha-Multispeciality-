@@ -464,7 +464,7 @@ const Footer = () => {
 
 
       <section className="relative">
-        <div className=" fixed bottom-0 right-0  flex justify-around items-center py-2 bg-white shadow-md border-t sm:bg-transparent sm:shadow-none sm:border-0 z-[9999] sm:bottom-3 sm:right-2 sm:w-auto sm:flex-col sm:items-end sm:space-y-2 sm:py-0  ">
+        <div className=" fixed bottom-0  right-0   flex justify-around items-center py-2 bg-white shadow-md border-t sm:bg-transparent sm:shadow-none sm:border-0 z-[9999] sm:bottom-3 mb-footer sm:right-2 sm:w-auto sm:flex-col sm:items-end sm:space-y-2 sm:py-0  ">
 
           {/* Emergency Button */}
           <Link href="#">

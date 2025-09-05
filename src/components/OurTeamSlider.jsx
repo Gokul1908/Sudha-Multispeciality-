@@ -67,17 +67,17 @@ export default function OurTeamSlider() {
   };
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8">
+    <section className="">
       <div className="max-w-7xl bg-gradient-to-r from-[#2A3D90] to-[#0C122A] mx-auto px-4 rounded-3xl pt-16 pb-20">
         <div className="flex justify-center ">
-          <h2 className="bg-white text-[#2B3990] px-5  py-2 rounded-full text-sm font-semibold">
+          <h6 className="bg-white text-[#2B3990] px-5  py-2 rounded-full text-sm font-semibold">
             Our Medical Team
-          </h2>
+          </h6>
         </div>
 
-        <h1 className="text-center text-[30px] text-white mt-4">
+        <h2 className="text-center text-[30px] text-white mt-4">
           Our Multi-Speciality Experts
-        </h1>
+        </h2>
 
         <p className=" text-white mt-2 text-center">
           Book your appointment with the best specialists for all of your health

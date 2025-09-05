@@ -244,6 +244,13 @@ span {
     padding-left: 16px;
     padding-right: 16px;
   }
+ 
+.sm-none{
+  display: none;
+}
+  .sm-width-full{
+    width: 100% !important;
+  }
 
   .mb-hero-section {
     margin-top: -5rem;
@@ -266,7 +273,15 @@ span {
     padding-left: 16px;
     padding-right: 16px;
   }
+ .sm-text{
+    font-size: 40px;
+  }
+  
+  .mb-footer{
+    width:100%;
+  }
 
+  
   .mb-hero-section {
     margin-top: -5rem;
   }
