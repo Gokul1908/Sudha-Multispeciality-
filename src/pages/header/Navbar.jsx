@@ -282,19 +282,28 @@ export default function Navbar() {
 
             {/* CTA + MobileNav */}
             <div className="flex items-center gap-2">
-              {/* CTA visible in all screens */}
               <Link
                 href="/resources/contact-us"
-                className="hidden sm:flex btn-white  items-center gap-x-2 rounded-full"
+                className="small-hidden display-block  btn-white items-center gap-x-2 rounded-full"
               >
-                Consult Our Specialists
+                Consult Our Specialists 
               </Link>
+
+              {/* Mobile CTA */}
+              <Link
+                href="/resources/contact-us"
+                className="desktop-hidden small-block  btn-white items-center gap-x-2 rounded-full"
+              >
+                Contact Us 
+              </Link>
+
 
               {/* Mobile Menu Toggle */}
               <div className="lg:hidden">
                 <MobileNav links={links} />
               </div>
             </div>
+
           </div>
         </header>
       </section>

@@ -1,5 +1,5 @@
 "use client";
-import React from 'react'
+import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -7,10 +7,9 @@ import "./CampusFacilitySlider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
-const CustomPrev = ({ currentSlide, slideCount, ...props }) => (
+const CustomPrev = ({ onClick }) => (
   <button
-    {...props}
+    onClick={onClick}
     className="absolute z-10 
                right-24 lg:right-[90px]
                bottom-[-40px] md:bottom-[-50px] 
@@ -22,9 +21,9 @@ const CustomPrev = ({ currentSlide, slideCount, ...props }) => (
   </button>
 );
 
-const CustomNext = ({ currentSlide, slideCount, ...props }) => (
+const CustomNext = ({ onClick }) => (
   <button
-    {...props}
+    onClick={onClick}
     className="absolute z-10 
                right-14 lg:right-[40px]
                bottom-[-40px] md:bottom-[-50px]
@@ -36,9 +35,6 @@ const CustomNext = ({ currentSlide, slideCount, ...props }) => (
   </button>
 );
 
-
-
-
 export default function CampusFacilitySlider({ data }) {
   const settings = {
     dots: false,
@@ -46,8 +42,8 @@ export default function CampusFacilitySlider({ data }) {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <CustomNext direction="right" />,
-    prevArrow: <CustomPrev direction="left" />,
+    nextArrow: <CustomNext />,
+    prevArrow: <CustomPrev />,
     responsive: [
       {
         breakpoint: 1024, // tablets
@@ -73,17 +69,11 @@ export default function CampusFacilitySlider({ data }) {
               <div className="relative rounded-3xl overflow-hidden">
                 <Image
                   src={facility.image}
-
-                  width={800} // ✅ add width
-                  height={500} // ✅ add height
+                  width={800}
+                  height={500}
+                  alt={facility.title || "Facility"} // ✅ add alt for accessibility
                   className="object-cover w-full h-auto rounded-3xl"
                 />
-                {/* Optional title overlay */}
-                {/* 
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/80 px-4 py-2 rounded-xl text-[#2B3990] font-semibold">
-                  {facility.title}
-                </div> 
-                */}
               </div>
             </div>
           ))}

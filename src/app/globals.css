@@ -202,6 +202,15 @@ span {
 
 }
 
+.desktop-hidden{
+  display: none!important;
+
+}
+
+.display-block{
+  display:block!important;
+}
+
 .ourteamcard_img_one::before {
   content: "";
   position: absolute;
@@ -274,7 +283,17 @@ span {
     padding-left: 16px;
     padding-right: 16px;
   }
+.small-hidden{
+  display:none!important;
+}
 
+.small-block{
+  display: block!important;
+}
+
+  .sm-none {
+    display: none;
+}
   .sm-text {
     font-size: 40px;
   }
