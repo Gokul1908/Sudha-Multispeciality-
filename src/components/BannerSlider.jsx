@@ -13,7 +13,7 @@ const slides = [
     btnText: "Healthcare Excellence Made Affordable",
     title: (
       <>
-        Comprehensive Care, <br />
+        Comprehensive Care,
         All In One Place.
       </>
     ),
@@ -29,7 +29,7 @@ const slides = [
     btnText: "Sudha Mother and Child Care",
     title: (
       <>
-        Mother And <br />
+        Mother And 
         Child Care
       </>
     ),
@@ -45,8 +45,8 @@ const slides = [
     btnText: "Sudha Fertility Centre",
     title: (
       <>
-        Fertility <br />
-        Care
+        Fertility 
+        Centre
       </>
     ),
     link: "https://sudhafertilitycentre.com/",
@@ -61,7 +61,7 @@ const slides = [
     btnText: "Sudha Cancer Centre",
     title: (
       <>
-        Sudha Cancer <br />
+         Cancer 
         Centre
       </>
     ),
