@@ -109,7 +109,7 @@ const serviceSections = [
   { id: "facilities", label: "Facilities" },
   { id: "services", label: "Services" },
   { id: "doctors", label: "Doctors" },
-  { id: "faqs", label: "FAQs" },
+  // { id: "faqs", label: "FAQs" },
 ];
 
 const faq = [
