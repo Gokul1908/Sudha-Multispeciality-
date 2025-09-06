@@ -654,7 +654,7 @@ export const links = [
       },
       {
         header: "Find a Doctor",
-        hrefs: "/resources/find-a-doctor",
+        hrefs: "find-a-doctor",
         image: Doctor,
         hoverImage: Doctor,
         subMenu: [
@@ -692,7 +692,7 @@ export const links = [
       },
       {
         header: "Contact Us",
-        hrefs: "/resources/contact-us",
+        hrefs: "contact-us",
         image: Contact,
         hoverImage: Contact,
         subMenu: [
