@@ -284,7 +284,7 @@ export default function Navbar() {
             <div className="flex items-center gap-2">
               {/* CTA visible in all screens */}
               <Link
-                href="/contact-us"
+                href="/resources/contact-us"
                 className="hidden sm:flex btn-white  items-center gap-x-2 rounded-full"
               >
                 Consult Our Specialists
